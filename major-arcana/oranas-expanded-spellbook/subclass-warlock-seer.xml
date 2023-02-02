@@ -72,7 +72,7 @@
 		</element>
 		<!-- Future Spells -->
 		<element name="Guiding Bolt" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_ARCHETYPE_FEATURE_SEER_FUTURE_SPELL_GUIDING_BOLT">
-			<support>Future Spells</support>
+			<supports>Future Spells</supports>
 			<sheet>
 				<description>This spell doesn't count against the number of spells you know, and you can cast it as a ritual if it has the ritual tag.</description>
 			</sheet>
@@ -81,7 +81,7 @@
 			</rules>
 		</element>
 		<element name="Surveillance" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_ARCHETYPE_FEATURE_SEER_FUTURE_SPELL_SURVEILLANCE">
-			<support>Future Spells</support>
+			<supports>Future Spells</supports>
 			<sheet>
 				<description>This spell doesn't count against the number of spells you know, and you can cast it as a ritual if it has the ritual tag.</description>
 			</sheet>
@@ -92,7 +92,7 @@
 		<element name="Augury" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_ARCHETYPE_FEATURE_SEER_FUTURE_SPELL_AUGURY">
 			<p><em>Prerequisite: Level 3</em></p>
 			<requirements>[level:3]</requirements>
-			<support>Future Spells</support>
+			<supports>Future Spells</supports>
 			<sheet>
 				<description>This spell doesn't count against the number of spells you know, and you can cast it as a ritual if it has the ritual tag.</description>
 			</sheet>
@@ -103,7 +103,7 @@
 		<element name="Moonbeam" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_ARCHETYPE_FEATURE_SEER_FUTURE_SPELL_MOONBEAM">
 			<p><em>Prerequisite: Level 3</em></p>
 			<requirements>[level:3]</requirements>
-			<support>Future Spells</support>
+			<supports>Future Spells</supports>
 			<sheet>
 				<description>This spell doesn't count against the number of spells you know, and you can cast it as a ritual if it has the ritual tag.</description>
 			</sheet>
@@ -114,7 +114,7 @@
 		<element name="Aura of Candor" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_ARCHETYPE_FEATURE_SEER_FUTURE_SPELL_AURA_OF_CANDOR">
 			<p><em>Prerequisite: Level 5</em></p>
 			<requirements>[level:5]</requirements>
-			<support>Future Spells</support>
+			<supports>Future Spells</supports>
 			<sheet>
 				<description>This spell doesn't count against the number of spells you know, and you can cast it as a ritual if it has the ritual tag.</description>
 			</sheet>
@@ -125,7 +125,7 @@
 		<element name="Clairvoyance" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_ARCHETYPE_FEATURE_SEER_FUTURE_SPELL_CLAIRVOYANCE">
 			<p><em>Prerequisite: Level 5</em></p>
 			<requirements>[level:5]</requirements>
-			<support>Future Spells</support>
+			<supports>Future Spells</supports>
 			<sheet>
 				<description>This spell doesn't count against the number of spells you know, and you can cast it as a ritual if it has the ritual tag.</description>
 			</sheet>
@@ -136,7 +136,7 @@
 		<element name="Aura of Unity" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_ARCHETYPE_FEATURE_SEER_FUTURE_SPELL_AURA_OF_UNITY">
 			<p><em>Prerequisite: Level 7</em></p>
 			<requirements>[level:7]</requirements>
-			<support>Future Spells</support>
+			<supports>Future Spells</supports>
 			<sheet>
 				<description>This spell doesn't count against the number of spells you know, and you can cast it as a ritual if it has the ritual tag.</description>
 			</sheet>
@@ -147,7 +147,7 @@
 		<element name="Divination" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_ARCHETYPE_FEATURE_SEER_FUTURE_SPELL_DIVINATION">
 			<p><em>Prerequisite: Level 7</em></p>
 			<requirements>[level:7]</requirements>
-			<support>Future Spells</support>
+			<supports>Future Spells</supports>
 			<sheet>
 				<description>This spell doesn't count against the number of spells you know, and you can cast it as a ritual if it has the ritual tag.</description>
 			</sheet>
@@ -158,7 +158,7 @@
 		<element name="Commune" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_ARCHETYPE_FEATURE_SEER_FUTURE_SPELL_COMMUNE">
 			<p><em>Prerequisite: Level 9</em></p>
 			<requirements>[level:9]</requirements>
-			<support>Future Spells</support>
+			<supports>Future Spells</supports>
 			<sheet>
 				<description>This spell doesn't count against the number of spells you know, and you can cast it as a ritual if it has the ritual tag.</description>
 			</sheet>
@@ -169,7 +169,7 @@
 		<element name="Legend Lore" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_ARCHETYPE_FEATURE_SEER_FUTURE_SPELL_LEGEND_LORE">
 			<p><em>Prerequisite: Level 9</em></p>
 			<requirements>[level:9]</requirements>
-			<support>Future Spells</support>
+			<supports>Future Spells</supports>
 			<sheet>
 				<description>This spell doesn't count against the number of spells you know, and you can cast it as a ritual if it has the ritual tag.</description>
 			</sheet>
