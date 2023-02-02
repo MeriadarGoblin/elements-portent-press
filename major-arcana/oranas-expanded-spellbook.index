@@ -4,7 +4,7 @@
 		<name>Orana's Expanded Spellbook</name>
 		<description>The content from the Final Fantatsy XIV DnD Compendium.</description>
 		<author url="https://www.gmbinder.com/share/-LsDqsNbupzeLhkTIcPv">SilentSoren</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="oranas-expanded-spellbook.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook.index" />
 		</update>
 	</info>
