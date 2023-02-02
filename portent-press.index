@@ -9,6 +9,6 @@
 		</update>
 	</info>
 	<files>
-		<file name="spells.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/OES/spells.xml" />
+		<file name="spells.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook.index" />
 	</files>
 </index>
