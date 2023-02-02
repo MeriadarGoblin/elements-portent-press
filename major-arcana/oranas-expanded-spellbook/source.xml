@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Source</name>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/source.xml" />
+		</update>
+	</info>
+	<element name="Orana's Expanded Spellbook" type="Source" source="Orana's Expanded Spellbook" id="ID_SOURCE_PP_OES">
+		<description>
+			<p>An additional content made by Portent Press. Orana's Expanded Spellbook adds more spell and optional class features!</p>
+		</description>
+		<setters>
+			<set name="abbreviation">OES</set>
+			<set name="url">https://discord.com/invite/fspTtCsvwt</set>
+			<set name="image">https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/OES-cover.PNG</set>
+			<set name="author" abbreviation="PP" url="http://dnd.wizards.com">Wizards of the Coast</set>
+			<set name="homebrew">true</set>
+			<set name="release">20220901</set>
+		</setters>
+	</element>
+</elements>

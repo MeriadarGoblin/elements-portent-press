@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<info>
+		<name>Sonorant-at-Arms</name>
+		<update version="0.1.0">
+			<file name="subclass-fighter-sonorant.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/subclass-fighter-sonorant.xml" />
+		</update>
+	</info>
+
+	<element name="Sonorant-at-Arms" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_SONORANT_AT_ARMS">
+		<supports>Martial Archetype</supports>
+		<description>
+			<p>An archetypal warrior-skald weaves the virtuosity with weapons common to all fighters with magical command. Sonorants-at-Arms infuse the very sounds of combat with the powers commanded by bards. Their musical talents extend to and magical, primarily that of mental manipulation: a Sonorants-at-Arms' songs bolster their allies and bind the psyches of those that would oppose them.</p>
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_SONORANT_COMBAT_SYMPHONY" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_SONORANT_SPELLCASTING" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_SONORANT_MUDDLING_MARCH" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_SONORANT_SOUND_OF_SILENCE" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_SONORANT_EMBOLDENING_MARCH" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_SONORANT_MAGICAL_STAMINA" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_SONORANT_COMBAT_SYMPHONY" level="3" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_SONORANT_SPELLCASTING" level="3" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_SONORANT_MUDDLING_MARCH" level="7" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_SONORANT_SOUND_OF_SILENCE" level="10" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_SONORANT_EMBOLDENING_MARCH" level="15" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_SONORANT_MAGICAL_STAMINA" level="18" />
+		</rules>
+	</element>
+	<element name="Combat Symphony" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_SONORANT_COMBAT_SYMPHONY">
+		<description>
+			<p>You can use bludgeoning weapons as percussion instruments and crossbows and bows as string instruments with which you are proficient.</p>
+			<p class="indent">Additionally, with each swing or thrust, you manipulate air currents; with each strike, blocked or not, you cause lasting vibrations through your opponents. When you make a weapon attack against a creature, that creature has disadvantage on ability checks relying on hearing until the end of your next turn, whether you hit or not. At 10th level, that creature is deafened to any sounds you choose instead.</p>
+		</description>
+		<sheet>
+			<description>You can use bludgeoning weapons as percussion instruments and crossbows and bows as string instruments with which you are proficient. Additionally, with each swing or thrust, you manipulate air currents; with each strike, blocked or not, you cause lasting vibrations through your opponents. When you make a weapon attack against a creature, that creature has disadvantage on ability checks relying on hearing until the end of your next turn, whether you hit or not. At 10th level, that creature is deafened to any sounds you choose instead.</description>
+		</sheet>
+	</element>
+	<element name="Spellcasting" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_SONORANT_SPELLCASTING">
+		<description>
+			<p>You augment your martial prowess with bardic magic.</p>
+			<h5>Cantrips</h5>
+			<p>You learn two cantrips of your choice from the bard spell list. You learn an additional bard cantrip at 10th level.</p>
+			<h5>Spell Slots</h5>
+			<p>The Sonorant-at-Arms Spellcasting table shows how many spell slots you have to cast your bard spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.</p>
+			<p class="indent">For example, if you know the 1st-level spell charm person and have a 1st-level and a 2nd-level spell slot available, you can cast charm person using either slot.</p>
+			<h5>Spells Known of 1st Level and Higher</h5>
+			<p>You know three 1st-level bard spells of your choice, two of which you must choose from the enchantment and illusion spells on the bard spell list.</p>
+			<p class="indent">The Spells Known column of the Sonorant-at-Arms Spellcasting table shows when you learn more bard spells of 1st level or higher. Each of these spells must be an enchantment or illusion spell of your choice, and must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.</p>
+			<p class="indent">The spells you learn at 8th, 14th, and 20th level can come from any school of magic.</p>
+			<p class="indent">Whenever you gain a level in this class, you can replace one of the bard spells you know with another spell of your choice from the bard spell list. The new spell must be of a level for which you have spell slots, and it must be an enchantment or illusion spell, unless you're replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic.</p>
+			<h5>Spellcasting Ability</h5>
+			<p>Charisma is your spellcasting ability for your bard spells, since you project your spells through dramtic flair in comabat. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a bard spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><b>Spell Save DC =</b> 8 + your proficiency bonus + your Charisma modifier</p>
+				<p><b>Spell attack modifier =</b> your proficiency bonus + your Charisma modifier</p>
+			</center>
+			<h5>Sonorant-at-Arms Spellcasting</h5>
+			<table>
+				<thead>
+					<tr><td>Fighter Level</td><td>Cantrips Known</td><td>Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td></tr>
+				</thead>
+				<tr><td>3rd</td><td>2</td><td>2</td><td>-</td><td>-</td><td>-</td></tr>
+				<tr><td>4th</td><td>2</td><td>3</td><td>-</td><td>-</td><td>-</td></tr>
+				<tr><td>7th</td><td>2</td><td>4</td><td>2</td><td>-</td><td>-</td></tr>
+				<tr><td>8th</td><td>2</td><td>4</td><td>2</td><td>-</td><td>-</td></tr>
+				<tr><td>10th</td><td>3</td><td>4</td><td>3</td><td>-</td><td>-</td></tr>
+				<tr><td>11th</td><td>3</td><td>4</td><td>3</td><td>-</td><td>-</td></tr>
+				<tr><td>13th</td><td>3</td><td>4</td><td>3</td><td>2</td><td>-</td></tr>
+				<tr><td>14th</td><td>3</td><td>4</td><td>3</td><td>2</td><td>-</td></tr>
+				<tr><td>16th</td><td>3</td><td>4</td><td>3</td><td>3</td><td>-</td></tr>
+				<tr><td>19th</td><td>3</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>20th</td><td>3</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<spellcasting name="Sonorant" ability="Charisma" prepare="false" allowReplace="true">
+			<list>Bard</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+			<stat name="sonorant:spellcasting:slots:1" value="2" level="3" />
+			<stat name="sonorant:spellcasting:slots:1" value="1" level="4" />
+			<stat name="sonorant:spellcasting:slots:1" value="1" level="7" />
+			<stat name="sonorant:spellcasting:slots:2" value="2" level="7" />
+			<stat name="sonorant:spellcasting:slots:2" value="1" level="10" />
+			<stat name="sonorant:spellcasting:slots:3" value="2" level="13" />
+			<stat name="sonorant:spellcasting:slots:3" value="1" level="16" />
+			<stat name="sonorant:spellcasting:slots:4" value="1" level="19" />
+			<select type="Spell" name="Cantrip (Sonorant)" supports="Bard, 0" level="3" number="2" spellcasting="Sonorant" />
+			<select type="Spell" name="Cantrip (Sonorant)" supports="Bard, 0" level="10" number="1" spellcasting="Sonorant" />
+			<select type="Spell" name="Spellcasting (Sonorant)" supports="($(spellcasting:list)||Bard), 1" level="3" number="1" spellcasting="Sonorant" />
+			<select type="Spell" name="Spellcasting (Sonorant)" supports="$(spellcasting:list), 1" level="3" number="2" spellcasting="Sonorant" />
+			<select type="Spell" name="Spellcasting (Sonorant)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" spellcasting="Sonorant"/>
+			<select type="Spell" name="Spellcasting (Sonorant)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" spellcasting="Sonorant"/>
+			<select type="Spell" name="Spellcasting (Sonorant)" supports="(Bard||$(spellcasting:list)), $(spellcasting:slots)" level="8" spellcasting="Sonorant"/>
+			<select type="Spell" name="Spellcasting (Sonorant)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" spellcasting="Sonorant"/>
+			<select type="Spell" name="Spellcasting (Sonorant)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" spellcasting="Sonorant"/>
+			<select type="Spell" name="Spellcasting (Sonorant)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" spellcasting="Sonorant"/>
+			<select type="Spell" name="Spellcasting (Sonorant)" supports="(Bard||$(spellcasting:list)), $(spellcasting:slots)" level="14" spellcasting="Sonorant"/>
+			<select type="Spell" name="Spellcasting (Sonorant)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" spellcasting="Sonorant"/>
+			<select type="Spell" name="Spellcasting (Sonorant)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" spellcasting="Sonorant"/>
+			<select type="Spell" name="Spellcasting (Sonorant)" supports="(Bard||$(spellcasting:list)), $(spellcasting:slots)" level="20" spellcasting="Sonorant"/>
+		</rules>
+	</element>
+	<element name="Muddling March" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_SONORANT_MUDDLING_MARCH">
+		<description>
+			<p>At the start of each of your turns, choose the Dash, Disengage, Help, Hide, or Dodge action. Any creature that starts its turn within a number of feet of you equal to 5 times your proficiency bonus, or enters a space within that range, gains no benefit from that action until the start of your next turn. A creature that can't hear sound created by a spell you cast, or a creature you choose, is immune to this effect.</p>
+			<p class="indent">Moreover, when you take the Attack action, you can cast one of your bard cantrips in place of one of your attacks.</p>
+		</description>
+		<sheet>
+			<description>At the start of each of your turns, choose the Dash, Disengage, Help, Hide, or Dodge action. Any creature that starts its turn within a number of feet of you equal to 5 times your proficiency bonus ({{muddling march:feet}}), or enters a space within that range, gains no benefit from that action until the start of your next turn. A creature that can't hear sound created by a spell you cast, or a creature you choose, is immune to this effect. &#13;
+				When you take the Attack action, you can cast one of your bard cantrips in place of one of your attacks.
+			</description>
+		</sheet>
+		<rules>
+			<stat name="muddling march:feet" value="proficiency" />
+			<stat name="muddling march:feet" value="proficiency" />
+			<stat name="muddling march:feet" value="proficiency" />
+			<stat name="muddling march:feet" value="proficiency" />
+			<stat name="muddling march:feet" value="proficiency" />
+		</rules>
+	</element>
+	<element name="Sound of Silence" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_SONORANT_SOUND_OF_SILENCE">
+		<description>
+			<p>When you target one or more creatures with a spell that requires a saving throw, you can affect any number of those creatures with your Combat Symphony.</p>
+			<p class="indent">Additionally, when you use your Combat Symphony on a creature under the effect of your Muddling March, that creature can't cast spells with verbal components.</p>
+		</description>
+		<sheet>
+			<description>When you target one or more creatures with a spell that requires a saving throw, you can affect any number of those creatures with your Combat Symphony. Additionally, when you use your Combat Symphony on a creature under the effect of your Muddling March, that creature can't cast spells with verbal components.</description>
+		</sheet>
+	</element>
+	<element name="Emboldening March" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_SONORANT_EMBOLDENING_MARCH">
+		<description>
+			<p>When you choose a type of action for your Muddling March, each creature of your choice within the same range that you exempted from its effect can take that action as a bonus action on its turn.</p>
+			<p class="indent">Once you use this feature, you can't do so again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="Short/Long Rest">
+			<description>When you choose a type of action for your Muddling March, each creature of your choice within the same range that you exempted from its effect can take that action as a bonus action on its turn.</description>
+		</sheet>
+	</element>
+	<element name="Magical Stamina" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_SONORANT_MAGICAL_STAMINA">
+		<description>
+			<p>You grant magical longevity to yourself and your allies. When you use your Second Wind, each creature you choose within 5 feet of you, including yourself, regains one expended 1st-level spell slot. If only you gain this benefit, you can instead regain a 2nd-level spell slot.</p>
+		</description>
+		<sheet usage="Second Wind">
+			<description>When you use your Second Wind, each creature you choose within 5 feet of you, including yourself, regains one expended 1st-level spell slot. If only you gain this benefit, you can instead regain a 2nd-level spell slot.</description>
+		</sheet>
+	</element>
+</elements>

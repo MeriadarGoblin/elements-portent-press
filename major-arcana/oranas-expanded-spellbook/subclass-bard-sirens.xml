@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<info>
+		<name>College of Sirens</name>
+		<update version="0.1.0">
+			<file name="subclass-bard-sirens.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/subclass-bard-sirens.xml" />
+		</update>
+	</info>
+
+	<element name="College of Sirens" type="Archetype" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_COLLEGE_OF_SIRENS">
+		<supports>Bard College</supports>
+		<description>
+			<p>The song of the sea bewitches and mesmerizes. Its waves provide melody; its storms play torment upon its travelers. Bards of the College of Sirens harness the ancient wisdom of the seas and spin it into performances that captivate. They specialize in shanties and hypnotic stories of beauty and violence, charm and fear, depths and shallows.</p>
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_SIRENS_COLLEGE_SPELLS" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_SIRENS_AQUATIC_ACOUSTICIAN" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_SIRENS_SIRENS_SONG" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_SIRENS_SECRETS_OF_THE_DEEP" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_SIRENS_SIRENS_ECHO" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_SIRENS_SHIPWRECK" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_SIRENS_COLLEGE_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_SIRENS_AQUATIC_ACOUSTICIAN" level="3" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_SIRENS_SIRENS_SONG" level="3" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_SIRENS_SECRETS_OF_THE_DEEP" level="6" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_SIRENS_SIRENS_ECHO" level="6" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_SIRENS_SHIPWRECK" level="14" />
+		</rules>
+	</element>
+	<element name="College of Siren Spells" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_SIRENS_COLLEGE_SPELLS">
+		<description>
+			<p>You learn additional spells when you reach certain levels in this class, as shown on the College of Sirens Spells table. Each of these spells counts as a bard spell for you, but doesn't count against the number of bard spells you know.</p>
+			<h5>College of Sirens Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Bard Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td>echolocate, characterize</td></tr>
+				<tr><td>5th</td><td>wail of dolor</td></tr>
+				<tr><td>7th</td><td>vex</td></tr>
+				<tr><td>9th</td><td>mislead</td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<spellcasting name="Bard" extend="true">
+			<extend>ID_PP_OES_SPELL_ECHOLOCATE</extend>
+			<extend>ID_PP_OES_SPELL_CHARACTERIZE</extend>
+			<extend>ID_PP_OES_SPELL_WAIL_OF_DOLOR</extend>
+			<extend>ID_PP_OES_SPELL_VEX</extend>
+			<extend>ID_PHB_SPELL_MISLEAD</extend>
+		</spellcasting>
+	</element>
+	<element name="Aquatic Acoustician" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_SIRENS_AQUATIC_ACOUSTICIAN">
+		<description>
+			<p>You gain proficiency with hand crossbows, nets, and tridents.</p>
+			<p class="indent">Additionally, you gain the following benefits while submerged in water:</p>
+			<ul>
+				<li>You can cast spells with verbal components, and doing so doesn't cause you to begin choking or suffocating or to lose your breath.</li>
+				<li>Music and sounds you create, such as with musical instruments or your voice, are not distorted by passing through water.</li>
+				<li>Your proficiency bonus is doubled for Dexterity (Acrobatics) and Charisma (Performance) checks.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You gain the following benefits while submerged in water: &#13;
+				• You can cast spells with verbal components under water. &#13; 
+				• Music and sounds you create, such as with musical instruments or your voice, are not distorted by passing through water. &#13;
+				• Your proficiency bonus is doubled for Dexterity (Acrobatics) and Charisma (Performance) checks.
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_NET" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT" />
+		</rules>
+	</element>
+	<element name="Siren's Song" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_SIRENS_SIRENS_SONG">
+		<description>
+			<p>You learn to replicate the hypnotic temptation of the sea. As a bonus action, you can expend one use of your Bardic Inspiration and choose a creature that can hear you within 60 feet of you to gain your choice of effect. This range is doubled if both you and the creature are submerged.</p>
+			<p class="indent"><b>Call of the Sea.</b> Roll your Bardic Inspiration die. The target gains a swimming speed equal to its walking speed and ignores the detriments of underwater visibility for a number of hours equal to your roll.</p>
+			<p class="indent"><b>Siren's Charm.</b> The target must make a Wisdom saving throw against your spell save DC or be charmed by you for 1 minute. While charmed in this way, the creature must use its movement to move toward you. If you damage the creature or that movement would take it through obviously dangerous terrain, like lava or off a cliff, it must make an additional Wisdom saving throw. On a success, the creature is no longer charmed and is immune to this feature for 24 hours.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>As a bonus action, you can expend one use of your Bardic Inspiration and choose a creature that can hear you within 60 feet of you to gain your choice of effect. This range is doubled if both you and the creature are submerged. &#13;
+				Call of the Sea. Roll your Bardic Inspiration die. The target gains a swimming speed equal to its walking speed and ignores the detriments of underwater visibility for a number of hours equal to your roll. &#13;
+				Siren's Charm. The target must make a Wisdom saving throw against your spell save DC or be charmed by you for 1 minute. While charmed in this way, the creature must use its movement to move toward you. If you damage the creature or that movement would take it through obviously dangerous terrain, like lava or off a cliff, it must make an additional Wisdom saving throw. On a success, the creature is no longer charmed and is immune to this feature for 24 hours.
+			</description>
+		</sheet>
+	</element>
+	<element name="Secrets of the Deep" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_SIRENS_SECRETS_OF_THE_DEEP">
+		<description>
+			<p>You learn the water breathing spell if you don't already know it, and it counts as a bard spell for you, but it doesn't count against the number of bard spells you know.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_WATER_BREATHING" />
+		</rules>
+	</element>
+	<element name="Siren's Echo" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_SIRENS_SIRENS_ECHO">
+		<description>
+			<p>When you use your action to cast a spell of 1st-level or higher that has a verbal component, you can choose a creature within 30 feet of you that can hear you. That creature immediately use its reaction to cast the same spell, even if it doesn't know it or have it prepared, provided it can expend a spell slot of the spell's level or higher and provide the spell's components. The triggering spell is considered to be on the creature's spell list for this casting.</p>
+			<p class="indent">Once you use this feature, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you use your action to cast a spell of 1st-level or higher that has a verbal component, you can choose a creature within 30 feet of you that can hear you. That creature immediately use its reaction to cast the same spell, even if it doesn't know it or have it prepared, provided it can expend a spell slot of the spell's level or higher and provide the spell's components. The triggering spell is considered to be on the creature's spell list for this casting. Once you use this feature, you can't do so again until you finish a long rest.</description>
+		</sheet>
+	</element>
+	<element name="Shipwreck" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_SIRENS_SHIPWRECK">
+		<description>
+			<p>You can convince even the most careful creatures to throw themselves against the rocks. When you force any number of creatures to make an Intelligence, Wisdom, or Charisma saving throw, you can expend one use of your Bardic Inspiration. Roll the Bardic Inspiration die and subtract the number rolled from each creature's saving throw.</p>
+		</description>
+		<sheet>
+			<description>When you force any number of creatures to make an Intelligence, Wisdom, or Charisma saving throw, you can expend one use of your Bardic Inspiration. Roll the Bardic Inspiration die and subtract the number rolled from each creature's saving throw.</description>
+		</sheet>
+	</element>
+</elements>

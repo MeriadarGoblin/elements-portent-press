@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Orana's Expanded Spellbook</name>
+		<description>The content from the Final Fantatsy XIV DnD Compendium.</description>
+		<author url="https://www.gmbinder.com/share/-LsDqsNbupzeLhkTIcPv">SilentSoren</author>
+		<update version="0.0.1">
+			<file name="oranas-expanded-spellbook.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook.index" />
+		</update>
+	</info>
+	<files>
+		<file name="source.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/source.xml" />
+		<file name="spells.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/spells.xml" />
+		<file name="subclass-bard-puppetry.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/subclass-bard-puppetry.xml" />
+		<file name="subclass-bard-sirens.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/subclass-bard-sirens.xml" />
+		<file name="subclass-cleric-motion.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/subclass-cleric-motion.xml" />
+		<file name="subclass-cleric-music.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/subclass-cleric-music.xml" />
+		<file name="subclass-druid-caverns.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/subclass-druid-caverns.xml" />
+		<file name="subclass-druid-veins.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/subclass-druid-veins.xml" />
+		<file name="subclass-fighter-sonorant.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/subclass-fighter-sonorant.xml" />
+		<file name="subclass-paladin-sophistication" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/subclass-paladin-sophistication.xml" />
+		<file name="subclass-sorcerer-blight-hand.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/subclass-blight-hand.xml" />
+		<file name="subclass-sorcerer-mimetic-bloodline.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/subclass-sorcerer-mimetic-bloodline.xml" />
+		<file name="subclass-warlock-seer.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/subclass-warlock-seer.xml" />
+		<file name="subclass-warlock-sentient-spellbook.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/subclass-warlock-sentient-spellbook.xml" />
+		<file name="subclass-wizard-ritualism.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/subclass-wizard-ritualism.xml" />
+		<file name="subclass-wizard-spycraft.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/subclass-wizard-spycraft.xml" />
+
+		<!-- TO DO: -->
+		<!-- 
+		<file name="feats.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/feats.xml" />
+		<file name="items-magic.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/items-magic.xml" />
+		<file name="optional-class-features.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/optional-class-features.xml" />
+		 -->
+	</files>
+</index>

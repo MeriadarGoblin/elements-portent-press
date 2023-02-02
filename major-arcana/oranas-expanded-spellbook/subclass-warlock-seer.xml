@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<info>
+		<name>The Seer</name>
+		<update version="0.1.0">
+			<file name="subclass-warlock-seer.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/subclass-warlock-seer.xml" />
+		</update>
+	</info>
+
+	<element name="The Seer" type="Archetype" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_SEER">
+			<supports>Otherworldly Patron</supports>
+			<description>
+				<p>Your patron is a being that sees into what is meant to be unseen and beyond, a creature that sees through time and, perhaps, into different realms. Usually, these entities are entirely mysterious, able to avoid detection and understanding, as they can always see the attempts coming and avoid them.</p>
+				<p class="indent">This being’s motivations and plans will often be impossible to fully understand until they come to fruition, as they act to set up the pieces to reach a specific future that they can see. Those who make pacts with these mystifying patrons often wish to gain the knowledge needed to forge their own fate or to change a destiny they don’t wish to be dealt.</p>
+				<div element="ID_PP_OES_ARCHETYPE_FEATURE_SEER_EXPANDED_SPELL_LIST" />
+				<div element="ID_PP_OES_ARCHETYPE_FEATURE_SEER_FUTURE_SPELL" />
+				<div element="ID_PP_OES_ARCHETYPE_FEATURE_SEER_GIFTED_SIGHT" />
+				<div element="ID_PP_OES_ARCHETYPE_FEATURE_SEER_ALTER_FATE" />
+				<div element="ID_PP_OES_ARCHETYPE_FEATURE_SEER_ALLSEERS_MIND" />
+				<div element="ID_PP_OES_ARCHETYPE_FEATURE_SEER_IMPECCABLE_FORESIGHT" />
+			</description>
+			<sheet display="false" />
+			<rules>
+				<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_SEER_EXPANDED_SPELL_LIST" level="1" />
+				<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_SEER_FUTURE_SPELL" level="1" />
+				<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_SEER_GIFTED_SIGHT" level="1" />
+				<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_SEER_ALTER_FATE" level="6" />
+				<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_SEER_ALLSEERS_MIND" level="10" />
+				<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_SEER_IMPECCABLE_FORESIGHT" level="14" />
+			</rules>
+	</element>
+	<element name="Expanded Spell List" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_SEER_EXPANDED_SPELL_LIST">
+			<description>
+				<p>The Seer lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+				<h5>Seer Expanded Spells</h5>
+				<table>
+					<thead>
+						<tr><td>Spell Level</td><td>Spells</td></tr>
+					</thead>
+					<tr><td>1st</td><td><em>guiding bolt, surveillance</em></td></tr>
+					<tr><td>2nd</td><td><em>augury, moonbeam</em></td></tr>
+					<tr><td>3rd</td><td><em>aura of candor, clairvoyance</em></td></tr>
+					<tr><td>4th</td><td><em>aura of unity, divination</em></td></tr>
+					<tr><td>5th</td><td><em>commune, legend lore</em></td></tr>
+				</table>
+			</description>
+			<sheet display="false" />
+			<spellcasting name="Warlock" extend="true">
+				<extend>ID_PHB_SPELL_GUIDING_BOLT</extend>
+				<extend>ID_PP_OES_SPELL_SURVEILLANCE</extend>
+				<extend>ID_PHB_SPELL_AUGURY</extend>
+				<extend>ID_PHB_SPELL_MOONBEAM</extend>
+				<extend>ID_PP_OES_SPELL_AURA_OF_CANDOR</extend>
+				<extend>ID_PHB_SPELL_CLAIRVOYANCE</extend>
+				<extend>ID_PP_OES_AURA_OF_UNITY</extend>
+				<extend>ID_PHB_SPELL_DIVINATION</extend>
+				<extend>ID_PHB_SPELL_COMMUNE</extend>
+				<extend>ID_PHB_SPELL_LEGEND_LORE</extend>
+			</spellcasting>
+		</element>
+		<element name="Future Spell" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_SEER_FUTURE_SPELL">
+			<description>
+				<p>Your patron allows your mind to access magic from an alternative future. You learn a spell that is on your Expanded Spells List that is of a level you can cast, called your Future Spell. You know that spell, it doesn't count against the number of spells you know, and you can cast it as a ritual if it has the ritual tag.</p>
+				<p class="indent">Additionally, when you gain a level in this class, you can choose one of the spells from your Expanded Spell List and replace your Future Spell with it, so long as it is of a level you can cast.</p>
+			</description>
+			<sheet>
+				<description>You learn a spell that is on your Expanded Spells List that is of a level you can cast, called your Future Spell. You know that spell, it doesn't count against the number of spells you know, and you can cast it as a ritual if it has the ritual tag. Future spell:</description>
+			</sheet>
+			<rules>
+				<select type="Archetype Feature" name="Future Spell (The Seer)" supports="Future Spells" />
+			</rules>
+		</element>
+		<!-- Future Spells -->
+		<element name="Guiding Bolt" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_ARCHETYPE_FEATURE_SEER_FUTURE_SPELL_GUIDING_BOLT">
+			<support>Future Spells</support>
+			<sheet>
+				<description>This spell doesn't count against the number of spells you know, and you can cast it as a ritual if it has the ritual tag.</description>
+			</sheet>
+			<rules>
+				<grant type="Spell" id="ID_PHB_SPELL_GUIDING_BOLT" spellcasting="Warlock" level="1" prepared="true" />
+			</rules>
+		</element>
+		<element name="Surveillance" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_ARCHETYPE_FEATURE_SEER_FUTURE_SPELL_SURVEILLANCE">
+			<support>Future Spells</support>
+			<sheet>
+				<description>This spell doesn't count against the number of spells you know, and you can cast it as a ritual if it has the ritual tag.</description>
+			</sheet>
+			<rules>
+				<grant type="Spell" id="ID_PP_OES_SPELL_SURVEILLANCE" spellcasting="Warlock" level="1" prepared="true" />
+			</rules>
+		</element>
+		<element name="Augury" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_ARCHETYPE_FEATURE_SEER_FUTURE_SPELL_AUGURY">
+			<p><em>Prerequisite: Level 3</em></p>
+			<requirements>[level:3]</requirements>
+			<support>Future Spells</support>
+			<sheet>
+				<description>This spell doesn't count against the number of spells you know, and you can cast it as a ritual if it has the ritual tag.</description>
+			</sheet>
+			<rules>
+				<grant type="Spell" id="ID_PHB_SPELL_AUGURY" spellcasting="Warlock" level="1" prepared="true" />
+			</rules>
+		</element>
+		<element name="Moonbeam" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_ARCHETYPE_FEATURE_SEER_FUTURE_SPELL_MOONBEAM">
+			<p><em>Prerequisite: Level 3</em></p>
+			<requirements>[level:3]</requirements>
+			<support>Future Spells</support>
+			<sheet>
+				<description>This spell doesn't count against the number of spells you know, and you can cast it as a ritual if it has the ritual tag.</description>
+			</sheet>
+			<rules>
+				<grant type="Spell" id="ID_PHB_SPELL_MOONBEAM" spellcasting="Warlock" level="3" prepared="true" />
+			</rules>
+		</element>
+		<element name="Aura of Candor" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_ARCHETYPE_FEATURE_SEER_FUTURE_SPELL_AURA_OF_CANDOR">
+			<p><em>Prerequisite: Level 5</em></p>
+			<requirements>[level:5]</requirements>
+			<support>Future Spells</support>
+			<sheet>
+				<description>This spell doesn't count against the number of spells you know, and you can cast it as a ritual if it has the ritual tag.</description>
+			</sheet>
+			<rules>
+				<grant type="Spell" id="ID_PP_OES_SPELL_AURA_OF_CANDOR" spellcasting="Warlock" level="5" prepared="true" />
+			</rules>
+		</element>
+		<element name="Clairvoyance" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_ARCHETYPE_FEATURE_SEER_FUTURE_SPELL_CLAIRVOYANCE">
+			<p><em>Prerequisite: Level 5</em></p>
+			<requirements>[level:5]</requirements>
+			<support>Future Spells</support>
+			<sheet>
+				<description>This spell doesn't count against the number of spells you know, and you can cast it as a ritual if it has the ritual tag.</description>
+			</sheet>
+			<rules>
+				<grant type="Spell" id="ID_PHB_SPELL_CLAIRVOYANCE" spellcasting="Warlock" level="5" prepared="true" />
+			</rules>
+		</element>
+		<element name="Aura of Unity" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_ARCHETYPE_FEATURE_SEER_FUTURE_SPELL_AURA_OF_UNITY">
+			<p><em>Prerequisite: Level 7</em></p>
+			<requirements>[level:7]</requirements>
+			<support>Future Spells</support>
+			<sheet>
+				<description>This spell doesn't count against the number of spells you know, and you can cast it as a ritual if it has the ritual tag.</description>
+			</sheet>
+			<rules>
+				<grant type="Spell" id="ID_PP_OES_AURA_OF_UNITY" spellcasting="Warlock" level="7" prepared="true" />
+			</rules>
+		</element>
+		<element name="Divination" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_ARCHETYPE_FEATURE_SEER_FUTURE_SPELL_DIVINATION">
+			<p><em>Prerequisite: Level 7</em></p>
+			<requirements>[level:7]</requirements>
+			<support>Future Spells</support>
+			<sheet>
+				<description>This spell doesn't count against the number of spells you know, and you can cast it as a ritual if it has the ritual tag.</description>
+			</sheet>
+			<rules>
+				<grant type="Spell" id="ID_PHB_SPELL_DIVINATION" spellcasting="Warlock" level="7" prepared="true" />
+			</rules>
+		</element>
+		<element name="Commune" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_ARCHETYPE_FEATURE_SEER_FUTURE_SPELL_COMMUNE">
+			<p><em>Prerequisite: Level 9</em></p>
+			<requirements>[level:9]</requirements>
+			<support>Future Spells</support>
+			<sheet>
+				<description>This spell doesn't count against the number of spells you know, and you can cast it as a ritual if it has the ritual tag.</description>
+			</sheet>
+			<rules>
+				<grant type="Spell" id="ID_PHB_SPELL_COMMUNE" spellcasting="Warlock" level="9" prepared="true" />
+			</rules>
+		</element>
+		<element name="Legend Lore" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_ARCHETYPE_FEATURE_SEER_FUTURE_SPELL_LEGEND_LORE">
+			<p><em>Prerequisite: Level 9</em></p>
+			<requirements>[level:9]</requirements>
+			<support>Future Spells</support>
+			<sheet>
+				<description>This spell doesn't count against the number of spells you know, and you can cast it as a ritual if it has the ritual tag.</description>
+			</sheet>
+			<rules>
+				<grant type="Spell" id="ID_PHB_SPELL_LEGEND_LORE" spellcasting="Warlock" level="9" prepared="true" />
+			</rules>
+		</element>
+		<element name="Gifted Sight" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_SEER_GIFTED_SIGHT">
+			<description>
+				<p>You gain the ability to view glimpses of possible futures and partially manifest them in your timeline. You have a pool of d4s that you can spend to aid you and your allies. The number of dice in the pool equals 1 + your warlock level.</p>
+				<p class="indent">When you or a friendly creature that you can see within 30 feet of you makes an attack roll, ability check, or saving throw, you can use your reaction to roll a d4, adding the number rolled to the result by spending a die from the pool. You can choose to use this feature after the creature makes its roll, but before the GM determines if it succeeds or fails.</p>
+				<p class="indent">Your pool regains all expended dice when you finish a long rest.</p>
+			</description>
+			<sheet action="Reaction" usage="{{gifted sight:dice}}d4/Long Rest">
+				<description>When you or a friendly creature that you can see within 30 feet of you makes an attack roll, ability check, or saving throw, you can use your reaction to roll a d4, adding the number rolled to the result by spending a die from the pool. You can choose to use this feature after the creature makes its roll, but before the GM determines if it succeeds or fails. Your pool regains all expended dice when you finish a long rest.</description>
+			</sheet>
+			<rules>
+				<stat name="gifted sight:dice" value="1" />
+				<stat name="gifted sight:dice" value="level:warlock" />
+			</rules>
+		</element>
+		<element name="Alter Fate" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_SEER_ALTER_FATE">
+			<description>
+				<p>You can look at potential futures and alter fate’s current course to hinder your enemies. When a creature you can see within 30 feet of you makes an attack roll against you, but before the result is announced, you can use your reaction to roll 2d4. The creature gains a penalty to its roll equal to the result, and it is marked by fate for 1 minute. While marked in this way, you can roll 2d4 instead of 1d4 when using your Gifted Sight feature to aid a creature making an attack roll or ability check against it.</p>
+			</description>
+			<sheet action="Reaction" usage="Short/Long Rest">
+				<description>When a creature you can see within 30 feet of you makes an attack roll against you, but before the result is announced, you can use your reaction to roll 2d4. The creature gains a penalty to its roll equal to the result, and it is marked by fate for 1 minute. While marked in this way, you can roll 2d4 instead of 1d4 when using your Gifted Sight feature to aid a creature making an attack roll or ability check against it. Once you use this reaction, you can't do so again until you finish a short or long rest.</description>
+			</sheet>
+		</element>
+		<element name="Allseer's Mind" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_SEER_ALLSEERS_MIND">
+			<description>
+				<p>Your gift of sight reveals what is hidden to you. You are always under the effects of the <i>see invisibility</i> spell unless you choose not to be, you are immune to being blinded, and you can't be surprised while you are conscious.</p>
+				<div class="reference">
+					<div element="ID_PHB_SPELL_SEE_INVISIBILITY" />
+				</div>
+			</description>
+			<sheet>
+				<description>You are always under the effects of the <i>see invisibility</i> spell unless you choose not to be, you are immune to being blinded, and you can't be surprised while you are conscious.</description>
+			</sheet>
+		</element>
+		<element name="Impeccable Foresight" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_SEER_IMPECCABLE_FORESIGHT">
+			<description>
+				<p>You are able to activate your power and see the immediate future. As an action, you can give yourself this foresight for 1 minute. For the duration, you have advantage on attack rolls, ability checks, and saving throws. Additionally, other creatures have disadvantage on attack rolls made against you for the duration.</p>
+			</description>
+			<sheet action="Action" usage="Long Rest">
+				<description>As an action, you can give yourself this foresight for 1 minute. For the duration, you have advantage on attack rolls, ability checks, and saving throws. Additionally, other creatures have disadvantage on attack rolls made against you for the duration. Once you use this feature, you can't use it again until you finish a long rest.</description>
+			</sheet>
+		</element>
+</elements>

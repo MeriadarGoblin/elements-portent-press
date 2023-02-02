@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<info>
+		<name>Music Domain</name>
+		<update version="0.1.0">
+			<file name="subclass-cleric-music.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/subclass-cleric-music.xml" />
+		</update>
+	</info>
+	
+	<element name="Music Domain" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_MUSIC_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>Music is a staple of cultures and civilizations across the multiverse, a rhythm and melody that brings joy, sorrow, and every emotion in between. The gods of music—including Lugh, Apollo, Dionysus, Bes, and Balder—value the range of impacts music has on all creatures, even those that don't or can't recognize the mathematics, order, and science that establish its songs.</p>
+			<p class="indent">Many of these gods also recognize the importance of discordance within the domain. They understand that music isn't and shouldn't always be pleasing, that in cacophony there is meaning and in that meaning emotion. Clerics of the music domain spread this message, sometimes in hymns, and other times in chaotic rabble.</p>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>echolocate, thunderwave</em></td></tr>
+				<tr><td>3rd</td><td><em>Orana's hidden ear, shatter</em></td></tr>
+				<tr><td>5th</td><td><em>concussive blast, mass healing word</em></td></tr>
+				<tr><td>7th</td><td><em>confusion, empty orchestra</em></td></tr>
+				<tr><td>9th</td><td><em>conduct chorus, dominate person</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PP_OES_SPELL_ECHOLOCATE" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PP_OES_SPELL_ORANAS_HIDDEN_EAR" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SHATTER" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PP_OES_SPELL_CONCUSSIVE_BLAST" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MASS_HEALING_WORD" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONFUSION" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PP_OES_SPELL_EMPTY_ORCHESTRA" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PP_OES_SPELL_CONDUCT_CHORUS" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_MUSIC_BONUS_PROFICIENCIES" level="1" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_MUSIC_AMBIENT_MUSIC" level="1" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_MUSIC_CHANNEL_DIVINITY_DIVINE_SOUND" level="2" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_MUSIC_AMPLIFIER" level="6" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_MUSIC_POTENT_SPELLCASTING" level="8" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_MUSIC_SOUNDPIECE_OF_THE_GODS" level="17" />
+		</rules>
+	</element>
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_MUSIC_BONUS_PROFICIENCIES">
+		<description>
+			<p>You gain proficiency with the Performance skill and two instruments of your choice. In addition, you can use either or both of these instruments as holy symbols.</p>
+		</description>
+		<sheet>
+			<description>You can use two instruments of your choice as holy symbols.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Musical Instruments (Music Domain)" supports="Musical Instrument" number="2" />
+		</rules>
+	</element>
+	<element name="Ambient Music" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_MUSIC_AMBIENT_MUSIC">
+		<description>
+			<p>You learn to invigorate your allies with ambient music. Over the course of 10 minutes, which can be accomplished over a short or long rest, you can create magical sounds that linger in the minds of friendly creatures who can hear you for the duration. The ambient music lingers for a number of hours equal to half your cleric level (rounded up), and while it lingers, the creature's movement is unaffected by difficult terrain, it can travel at a fast pace without suffering a penalty to its passive Perception, it has advantage on saving throws to avoid exhaustion, and it can add a d4 to saving throws it makes that use an ability score of your choice.</p>
+			<p class="indent">Once you use this feature, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>Over the course of 10 minutes, which can be accomplished over a short or long rest, you can create magical sounds that linger in the minds of friendly creatures who can hear you for the duration. The ambient music lingers for a number of hours equal to half your cleric level (rounded up), and while it lingers, the creature's movement is unaffected by difficult terrain, it can travel at a fast pace without suffering a penalty to its passive Perception, it has advantage on saving throws to avoid exhaustion, and it can add a d4 to saving throws it makes that use an ability score of your choice.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Divine Sound" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_MUSIC_CHANNEL_DIVINITY_DIVINE_SOUND">
+		<description>
+			<p>You can Channel Divinity to fill the air around you with a divine sound. As a bonus action, you can sing, play a musical instrument, or make some other sound. Each creature of your choice within 30 feet of you that can hear the sound gains one of the following benefits of your choice:</p>
+			<p class="indent"><b>Dance.</b> The creature can immediately use its reaction to move up to half its speed without provoking opportunity attacks, and it has advantage on Dexterity (Acrobatics) checks until the end of its next turn.</p>
+			<p class="indent"><b>Hype Up.</b> The creature gains advantage on the next attack roll, ability check, or saving throw it makes before the end of its next turn.</p>
+			<p class="indent"><b>Relax.</b> The creature gains temporary hit points equal to your Wisdom modifier + half your cleric level.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Channel Divinity" alt="Divine Sound">
+			<description>As a bonus action, you can sing, play a musical instrument, or make some other sound. Each creature of your choice within 30 feet of you that can hear the sound gains one of the following benefits of your choice: &#13;
+				• Dance. The creature can immediately use its reaction to move up to half its speed without provoking opportunity attacks, and it has advantage on Dexterity (Acrobatics) checks until the end of its next turn. &#13;
+				• Hype Up. The creature gains advantage on the next attack roll, ability check, or saving throw it makes before the end of its next turn. &#13;
+				• Relax. The creature gains temporary hit points equal to your Wisdom modifier + half your cleric level.
+			</description>
+		</sheet>
+	</element>
+	<element name="Music Amplifier" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_MUSIC_AMPLIFIER">
+		<description>
+			<p>When you or a creature within 30 feet of you casts a spell with a verbal component that has a range of 5 feet or greater, you can magically amplify the casting, doubling the range of the spell (no action required).</p>
+			<p class="indent">Additionally, when a creature you can see makes a saving throw against a spell of 1st-level or higher that deals thunder damage, you can use your reaction to amplify the sound in its ears, imposing disadvantage on its saving throw.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When you or a creature within 30 feet of you casts a spell with a verbal component that has a range of 5 feet or greater, you can magically amplify the casting, doubling the range of the spell (no action required). &#13;
+				Additionally, when a creature you can see makes a saving throw against a spell of 1st-level or higher that deals thunder damage, you can use your reaction to amplify the sound in its ears, imposing disadvantage on its saving throw.
+			</description>
+		</sheet>
+	</element>
+	<element name="Potent Spellcasting" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_MUSIC_POTENT_SPELLCASTING">
+		<description>
+			<p>You add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+		</description>
+		<sheet>
+			<description>You add your Wisdom modifier to the damage you deal with any cleric cantrip.</description>
+		</sheet>
+	</element>
+	<element name="Soundpiece of the Gods" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_MUSIC_SOUNDPIECE_OF_THE_GODS">
+		<description>
+			<p>The words and sounds of creation move through you. Any spell with "power word" in its name is added to the cleric spell list for you, you always have them prepared, and they don't count against your number of spells prepared.</p>
+			<p class="indent">Additionally, while a creature benefits from your Ambient Music, it can't be frightened, and any effect causing it to be frightened is suppressed.</p>
+		</description>
+		<sheet>
+			<description>While a creature benefits from your Ambient Music, it can't be frightened, and any effect causing it to be frightened is suppressed.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_POWER_WORD_HEAL" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_POWER_WORD_KILL" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_POWER_WORD_STUN" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_POWER_WORD_PAIN" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PP_OES_SPELL_POWER_WORD_REPEL" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PP_OES_SPELL_POWER_WORD_WAIT" spellcasting="Cleric" prepared="true" />
+		</rules>
+	</element>
+</elements>

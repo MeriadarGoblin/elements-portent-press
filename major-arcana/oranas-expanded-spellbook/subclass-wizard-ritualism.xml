@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<info>
+		<name>Wizard: Ritualism</name>
+		<update version="0.1.0">
+			<file name="subclass-wizard-ritualism.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/subclass-wizard-ritualism.xml" />
+		</update>
+	</info>
+	<element name="Ritualism" type="Archetype" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_WIZARD_RITUALISM">
+		<supports>Arcane Tradition</supports>
+		<description>
+			<p>Rituals are near and dear to the heart of many wizards, but to none so much as those that follow the arcane tradition of ritualism. Often called ritualists or rites, wizards of ritualism make it their mission to not only collect the secrets of all ritual magics but to expand the bounds of magic, transforming other spells into rituals in order to become the most efficient wizards they can be.</p>
+			<p class="indent">As adventurers, they consider themselves like multi-tools, often the most prepared to deal with an unexpected situation. On the fields of battle, they use their efficiency to exploit the expectations of their enemies, keeping more of their power in hand for opportunities of battle than the wizards of other traditions.</p>
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_RITUALISM_RITUAL_SAVANT" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_RITUALISM_RITE_OF_EFFICIENCY" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_RITUALISM_RITUAL_RESISTANCE" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_RITUALISM_RITUAL_INVALUABLE_CEREMONIES" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_RITUALISM_RITUAL_UNRIVALED_EFFICIENCY" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_RITUALISM_RITUAL_SAVANT" level="2" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_RITUALISM_RITE_OF_EFFICIENCY" level="2" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_RITUALISM_RITUAL_RESISTANCE" level="6" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_RITUALISM_RITUAL_INVALUABLE_CEREMONIES" level="10" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_RITUALISM_RITUAL_UNRIVALED_EFFICIENCY" level="14" />
+		</rules>
+	</element>
+	<element name="Ritual Savant" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_RITUALISM_RITUAL_SAVANT">
+		<description>
+			<p>You can copy a wizard spell with the ritual tag into your spellbook in ten minutes instead of the time it would normally take to transcribe it.</p>
+			<p class="indent">Additionally, you can copy any spell with the ritual tag into your spellbook. When you do so, it becomes a wizard spell for you.</p>
+		</description>
+		<sheet>
+			<description>You can copy a wizard spell with the ritual tag into your spellbook in ten minutes instead of the time it would normally take to transcribe it. Additionally, you can copy any spell with the ritual tag into your spellbook. When you do so, it becomes a wizard spell for you.</description>
+		</sheet>
+	</element>
+	<element name="Rite of Efficiency" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_RITUALISM_RITE_OF_EFFICIENCY">
+		<description>
+			<p>You learn a special rite that transforms spells into tools that can be wielded to greater use. Over the course of a long rest, you can choose a spell of 5th-level or lower from your spellbook that has a casting time of 1 action to become a Rite Spell. Your Rite Spell gains the ritual tag until you complete a long rest.</p>
+			<p class="indent">At 6th level, you can choose two Rite Spells over the course of a long rest. At 14th level, you can choose three.</p>
+		</description>
+		<sheet>
+			<description>Over the course of a long rest, you can choose a spell of 5th-level or lower from your spellbook that has a casting time of 1 action to become a Rite Spell. Your Rite Spell gains the ritual tag until you complete a long rest.</description>
+			<description level="6">Over the course of a long rest, you can choose two spells of 5th-level or lower from your spellbook that has a casting time of 1 action to become a Rite Spell. Your Rite Spell gains the ritual tag until you complete a long rest.</description>
+			<description level="14">Over the course of a long rest, you can choose three spells of 5th-level or lower from your spellbook that has a casting time of 1 action to become a Rite Spell. Your Rite Spell gains the ritual tag until you complete a long rest.</description>
+		</sheet>
+	</element>
+	<element name="Ritual Resistance" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_RITUALISM_RITUAL_RESISTANCE">
+		<description>
+			<p>You bind strengthening magics into your spells as you elongate their casting. When you cast a spell that targets you or a friendly creature as a ritual, you can grant the target a bonus to AC equal to your Intelligence modifier (minimum of +1) and resistance to a damage type of your choice for the duration of the spell.</p>
+			<p class="indent">Once you use this feature, you can't do so again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="Short/Long Rest">
+			<description>When you cast a spell that targets you or a friendly creature as a ritual, you can grant the target a +{{ritual resistance:ac}} bonus to AC and resistance to a damage type of your choice for the duration of the spell.</description>
+		</sheet>
+		<rules>
+			<stat name="ritual resistance:ac" value="1" bonus="base" />
+			<stat name="ritual resistance:ac" value="intelligence:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="Invaluable Ceremonies" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_RITUALISM_RITUAL_INVALUABLE_CEREMONIES">
+		<description>
+			<p>Your knowledge of rituals allows you to exploit their esoteric nature. You can cast a spell with the ritual tag over the course of 1 hour, instead of 10 minutes. When you do so, any material component that would be consumed by the spell is instead maintained, unless it would be consumed to create the spell's effect such as in instant summons.</p>
+			<p class="indent">Additionally, when you cast a spell as a ritual, you can choose to disguise its casting by incorporating mundane practices. When you do so, you appear to performing a mundane task using the ritual's material component, such as writing in a book in the case of illusory script, rather than casting a spell. A creature who wishes to determine what you're doing must spend 1 minute observing you before making an Intelligence (Arcana) check contested by your spell save DC. On a failure, the creature believes you were doing the mundane task, even when the effect of the spell resolves. Further, any creature who is not aware that you are spellcasting and if forced to make as saving throw as a result of your ritual does so with disadvantage.</p>
+		</description>
+		<sheet>
+			<description>You can cast a spell with the ritual tag over the course of 1 hour, instead of 10 minutes. When you do so, any material component that would be consumed by the spell is instead maintained, unless it would be consumed to create the spell's effect such as in instant summons. Additionally, when you cast a spell as a ritual, you can choose to disguise its casting by incorporating mundane practices. When you do so, you appear to performing a mundane task using the ritual's material component, such as writing in a book in the case of illusory script, rather than casting a spell. A creature who wishes to determine what you're doing must spend 1 minute observing you before making an Intelligence (Arcana) check contested by your spell save DC. On a failure, the creature believes you were doing the mundane task, even when the effect of the spell resolves. Further, any creature who is not aware that you are spellcasting and if forced to make as saving throw as a result of your ritual does so with disadvantage.</description>
+		</sheet>
+	</element>
+	<element name="Unrivaled Efficiency" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_RITUALISM_RITUAL_UNRIVALED_EFFICIENCY">
+		<description>
+			<p>You can cast a spell as a ritual in one-tenth the amount of time normally required.</p>
+			<p class="indent">Additionally, when you choose your Rite Spells, one of your choices can be of 7th level or lower.</p>
+		</description>
+		<sheet>
+			<description>You can cast a spell as a ritual in one-tenth the amount of time normally required. Additionally, when you choose your Rite Spells, one of your choices can be of 7th level or lower.</description>
+		</sheet>
+	</element>
+</elements>

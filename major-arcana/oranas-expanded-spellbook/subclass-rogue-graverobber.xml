@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<info>
+		<name>Grave Robber</name>
+		<update version="0.1.0">
+			<file name="subclass-rogue-graverobber.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/subclass-rogue-graverobber.xml" />
+		</update>
+	</info>
+
+	<element name="Grave Robber" type="Archetype" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_GRAVEROBBER">
+		<supports>Rougish Archetype</supports>
+		<description>
+			<p>Some rogues burgle tombs and graves to abscond with the jewels and riches within, but the archetypal grave robber plunders far more morbid treasures. These rogues learn the secrets of life and death, past and future, stealing them away for purposes both magical and mortal.</p>
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_GRAVE_ROBBER_SPELLCASTING" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_GRAVE_ROBBER_VOICE_OF_THE_GRAVE" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_GRAVE_ROBBER_HIDDEN_RITUALS" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_GRAVE_ROBBER_IMPERSONATE_CORPSE" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_GRAVE_ROBBER_STEAL_FROM_DEATH" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_GRAVE_ROBBER_SPELLCASTING" level="3" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_GRAVE_ROBBER_VOICE_OF_THE_GRAVE" level="3" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_GRAVE_ROBBER_HIDDEN_RITUALS" level="9" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_GRAVE_ROBBER_IMPERSONATE_CORPSE" level="13" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_GRAVE_ROBBER_STEAL_FROM_DEATH" level="17" />
+		</rules>
+	</element>
+	<element name="Spellcasting" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_GRAVE_ROBBER_SPELLCASTING">
+		<description>
+			<p>You gain the ability to cast spells.</p>
+			<p><b>Cantrips.</b> You learn the thaumaturgy cantrip and two other cantrips of your choice from the cleric spell list. You learn one additional cleric cantrip of your choice at 10th level.</p>
+			<p><b>Spell Slots.</b> The Grave Robber Spellcasting table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.</p>
+			<p><b>Spells Known of 1st Level and Higher.</b> You know three 1st-level cleric spells of your choice, two of which you must choose from the divination and necromancy spells on the cleric spell list.</p>
+			<p class="indent">The Spells Known column of the Grave Robber Spellcasting table shows when you learn more cleric spells of 1st level or higher. Each of these spells must be a divination or necromancy spell of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.</p>
+			<p class="indent">The spells you learn at 8th, 14th, and 20th level can come from any school of magic.</p>
+			<p class="indent">Whenever you gain a level in this class, you can replace one of the cleric spells you know with another spell of your choice from the cleric spell list. The new spell must be of a level for which you have spell slots, and it must be a divination or necromancy spell, unless you're replacing the spell you gained at 3rd, 8th, 14th, or 20th level.</p>
+			<p><b>Spellcasting Ability.</b> Charisma is your spellcasting ability for you cleric spells, since you cast spells by calling upon secrets pulled from spirits and stolen from the outer planes. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a cleric spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><b>Spell Save DC =</b> 8 + your proficiency bonus + your Charisma modifier</p>
+				<p><b>Spell attack modifier =</b> your proficiency bonus + your Charisma modifier</p>
+			</center>
+			<p class="indent"><b>Ritual Casting.</b> You can cast a cleric spell as a ritual if that spell has the ritual tag and you know the spell.</p>
+			<h5>Grave Robber Spellcasting</h5>
+			<table>
+				<thead>
+					<tr><td>Rogue Level</td><td>Cantrips Known</td><td>Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td></tr>
+				</thead>
+				<tr><td>3rd</td><td>3</td><td>2</td><td>-</td><td>-</td><td>-</td></tr>
+				<tr><td>4th</td><td>3</td><td>3</td><td>-</td><td>-</td><td>-</td></tr>
+				<tr><td>7th</td><td>3</td><td>4</td><td>2</td><td>-</td><td>-</td></tr>
+				<tr><td>8th</td><td>3</td><td>4</td><td>2</td><td>-</td><td>-</td></tr>
+				<tr><td>10th</td><td>4</td><td>4</td><td>3</td><td>-</td><td>-</td></tr>
+				<tr><td>11th</td><td>4</td><td>4</td><td>3</td><td>-</td><td>-</td></tr>
+				<tr><td>13th</td><td>4</td><td>4</td><td>3</td><td>2</td><td>-</td></tr>
+				<tr><td>14th</td><td>4</td><td>4</td><td>3</td><td>2</td><td>-</td></tr>
+				<tr><td>16th</td><td>4</td><td>4</td><td>3</td><td>3</td><td>-</td></tr>
+				<tr><td>19th</td><td>4</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>20th</td><td>4</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<spellcasting name="Grave Robber" ability="Charisma" prepare="false" allowReplace="true">
+			<list>Cleric</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+			<stat name="grave robber:spellcasting:slots:1" value="2" level="3" />
+			<stat name="grave robber:spellcasting:slots:1" value="1" level="4" />
+			<stat name="grave robber:spellcasting:slots:1" value="1" level="7" />
+			<stat name="grave robber:spellcasting:slots:2" value="2" level="7" />
+			<stat name="grave robber:spellcasting:slots:2" value="1" level="10" />
+			<stat name="grave robber:spellcasting:slots:3" value="2" level="13" />
+			<stat name="grave robber:spellcasting:slots:3" value="1" level="16" />
+			<stat name="grave robber:spellcasting:slots:4" value="1" level="19" />
+			<grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" spellcasting="Grave Robber" prepared="true" level="3" />
+			<select type="Spell" name="Cantrip (Grave Robber)" supports="Cleric, 0" level="3" number="2" spellcasting="Grave Robber" />
+			<select type="Spell" name="Cantrip (Grave Robber)" supports="Cleric, 0" level="10" number="1" spellcasting="Grave Robber" />
+			<select type="Spell" name="Spellcasting (Grave Robber)" supports="($(spellcasting:list)||Cleric), 1" level="3" number="1" spellcasting="Grave Robber" />
+			<select type="Spell" name="Spellcasting (Grave Robber)" supports="$(spellcasting:list), 1" level="3" number="2" spellcasting="Grave Robber" />
+			<select type="Spell" name="Spellcasting (Grave Robber)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" spellcasting="Grave Robber"/>
+			<select type="Spell" name="Spellcasting (Grave Robber)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" spellcasting="Grave Robber"/>
+			<select type="Spell" name="Spellcasting (Grave Robber)" supports="(Cleric||$(spellcasting:list)), $(spellcasting:slots)" level="8" spellcasting="Grave Robber"/>
+			<select type="Spell" name="Spellcasting (Grave Robber)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" spellcasting="Grave Robber"/>
+			<select type="Spell" name="Spellcasting (Grave Robber)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" spellcasting="Grave Robber"/>
+			<select type="Spell" name="Spellcasting (Grave Robber)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" spellcasting="Grave Robber"/>
+			<select type="Spell" name="Spellcasting (Grave Robber)" supports="(Cleric||$(spellcasting:list)), $(spellcasting:slots)" level="14" spellcasting="Grave Robber"/>
+			<select type="Spell" name="Spellcasting (Grave Robber)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" spellcasting="Grave Robber"/>
+			<select type="Spell" name="Spellcasting (Grave Robber)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" spellcasting="Grave Robber"/>
+			<select type="Spell" name="Spellcasting (Grave Robber)" supports="(Cleric||$(spellcasting:list)), $(spellcasting:slots)" level="20" spellcasting="Grave Robber"/>
+		</rules>
+	</element>
+	<element name="Voice of the Grave" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_GRAVE_ROBBER_VOICE_OF_THE_GRAVE">
+		<description>
+			<p>Your voice channels haunting secrets. When you cast thaumaturgy, you gain the following additional benefits:</p>
+			<ul>
+				<li>When you cause your voice to boom louder, you can choose for it to originate from anywhere within the spell's range.</li>
+				<li>Sounds you create within range last for up to 1 minute rather than instantaneously, and you can use your bonus action to alter the sounds you make.</li>
+				<li>The verbal component for the spell can be any word, so long as it is spoken at a whisper, that you can choose to be heard as a whisper by anyone within the spell's range.</li>
+			</ul>
+			<p class="indent">Additionally, when you use your action to cast thaumaturgy to create an audible effect, you have advantage on Dexterity (Stealth) and Dexterity (Sleight of Hand) checks you make until the end of your next turn.</p>
+		</description>
+		<sheet>
+			<description>When you cast thaumaturgy, you gain the following additional benefits: &#13;
+				• When you cause your voice to boom louder, you can choose for it to originate from anywhere within the spell's range. &#13;
+				• Sounds you create within range last for up to 1 minute rather than instantaneously, and you can use your bonus action to alter the sounds you make. &#13;
+				• The verbal component for the spell can be any word, so long as it is spoken at a whisper, that you can choose to be heard as a whisper by anyone within the spell's range. &#13;
+				Additionally, when you use your action to cast thaumaturgy to create an audible effect, you have advantage on Dexterity (Stealth) and Dexterity (Sleight of Hand) checks you make until the end of your next turn.
+			</description>
+		</sheet>
+	</element>
+	<element name="Hidden Rituals" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_GRAVE_ROBBER_HIDDEN_RITUALS">
+		<description>
+			<p>You learn to cast spells in dead languages and with forgotten gestures. When you begin casting a cleric spell, you can make a Charisma (Stealth) check as a part of the casting, which is contested by a creature's passive Perception. A creature whose passive Perception is lower than your check doesn't recognize that you are casting a spell, even if the spell has components the creature would normally see or hear.</p>
+		</description>
+		<sheet>
+			<description>When you begin casting a cleric spell, you can make a Charisma (Stealth) check as a part of the casting, which is contested by a creature's passive Perception. A creature whose passive Perception is lower than your check doesn't recognize that you are casting a spell, even if the spell has components the creature would normally see or hear.</description>
+		</sheet>
+	</element>
+	<element name="Impersonate Corpse" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_GRAVE_ROBBER_IMPERSONATE_CORPSE">
+		<description>
+			<p>Your familiarity with corpses allows you to magically become them. Over the course of a short rest or long rest, which you take within 5 feet of a humanoid corpse, you can conduct a ritual to take on the identity of the deceased. While you impersonate the corpse, you gain the following benefits:</p>
+			<ul>
+				<li>Your size, height, weight, facial features, voice, hair length, coloration, and distinguishing characteristics match that of the deceased. If the creature is missing limbs or a head, yours becomes invisible, as to appear as if you lack the appendage.</li>
+				<li>You learn the creature's thoughts and all the details from its last 24 hours of life.</li>
+				<li>You gain resistance to poison and necrotic damage, and you are immune to disease.</li>
+				<li>The first time you hit a creature who knew the deceased with a weapon attack, you gain the benefits of your Sneak Attack even if you do not have advantage or an ally within 5 feet, but not if you have disadvantage on the attack.</li>
+				<p class="indent">Your impersonation lasts for 8 hours and ends early if you die or you choose for it to (no action required). Once you impersonate a corpse with this feature, you can't do so again with that same corpse.</p>
+			</ul>
+		</description>
+		<sheet action="Ritual" usage="8 hrs/Corpse">
+			<description>Over the course of a short rest or long rest, which you take within 5 feet of a humanoid corpse, you can conduct a ritual to take on the identity of the deceased. While you impersonate the corpse, you gain the following benefits: &#13;
+				• Your size, height, weight, facial features, voice, hair length, coloration, and distinguishing characteristics match that of the deceased. If the creature is missing limbs or a head, yours becomes invisible, as to appear as if you lack the appendage.&#13;
+				• You learn the creature's thoughts and all the details from its last 24 hours of life. &#13;
+				• You gain resistance to poison and necrotic damage, and you are immune to disease. &#13;
+				• The first time you hit a creature who knew the deceased with a weapon attack, you gain the benefits of your Sneak Attack even if you do not have advantage or an ally within 5 feet, but not if you have disadvantage on the attack. &#13;
+				Your impersonation lasts for 8 hours and ends early if you die or you choose for it to (no action required). Once you impersonate a corpse with this feature, you can't do so again with that same corpse.
+			</description>
+		</sheet>
+	</element>
+	<element name="Steal From Death" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_GRAVE_ROBBER_STEAL_FROM_DEATH">
+		<description>
+			<p>You learn to rob even death of its prize. If you take damage that reduces you to 0 hit points and doesn't kill you outright, you can use your reaction to make a Charisma (Sleight of Hand) check to steal your soul back into your body. If the result of your check is equal to or greater than the damage taken, you return to consciousness with a number of hit points equal to your rogue level, and you have resistance to all damage until the end of your next turn.</p>
+			<p class="indent">Before you make your check, you can choose to expend an available spell slot to bolster it (no action required). When you do so, you add a bonus to your check equal to 10 times the spell's level, and you regain an equal number of additional hit points if you succeed.</p>
+		</description>
+		<sheet>
+			<description>If you take damage that reduces you to 0 hit points and doesn't kill you outright, you can use your reaction to make a Charisma (Sleight of Hand) check to steal your soul back into your body. If the result of your check is equal to or greater than the damage taken, you return to consciousness with {{level:rogue}} hit points equal to your rogue level, and you have resistance to all damage until the end of your next turn.</description>
+		</sheet>
+	</element>
+</elements>

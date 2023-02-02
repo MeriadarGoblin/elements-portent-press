@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<info>
+		<name>Motion Domain</name>
+		<update version="0.1.0">
+			<file name="subclass-cleric-motion.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/subclass-cleric-motion.xml" />
+		</update>
+	</info>
+
+	<element name="Motion Domain" type="Archetype" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_MOTION_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>The act of motion is performed by all living things, one of the base signs of life itself, and it has many manifestations. The gods of motion inspire their followers to recognize how all motion can cause further motion in other creatures or objects, to see how all is connected through even the smallest actions.</p>
+			<p class="indent">Many of these clerics never stop moving, by means of constant traveling and sometimes being incapable of sitting still. While others are careful with their movements, only being in motion when they believe they understand what impacts their movement will have.</p>
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_MOTION_BONUS_PROFICIENCIES" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_MOTION_INERTIA" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_MOTION_CHANNEL_DIVINITY_MASS_AND_ACCELERATION" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_MOTION_ACTION_AND_REACTION" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_MOTION_DIVINE_STRIKE" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_MOTION_UNSTOPPABLE_FORCE_AND_IMMOVABLE_OBJECT" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_LONGSTRIDER" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PP_OES_SPELL_SPRING" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PP_OES_SPELL_SHUNT" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_PERSON" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PP_OES_SPELL_BLESSING_OF_SPEED" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PP_OES_SPELL_RAY_OF_LETHARGY" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_COMPULSION" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PP_OES_SPELL_EARTH_WALK" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_MONSTER" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_MOTION_BONUS_PROFICIENCIES" level="1" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_MOTION_INERTIA" level="1" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_MOTION_CHANNEL_DIVINITY_MASS_AND_ACCELERATION" level="2" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_MOTION_ACTION_AND_REACTION" level="6" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_MOTION_DIVINE_STRIKE" level="8" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_MOTION_UNSTOPPABLE_FORCE_AND_IMMOVABLE_OBJECT" level="17" />
+		</rules>
+	</element>
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_MOTION_BONUS_PROFICIENCIES">
+		<description>
+			<p>You gain proficiency with martial weapons and heavy armor. You also become proficient in your choice of Acrobatics or Athletics.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+			<select type="Proficiency" name="Bonus Proficiencies (Motion Domain)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ATHLETICS" />
+		</rules>
+	</element>
+	<element name="Inertia" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_MOTION_INERTIA">
+		<description>
+			<p>Your speed increases by 10 feet. In addition, if you move only in a straight line on your turn, you can take the Dash action as a bonus action, but this extra movement can only be used to continue to move in that straight line.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>If you move only in a straight line on your turn, you can take the Dash action as a bonus action, but this extra movement can only be used to continue to move in that straight line.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:misc" value="10" />
+		</rules>
+	</element>
+	<element name="Channel Divinity: Mass And Acceleration" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_MOTION_CHANNEL_DIVINITY_MASS_AND_ACCELERATION">
+		<description>
+			<p>You can use your Channel Divinity to grace a creature with a blessing of forceful motion.</p>
+			<p class="indent">As an action, you can present your holy symbol and choose a willing creature that can see or hear you within 30 feet of you. That creature's weight is multiplied by 10, and it is launched to an unoccupied space of your choice within 120 feet of it, so long as there is a clear path of travel to the space. Each other creature within 10 feet of the chosen space must make a Constitution saving throw as a the creature's force disperses and its weight returns to normal. A creature takes force damage equal to 3d6 + your cleric level on a failed saving throw, and half as much damage on a successful one.</p>
+		</description>
+		<sheet action="Action" usage="Channel Divinity" alt="Mass and Acceleration">
+			<description>As an action, you can present your holy symbol and choose a willing creature that can see or hear you within 30 feet of you. That creature's weight is multiplied by 10, and it is launched to an unoccupied space of your choice within 120 feet of it, so long as there is a clear path of travel to the space. Each other creature within 10 feet of the chosen space must make a Constitution saving throw as a the creature's force disperses and its weight returns to normal. A creature takes force damage equal to 3d6 + your cleric level on a failed saving throw, and half as much damage on a successful one.</description>
+		</sheet>
+	</element>
+	<element name="Action and Reaction" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_MOTION_ACTION_AND_REACTION">
+		<description>
+			<p>You can re-balance the forces applied upon creatures near you. As an action, you can choose a number of creatures up to your proficiency bonus that can see or hear you within 30 feet of you to have their speed halved for 1 minute. For each creature that has its speed reduced, you can choose a creature that can see or hear you within 30 feet of you to have its speed doubled for 1 minute.</p>
+			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="{{proficiency}}/Long Rest">
+			<description>As an action, you can choose a number of creatures up to your proficiency bonus that can see or hear you within 30 feet of you to have their speed halved for 1 minute. For each creature that has its speed reduced, you can choose a creature that can see or hear you within 30 feet of you to have its speed doubled for 1 minute.</description>
+		</sheet>
+	</element>
+	<element name="Divine Strike" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_MOTION_DIVINE_STRIKE">
+		<description>
+			<p>You gain the ability to infuse your weapon strikes with the force of your motion. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+		</description>
+		<sheet>
+			<description>Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target.</description>
+			<description level="14">Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 2d8 damage of the same type dealt by the weapon to the target.</description>
+		</sheet>
+	</element>
+	<element name="Unstoppable Force and Immovable Object" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_MOTION_UNSTOPPABLE_FORCE_AND_IMMOVABLE_OBJECT">
+		<description>
+			<p>You are both the unstoppable force and the immovable object, gaining the following benefits:</p>
+			<ul>
+				<li>Your speed can't be reduced in any way, and no terrain or any other effect can cost additional feet of movement for you to move through it.</li>
+				<li>You can't be moved against your will.</li>
+			</ul>
+			<p class="indent">Additionally, as a bonus action, you can give each creature of your choice that can see or hear you within 30 feet of you the benefits above for 1 hour or until you end the effect as a bonus action.</p>
+			<p class="indent">Once you give a creature this benefit, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Long Rest">
+			<description>You gain the following benefits:
+				• Your speed can't be reduced in any way, and no terrain or any other effect can cost additional feet of movement for you to move through it. &#13;
+				• You can't be moved against your will. &#13;
+				Additionally, as a bonus action, you can give each creature of your choice that can see or hear you within 30 feet of you the benefits above for 1 hour or until you end the effect as a bonus action. &#13;
+				Once you give a creature this benefit, you can't do so again until you finish a long rest.
+			</description>
+		</sheet>
+	</element>
+</elements>

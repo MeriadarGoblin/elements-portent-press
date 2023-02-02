@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<info>
+		<name>Circle of Caverns</name>
+		<update version="0.1.0">
+			<file name="subclass-druid-caverns.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/subclass-druid-caverns.xml" />
+		</update>
+	</info>
+
+	<element name="Circle of Caverns" type="Archetype" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_CIRCLE_OF_CAVERNS">
+		<supports>Druid Circle</supports>
+		<description>
+			<p>Druids of the Circle of Caverns focus on maintaining the balance of the underground. It may not be as at risk as the forests above, but there is a delicate balance to all nature, even that which is not often seen. These druids typically move through the hidden tunnels and passages below, and may not even reveal themselves unless they feel the need to take action. When they do reveal themselves they bring with them the earthen power of the underground world of stone.</p>
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_CAVERNS_EMISSARY_OF_DARKNESS" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_CAVERNS_EARTHEN_FORM" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_CAVERNS_STRENGTH_OF_STORM" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_CAVERNS_UNDERGROUND_GUIDE" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_CAVERNS_EMBODIMENT_OF_CAVERNS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_CAVERNS_EMISSARY_OF_DARKNESS" level="2" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_CAVERNS_EARTHEN_FORM" level="2" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_CAVERNS_STRENGTH_OF_STORM" level="6" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_CAVERNS_UNDERGROUND_GUIDE" level="10" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_CAVERNS_EMBODIMENT_OF_CAVERNS" level="14" />
+		</rules>
+	</element>
+	<element name="Earthen Form" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_CAVERNS_EMISSARY_OF_DARKNESS">
+		<description>
+			<p>You gain darkvision out to a range of 60 feet, and you retain your darkvision even in beast form. If you already have darkvision in your normal or beast form, its range instead increases by 30 feet.</p>
+			<p class="indent">In addition, you gain proficiency in the Stealth skill, and you can take the Hide action as a bonus action while in dim light or darkness. While you are in a beast form, you add your proficiency bonus to Dexterity (Stealth) checks you make, even if the beast form you take is already proficient.</p>
+		</description>
+		<sheet>
+			<description>You retain your darkvision even in beast form. If you already have darkvision in your normal or beast form, its range instead increases by 30 feet. You can take the Hide action as a bonus action while in dim light or darkness. While you are in a beast form, you add your proficiency bonus to Dexterity (Stealth) checks you make, even if the beast form you take is already proficient.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+		</rules>
+	</element>
+	<element name="Earthen Form" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_CAVERNS_EARTHEN_FORM">
+		<description>
+			<p>The beasts you assume the form of are reinforced with the power of the underground. When you use your Wild Shape, your new form is coated in a shell of rock, and you gain temporary hit points equal to your Wisdom modifier plus twice your Druid level. The temporary hit points fade when your Wild Shape ends, or if you use your Wild Shape again.</p>
+			<p class="indent">While you have these temporary hit points, you gain the following benefits:</p>
+			<ul>
+				<li>You gain tremorsense out to a range of 15 feet.</li>
+				<li>Moving through nonmagical difficult terrain costs you no extra movement.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you use your Wild Shape, your new form is coated in a shell of rock, and you gain temporary hit points equal to your Wisdom modifier plus twice your Druid level ({{earthen form:temp hp}}). The temporary hit points fade when your Wild Shape ends, or if you use your Wild Shape again. While you have these temporary hit points, you gain the following benefits: &#13;
+				• You gain tremorsense out to a range of 15 feet. &#13;
+				• Moving through nonmagical difficult terrain costs you no extra movement.
+			</description>
+		</sheet>
+		<rules>
+			<stat name="earthen form: temp hp" value="wisdom:modifier" />
+			<stat name="earthen form: temp hp" value="level:druid" />
+			<stat name="earthen form: temp hp" value="level:druid" />
+		</rules>
+	</element>
+	<element name="Strength of Stone" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_CAVERNS_STRENGTH_OF_STORM">
+		<description>
+			<p>Your bestial transformations are further filled with subterranean might. While you are in your beast form, your weapon attacks count as magical, and you gain a bonus to attack rolls you make with them equal to your proficiency bonus. You can also use your spell save DC in place of the DC of the beast's abilities.</p>
+			<p class="indent">Additionally, when you hit a creature with a weapon attack, you can expend a spell slot to deal an extra 1d6 bludgeoning damage to the target, plus another 1d6 per level of the spell slot, as well as inflict one of the following effects:</p>
+			<p class="indent"><b>Dust Cloud.</b> The creature must succeed on a Dexterity saving throw against your spell save DC or have disadvantage on Wisdom (Perception) checks until the end of its next turn.</p>
+			<p class="indent"><b>Quake.</b> The creature must succeed on a Strength saving throw against your spell save DC or be knocked prone.</p>
+			<p class="indent"><b>Rock Blast.</b> The creature must succeed on a Strength saving throw against your spell save DC or be pushed up to 10 feet away from you.</p>
+		</description>
+		<sheet>
+			<description>While you are in your beast form, your weapon attacks count as magical, and you gain a bonus to attack rolls you make with them equal to your proficiency bonus. You can also use your spell save DC in place of the DC of the beast's abilities. &#13;
+				Additionally, when you hit a creature with a weapon attack, you can expend a spell slot to deal an extra 1d6 bludgeoning damage to the target, plus another 1d6 per level of the spell slot, as well as inflict one of the following effects: &#13;
+				Dust Cloud. The creature must succeed on a Dexterity saving throw against your spell save DC or have disadvantage on Wisdom (Perception) checks until the end of its next turn. &#13;
+				Quake. The creature must succeed on a Strength saving throw against your spell save DC or be knocked prone. &#13;
+				Rock Blast. The creature must succeed on a Strength saving throw against your spell save DC or be pushed up to 10 feet away from you.
+			</description>
+		</sheet>
+	</element>
+	<element name="Underground Guide" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_CAVERNS_UNDERGROUND_GUIDE">
+		<description>
+			<p>You are adept in finding your way through even the darkest depths. While you are underground, you can't be surprised, and you can cast commune with nature as a ritual, even if you don't have it prepared. When you cast the spell in this way, you can use the spell's normal 3 mile radius, you know what beasts live within the area, and for the next 8 hours you can speak with any beast that lives within the area as if you shared a language.</p>
+			<p class="indent">Once you cast commune with nature in this way, you can't do so again until you finish a short or long rest.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_COMMUNE_WITH_NATURE" />
+			</div>
+		</description>
+		<sheet usage="Short/Long Rest">
+			<description>While you are underground, you can't be surprised, and you can cast commune with nature as a ritual, even if you don't have it prepared. When you cast the spell in this way, you can use the spell's normal 3 mile radius, you know what beasts live within the area, and for the next 8 hours you can speak with any beast that lives within the area as if you shared a language. Once you cast commune with nature in this way, you can't do so again until you finish a short or long rest.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_COMMUNE_WITH_NATURE" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+	<element name="Embodiment of Caverns" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_CAVERNS_EMBODIMENT_OF_CAVERNS">
+		<description>
+			<p>The full power of the underground now strengthens your beast forms. When you expend a spell slot as part of your Strength of Stone, you gain temporary hit points equal to the additional damage dealt. If you already have temporary hit points from Earthen Form, you increase the number of temporary hit points you have by the same amount. These temporary hit points count as being granted by your Earthen Form feature.</p>
+			<p class="indent">In addition, while you have temporary hit points from your Earthen Form you gain the following additional benefits:</p>
+			<ul>
+				<li>You can’t be blinded or petrified and you are immune to poison and disease.</li>
+				<li>You gain resistance to nonmagical bludgeoning, piercing and slashing damage.</li>
+				<li>Your tremorsense extends to range of 30 feet.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you expend a spell slot as part of your Strength of Stone, you gain temporary hit points equal to the additional damage dealt. If you already have temporary hit points from Earthen Form, you increase the number of temporary hit points you have by the same amount. These temporary hit points count as being granted by your Earthen Form feature. In addition, while you have temporary hit points from your Earthen Form you gain the following additional benefits:&#13;
+				• You can’t be blinded or petrified and you are immune to poison and disease. &#13;
+				• You gain resistance to nonmagical bludgeoning, piercing and slashing damage. &#13;
+				• Your tremorsense extends to range of 30 feet.
+			</description>
+		</sheet>
+	</element>
+</elements>

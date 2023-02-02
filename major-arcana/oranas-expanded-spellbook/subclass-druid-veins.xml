@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<info>
+		<name>Circle of Veins</name>
+		<update version="0.1.0">
+			<file name="subclass-druid-veins.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/subclass-druid-veins.xml" />
+		</update>
+	</info>
+
+	<element name="Circle of Veins" type="Archetype" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_CIRCLE_OF_VEINS">
+		<supports>Druid Circle</supports>
+		<description>
+			<p>Druids of the Circle of Veins hold the belief that the worlds of the Material Plane, and indeed all planes, are alive. They can discern the channels through which the lifeblood of the planet flows, the natural magic that suffuses all life. These druids appreciate both the scale of these flowing reservoirs and the awe-inspiring, if untamable, power they house. Although many druids and rangers draw from this energy in the ages-old spells that harness it predictably, druids of the Veins embrace its wild nature and utilize it to defend ley crossings from being defiled or destroyed.</p>
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_VEINS_VEILED_AWARENESS" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_VEINS_PRIMAL_PERMUTATION" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_VEINS_UNRULY_HARMONY" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_VEINS_FLOWING_COMPREHENSION" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_VEINS_PRIMAL_CHANNELING" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_VEINS_VEILED_AWARENESS" level="2" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_VEINS_PRIMAL_PERMUTATION" level="2" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_VEINS_UNRULY_HARMONY" level="6" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_VEINS_FLOWING_COMPREHENSION" level="10" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_VEINS_PRIMAL_CHANNELING" level="14" />
+		</rules>
+	</element>
+	<element name="Veiled Awareness" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_VEINS_VEILED_AWARENESS">
+		<description>
+			<p>When you choose this circle at 2nd level, you gain a sense for the energies of the lands. You always know the distance to the nearest Fey Crossing or a planar portal, provided one exists within 1 mile of you.</p>
+		</description>
+		<sheet>
+			<description>You always know the distance to the nearest Fey Crossing or a planar portal, provided one exists within 1 mile of you.</description>
+		</sheet>
+	</element>
+	<element name="Primal Permutation" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_VEINS_PRIMAL_PERMUTATION">
+		<description>
+			<p>You can draw on your magic even while in beast form, albeit without knowledge of its result. When you use your Wild Shape, you gain the following benefits:</p>
+			<ul>
+				<li>You can add your Wisdom modifier (minimum of 1) to the attack and damage rolls you make in beast form.</li>
+				<li>You can immediately cast a spell of 1st-level or higher with a casting time of 1 action or 1 bonus action as part of the action used to assume the beast form, or you can choose to cast a spell once while in your beast form. You ignore the components of spells you cast this way, except for spells with a material component that have a listed cost.</li>
+				<li>Any time you cast a spell while in beast form, roll a 1d8 and gain the corresponding benefit listed in the Permutations table, found at the end of this circle option. You can only have one benefit at a time, and the benefit disappears when you revert to your normal form.</li>
+			</ul>
+			<h5>Permutations</h5>
+			<table>
+				<thead>
+					<tr><td>d8 Effect</td><td></td></tr>
+				</thead>
+				<tr><td>1</td><td>Whirling winds or waters, rumbling earth, or grasping vines surround you in a sphere with a radius of 5 feet per level of the spell. A creature moving through the area, except those you choose, must spend 2 feet of movement for every 1 foot it moves.</td></tr>
+				<tr><td>2</td><td>You gain darkvision out to 20 feet per level of the spell, or if you already have darkvision, its range increases by the same distance. Magical darkness doesn't impede this darkvision.</td></tr>
+				<tr><td>3</td><td>Your AC increases by 1 per level of the spell.</td></tr>
+				<tr><td>4</td><td>Choose one ability score. You have a bonus to ability checks and saving throws using the chosen ability equal to the level of the spell.</td></tr>
+				<tr><td>5</td><td>You can use a bonus action on each of your turns to teleport up to 5 feet per level of the spell to an unoccupied space you can see.</td></tr>
+				<tr><td>6</td><td>You gain a burrowing speed equal to 10 feet per level of the spell, or any burrowing speed you have increases by the same distance.</td></tr>
+				<tr><td>7</td><td>You gain a flying speed equal to 10 feet per level of the spell, or any flying speed you have increases by the same distance.</td></tr>
+				<tr><td>8</td><td>You regain an expended spell slot. The slot you regain must be of a level lower than the spell you cast and can't be higher than 5th level.</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>When you use your Wild Shape, you gain the following benefits: &#13;
+				• You can add your Wisdom modifier (minimum of 1) to the attack and damage rolls you make in beast form. &#13;
+				• You can immediately cast a spell of 1st-level or higher with a casting time of 1 action or 1 bonus action as part of the action used to assume the beast form, or you can choose to cast a spell once while in your beast form. You ignore the components of spells you cast this way, except for spells with a material component that have a listed cost.
+				• Any time you cast a spell while in beast form, roll a 1d8 and gain the corresponding benefit listed in the Permutations table, found at the end of this circle option. You can only have one benefit at a time, and the benefit disappears when you revert to your normal form.
+			</description>
+		</sheet>
+	</element>
+	<element name="Unruly Harmony" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_VEINS_UNRULY_HARMONY">
+		<description>
+			<p>As a bonus action on each of your turns while in your beast form, you can make a single melee weapon attack using your form's natural weapon.</p>
+			<p class="indent">You can also roll 2d4 instead of 1d8 when you use your Primal Permutation, taking either the result of one of the d4s or their combined total as the number to roll on the table.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>As a bonus action on each of your turns while in your beast form, you can make a single melee weapon attack using your form's natural weapon. You can also roll 2d4 instead of 1d8 when you use your Primal Permutation, taking either the result of one of the d4s or their combined total as the number to roll on the table.</description>
+		</sheet>
+	</element>
+	<element name="Flowing Comprehension" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_VEINS_FLOWING_COMPREHENSION">
+		<description>
+			<p>You can use the coursing power beneath the earth to guide you. You always have the commune with nature spell prepared, it doesn't count against the number of spells you can prepare, and you don't have to see a space or creature within 30 feet of you for the purposes of targeting it with a spell.</p>
+			<p class="indent">Additionally, when you take the form of a beast using your Wild Shape, its current and maximum hit points increase by five times your druid level.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_COMMUNE_WITH_NATURE" />
+			</div>
+		</description>
+		<sheet>
+			<description>You always have the commune with nature spell prepared, it doesn't count against the number of spells you can prepare, and you don't have to see a space or creature within 30 feet of you for the purposes of targeting it with a spell. Additionally, when you take the form of a beast using your Wild Shape, its current and maximum hit points increase by five times your druid level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_COMMUNE_WITH_NATURE" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+	<element name="Primal Channeling" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_VEINS_PRIMAL_CHANNELING">
+		<description>
+			<p>Each time you finish a long rest, you can choose one result of 1–7 from the Primal Permutations table. You constantly gain that option's benefit, even while outside of a beast form. If you enter your beast form and would roll that benefit, you can choose the result instead of rolling. The benefit is treated as if you activated the permutation using a 3rd-level spell.</p>
+		</description>
+		<sheet>
+			<description>Each time you finish a long rest, you can choose one result of 1–7 from the Primal Permutations table. You constantly gain that option's benefit, even while outside of a beast form. If you enter your beast form and would roll that benefit, you can choose the result instead of rolling. The benefit is treated as if you activated the permutation using a 3rd-level spell.</description>
+		</sheet>
+	</element>
+</elements>

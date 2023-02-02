@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<info>
+		<name>Polis Sweeper</name>
+		<update version="0.1.0">
+			<file name="subclass-ranger-polis-sweeper.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/ranger-polis-sweeper.xml" />
+		</update>
+	</info>
+
+	<element name="Polis Sweeper" type="Archetype" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_POLIS_SWEEPER">
+		<supports>Ranger Archetype</supports>
+		<description>
+			<p>Protecting the boundary between the settled areas of the world and the wilds requires watchers from both sides of the palisade. Polis sweepers consider cities to be ecosystems all their own, with food chains to respect and imbalances to correct. They listen to the city's whispers to find their way and will cut out parts of it that are killing the whole - whether that means offing a corrupt official or burning an abandoned building that's a den for plague rats.</p>
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_POLIS_SWEEPER_MAGIC" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_POLIS_SWEEPER_INCEPT_CONSPIRACY" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_POLIS_SWEEPER_STREETWISE" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_POLIS_SWEEPER_BACK_OF_MY_HEAD" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_POLIS_SWEEPER_LETHAL_SCHEME" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_POLIS_SWEEPER_LOST_IN_THE_CROWD" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_POLIS_SWEEPER_MAGIC" level="3" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_POLIS_SWEEPER_INCEPT_CONSPIRACY" level="3" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_POLIS_SWEEPER_STREETWISE" level="3" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_POLIS_SWEEPER_BACK_OF_MY_HEAD" level="7" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_POLIS_SWEEPER_LETHAL_SCHEME" level="11" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_POLIS_SWEEPER_LOST_IN_THE_CROWD" level="15" />
+		</rules>
+	</element>
+	<element name="Polis Sweeper Magic" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_POLIS_SWEEPER_MAGIC">
+		<description>
+			<p>You learn an additional spell when you reach certain levels in this class, as shown in the Polis Sweper Spells table. Each spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.</p>
+			<h5 class="caption">Polis Sweeper Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Ranger Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>elude, message</em></td></tr>
+				<tr><td>5th</td><td><em>Orana's hidden ear</em></td></tr>
+				<tr><td>9th</td><td><em>fabricate doubt</em></td></tr>
+				<tr><td>13th</td><td><em>arcane eye</em></td></tr>
+				<tr><td>17th</td><td><em>passwall</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PP_OES_SPELL_ELUDE" level="3" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_PHB_SPELL_MESSAGE" level="3" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_PP_OES_SPELL_ORANAS_HIDDEN_EAR" level="5" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_PP_OES_SPELL_FABRICATE_DOUBT" level="9" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_PHB_SPELL_ARCANE_EYE" level="13" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_PHB_SPELL_PASSWALL" level="17" spellcasting="Ranger" />
+		</rules>
+	</element>
+	<element name="Incept Conspiracy" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_POLIS_SWEEPER_INCEPT_CONSPIRACY">
+		<description>
+			<p>Over the course of one minute, you can choose up to three willing creatures within 5 feet of you, making you and each of those creatures conspirators. On your turn while a conspirator is within 5 feet of you (no action required), you can use subtle magics to monitor and imperil a creature you can see within 30 feet of you: your mark.</p>
+			<p class="indent">Until you use this feature again, each conspirator gains the benefits of your Favored Enemy against the mark. Once per turn, when a conspirator hits the mark with an attack, it can force the mark to suffer one of the following effects. Conspirators can't force a mark to suffer the same effect twice in a row during the same round in combat.</p>
+			<ul>
+				<li>The attack puts it off-kilter. It has disadvantage on the next attack roll it makes before the end of its next turn.</li>
+				<li>The attack dazes the creature, which can't take reactions until the end of its next turn.</li>
+				<li>The attack hits a vulnerable area, dealing an additional 1d4 damage. This damage increases to 1d6 at 6th level and 1d8 at 14th level.</li>
+			</ul>
+			<p class="indent">You can choose a mark twice, regaining expended uses when you finish a short or long rest.</p>
+		</description>
+		<sheet action="2 Marks" usage="Short/Long Rest">
+			<description>Over one minute, you can choose up to three willing creatures within 5 feet of you, making you and each of those creatures conspirators. On your turn while a conspirator is within 5 feet of you (no action required), you can use subtle magics to monitor and imperil a creature you can see within 30 feet of you: your mark.&#13;
+				Until you use this feature again, each conspirator gains the benefits of your Favored Enemy against the mark. Once per turn, when a conspirator hits the mark with an attack, it can force the mark to suffer one of the following effects. Conspirators can't force a mark to suffer the same effect twice in a row during the same round in combat. &#13;
+				• The attack puts it off-kilter. It has disadvantage on the next attack roll it makes before the end of its next turn. &#13;
+				• The attack dazes the creature, which can't take reactions until the end of its next turn. &#13;
+				• The attack hits a vulnerable area, dealing an additional 1d4 damage.
+			</description>
+			<description level="6">Over one minute, you can choose up to three willing creatures within 5 feet of you, making you and each of those creatures conspirators. On your turn while a conspirator is within 5 feet of you (no action required), you can use subtle magics to monitor and imperil a creature you can see within 30 feet of you: your mark.&#13;
+				Until you use this feature again, each conspirator gains the benefits of your Favored Enemy against the mark. Once per turn, when a conspirator hits the mark with an attack, it can force the mark to suffer one of the following effects. Conspirators can't force a mark to suffer the same effect twice in a row during the same round in combat. &#13;
+				• The attack puts it off-kilter. It has disadvantage on the next attack roll it makes before the end of its next turn. &#13;
+				• The attack dazes the creature, which can't take reactions until the end of its next turn. &#13;
+				• The attack hits a vulnerable area, dealing an additional 1d6 damage.
+			</description>
+			<description level="14">Over one minute, you can choose up to three willing creatures within 5 feet of you, making you and each of those creatures conspirators. On your turn while a conspirator is within 5 feet of you (no action required), you can use subtle magics to monitor and imperil a creature you can see within 30 feet of you: your mark.&#13;
+				Until you use this feature again, each conspirator gains the benefits of your Favored Enemy against the mark. Once per turn, when a conspirator hits the mark with an attack, it can force the mark to suffer one of the following effects. Conspirators can't force a mark to suffer the same effect twice in a row during the same round in combat. &#13;
+				• The attack puts it off-kilter. It has disadvantage on the next attack roll it makes before the end of its next turn. &#13;
+				• The attack dazes the creature, which can't take reactions until the end of its next turn. &#13;
+				• The attack hits a vulnerable area, dealing an additional 1d8 damage.
+			</description>
+		</sheet>
+	</element>
+	<element name="Streetwise" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_POLIS_SWEEPER_STREETWISE">
+		<description>
+			<p>You have an ear to the pulse of the city, and can even hear what it has to say. Your Natural Explorer feature's benefits also apply within cities and other similar settlements, and urban areas count as favored terrain for you.</p>
+			<p class="indent">Over the course of 1 minute, you can touch a road, street, or alleyway to learn basic facts about happenings in its area or creatures that walked on it, both within the last 7 days. A path you commune with this way has an Intelligence of 5 but can't relay any visual information to you.</p>
+		</description>
+		<sheet>
+			<description>Your Natural Explorer feature's benefits also apply within cities and other similar settlements, and urban areas count as favored terrain for you. Over the course of 1 minute, you can touch a road, street, or alleyway to learn basic facts about happenings in its area or creatures that walked on it, both within the last 7 days. A path you commune with this way has an Intelligence of 5 but can't relay any visual information to you.</description>
+		</sheet>
+	</element>
+	<element name="Back of my Head" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_POLIS_SWEEPER_BACK_OF_MY_HEAD">
+		<description>
+			<p>You can add your proficiency bonus to initiative rolls, and you can choose a mark while a conspirator is up to 15 feet from you. A conspirator other than you that was surprised is no longer surprised when you choose a mark.</p>
+		</description>
+		<sheet>
+			<description>You can choose a mark while a conspirator is up to 15 feet from you. A conspirator other than you that was surprised is no longer surprised when you choose a mark.</description>
+		</sheet>
+		<rules>
+			<stat name="initiative:misc" value="proficiency" />
+		</rules>
+	</element>
+	<element name="Lethal Scheme" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_POLIS_SWEEPER_LETHAL_SCHEME">
+		<description>
+			<p>Once per turn, when a conspirator misses the mark with an attack, the mark provokes an opportunity attack from one other conspirator of your choice. This attack can be a ranged weapon attack.</p>
+		</description>
+		<sheet>
+			<description>Once per turn, when a conspirator misses the mark with an attack, the mark provokes an opportunity attack from one other conspirator of your choice. This attack can be a ranged weapon attack.</description>
+		</sheet>
+	</element>
+	<element name="Lost in the Crowd" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_POLIS_SWEEPER_LOST_IN_THE_CROWD">
+		<description>
+			<p>When a creature you can see attacks a conspirator or forces it to make a saving throw, you can use your reaction to take the Hide action. When you attempt to hide in this way, you become invisible to the creature until the start of your next turn, and if you successfully hide from it, it must choose a new target or lose the attack or effect.</p>
+		</description>
+		<sheet>
+			<description>When a creature you can see attacks a conspirator or forces it to make a saving throw, you can use your reaction to take the Hide action. When you attempt to hide in this way, you become invisible to the creature until the start of your next turn, and if you successfully hide from it, it must choose a new target or lose the attack or effect.</description>
+		</sheet>
+	</element>
+</elements>

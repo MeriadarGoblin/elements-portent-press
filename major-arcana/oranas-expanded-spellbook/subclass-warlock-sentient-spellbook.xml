@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<info>
+		<name>The Sentient Spellbook</name>
+		<update version="0.1.0">
+			<file name="subclass-warlock-sentient-spellbook.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/subclass-warlock-sentient-spellbook.xml" />
+		</update>
+	</info>
+
+	<element name="The Sentient Spellbook" type="Archetype" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_SENTIENT_SPELLBOOK">
+		<supports>Otherworldly Patron</supports>
+		<description>
+			<p>There are many ways to animate and awaken that which is insentient or insapient: <i>wish</i> spells, spells that animate, and more esoteric means. In the case of spellbooks, there is even the possibility that the gathering of so much magic into one item can alter its reality, giving it life.</p>
+			<p class="indent">Regardless of how your patron was created, you have formed a pact with a living spellbook. The being's motivations may be as varied as the spells within its pages, or as straightforward as a simple desire for the knowledge or means to free other objects from insentient boredom.</p>
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_SENTIENT_SPELLBOOK_EXPANDED_SPELL_LIST" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_SENTIENT_SPELLBOOK_BONUS_CANTRIPS" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_SENTIENT_SPELLBOOK_SCRIPTED_ARCANUM" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_SENTIENT_SPELLBOOK_COMPENDIUM_OF_EXPECTATIONS" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_SENTIENT_SPELLBOOK_GIVE_LIFE" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_SENTIENT_SPELLBOOK_OBJECTIFY" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_SENTIENT_SPELLBOOK_EXPANDED_SPELL_LIST" level="1" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_SENTIENT_SPELLBOOK_BONUS_CANTRIPS" level="1" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_SENTIENT_SPELLBOOK_SCRIPTED_ARCANUM" level="1" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_SENTIENT_SPELLBOOK_COMPENDIUM_OF_EXPECTATIONS" level="6" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_SENTIENT_SPELLBOOK_GIVE_LIFE" level="10" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_SENTIENT_SPELLBOOK_OBJECTIFY" level="14" />
+		</rules>
+	</element>
+	<element name="Expanded Spell List" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_SENTIENT_SPELLBOOK_EXPANDED_SPELL_LIST">
+		<description>
+			<p>The Sentient Spellbook lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5>Sentient Spellbook Expanded Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>identify, magic missile</em></td></tr>
+				<tr><td>2nd</td><td><em>arcanist's magic aura, magic mouth</em></td></tr>
+				<tr><td>3rd</td><td><em>balderash, glyph of warding</em></td></tr>
+				<tr><td>4th</td><td><em>diviniation, private sanctum</em></td></tr>
+				<tr><td>5th</td><td><em>animate objects, telepathic bond</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<spellcasting name="Warlock" extend="true">
+			<extend>ID_PHB_SPELL_IDENTIFY</extend>
+			<extend>ID_PHB_SPELL_MAGIC_MISSILE</extend>
+			<extend>ID_PHB_SPELL_NYSTULS_MAGIC_AURA</extend>
+			<extend>ID_PHB_SPELL_MAGIC_MOUTH</extend>
+			<extend>ID_PP_OES_SPELL_BALDERASH</extend>
+			<extend>ID_PHB_SPELL_GLYPH_OF_WARDING</extend>
+			<extend>ID_PHB_SPELL_DIVINATION</extend>
+			<extend>ID_PHB_SPELL_MORDENKAINENS_PRIVATE_SANCTUM</extend>
+			<extend>ID_PHB_SPELL_ANIMATE_OBJECTS</extend>
+			<extend>ID_PHB_SPELL_RARYS_TELEPATHIC_BOND</extend>
+		</spellcasting>
+	</element>
+	<element name="Bonus Cantrips" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_SENTIENT_SPELLBOOK_BONUS_CANTRIPS">
+		<description>
+			<p>You learn the <li>magic parchment</li>> and <i>transfer lore</i>> cantrips. They count as warlock cantrips for you, but they don’t count against your number of cantrips known.</p>
+			<p class="indent">Additionally, when you make a Charisma (Deception), Charisma (Intimidation), or Charisma (Persuasion) check utilizing information that was gathered by one of these cantrips, you gain a bonus to the check equal to your Intelligence modifier (minimum of +1).</p>
+		</description>
+		<sheet>
+			<description>You gain a +{{seer:cantrips}} bonus when you make a Charisma (Deception), Charisma (Intimidation), or Charisma (Persuasion) check utilizing information that was gathered by the cantrips: magic parchment or transfer lore.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PP_OES_SPELL_MAGIC_PARCHMENT" spellcasting="Warlock" level="1" prepared="true" />
+			<grant type="Spell" id="ID_PP_OES_SPELL_TRANSFER_LORE" spellcasting="Warlock" level="1" prepared="true" />
+			<stat name="seer:cantrips" value="1" bonus="base" />
+			<stat name="seer:cantrips" value="intelligence:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="Scripted Arcanum" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_SENTIENT_SPELLBOOK_SCRIPTED_ARCANUM">
+		<description>
+			<p>Your patron reveals the secrets of written magic. You gain proficiency in the Arcana skill if you don't already have it. In addition, when you use a spell scroll, the written spell is always considered on the warlock spell list for you. If you use a spell scroll to cast a spell of a higher level than you can normally cast, you add your proficiency bonus to the check made to do so.</p>
+			<p class="indent">You can also script magic into your body, much like a living spellbook yourself. Over the course of a long rest, you can script a magical glyph or string of arcane equations onto the surface of your body or a piece of parchment. When you do so, choose a warlock spell that you know. While the script remains, you can cast that spell at its lowest level once without expending a spell slot or material components, causing the script to burn away.</p>
+			<p class="indent">You can only have one spell written in this way at a time. When you reach 10th level, you can script a second spell, but it must be of 3rd-level or lower.</p>
+		</description>
+		<sheet>
+			<description>When you use a spell scroll, the written spell is always considered on the warlock spell list for you. If you use a spell scroll to cast a spell of a higher level than you can normally cast, you add your proficiency bonus to the check made to do so.&#13;
+				You can also script magic into your body, much like a living spellbook yourself. Over the course of a long rest, you can script a magical glyph or string of arcane equations onto the surface of your body or a piece of parchment. When you do so, choose a warlock spell that you know. While the script remains, you can cast that spell at its lowest level once without expending a spell slot or material components, causing the script to burn away.&#13;
+				You can only have one spell written in this way at a time. When you reach 10th level, you can script a second spell, but it must be of 3rd-level or lower.
+			</description>
+			<description level="10">When you use a spell scroll, the written spell is always considered on the warlock spell list for you. If you use a spell scroll to cast a spell of a higher level than you can normally cast, you add your proficiency bonus to the check made to do so.&#13;
+				You can also script magic into your body, much like a living spellbook yourself. Over the course of a long rest, you can script a magical glyph or string of arcane equations onto the surface of your body or a piece of parchment. When you do so, choose a warlock spell that you know. While the script remains, you can cast that spell at its lowest level once without expending a spell slot or material components, causing the script to burn away.&#13;
+				You can only have one spell written in this way at a time. You can script a second spell, but it must be of 3rd-level or lower.
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+		</rules>
+	</element>
+	<element name="Compendium of Expectations" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_SENTIENT_SPELLBOOK_COMPENDIUM_OF_EXPECTATIONS">
+		<description>
+			<p>Your patron has shared knowledge of spells and their effects. When you make a saving throw against a spell, you can roll a d6 and add the result to your roll.</p>
+		</description>
+		<sheet>
+			<description>When you make a saving throw against a spell, you can roll a d6 and add the result to your roll.</description>
+		</sheet>
+	</element>
+	<element name="Give Life" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_SENTIENT_SPELLBOOK_GIVE_LIFE">
+		<description>
+			<p>You learn the <i>awaken</i> spell. It counts as a warlock spell for you, but it doesn’t count against the number of spells you know. You can also cast it once without requiring material components or expending a spell slot, and you regain the ability to do so when you finish a long rest.</p>
+			<p class="indent">Whenever you cast this spell, you can target a Small or smaller object. When you do so, the object becomes a creature that uses the Awakened Object stat block, or another stat block of the GM's choosing.</p>
+		</description>
+		<sheet usage="Long Rest">
+			<description>You can cast awaken once without requiring material components or expending a spell slot, and you regain the ability to do so when you finish a long rest. Whenever you cast this spell, you can target a Small or smaller object. When you do so, the object becomes a creature that uses the Awakened Object stat block, or another stat block of the GM's choosing.</description>
+		</sheet>
+	</element>
+	<element name="Objectify" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_SENTIENT_SPELLBOOK_OBJECTIFY">
+		<description>
+			<p>As an action, you can choose a creature you can see within 60 feet. The target must make an Intelligence saving throw as its mind is rewritten with a history of immobile, insentient existence. On a failure, a creature takes 8d10 psychic damage, and until the end of your next turn, its speed becomes 0 and it believes its shape, weight, and composition to be that of an object of your choice. On a success, a creature takes half as much damage, and until the end of your next turn, its movement speed is halved and it has disadvantage on Strength and Dexterity checks.</p>
+			<p class="indent">Once you use this feature, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="Long Rest">
+			<description>As an action, you can choose a creature you can see within 60 feet. The target must make an Intelligence saving throw as its mind is rewritten with a history of immobile, insentient existence. On a failure, a creature takes 8d10 psychic damage, and until the end of your next turn, its speed becomes 0 and it believes its shape, weight, and composition to be that of an object of your choice. On a success, a creature takes half as much damage, and until the end of your next turn, its movement speed is halved and it has disadvantage on Strength and Dexterity checks.&#13;
+				Once you use this feature, you can't do so again until you finish a long rest.
+			</description>
+		</sheet>
+	</element>
+</elements>

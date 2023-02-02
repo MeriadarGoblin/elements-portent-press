@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<info>
+		<name>Oath of Sophistication</name>
+		<update version="0.1.0">
+			<file name="subclass-paladin-sophistication.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/subclass-paladin-sophistication.xml" />
+		</update>
+	</info>
+	
+	<element name="Oath of Sophistication" type="Archetype" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_OATH_OF_SOPHISTICATION">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p>The Oath of Sophistication binds paladins to protect the value of high society, material possessions, and once-in-a-life-time opportunities. Though they are often called vain, sometimes even by other paladins, these paladins are not necessarily obsessed with their place in the things they protect. They recognize the importance of high society's continuation and the means by which it can be made available to all.</p>
+			<p class="indent">More than perhaps any other oath, the oath of sophistication encourages its paladins to be charitable, critical of wasted opportunity, and careful with their words and intentions.</p>
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_OOS_OATH_SPELLS" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_OOS_CHANNEL_DIVINITY" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_OOS_AURA_OF_OPPORTUNITY" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_OOS_INTENTIONAL_SPEAKER" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_OOS_PERFECT_PARTYGOER" />
+			<h4>Tenets of Sophistication</h4>
+			<p>Though the exact words and strictures of the Oath of Sophistication vary, paladins of this oath share these tenets.</p>
+			<p class="indent"><b>Charitable.</b> No matter their station in life, others can always benefit from help. Be ever willing to lend aid to those who need it.</p>
+			<p class="indent"><b>Charming.</b> To be sophisticated is to charm.</p>
+			<p class="indent"><b>Decisive.</b> Opportunities and experience flit through life often but once. Be ready to embrace the unexpected.</p>
+			<p class="indent"><b>Intentional.</b> Sophistication begets observation. Speak and act always as if someone watches.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_OOS_OATH_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_OOS_CHANNEL_DIVINITY" level="3" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_OOS_AURA_OF_OPPORTUNITY" level="7" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_OOS_INTENTIONAL_SPEAKER" level="15" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_OOS_PERFECT_PARTYGOER" level="20" />
+		</rules>
+	</element>
+	<element name="Oath Spells" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_OOS_OATH_SPELLS">
+		<description>
+			<p>You gain oath spells at the paladin levels listed.</p>
+			<h5>Oath of Sophistication Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Paladin Levels</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td>charm person, comprehend languages</td></tr>
+				<tr><td>5th</td><td>enthrall, Orana's hidden ear</td></tr>
+				<tr><td>9th</td><td>enbolden, sending</td></tr>
+				<tr><td>13th</td><td>private sanctum, vex</td></tr>
+				<tr><td>17th</td><td>conduct chorus, seeming</td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_CHARM_PERSON" spellcasting="Paladin" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_COMPREHEND_LANGUAGES" spellcasting="Paladin" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ENTHRALL" spellcasting="Paladin" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PP_OES_SPELL_ORANAS_HIDDEN_EAR" spellcasting="Paladin" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PP_OES_SPELL_EMBOLDEN" spellcasting="Paladin" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SENDING" spellcasting="Paladin" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MORDENKAINENS_PRIVATE_SANCTUM" spellcasting="Paladin" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PP_OES_SPELL_VEX" spellcasting="Paladin" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PP_OES_SPELL_CONDUCT_CHORUS" spellcasting="Paladin" level="17" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SEEMING" spellcasting="Paladin" level="17" prepared="true" />
+		</rules>
+	</element>
+	<element name="Channel Divinity" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_OOS_CHANNEL_DIVINITY">
+		<description>
+			<p>You gain the following two Channel Divinity options:</p>
+			<p class="indent"><b><i>Charitable Donation.</i></b> When a creature you can see within 30 feet takes damage, you can Channel Divinity as a reaction to draw power from your Lay on Hands pool to restore a number of hit points to that creature. If this would reduce your pool to 0 hit points, you immediately regain 5.</p>
+			<p class="indent"><b><i>Sophisticated Grace.</i></b> As a bonus action, you can use your Channel Divinity to move with refined elegance. For the next 10 minutes, you suffer no penalties to Dexterity (Stealth) checks as a result of wearing armor, you can add your Charisma modifier to Dexterity (Acrobatics) checks and your Dexterity modifier to Charisma (Performance) checks made to dance or move gracefully, and you have advantage on ability checks and saving throws to avoid being knocked prone.</p>
+		</description>
+		<sheet>
+			<description>You have the Charitable Donation and Sophisticated Grace Channel Divinity options.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OOS_CHANNEL_DIVINITY_CHARITABLE_DONATION" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_OOV_CHANNEL_DIVINITY_SOPHISTICATED_GRACE" />
+		</rules>
+	</element>
+	<element name="Channel Divnity: Charitable Donation" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_OOS_CHANNEL_DIVINITY_CHARITABLE_DONATION">
+		<description>
+			<p>When a creature you can see within 30 feet takes damage, you can Channel Divinity as a reaction to draw power from your Lay on Hands pool to restore a number of hit points to that creature. If this would reduce your pool to 0 hit points, you immediately regain 5.</p>
+		</description>
+		<sheet alt="Charitable Donation" action="Reaction" usage="Channel Divinity">
+			<description>When a creature you can see within 30 feet takes damage, you can Channel Divinity as a reaction to draw power from your Lay on Hands pool to restore a number of hit points to that creature. If this would reduce your pool to 0 hit points, you immediately regain 5.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Sophisticated Grace" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_OOS_CHANNEL_DIVINITY_SOPHISTICATED_GRACE">
+		<description>
+			<p>As a bonus action, you can use your Channel Divinity to move with refined elegance. For the next 10 minutes, you suffer no penalties to Dexterity (Stealth) checks as a result of wearing armor, you can add your Charisma modifier to Dexterity (Acrobatics) checks and your Dexterity modifier to Charisma (Performance) checks made to dance or move gracefully, and you have advantage on ability checks and saving throws to avoid being knocked prone.</p>
+		</description>
+		<sheet alt="Sophisticated Grace" action="Bonus Action" usage="Channel Divinity">
+			<description>As a bonus action, you can use your Channel Divinity to move with refined elegance. For the next 10 minutes, you suffer no penalties to Dexterity (Stealth) checks as a result of wearing armor, you can add your Charisma modifier to Dexterity (Acrobatics) checks and your Dexterity modifier to Charisma (Performance) checks made to dance or move gracefully, and you have advantage on ability checks and saving throws to avoid being knocked prone.</description>
+		</sheet>
+	</element>
+	<element name="Aura of Opportunity" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_OOS_AURA_OF_OPPORTUNITY">
+		<description>
+			<p>You emit an aura of opportunity while you aren’t incapacitated. Any ally that ends its turn within 10 feet of you can use its reaction to make an opportunity attack whenever a creature enters its reach before the start of its next turn.</p>
+			<p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
+		</description>
+		<sheet>
+			<description>You emit an aura of opportunity while you aren’t incapacitated. Any ally that ends its turn within 10 feet of you can use its reaction to make an opportunity attack whenever a creature enters its reach before the start of its next turn.</description>
+			<description level="18">You emit an aura of opportunity while you aren’t incapacitated. Any ally that ends its turn within 30 feet of you can use its reaction to make an opportunity attack whenever a creature enters its reach before the start of its next turn.</description>
+		</sheet>
+	</element>
+	<element name="Intentional Speaker" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_OOS_INTENTIONAL_SPEAKER">
+		<description>
+			<p>If your total for a Charisma check is less than your Charisma score, you can use that score in place of the total.</p>
+		</description>
+		<sheet>
+			<description>If your total for a Charisma check is less than your Charisma score, you can use that score in place of the total.</description>
+		</sheet>
+	</element>
+	<element name="Perfect Partygoer" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_OOS_PERFECT_PARTYGOER">
+		<description>
+			<p>You become the life of the party. As an action, transform into the most idyllic and fashionable member of your society, gaining the following benefits for 1 minute:</p>
+			<ul>
+				<li>You can use a bonus action to cause a creature within 30 feet of you to regain 20 hit points.</li>
+				<li>If you end your turn without dealing damage to a creature, you can add your Charisma modifier to your AC until the start of your next turn for attacks it makes against you.</li>
+				<li>You emanate an aura of peace in a 30-foot radius. The first time an enemy creature enters the aura or starts its turn there, the creature must succeed on a a Wisdom saving throw or become charmed by you for 1 minute or until it takes any damage.</li>
+			</ul>
+			<p class="indent">Once you use this feature, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="Long Rest">
+			<description>As an action, transform into the most idyllic and fashionable member of your society, gaining the following benefits for 1 minute:&#13;
+				• You can use a bonus action to cause a creature within 30 feet of you to regain 20 hit points. &#13;
+				• If you end your turn without dealing damage to a creature, you can add your Charisma modifier to your AC until the start of your next turn for attacks it makes against you. &#13;
+				• You emanate an aura of peace in a 30-foot radius. The first time an enemy creature enters the aura or starts its turn there, the creature must succeed on a a Wisdom saving throw or become charmed by you for 1 minute or until it takes any damage.
+			</description>
+		</sheet>
+	</element>
+</elements>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<info>
+		<name>Mimetic Bloodline</name>
+		<update version="0.1.0">
+			<file name="subclass-sorcerer-mimetic-bloodline.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/subclass-sorcerer-mimetic-bloodline.xml" />
+		</update>
+	</info>
+
+	<element name="Mimetic Bloodline" type="Archetype" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_MIMETIC_BLOODLINE">
+		<supports>Sorcerous Origin</supports>
+		<description>
+			<p>Although often overlooked as a weak species native to grimy dungeons, mimics can sometimes attain enough power to speak the common tongue. In doing so, they develop the ability to convince passersby that they are in fact useful assets to bring along. In the event that a mimic takes a liking to a particular adventurer, they may bond with that humanoid as their host, assuming the role of the adventurer's clothing and gear.</p>
+			<p class="indent">Your ancestor became so close to their mimic, that it was forever bonded with their bloodline. The power of its mimicry has awakened within you, changing your shape and form.</p>
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_MIMETIC_BLOODLINE_SPELLS" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_MIMETIC_BLOODLINE_SHAPECHANGER" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_MIMETIC_BLOODLINE_PSEUDOPODIAL_ADHESION" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_MIMETIC_BLOODLINE_PERFECT_FALSITY" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_MIMETIC_BLOODLINE_TRUE_MIMICRY" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_MIMETIC_BLOODLINE_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_MIMETIC_BLOODLINE_SHAPECHANGER" level="1" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_MIMETIC_BLOODLINE_PSEUDOPODIAL_ADHESION" level="6" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_MIMETIC_BLOODLINE_PERFECT_FALSITY" level="14" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_MIMETIC_BLOODLINE_TRUE_MIMICRY" level="18" />
+		</rules>
+	</element>
+	<element name="Mimetic Spells" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_MIMETIC_BLOODLINE_SPELLS">
+		<description>
+			<p>You learn additional spells when you reach certain levels in this class, as shown in the Mimetic Spells table. These spells count as sorcerer spells for you, but they don't count against the number of sorcerer spells you know.</p>
+			<p class="indent">Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be an Enchantment or a Transmutation spell from the sorcerer, warlock, or wizard spell list.</p>
+			<h5>Mimetic Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td>disguise self, kinetic ward</td></tr>
+				<tr><td>3rd</td><td>alter self, characterize</td></tr>
+				<tr><td>5th</td><td>aura of candor, nondetection</td></tr>
+				<tr><td>7th</td><td>rubberize, polymorph</td></tr>
+				<tr><td>9th</td><td>seeming, transmogify</td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DISGUISE_SELF" spellcasting="Sorcerer" level="1" prepared="true" />
+			<grant type="Spell" id="ID_PP_OES_SPELL_KINETIC_WARD" spellcasting="Sorcerer" level="1" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ALTER_SELF" spellcasting="Sorcerer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PP_OES_SPELL_CHARACTERIZE" spellcasting="Sorcerer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PP_OES_SPELL_AURA_OF_CANDOR" spellcasting="Sorcerer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_NONDETECTION" spellcasting="Sorcerer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PP_OES_SPELL_RUBBERIZE" spellcasting="Sorcerer" level="7" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_POLYMORPH" spellcasting="Sorcerer" level="7" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SEEMING" spellcasting="Sorcerer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PP_OES_TRANSMOGIFY" spellcasting="Sorcerer" level="9" prepared="true" />
+		</rules>
+	</element>
+	<element name="Shapechanger" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_MIMETIC_BLOODLINE_SHAPECHANGER">
+		<description>
+			<p>You have the innate ability to transform parts of your body. You gain the metamorphose cantrip if you don't already know it, and it has the following additional benefits for you:</p>
+			<ul>
+				<li>When you change a characteristic of your body, you can instead have a part of it take the appearance of a piece of an object. For instance, you could have your leg resemble a table leg, or your hand appear as the head of a hammer. If you cast this spell three times consecutively to resemble parts of the same object, your body transforms into a perfect recreation of that object until the spell ends, albeit the same size as your normal form. While transformed in this way, you retain all your normal statistics as well as the ability to speak, but your ability to move or take actions is limited by the capabilities of the object. You can end the effect at any time (no action required), and while you are motionless a creature can discern you are not an object by succeeding on an Intelligence (Investigation) check against your spell save DC.</li>
+				<li>When you change a characteristic of your body, you can also shrink or grow in size, from Medium to Small, or Small to Medium.</li>
+				<li>When you would change a characteristic of your body, you can instead transform one of your appendages into a blunt protrusion, quickly attacking with it. Make a melee spell attack against a creature within 5 feet of you. On a hit, the target takes 1d12 bludgeoning damage. The appendage then returns to normal.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you cast the metamorphose cantrip, you gain addiitonal benefits:&#13;
+				• When you change a characteristic of your body, you can instead have a part of it take the appearance of a piece of an object. For instance, you could have your leg resemble a table leg, or your hand appear as the head of a hammer. If you cast this spell three times consecutively to resemble parts of the same object, your body transforms into a perfect recreation of that object until the spell ends, albeit the same size as your normal form. While transformed in this way, you retain all your normal statistics as well as the ability to speak, but your ability to move or take actions is limited by the capabilities of the object. You can end the effect at any time (no action required), and while you are motionless a creature can discern you are not an object by succeeding on an Intelligence (Investigation) check against your spell save DC.&#13;
+				• When you change a characteristic of your body, you can also shrink or grow in size, from Medium to Small, or Small to Medium.&#13;
+				• When you would change a characteristic of your body, you can instead transform one of your appendages into a blunt protrusion, quickly attacking with it. Make a melee spell attack against a creature within 5 feet of you. On a hit, the target takes 1d12 bludgeoning damage. The appendage then returns to normal.
+			</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Shapechanger (Mimetic Bloodline)" supports="Sorcerer,0" spellcasting="Sorcerer" default="ID_PP_OES_SPELL_METAMORPHOSE" default-behaviour="force" />
+		</rules>
+	</element>
+	<element name="Pseudopodial Adhesion" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_MIMETIC_BLOODLINE_PSEUDOPODIAL_ADHESION">
+		<description>
+			<p>You have developed pseudopods, viscous and sticky protrusions that you can use to your advantage, both defensively and offensively. You can use these pseudopods to move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free.</p>
+			<p class="indent">Additionally, when you hit a creature you can see with a spell attack, you can choose for one of your pseudopods to reach out and grapple the creature if it is within 30 feet of you. You can't move more than 30 feet away from a creature you have grappled in this way, unless you choose to drag it. The creature can break the grapple by making a successful Strength check against your spell save DC as an action. You can have up to two creatures grappled in this way, though while you are grappling in this way you can't use your pseudopods to move.</p>
+			<p class="indent">When a creature starts its turn while being grappled by one of your pseudopods, you can choose to spend up to 5 sorcery points to crush it as a reaction. For each sorcery point you spend, the creature takes 1d10 bludgeoning damage.</p>
+		</description>
+		<sheet>
+			<description>When you hit a creature you can see with a spell attack, you can choose for one of your pseudopods to reach out and grapple the creature if it is within 30 feet of you. You can't move more than 30 feet away from a creature you have grappled in this way, unless you choose to drag it. The creature can break the grapple by making a successful Strength check against your spell save DC as an action. You can have up to two creatures grappled in this way, though while you are grappling in this way you can't use your pseudopods to move. When a creature starts its turn while being grappled by one of your pseudopods, you can choose to spend up to 5 sorcery points to crush it as a reaction. For each sorcery point you spend, the creature takes 1d10 bludgeoning damage.</description>
+		</sheet>
+	</element>
+	<element name="Perfect Falsity" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_MIMETIC_BLOODLINE_PERFECT_FALSITY">
+		<description>
+			<p>When you use your Shapechanger feature to appear as an object and remain motionless, you are indistinguishable from an ordinary object.</p>
+			<p class="indent">Intelligence (Investigation) checks made against spells you cast are made with disadvantage.</p>
+			<p class="indent">Additionally, when you cast the metamorphose spell, you can choose to gain a 30 foot flying, swimming, or walking speed. If you already have the chosen speed, it instead increases by 30 feet. The benefit lasts until the spell ends, or until you use this feature to choose the same or a different benefit.</p>
+		</description>
+		<sheet>
+			<description>When you use your Shapechanger feature to appear as an object and remain motionless, you are indistinguishable from an ordinary object. Intelligence (Investigation) checks made against spells you cast are made with disadvantage. Additionally, when you cast the metamorphose spell, you can choose to gain a 30 foot flying, swimming, or walking speed. If you already have the chosen speed, it instead increases by 30 feet. The benefit lasts until the spell ends, or until you use this feature to choose the same or a different benefit.</description>
+		</sheet>
+	</element>
+	<element name="True Mimicry" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_MIMETIC_BLOODLINE_TRUE_MIMICRY">
+		<description>
+			<p>You learn the true polymorph spell, which counts as a sorcerer spell for you, but doesn't count against the number of sorcerer spells you know. For you, true polymorph doesn't require concentration and automatically lasts until dispelled. If you cast this spell on an unwilling creature, it has disadvantage on its save.</p>
+			<p class="indent">If you cast this spell on yourself, you can choose to retain any of your ability scores or statistics, no matter the form. Additionally, you can always speak, no matter the form, as your voice resonates outwards from within it.</p>
+		</description>
+		<sheet>
+			<description>For you, true polymorph doesn't require concentration and automatically lasts until dispelled. If you cast this spell on an unwilling creature, it has disadvantage on its save. If you cast this spell on yourself, you can choose to retain any of your ability scores or statistics, no matter the form. Additionally, you can always speak, no matter the form, as your voice resonates outwards from within it.</description>
+		</sheet>
+	</element>
+</elements>

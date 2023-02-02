@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<info>
+		<name>Blight Hand</name>
+		<update version="0.1.0">
+			<file name="subclass-sorcerer-blight-hand.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/subclass-blight-hand.xml" />
+		</update>
+	</info>
+
+	<element name="Blight Hand" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_GRAVE_ROBBER">
+		<supports>Sorcerous Origin</supports>
+		<description>
+			<p>Your innate magic is a magical rot, a sort of disease that befouled a place so deeply that it seeped into the land and spread to those born within it. Most often, this corruption stems from workings of intense necromancy practiced in the wilderness, where such magic could infect the plants and animals that people subsisted on without their knowledge. But it is also known to reside deep within the earth, occasionally manifesting alongside plagues and natural blights, infecting children that reside near such affected areas. Whatever the cause, the darker side of nature works through you, spreading rot and undeath by your hand.</p>
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_BLIGHT_HAND_SPELLS" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_BLIGHT_HAND_BORN_OF_ROT_AND_RUIN" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_BLIGHT_HAND_ROTCALLER" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_BLIGHT_HAND_DESSICATOR" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_BLIGHT_HAND_DEATHS_STRIDE" />
+			<div element="ID_PP_OES_ARCHETYPE_FEATURE_BLIGHT_HAND_HEART_ROOT" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_BLIGHT_HAND_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_BLIGHT_HAND_BORN_OF_ROT_AND_RUIN" level="1" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_BLIGHT_HAND_ROTCALLER" level="1" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_BLIGHT_HAND_DESSICATOR" level="6" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_BLIGHT_HAND_DEATHS_STRIDE" level="14" />
+			<grant type="Archetype Feature" id="ID_PP_OES_ARCHETYPE_FEATURE_BLIGHT_HAND_HEART_ROOT" level="18" />
+		</rules>
+	</element>
+	<element name="Blight Spells" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_BLIGHT_HAND_SPELLS">
+		<description>
+			<p>You learn additional spells when you reach certain levels in this class, as shown in the Blight Spells table. These spells count as sorcerer spells for you, but they don't count against the number of sorcerer spells you know.</p>
+			<p class="indent">Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be a Conjuration or Necromancy spell from the druid or wizard spell list.</p>
+			<h5>Blight Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td>entangle, life tap</td></tr>
+				<tr><td>3rd</td><td>death grip, withering spike</td></tr>
+				<tr><td>5th</td><td>animate dead, toxicity</td></tr>
+				<tr><td>7th</td><td>blight, create undead</td></tr>
+				<tr><td>9th</td><td>contagion, wring out</td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ENTANGLE" spellcasting="Sorcerer" level="1" prepared="true" />
+			<grant type="Spell" id="ID_PP_OES_SPELL_LIFE_TAP" spellcasting="Sorcerer" level="1" prepared="true" />
+			<grant type="Spell" id="ID_PP_OES_SPELL_DEATH_GRIP" spellcasting="Sorcerer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PP_OES_SPELL_WITHERING_SPIKE" spellcasting="Sorcerer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ANIMATE_DEAD" spellcasting="Sorcerer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PP_OES_SPELL_TOXICITY" spellcasting="Sorcerer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLIGHT" spellcasting="Sorcerer" level="7" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CREATE_UNDEAD" spellcasting="Sorcerer" level="7" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONTAGION" spellcasting="Sorcerer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PP_OES_SPELL_WRING_OUT" spellcasting="Sorcerer" level="9" prepared="true" />
+		</rules>
+	</element>
+	<element name="Borne of Rot and Ruin" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_BLIGHT_HAND_BORN_OF_ROT_AND_RUIN">
+		<description>
+			<p>The natural necromantic energy that fills your heart protects you against its touch and allows you to affect the natural world in unnatural ways. You are immune to disease, and you have advantage on saving throws against poison.</p>
+			<p class="indent">Additionally, you learn the druidcraft cantrip, which counts as a sorcerer cantrip for you but doesn't count against your number of sorcerer cantrips known. When you cast druidcraft, you choose from the following additional effects:</p>
+			<ul>
+				<li>You can instantly make a flower wilt, a seed pod rot, or a leaf age and fall as if in autumn.</li>
+				<li>You can create a swarm of Tiny harmless insects. The effect must fit in a 5-foot cube.</li>
+				<li>You can cause a bowl, plate, or skewer of food to instantly rot and attract bugs.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You are immune to disease, and you have advantage on saving throws against poison. When you cast druidcraft, you choose from the following additional effects:&#13;
+				• You can instantly make a flower wilt, a seed pod rot, or a leaf age and fall as if in autumn.&#13;
+				• You can create a swarm of Tiny harmless insects. The effect must fit in a 5-foot cube.&#13;
+				• You can cause a bowl, plate, or skewer of food to instantly rot and attract bugs.
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT" spellcasting="Sorcerer" level="1" prepared="true" />
+		</rules>
+	</element>
+	<element name="Rotcaller" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_BLIGHT_HAND_ROTCALLER">
+		<description>
+			<p>You draw death from the land. As an action, you can touch the ground and pull dead plant matter from deep within it, creating a twig blight in the nearest unoccupied space. A twig blight created in this way is an Undead instead of a Plant, it has a number of hit points equal to 3 + twice your sorcerer level, and it gains a bonus to attack rolls, saving throws, and damage rolls equal to your proficiency bonus.</p>
+			<p class="indent">As a bonus action, you can mentally command it and any other Undead under your control. You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.</p>
+			<p class="indent">The creature is under your control for 24 hours, until it drops to 0 hit points, or until you die, at which points it withers and dies. Your GM has its statistics.</p>
+			<p class="indent">At 10th level, you can create a <b>vine blight</b> in this way. It is an Undead instead of a Plant, it has a number of hit points equal to three times your sorcerer level, and it gains a bonus to attack rolls, saving throws, and damage rolls equal to your proficiency bonus + your Charisma modifier.</p>
+			<p class="indent">Once you create a creature with this feature, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet action="Special" usage="Long Rest">
+			<description>As an action, you can touch the ground and pull dead plant matter from deep within it, creating a twig blight in the nearest unoccupied space. A twig blight created in this way is an Undead instead of a Plant, it has a number of hit points equal to 3 + twice your sorcerer level, and it gains a bonus to attack rolls, saving throws, and damage rolls equal to your proficiency bonus.&#13;
+				As a bonus action, you can mentally command it and any other Undead under your control. You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.&#13;
+				The creature is under your control for 24 hours, until it drops to 0 hit points, or until you die, at which points it withers and dies. Your GM has its statistics.&#13;
+				Once you create a creature with this feature, you can't do so again until you finish a long rest.
+			</description>
+			<description level="10">As an action, you can touch the ground and pull dead plant matter from deep within it, creating a twig blight in the nearest unoccupied space. A twig blight created in this way is an Undead instead of a Plant, it has a number of hit points equal to 3 + twice your sorcerer level, and it gains a bonus to attack rolls, saving throws, and damage rolls equal to your proficiency bonus.&#13;
+				As a bonus action, you can mentally command it and any other Undead under your control. You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.&#13;
+				The creature is under your control for 24 hours, until it drops to 0 hit points, or until you die, at which points it withers and dies. Your GM has its statistics.&#13;
+				At 10th level, you can create a <b>vine blight</b> in this way. It is an Undead instead of a Plant, it has a number of hit points equal to three times your sorcerer level, and it gains a bonus to attack rolls, saving throws, and damage rolls equal to your proficiency bonus + your Charisma modifier.&#13;
+				Once you create a creature with this feature, you can't do so again until you finish a long rest.
+			</description>
+		</sheet>
+	</element>
+	<element name="Dessicator" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_BLIGHT_HAND_DESSICATOR">
+		<description>
+			<p>Like roots, you can absorb some of the negative energy around you. When you cast a spell of 1st-level or higher that deals necrotic damage, you can expend a number of sorcery points equal to 1 + the spell's level to regain hit points equal to half the damage dealt to one target of the spell. Alternatively, if you have any Undead creatures under your control within 60 feet of you, you can instead choose for one of those Undead to regain the same amount.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell of 1st-level or higher that deals necrotic damage, you can expend a number of sorcery points equal to 1 + the spell's level to regain hit points equal to half the damage dealt to one target of the spell. Alternatively, if you have any Undead creatures under your control within 60 feet of you, you can instead choose for one of those Undead to regain the same amount.</description>
+		</sheet>
+	</element>
+	<element name="Death's Stride" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_BLIGHT_HAND_DEATHS_STRIDE">
+		<description>
+			<p>Moving through nonmagical difficult terrain costs you no extra movement.</p>
+			<p class="indent">Additionally, as a bonus action, you can cause undead vines and branches to grow from your limbs, reaching out of you like deathly tentacles, for 1 minute or until you choose for them to disappear (no action required). While they remain, you gain the following benefits:</p>
+			<ul>
+				<li>Your reach extends by 10 feet.</li>
+				<li>You gain the benefits of the spider climb spell, and you can walk using your vines and branches instead of your feet.</li>
+				<li>You can hover up to 15 feet above your vines and branches.</li>
+				<li>You can lift and move an Undead creature under your control and within your reach regardless of its weight.</li>
+			</ul>
+		</description>
+		<sheet action="Bonus Action" usage="1 minute">
+			<description>Moving through nonmagical difficult terrain costs you no extra movement. Additionally, as a bonus action, you can cause undead vines and branches to grow from your limbs, reaching out of you like deathly tentacles, for 1 minute or until you choose for them to disappear (no action required). While they remain, you gain the following benefits:&#13;
+				• Your reach extends by 10 feet.&#13;
+				• You gain the benefits of the spider climb spell, and you can walk using your vines and branches instead of your feet.&#13;
+				• You can hover up to 15 feet above your vines and branches.&#13;
+				• You can lift and move an Undead creature under your control and within your reach regardless of its weight.
+			</description>
+		</sheet>
+	</element>
+	<element name="Heart Root" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_BLIGHT_HAND_HEART_ROOT">
+		<description>
+			<p>You are immune to necrotic damage and poison.</p>
+			<p class="indent">Additionally, as a bonus action, you can siphon the undeath from an Undead you created or control within 60 feet of you. When you do so, you regain a number of hit points up to the total remaining hit points of the Undead. An Undead reduced to 0 by this feature immediately disintegrates.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You are immune to necrotic and poison. Additionally, as a bonus action, you can siphon the undeath from an Undead you created or control within 60 feet of you. When you do so, you regain a number of hit points up to the total remaining hit points of the Undead. An Undead reduced to 0 by this feature immediately disintegrates.</description>
+		</sheet>
+	</element>
+</elements>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Portent Press</name>
+		<description>A collection of the content created by Portent Press.</description>
+		<author url="https://discord.com/invite/fspTtCsvwt">Portent Press</author>
+		<update version="1.0">
+			<file name="portent-press.index" url="" />
+		</update>
+	</info>
+	<files>
+		<file name="spells.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/OES/spells.xml" />
+	</files>
+</index>
