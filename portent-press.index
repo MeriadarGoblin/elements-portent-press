@@ -5,7 +5,7 @@
 		<description>A collection of the content created by Portent Press.</description>
 		<author url="https://discord.com/invite/fspTtCsvwt">Portent Press</author>
 		<update version="1.0">
-			<file name="portent-press.index" url="" />
+			<file name="portent-press.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/portent-press.index" />
 		</update>
 	</info>
 	<files>
