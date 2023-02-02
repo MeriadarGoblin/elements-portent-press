@@ -3,7 +3,7 @@
 	<info>
 		<name>Spells</name>
 		<update version="0.1.0">
-			<file name="spells.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/spells.xml" />
+			<file name="spells.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/spells.xml" />
 		</update>
 	</info>
 

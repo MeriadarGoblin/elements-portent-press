@@ -3,7 +3,7 @@
 	<info>
 		<name>Polis Sweeper</name>
 		<update version="0.1.0">
-			<file name="subclass-ranger-polis-sweeper.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/ranger-polis-sweeper.xml" />
+			<file name="subclass-ranger-polis-sweeper.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/ranger-polis-sweeper.xml" />
 		</update>
 	</info>
 

@@ -3,7 +3,7 @@
 	<info>
 		<name>Circle of Caverns</name>
 		<update version="0.1.0">
-			<file name="subclass-druid-caverns.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/subclass-druid-caverns.xml" />
+			<file name="subclass-druid-caverns.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/subclass-druid-caverns.xml" />
 		</update>
 	</info>
 
