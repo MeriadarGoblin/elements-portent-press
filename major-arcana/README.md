@@ -1,4 +1,4 @@
-# elements-ffxiv
+# elements-portent-press
 This is an index for the [Aurora Character Builder](http://www.aurorabuilder.com "Aurora Website") of content from Portent's Press set of compendiums.
 
 ## Repository Links
