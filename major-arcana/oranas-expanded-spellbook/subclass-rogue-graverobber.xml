@@ -2,8 +2,8 @@
 <elements>
 	<info>
 		<name>Grave Robber</name>
-		<update version="0.1.0">
-			<file name="subclass-rogue-graverobber.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/main/major-arcana/oranas-expanded-spellbook/subclass-rogue-graverobber.xml" />
+		<update version="0.1.1">
+			<file name="subclass-rogue-graverobber.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/subclass-rogue-graverobber.xml" />
 		</update>
 	</info>
 
