@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>College of Sirens</name>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="subclass-bard-sirens.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/subclass-bard-sirens.xml" />
 		</update>
 	</info>
@@ -102,7 +102,7 @@
 			<p class="indent">Once you use this feature, you can't do so again until you finish a long rest.</p>
 		</description>
 		<sheet usage="1/Long Rest">
-			<description>When you use your action to cast a spell of 1st-level or higher that has a verbal component, you can choose a creature within 30 feet of you that can hear you. That creature immediately use its reaction to cast the same spell, even if it doesn't know it or have it prepared, provided it can expend a spell slot of the spell's level or higher and provide the spell's components. The triggering spell is considered to be on the creature's spell list for this casting. Once you use this feature, you can't do so again until you finish a long rest.</description>
+			<description>When you use your action to cast a spell of 1st-level or higher that has a verbal component, you can choose a creature within 30 feet of you that can hear you. That creature immediately use its reaction to cast the same spell, even if it doesn't know it or have it prepared, provided it can expend a spell slot of the spell's level or higher and provide the spell's components. The triggering spell is considered to be on the creature's spell list for this casting.</description>
 		</sheet>
 	</element>
 	<element name="Shipwreck" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_FEATURE_SIRENS_SHIPWRECK">

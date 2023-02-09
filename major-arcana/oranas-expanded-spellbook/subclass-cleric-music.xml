@@ -2,12 +2,12 @@
 <elements>
 	<info>
 		<name>Music Domain</name>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="subclass-cleric-music.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/subclass-cleric-music.xml" />
 		</update>
 	</info>
 	
-	<element name="Music Domain" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_MUSIC_DOMAIN">
+	<element name="Music Domain" type="Archetype" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_MUSIC_DOMAIN">
 		<supports>Divine Domain</supports>
 		<description>
 			<p>Music is a staple of cultures and civilizations across the multiverse, a rhythm and melody that brings joy, sorrow, and every emotion in between. The gods of music—including Lugh, Apollo, Dionysus, Bes, and Balder—value the range of impacts music has on all creatures, even those that don't or can't recognize the mathematics, order, and science that establish its songs.</p>

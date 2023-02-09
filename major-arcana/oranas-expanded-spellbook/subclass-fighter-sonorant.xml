@@ -2,12 +2,12 @@
 <elements>
 	<info>
 		<name>Sonorant-at-Arms</name>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="subclass-fighter-sonorant.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/subclass-fighter-sonorant.xml" />
 		</update>
 	</info>
 
-	<element name="Sonorant-at-Arms" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_SONORANT_AT_ARMS">
+	<element name="Sonorant-at-Arms" type="Archetype" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_SONORANT_AT_ARMS">
 		<supports>Martial Archetype</supports>
 		<description>
 			<p>An archetypal warrior-skald weaves the virtuosity with weapons common to all fighters with magical command. Sonorants-at-Arms infuse the very sounds of combat with the powers commanded by bards. Their musical talents extend to and magical, primarily that of mental manipulation: a Sonorants-at-Arms' songs bolster their allies and bind the psyches of those that would oppose them.</p>

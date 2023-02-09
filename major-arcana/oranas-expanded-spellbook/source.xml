@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Source</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="source.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/source.xml" />
 		</update>
 	</info>
@@ -14,7 +14,7 @@
 			<set name="abbreviation">OES</set>
 			<set name="url">https://discord.com/invite/fspTtCsvwt</set>
 			<set name="image">https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/OES-cover.PNG</set>
-			<set name="author" abbreviation="PP" url="http://dnd.wizards.com">Wizards of the Coast</set>
+			<set name="author" abbreviation="PP" url="https://discord.com/invite/fspTtCsvwt">Portent Press</set>
 			<set name="homebrew">true</set>
 			<set name="release">20220901</set>
 		</setters>

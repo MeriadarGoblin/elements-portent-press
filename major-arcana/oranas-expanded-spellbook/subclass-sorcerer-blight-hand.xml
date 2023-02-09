@@ -2,12 +2,12 @@
 <elements>
 	<info>
 		<name>Blight Hand</name>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="subclass-sorcerer-blight-hand.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/subclass-sorcerer-blight-hand.xml" />
 		</update>
 	</info>
 
-	<element name="Blight Hand" type="Archetype Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_GRAVE_ROBBER">
+	<element name="Blight Hand" type="Archetype" source="Orana's Expanded Spellbook" id="ID_PP_OES_ARCHETYPE_GRAVE_ROBBER">
 		<supports>Sorcerous Origin</supports>
 		<description>
 			<p>Your innate magic is a magical rot, a sort of disease that befouled a place so deeply that it seeped into the land and spread to those born within it. Most often, this corruption stems from workings of intense necromancy practiced in the wilderness, where such magic could infect the plants and animals that people subsisted on without their knowledge. But it is also known to reside deep within the earth, occasionally manifesting alongside plagues and natural blights, infecting children that reside near such affected areas. Whatever the cause, the darker side of nature works through you, spreading rot and undeath by your hand.</p>
