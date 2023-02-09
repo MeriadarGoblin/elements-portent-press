@@ -2,15 +2,16 @@
 <index>
 	<info>
 		<name>Orana's Expanded Spellbook</name>
-		<description>The content from the Final Fantatsy XIV DnD Compendium.</description>
-		<author url="https://www.gmbinder.com/share/-LsDqsNbupzeLhkTIcPv">SilentSoren</author>
-		<update version="0.0.3">
+		<description>The content from the Portent Press team that adds over 50 pages of spell-focused material.</description>
+		<author url="https://www.gmbinder.com/share/-MlFl9E_eKHFo8zeMH1c">Portent Press</author>
+		<update version="0.0.4">
 			<file name="oranas-expanded-spellbook.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook.index" />
 		</update>
 	</info>
 	<files>
 		<file name="source.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/source.xml" />
 		<file name="spells.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/spells.xml" />
+
 		<file name="subclass-bard-puppetry.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/subclass-bard-puppetry.xml" />
 		<file name="subclass-bard-sirens.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/subclass-bard-sirens.xml" />
 		<file name="subclass-cleric-motion.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/subclass-cleric-motion.xml" />
@@ -19,6 +20,7 @@
 		<file name="subclass-druid-veins.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/subclass-druid-veins.xml" />
 		<file name="subclass-fighter-sonorant.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/subclass-fighter-sonorant.xml" />
 		<file name="subclass-paladin-sophistication.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/subclass-paladin-sophistication.xml" />
+		<file name="subclass-rogue-graverobber.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/main/major-arcana/oranas-expanded-spellbook/subclass-rogue-graverobber.xml" />
 		<file name="subclass-sorcerer-blight-hand.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/subclass-sorcerer-blight-hand.xml" />
 		<file name="subclass-sorcerer-mimetic-bloodline.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/subclass-sorcerer-mimetic-bloodline.xml" />
 		<file name="subclass-warlock-seer.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/subclass-warlock-seer.xml" />
