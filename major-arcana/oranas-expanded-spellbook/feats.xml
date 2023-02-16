@@ -1,1 +1,324 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Feats</name>
+		<update version="0.0.1">
+			<file name="feats.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/feats.xml" />
+		</update>
+	</info>
+
+	<element name="Brutal Casting" type="Feat" source="Orana's Expanded Spellbook" id="ID_OES_FEAT_BRUTAL_CASTING">
+		<prerequisite>The ability to cast at least one spell</prerequisite>
+		<requirements>[type:spell]</requirements>
+		<description>
+			<p>You have practiced techniques that help you to empower your attacks with certain spells, gaining the following benefits:</p>
+			<ul>
+				<li>When you score a critical hit with a spell attack, you can roll one of the spell’s damage dice one additional time and add it to the extra damage of the critical hit.</li>
+				<li>When you cast a spell of 1st level or higher that requires you to make a spell attack, your spell attack scores a critical hit on a roll of 19 or 20.</li>
+				<li>You learn one cantrip that requires an attack roll. Choose the cantrip from the bard, cleric, druid, sorcerer, warlock, or wizard spell list. Your spellcasting ability for this cantrip depends on the spell list you chose from: Charisma for bard, sorcerer, or warlock; Wisdom for cleric or druid; or Intelligence for wizard.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you score a critical hit with a spell attack, you can roll one of the spell’s damage dice one additional time and add it to the extra damage of the critical hit. When you cast a spell of 1st level or higher that requires you to make a spell attack, your spell attack scores a critical hit on a roll of 19 or 20. &#13;
+				You learn one cantrip from a spell list from {{brutal casting:class}} that has an attack roll. Your spellcasting ability for this cantrip is {{brutal casting:spellcasting ability}}.
+			</description>
+		</sheet>
+		<rules>
+			<select type="Feat Feature" name="Brutal Casting Spell List" supports="Brutal Casting Class" />
+		</rules>
+	</element>
+	<element name="Bard Spell List" type="Feat Feature" source="Orana's Expanded Spellbook" id="ID_OES_FEAT_BRUTAL_CASTING_BARD">
+		<supports>Brutal Casting Class</supports>
+		<prerequisite>Choose an attack roll cantrip</prerequisite>
+		<description>
+			<p>You learn one cantrip that requires an attack roll. Choose the cantrip from the bard, cleric, druid, sorcerer, warlock, or wizard spell list. Your spellcasting ability for this cantrip depends on the spell list you chose from: Charisma for bard, sorcerer, or warlock; Wisdom for cleric or druid; or Intelligence for wizard.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="brutal casting:class" value="bard" />
+			<stat inline="true" name="brutal casting:spellcasting ability" value="charisma" />
+			<select type="Spell" name="Cantrip (Brutal Casting)" supports="$(spellcasting:list), 0" number="1" spellcasting="Bard" />
+		</rules>
+	</element>
+	<element name="Cleric Spell List" type="Feat Feature" source="Orana's Expanded Spellbook" id="ID_OES_FEAT_BRUTAL_CASTING_CLERIC">
+		<supports>Brutal Casting Class</supports>
+		<prerequisite>Choose an attack roll cantrip</prerequisite>
+		<description>
+			<p>You learn one cantrip that requires an attack roll. Choose the cantrip from the bard, cleric, druid, sorcerer, warlock, or wizard spell list. Your spellcasting ability for this cantrip depends on the spell list you chose from: Charisma for bard, sorcerer, or warlock; Wisdom for cleric or druid; or Intelligence for wizard.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="brutal casting:class" value="cleric" />
+			<stat inline="true" name="brutal casting:spellcasting ability" value="wisdom" />
+			<select type="Spell" name="Cantrip (Brutal Casting)" supports="$(spellcasting:list), 0" number="1" spellcasting="Cleric" />
+		</rules>
+	</element>
+	<element name="Druid Spell List" type="Feat Feature" source="Orana's Expanded Spellbook" id="ID_OES_FEAT_BRUTAL_CASTING_DRUID">
+		<supports>Brutal Casting Class</supports>
+		<prerequisite>Choose an attack roll cantrip</prerequisite>
+		<description>
+			<p>You learn one cantrip that requires an attack roll. Choose the cantrip from the bard, cleric, druid, sorcerer, warlock, or wizard spell list. Your spellcasting ability for this cantrip depends on the spell list you chose from: Charisma for bard, sorcerer, or warlock; Wisdom for cleric or druid; or Intelligence for wizard.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="brutal casting:class" value="druid" />
+			<stat inline="true" name="brutal casting:spellcasting ability" value="wisdom" />
+			<select type="Spell" name="Cantrip (Brutal Casting)" supports="$(spellcasting:list), 0" number="1" spellcasting="Druid" />
+		</rules>
+	</element>
+	<element name="Sorcerer Spell List" type="Feat Feature" source="Orana's Expanded Spellbook" id="ID_OES_FEAT_BRUTAL_CASTING_SORCERER">
+		<supports>Brutal Casting Class</supports>
+		<prerequisite>Choose an attack roll cantrip</prerequisite>
+		<description>
+			<p>You learn one cantrip that requires an attack roll. Choose the cantrip from the bard, cleric, druid, sorcerer, warlock, or wizard spell list. Your spellcasting ability for this cantrip depends on the spell list you chose from: Charisma for bard, sorcerer, or warlock; Wisdom for cleric or druid; or Intelligence for wizard.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="brutal casting:class" value="sorcerer" />
+			<stat inline="true" name="brutal casting:spellcasting ability" value="charisma" />
+			<select type="Spell" name="Cantrip (Brutal Casting)" supports="$(spellcasting:list), 0" number="1" spellcasting="Sorcerer" />
+		</rules>
+	</element>
+	<element name="Warlock Spell List" type="Feat Feature" source="Orana's Expanded Spellbook" id="ID_OES_FEAT_BRUTAL_CASTING_WARLOCK">
+		<supports>Brutal Casting Class</supports>
+		<prerequisite>Choose an attack roll cantrip</prerequisite>
+		<description>
+			<p>You learn one cantrip that requires an attack roll. Choose the cantrip from the bard, cleric, druid, sorcerer, warlock, or wizard spell list. Your spellcasting ability for this cantrip depends on the spell list you chose from: Charisma for bard, sorcerer, or warlock; Wisdom for cleric or druid; or Intelligence for wizard.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="brutal casting:class" value="warlock" />
+			<stat inline="true" name="brutal casting:spellcasting ability" value="charisma" />
+			<select type="Spell" name="Cantrip (Brutal Casting)" supports="$(spellcasting:list), 0" number="1" spellcasting="Warlock" />
+		</rules>
+	</element>
+	<element name="Wizard Spell List" type="Feat Feature" source="Orana's Expanded Spellbook" id="ID_OES_FEAT_BRUTAL_CASTING_WIZARD">
+		<supports>Brutal Casting Class</supports>
+		<prerequisite>Choose an attack roll cantrip</prerequisite>
+		<description>
+			<p>You learn one cantrip that requires an attack roll. Choose the cantrip from the bard, cleric, druid, sorcerer, warlock, or wizard spell list. Your spellcasting ability for this cantrip depends on the spell list you chose from: Charisma for bard, sorcerer, or warlock; Wisdom for cleric or druid; or Intelligence for wizard.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="brutal casting:class" value="wizard" />
+			<stat inline="true" name="brutal casting:spellcasting ability" value="intelligence" />
+			<select type="Spell" name="Cantrip (Brutal Casting)" supports="$(spellcasting:list), 0" number="1" spellcasting="Wizard" />
+		</rules>
+	</element>
+	<!-- /brutal casting spell lists -->
+	<element name="Hexer" type="Feat" source="Orana's Expanded Spellbook" id="ID_OES_FEAT_HEXER">
+		<prerequisite>The ability to cast at least one spell</prerequisite>
+		<requirements>[type:spell]</requirements>
+		<description>
+			<p>You have practiced the art of inflicting grievous curses, granting you the following benefits:</p>
+			<ul>
+				<li>Increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</li>
+				<li>You learn the hinder spell and another 1st-level Enchantment spell of your choice from any spell list. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.</li>
+				<li>When a spell you cast that has a duration of 1 minute or longer imposes a saving throw on a creature, you can choose for that creature to make the save with disadvantage. Once you use this ability, you must finish a short or long rest before you can use it again.</li>
+			</ul>
+		</description>
+		<sheet usage="1/Rest">
+			<description>You can cast each of these spells without expending a spell slot. You can cast either spell and another 1st-level Enchantment spell of your choice without expending a spell slot, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level.&#13;
+				When a spell you cast that has a duration of 1 minute or longer imposes a saving throw on a creature, you can choose for that creature to make the save with disadvantage. Once you use this ability, you must finish a short or long rest before you can use it again.&#13;
+				The spells casting ability when using this feature is: {{hexer:stat increase}}.
+			</description>
+		</sheet>
+		<rules>
+			<select type="Feat Feature" name="Hexer Score Increase (Feat)" supports="Hexer Score Increase" />
+			<select type="Spell" name="Spell (Hexer Feat)" supports="Enchantment, 1" />
+		</rules>
+	</element>
+	<element name="Intelligence Increase" type="Feat Feature" source="Orana's Expanded Spellbook" id="ID_OES_FEAT_HEXER_INTELLIGENCE">
+		<description>
+			<p>Increase your Intelligence to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="intelligence" value="1" />
+			<stat name="hexer:stat increase" value="intelligence" inline="true" />
+		</rules>
+	</element>
+	<element name="Wisdom Increase" type="Feat Feature" source="Orana's Expanded Spellbook" id="ID_OES_FEAT_HEXER_WISDOM">
+		<description>
+			<p>Increase your Wisdom to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="1" />
+			<stat name="hexer:stat increase" value="wisdom" inline="true" />
+		</rules>
+	</element>
+	<element name="Charisma Increase" type="Feat Feature" source="Orana's Expanded Spellbook" id="ID_OES_FEAT_HEXER_CHARISMA">
+		<description>
+			<p>Increase your Charisma by 1 to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="1" />
+			<stat name="hexer:stat increase" value="charisma" inline="true" />
+		</rules>
+	</element>
+	<!-- /hexer feat -->
+	<element name="Shadow Mage" type="Feat" source="Orana's Expanded Spellbook" id="ID_OES_FEAT_SHADOW_MAGE">
+		<prerequisite>The ability to cast at least one spell</prerequisite>
+		<requirements>[type:spell]</requirements>
+		<description>
+			<p>You have practiced manipulating areas of dim light and darkness with your spells, granting you the following benefits:</p>
+			<ul>
+				<li>Increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</li>
+				<li>When you cast a spell that targets an area, you can extinguish any non-magical light sources within that area.</li>
+				<li>As an action, you can wreathe your space in magical darkness until the end of your next turn.</li>
+			</ul>
+		</description>
+		<sheet action="Action">
+			<description>When you cast a spell that targets an area, you can extinguish any non-magical light sources within that area.&#13;
+				As an action, you can wreathe your space in magical darkness until the end of your next turn.
+			</description>
+		</sheet>
+		<rules>
+			<select type="Feat Feature" name="Shadow Mage Score Increase (Feat)" supports="Shadow Mage Score Increase" />
+			<select type="Spell" name="Spell (Hexer Feat)" supports="Enchantment, 1" />
+		</rules>
+	</element>
+	<element name="Intelligence Increase" type="Feat Feature" source="Orana's Expanded Spellbook" id="ID_OES_FEAT_SHADOW_MAGE_INTELLIGENCE">
+		<supports>Shadow Mage Score Increase</supports>
+		<description>
+			<p>Increase your Intelligence to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="intelligence" value="1" />
+		</rules>
+	</element>
+	<element name="Wisdom Increase" type="Feat Feature" source="Orana's Expanded Spellbook" id="ID_OES_FEAT_SHADOW_MAGE_WISDOM">
+		<supports>Shadow Mage Score Increase</supports>
+		<description>
+			<p>Increase your Wisdom to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="1" />
+		</rules>
+	</element>
+	<element name="Charisma Increase" type="Feat Feature" source="Orana's Expanded Spellbook" id="ID_OES_FEAT_SHADOW_MAGE_CHARISMA">
+		<supports>Shadow Mage Score Increase</supports>
+		<description>
+			<p>Increase your Charisma by 1 to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="1" />
+		</rules>
+	</element>
+	<!-- /Shadow Mage Feat -->
+	<element name="Spell Versatility" type="Feat" source="" id="ID_OES_FEAT_SPELL_VERSATILITY">
+		<prerequisite>Spellcasting or Pact Magic feature</prerequisite>
+		<description>
+			<p>The breadth of your aptitude for magic expands, allowing you greater flexibility. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</li>
+				<li>The number of spells you can prepare increases by 2. If you don't prepare spells, you instead learn two spells of your choice from the spell list mentioned in your Spellcasting or Pact Magic feature, which don't count against the number of spells you know. The spells must be of a level you can normally learn.</li>
+				<li>When you complete a short rest, you can choose one of the spells you have prepared and replace it with a different spell from the same list. Alternatively, when you complete a long rest, you can choose one of the spells you know and replace it with another spell from the same list. A spell you learn or prepare in this way must be of a level you can normally learn or prepare.</li>
+			</ul>
+		</description>
+		<sheet>
+
+		</sheet>
+		<rules>
+			<select type="Feat Feature" name="Spell Versatility" supports="Spell Versatility Feature" />
+			<!-- <stat name="cleric:spellcasting:prepare" value="2" />
+			<stat name="druid:spellcasting:prepare" value="2" />
+			<stat name="paladin:spellcasting:prepare" value="2" />
+			<stat name="wizard:spellcasting:prepare" value="2" /> -->
+		</rules>
+	</element>
+	<!-- So basically there is going to need to be a select for just about every kind of spellcasting feature. 
+	In this case: 11 from the main repo including subclasses, and 11 from OES subclasses -->
+	<element name="Warrior Mage" type="Feat" source="" id="ID_OES_FEAT_WARRIOR_MAGE">
+		<prerequisite>The ability to cast at least one spell</prerequisite>
+		<requirements>[type:spell]</requirements>
+		<description>
+			<p>You've trained to defend yourself even while casting spells, gaining the following benefits:</p>
+			<ul>
+				<li>Increase your Strength or Dexterity score by 1, to a maximum of 20</li>
+				<li>You gain proficiency with shields and your choice of a martial weapon that does not have the two-handed property, and you can use that weapon as a spellcasting focus for your spells.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You can use {{warrior mage:weapon}} as a spellcasting focus for your spells.</description>
+		</sheet>
+		<rules>
+			<select type="Feat Feature" name="Warrior Mage Score Increase (Feat)" supports="Warrior Mage Score Increase" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+			<select type="Proficiency" name="Warrior Mage Weapon" supports="Weapon, Martial, !ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED" />
+		</rules>
+	</element>
+	<element name="Strength Increase" type="Feat Feature" source="Orana's Expanded Spellbook" id="ID_OES_FEAT_WARRIOR_MAGE_STRENGTH">
+		<description>
+			<p>Increase your Strength by 1 to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="1" />
+		</rules>
+	</element>
+	<element name="Dexterity Increase" type="Feat Feature" source="Orana's Expanded Spellbook" id="ID_OES_FEAT_WARRIOR_MAGE_DEXTERITY">
+		<description>
+			<p>Increase your Dexterity by 1 to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="1" />
+		</rules>
+	</element>
+	<element name="Wind Touched" type="Feat" source="" id="ID_OES_FEAT_WIND_TOUCHED">
+		<description>
+			<p>Your exposure to the Elemental Plane of Air has surrounded your magical presence with whirling winds, granting you the following benefits:</p>
+			<ul>
+				<li>Increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</li>
+				<li>You learn the wind scythe cantrip, which for you has a range of 120 feet. The spell's spellcasting ability is {{wind touched:stat increase}}.</li>
+				<li>You learn the gale strike and expeditious retreat spells. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is {{wind touched:stat increase}}.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You can cast the Wind Scythe Cantrip with a range of 120 feet. You can cast Gale Strike and Expeditiou retreat without expending a spell slot, and you can't cast these spells in this away again until you finish a long rest or using spell slots of the appropiate level.&#13;
+				The spells' spellcasting ability is {{wind touched:stat increase}}.
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PP_OES_SPELL_WIND_SCYTHE" />
+			<grant type="Spell" id="ID_PP_OES_SPELL_GALE_STRIKE" />
+			<grant type="Spell" id="ID_PHB_SPELL_EXPEDITIOUS_RETREAT" />
+		</rules>
+	</element>
+	<element name="Intelligence Increase" type="Feat Feature" source="Orana's Expanded Spellbook" id="ID_OES_FEAT_WIND_TOUCHED_INTELLIGENCE">
+		<description>
+			<p>Increase your Intelligence by 1 to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="intelligence" value="1" />
+			<stat name="wind touched:stat increase" value="intelligence" inline="true" />
+		</rules>
+	</element>
+	<element name="Wisdom Increase" type="Feat Feature" source="Orana's Expanded Spellbook" id="ID_OES_FEAT_WIND_TOUCHED_WISDOM">
+		<description>
+			<p>Increase your Wisdom by 1 to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="1" />
+			<stat name="wind touched:stat increase" value="wisdom" inline="true" />
+		</rules>
+	</element>
+	<element name="Charisma Increase" type="Feat Feature" source="Orana's Expanded Spellbook" id="ID_OES_FEAT_WIND_TOUCHED_CHARISMA">
+		<description>
+			<p>Increase your Charisma by 1 to a maximum of 20.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="1" />
+			<stat name="wind touched:stat increase" value="charisma" inline="true" />
+		</rules>
+	</element>
+</elements>
