@@ -2,13 +2,13 @@
 <elements>
 	<info>
 		<name>Magic Items</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="optional-class-features.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/optonal-class-features.xml" />
 		</update>
 	</info>
 	
 	<!-- Bard Alternative Performer -->
-	<element name="Alternative Performer" type="Class Feature" source="" id="ID_PP_OES_CLASS_FEATURE_BARD_ADDITIONAL_ALTERNATIVE_PERFORMER">
+	<element name="Alternative Performer" type="Class Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_CLASS_FEATURE_BARD_ADDITIONAL_ALTERNATIVE_PERFORMER">
 		<description>
 			<p><i>1st-level bard feature</i></p>
 			<p>Choose any set of artisan's tools or gaming set. You gain proficiency with your choice if you didn't already have it, and you can use it as a spellcasting focus for your bard spells.</p>
@@ -21,7 +21,7 @@
 		</rules>
 	</element>
 
-	<element name="Bard, LV01: Alternative Performer" type="Item" source="" id="ID_PP_OES_ITEM_OCF_BARD_ADDITIONAL_ALTERNATIVE_PERFORMER">
+	<element name="Bard, LV01: Alternative Performer" type="Item" source="Orana's Expanded Spellbook" id="ID_PP_OES_ITEM_OCF_BARD_ADDITIONAL_ALTERNATIVE_PERFORMER">
 		<compendium display="false" />
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
@@ -40,7 +40,7 @@
 		</rules>
 	</element>
 	<!-- Cleric Minor Miracle -->
-	<element name="Minor Miracle" type="Class Feature" source="" id="ID_PP_OES_CLASS_FEATURE_CLERIC_ADDITIONAL_MINOR_MIRACLE">
+	<element name="Minor Miracle" type="Class Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_CLASS_FEATURE_CLERIC_ADDITIONAL_MINOR_MIRACLE">
 		<compendium display="false" />
 		<description>
 			<p><i>2nd-level cleric feature, which replaces Channel Divinity: Turn Undead, and Destroy Undead features</i></p>
@@ -60,7 +60,7 @@
 		</sheet>
 	</element>
 
-	<element name="Cleric, LV02: Minor Miracle" type="Item" source="" id="ID_PP_OES_ITEM_OCF_CLERIC_ADDITIONAL_MINOR_MIRACLE">
+	<element name="Cleric, LV02: Minor Miracle" type="Item" source="Orana's Expanded Spellbook" id="ID_PP_OES_ITEM_OCF_CLERIC_ADDITIONAL_MINOR_MIRACLE">
 		<compendium display="false" />
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
@@ -81,7 +81,7 @@
 		</rules>
 	</element>
 	<!-- Druid Druidic Modification -->
-	<element name="Druidic" type="Class Feature" source="" id="ID_PP_OES_CLASS_FEATURE_DRUID_ADDITIONAL_DRUIDIC">
+	<element name="Druidic" type="Class Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_CLASS_FEATURE_DRUID_ADDITIONAL_DRUIDIC">
 		<description>
 			<p>You know the druidcraft cantrip, which doesn't count against your number of cantrips known, and you know Druidic, the secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a message. Others spot the message’s presence with a successful DC 15 Wisdom (Perception) check but can’t decipher it without magic.</p>
 			<p class="indent">When you cast a druid spell with a verbal component, you can choose to speak the component in Druidic. When you do so, you can create a magical effect, as if by the druidcraft spell as a part of the spell's casting.</p>
@@ -99,7 +99,7 @@
 		</rules>
 	</element>
 
-	<element name="Druid, LV02: Druidic" type="Item" source="" id="ID_PP_OES_ITEM_OCF_DRUID_ADDITIONAL_DRUIDIC">
+	<element name="Druid, LV02: Druidic" type="Item" source="Orana's Expanded Spellbook" id="ID_PP_OES_ITEM_OCF_DRUID_ADDITIONAL_DRUIDIC">
 		<compendium display="false" />
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
@@ -119,7 +119,7 @@
 		</rules>
 	</element>
 	<!-- Sorcerer Spellbond -->
-	<element name="Spellbond" type="Class Feature" source="" id="ID_PP_OES_CLASS_FEATURE_SORCERER_ADDITIONAL_SPELLBOND">
+	<element name="Spellbond" type="Class Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_CLASS_FEATURE_SORCERER_ADDITIONAL_SPELLBOND">
 		<description>
 			<p>You can bond with a fragment of your magic with greater prowess. Choose a sorcerer spell you know. The spell you choose can't be higher than 5th level. When you cast that spell, you can use your Font of Magic feature as part of the same action. Also, when you use a Metamagic option on that spell, you can do so without spending any sorcery points.</p>
 			<p class="indent">When you finish a long rest, you can choose to swap this feature's benefits to another sorcerer spell you know of 5th level or lower.</p>
@@ -135,7 +135,7 @@
 		</sheet>
 	</element>
 
-	<element name="Sorcerer, LV11: Spellbond" type="Item" source="" id="ID_PP_OES_ITEM_OCF_SORCERER_ADDITIONAL_SPELLBOND">
+	<element name="Sorcerer, LV11: Spellbond" type="Item" source="Orana's Expanded Spellbook" id="ID_PP_OES_ITEM_OCF_SORCERER_ADDITIONAL_SPELLBOND">
 		<compendium display="false" />
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
@@ -154,7 +154,7 @@
 		</rules>
 	</element>
 	<!-- Warlock Occult Agent -->
-	<element name="Occult Agent" type="Class Feature" source="" id="ID_PP_OES_CLASS_FEATURE_WARLOCK_ADDITIONAL_OCCULT_AGENT">
+	<element name="Occult Agent" type="Class Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_CLASS_FEATURE_WARLOCK_ADDITIONAL_OCCULT_AGENT">
 		<description>
 			<p>As an action, you can transform your body to better represent your patron to others. For the next 10 minutes, or until you choose to end it (no action required), your appearance changes to match the source of your powers. For example, if your patron is a Fiend, you might grow horns or a pointed tail. Regardless of the transformation, your statistics remain the same. While transformed in this way, you add your proficiency bonus to Charisma checks you make to act as a representative of your patron. If you already add your proficiency bonus to the check, your proficiency bonus is instead doubled for the check.</p>
 			<p class="indent">Once you use this feature, you can't use it again until you finish a long rest. Beginning at 11th level, you can use this feature at will (no action required).</p>
@@ -169,7 +169,7 @@
 		</sheet>
 	</element>
 
-	<element name="Warlock, LV01: Occult Agent" type="Item" source="" id="ID_PP_OES_ITEM_OCF_WARLOCK_ADDITIONAL_OCCULT_AGENT">
+	<element name="Warlock, LV01: Occult Agent" type="Item" source="Orana's Expanded Spellbook" id="ID_PP_OES_ITEM_OCF_WARLOCK_ADDITIONAL_OCCULT_AGENT">
 		<compendium display="false" />
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
@@ -188,7 +188,7 @@
 		</rules>
 	</element>
 	<!-- Wizard Mage's Major -->
-	<element name="Mage's Major" type="Class Feature" source="" id="ID_PP_OES_CLASS_FEATURE_WIZARD_ADDITIONAL_MAGES_MAJOR">
+	<element name="Mage's Major" type="Class Feature" source="Orana's Expanded Spellbook" id="ID_PP_OES_CLASS_FEATURE_WIZARD_ADDITIONAL_MAGES_MAJOR">
 		<description>
 			<p>Choose a school of magic. You add your proficiency bonus to ability checks you make to ascertain information about that school of magic, as well as spells, objects, or magical effects associated with it. If you already add your proficiency bonus to the check, your proficiency bonus is instead doubled for the check.</p>
 			<p class="indent">Additionally, when you see or hear a creature within 60 feet of you begin casting a spell with verbal or somatic components, you learn that spell's school of magic.</p>
@@ -203,7 +203,7 @@
 		</rules>
 	</element>
 
-	<element name="Wizard, LV05: Major's Image" type="Item" source="" id="ID_PP_OES_ITEM_OCF_WIZARD_ADDITIONAL_MAGES_MAJOR">
+	<element name="Wizard, LV05: Major's Image" type="Item" source="Orana's Expanded Spellbook" id="ID_PP_OES_ITEM_OCF_WIZARD_ADDITIONAL_MAGES_MAJOR">
 		<compendium display="false" />
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
@@ -221,7 +221,7 @@
 			<grant type="Class Feature" id="ID_PP_OES_CLASS_FEATURE_WIZARD_ADDITIONAL_MAGES_MAJOR" requirements="[level:wizard:5]"/>
 		</rules>
 	</element>
-	<element name="Abjuration, Mage's Major" type="Class Feature" source="" id="ID_OES_MAJORS_MAJOR_ABJURATION">
+	<element name="Abjuration, Mage's Major" type="Class Feature" source="Orana's Expanded Spellbook" id="ID_OES_MAJORS_MAJOR_ABJURATION">
 		<supports>Mage's Major School</supports>
 		<description>
 			<p>You chose the school of abjuration.</p>
@@ -234,7 +234,7 @@
 			<stat name="mages major:school" value="abjuration" inline="true" />
 		</rules>
 	</element>
-	<element name="Conjuration, Mage's Major" type="Class Feature" source="" id="ID_OES_MAJORS_MAJOR_CONJURATION">
+	<element name="Conjuration, Mage's Major" type="Class Feature" source="Orana's Expanded Spellbook" id="ID_OES_MAJORS_MAJOR_CONJURATION">
 		<supports>Mage's Major School</supports>
 		<description>
 			<p>You chose the school of conjuration.</p>
@@ -247,7 +247,7 @@
 			<stat name="mages major:school" value="conjuration" inline="true" />
 		</rules>
 	</element>
-	<element name="Necromancy, Mage's Major" type="Class Feature" source="" id="ID_OES_MAJORS_MAJOR_NECROMANCY">
+	<element name="Necromancy, Mage's Major" type="Class Feature" source="Orana's Expanded Spellbook" id="ID_OES_MAJORS_MAJOR_NECROMANCY">
 		<supports>Mage's Major School</supports>
 		<description>
 			<p>You chose the school of necromancy.</p>
@@ -260,7 +260,7 @@
 			<stat name="mages major:school" value="necromancy" inline="true" />
 		</rules>
 	</element>
-	<element name="Evocation, Mage's Major" type="Class Feature" source="" id="ID_OES_MAJORS_MAJOR_EVOCATION">
+	<element name="Evocation, Mage's Major" type="Class Feature" source="Orana's Expanded Spellbook" id="ID_OES_MAJORS_MAJOR_EVOCATION">
 		<supports>Mage's Major School</supports>
 		<description>
 			<p>You chose the school of evocation.</p>
@@ -273,7 +273,7 @@
 			<stat name="mages major:school" value="evocation" inline="true" />
 		</rules>
 	</element>
-	<element name="Transmutation, Mage's Major" type="Class Feature" source="" id="ID_OES_MAJORS_MAJOR_TRANSMUTATION">
+	<element name="Transmutation, Mage's Major" type="Class Feature" source="Orana's Expanded Spellbook" id="ID_OES_MAJORS_MAJOR_TRANSMUTATION">
 		<supports>Mage's Major School</supports>
 		<description>
 			<p>You chose the school of transmutation.</p>
@@ -286,7 +286,7 @@
 			<stat name="mages major:school" value="transmutation" inline="true" />
 		</rules>
 	</element>
-	<element name="Divination, Mage's Major" type="Class Feature" source="" id="ID_OES_MAJORS_MAJOR_DIVINATION">
+	<element name="Divination, Mage's Major" type="Class Feature" source="Orana's Expanded Spellbook" id="ID_OES_MAJORS_MAJOR_DIVINATION">
 		<supports>Mage's Major School</supports>
 		<description>
 			<p>You chose the school of divination.</p>
@@ -299,7 +299,7 @@
 			<stat name="mages major:school" value="divination" inline="true" />
 		</rules>
 	</element>
-	<element name="Enchantment, Mage's Major" type="Class Feature" source="" id="ID_OES_MAJORS_MAJOR_ENCHANTMENT">
+	<element name="Enchantment, Mage's Major" type="Class Feature" source="Orana's Expanded Spellbook" id="ID_OES_MAJORS_MAJOR_ENCHANTMENT">
 		<supports>Mage's Major School</supports>
 		<description>
 			<p>You chose the school of enchantment.</p>
@@ -312,7 +312,7 @@
 			<stat name="mages major:school" value="enchantment" inline="true" />
 		</rules>
 	</element>
-	<element name="Illusion, Mage's Major" type="Class Feature" source="" id="ID_OES_MAJORS_MAJOR_ILLUSION">
+	<element name="Illusion, Mage's Major" type="Class Feature" source="Orana's Expanded Spellbook" id="ID_OES_MAJORS_MAJOR_ILLUSION">
 		<supports>Mage's Major School</supports>
 		<description>
 			<p>You chose the school of illusion.</p>
