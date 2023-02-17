@@ -1,1 +1,196 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Magic Items</name>
+		<update version="0.0.2">
+			<file name="items-magic.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/items-magic.xml" />
+		</update>
+	</info>
+	
+	<element name="Acoustic Anklet" type="Magic Item" source="Orana's Expanded Spellbook" id="ID_PP_OES_MAGIC_ITEM_ACOUSTIC_ANKLET">
+		<description>
+			<p>When you slip this multi-ringed bangle past your foot, its faint jingle resonates around you. As an action, you can cast the echolocate spell on yourself as a 3rd-level spell. Once used, this property can't be used again until the next dawn.</p>
+			<p class="indent">Additionally, while wearing this anklet, you can't be tracked via sound except by magical means.</p>
+			<div class="reference">
+				<div element="ID_PP_OES_SPELL_ECHOLOCATE" />
+			</div>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0"></set>
+			<set name="slot">misc</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Boots of Burrowing" type="Magic Item" source="Orana's Expanded Spellbook" id="ID_PP_OES_MAGIC_ITEM_BOOTS_OF_BURROWING">
+		<description>
+			<p>While you wear these boots, you can use a bonus action to cast the earth walk spell on yourself. Once used, this property of the boots can't be used again until the next dawn.</p>
+			<div class="reference">
+				<div element="ID_PP_OES_SPELL_EARTH_WALK" />
+			</div>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0"></set>
+			<set name="slot">misc</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Dagger of Sacrifice" type="Magic Item" source="Orana's Expanded Spellbook" id="ID_PP_OES_MAGIC_ITEM_ELDRITCH_ALTAR">
+		<description>
+			<p>This dagger drips blood at all times while unsheathed, vanishing mere moments after hitting the ground. While holding the dagger, you can cast the eldritch altar spell. If the dagger has ever drawn blood from a creature, you can provide a drop of that creature's blood for the casting of the spell. Additionally, when you cast the scrying spell targeting a creature while within the structure created by the spell, you can reach out to help or harm it. Once during the spell's duration, you can cast a single spell that targets the creature as if you were in the sensor's space. Once used, the dagger can't be used to cast eldritch altar gain until the sun next sets.</p>
+			<div class="reference">
+				<div element="ID_PP_OES_SPELL_ELDRITCH_ALTAR" />
+				<div element="ID_PHB_SPELL_SCRYING" />
+			</div>
+		</description>
+		<setters>
+			<set name="keywords">eldritch</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">true</set>
+			<set name="type" addition="Dagger">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="weapon">Dagger</set>
+			<set name="enhancement">0</set>
+		</setters>
+	</element>
+	<element name="Epitaph of Malice" type="Magic Item" source="Orana's Expanded Spellbook" id="ID_PP_OES_MAGIC_ITEM_EPITAPH_OF_MALICE">
+		<description>
+			<p>Bound with rotten, rune-carved leather, this hefty tome inexplicably has gravestones where a normal book would have pages. When found, the book contains the following spells: <i>create undead beast, create undead horde, death grip, ray of lethargy, sanguine storm,</i> and <i>withering spike</i>. It functions as a spellbook for you.</p>
+			<p class="indent">While you are holding the epitaph, you can use it as a spellcasting focus for your wizard spells, and you know the <i>chill touch, rekindle malice,</i> and <i>transfusion</i> cantrips if you don't already know them.</p>
+			<p class="indent">The book has 3 charges, and it regains 1d3 expended charges daily at dawn. You can use the charges in the following ways while holding it:</p>
+			<ul>
+				<li>If you spend 1 minute studying the book, you can expend 1 charge to replace one of your prepared wizard spells with a different spell in the book. The new spell must be of the Necromancy school.</li>
+				<li>As an action, you can bury the book in dirt and expend 1 charge. While it remains buried, you know the location of every corpse within 300 feet of it.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement" addition="requires attunement by a wizard">true</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="charges">3</set>
+		</setters>
+	</element>
+	<element name="Legion's Banner" type="Magic Item" source="Orana's Expanded Spellbook" id="ID_PP_OES_MAGIC_ITEM_LEGIONS_BANNER">
+		<description>
+			<p>An intricately decorated standard, its banner bears the symbol of a long-forgotten army atop a carved metal staff.</p>
+			<p class="indent">This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. While holding it, you gain a +2 bonus to Armor Class and saving throws.</p>
+			<p class="indent">The staff has 20 charges for the following properties. The staff regains 2d8 + 4 charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff retains its +2 bonus to attack and damage rolls but loses all other properties. On a 20, the staff regains 1d8 + 2 charges.</p>
+			<p class="indent"><b>Bearer of Honor.</b> While holding this staff, you can use an action you can fill yourself and all other creatures of your choice within 100 feet of you with the legion’s honor for 1 minute. During this time, affected creatures are immune to the charmed and frightened condition. Once you use this property, you can't use it again until the next dawn unless you spend 5 charges to use it again.</p>
+			<p class="indent"><b>Spells.</b> While holding this staff, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spell attack bonus: aid (2 charges), aura of unity (4 charges), beacon of hope (3 charges), blade barrier (6 charges), bless (1 charge), flame strike (5 charges), heroism (1 charge), inner warrior (2 charges), or spirit guardians (3 charges).</p>
+			<p class="indent"><b>Recall the Legion.</b> While holding this staff, you can use an action to call upon the legionaries of old, casting the legion’s assault spell. Once you use this property, you can't use it again until the next dawn unless you spend 8 charges to cast it.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement" addition="requires attunement by a cleric or paladin">true</set>
+			<set name="type" addition="Staff">Weapon</set>
+			<set name="rarity">Legendary</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="enhancement">2</set>
+			<set name="charges">20</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="2" bonus="enhancement" />
+		</rules>
+	</element>
+	<element name="Maculate Mala" type="Magic Item" source="Orana's Expanded Spellbook" id="ID_PP_OES_MAGIC_ITEM_MACULATE_MALA">
+		<description>
+			<p>This set of prayer beads is dingy and vile: any soap that touches it goes rancid, and water used to rinse it turns brackish and foetid. While attuned to this item, you gain a +1 bonus to your AC.</p>
+			<p class="indent">The mala has 5 charges for the following properties. It regains 1d4 + 1 charges daily at dawn.</p>
+			<p class="indent"><b>Besmirch.</b> As an action, you can touch the beads to an object that fits in a 10-foot cube and expend 1 charge. That item becomes revoltingly unclean, and its apparent value in gold pieces is reduced to one-tenth of its original state. A prestidigitation spell fails to clean an item soiled this way, as does any nonmagical method of cleaning, but a remove curse spell instantly purges the filth.</p>
+			<p class="indent"><b>Pollue.</b> When you take the Attack action, you can forgo one of your attacks to attempt to mire the target in sludge and refuse; you expend 3 charges and cast the ray of lethargy spell targeting one creature within your reach. The spell uses your ki save DC when cast this way, and you make an unarmed strike to hit with the spell instead of a ranged spell attack.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement" addition="requires attunement by a monk">true</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Legendary</set>
+			<set name="charges">5</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+		</rules>
+	</element>
+	<element name="Pauldrons of Parol" type="Magic Item" source="Orana's Expanded Spellbook" id="ID_PP_OES_MAGIC_ITEM_PAULDRONS_OF_PAROL">
+		<description>
+			<p>As part of the process of attuning to this item, you affix this set of mirrored shoulder-plates to an item of medium or heavy armor, or you replace the armor's pauldrons if it already has them. When you move with them on, their light clank seems to rub the tiredness from your eyes.</p>
+			<p class="indent">While attuned, you have a +1 bonus to AC, and you can't fall unconscious against your will while you have at least 1 hit point. Additionally, lightly obscured areas don't impose disadvantage on Wisdom checks you make to locate or track creatures, and if you would automatically fail such a check as a result of it being heavily obscured by darkness, smoke, or fog, you instead have disadvantage.</p>
+			<p class="indent">You can also cast aura of unity once as an action while wearing the armor. The spell doesn't require concentration for you when cast this way. The armor regains the ability to cast the spell at the stroke of midnight.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">true</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+		</rules>
+	</element>
+	<element name="Spellslinger's Bandolier" type="Magic Item" source="Orana's Expanded Spellbook" id="ID_PP_OES_MAGIC_ITEM_SPELLSLINGERS_BANDOLIER">
+		<description>
+			<p>While wearing this bandolier, you can add your Intelligence modifier to the damage rolls of your spell attacks, and you can draw or stow two wands when you would normally be able to draw or stow only one.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement" addition="requires attunement by a wizard">true</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Sword of Knighting" type="Magic Item" source="Orana's Expanded Spellbook" id="ID_PP_OES_MAGIC_ITEM_SWORD_OF_KNIGHTING">
+		<description>
+			<p>The delicate nature of this sword hints at its ceremonial purpose. When you cast a spell of 1st level or higher that targets friendly creatures while wielding the sword, you can choose to give those creatures a number of temporary hit points equal to your spellcasting ability modifier.</p>
+			<p class="indent">Additionally, as an action, you can touch a creature other than yourself with the sword and cast the inner warrior spell. When you cast the spell in this way, it doesn't require concentration, and has a duration of 1 hour. Also, until the spell ends, you have resistance to all damage while you are within 10 feet of the spell's target. Each time you take damage while you have this resistance, the target also takes the same amount of damage. Once used, this property of the sword can't be used again until the next dawn.</p>
+			<div class="reference">
+				<div element="ID_PP_OES_SPELL_INNER_WARRIOR" />
+			</div>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement" addition="requires attunement by a spellcaster">true</set>
+			<set name="type" addition="any sword">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+			<set name="name-format">{{parent}} of Vengeance</set>
+		</setters>
+	</element>
+	<element name="Totalizing Torc" type="Magic Item" source="Orana's Expanded Spellbook" id="ID_PP_OES_MAGIC_ITEM_TOTALIZING_TORC">
+		<description>
+			<p>This hard-metal neckwear is adorned with a plethora of beads that don't shift unless moved by hand. By moving the beads around and thinking on calculations, an attuned creature can cast assess as an action or bonus action.</p>
+			<div class="reference">
+				<div element="ID_PP_OES_SPELL_ASSESS" />
+			</div>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">true</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+</elements>

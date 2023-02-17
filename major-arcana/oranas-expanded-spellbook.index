@@ -4,13 +4,16 @@
 		<name>Orana's Expanded Spellbook</name>
 		<description>The content from the Portent Press team that adds over 50 pages of spell-focused material.</description>
 		<author url="https://www.gmbinder.com/share/-MlFl9E_eKHFo8zeMH1c">Portent Press</author>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<file name="oranas-expanded-spellbook.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook.index" />
 		</update>
 	</info>
 	<files>
+		<file name="feats.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/feats.xml" />
 		<file name="source.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/source.xml" />
 		<file name="spells.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/spells.xml" />
+		<file name="items-magic.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/items-magic.xml" />
+		<file name="optional-class-features.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/optional-class-features.xml" />
 
 		<file name="subclass-bard-puppetry.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/subclass-bard-puppetry.xml" />
 		<file name="subclass-bard-sirens.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/subclass-bard-sirens.xml" />
@@ -27,12 +30,5 @@
 		<file name="subclass-warlock-sentient-spellbook.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/subclass-warlock-sentient-spellbook.xml" />
 		<file name="subclass-wizard-ritualism.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/subclass-wizard-ritualism.xml" />
 		<file name="subclass-wizard-spycraft.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/subclass-wizard-spycraft.xml" />
-
-		<file name="feats.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/feats.xml" />
-		<!-- TO DO: -->
-		<!-- 
-		<file name="items-magic.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/items-magic.xml" />
-		<file name="optional-class-features.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/optional-class-features.xml" />
-		 -->
 	</files>
 </index>
