@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Spells</name>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="spells.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/spells.xml" />
 		</update>
 	</info>
@@ -1315,7 +1315,8 @@
 	<element name="Power Word Repel" type="Spell" source="Orana's Expanded Spellbook" id="ID_PP_OES_SPELL_POWER_WORD_REPEL">
 		<supports>Bard, Sorcerer, Warlock, Wizard</supports>
 		<description>
-			<p></p>
+			<p>You speak a word of power that repels the influence and very existence of one creature you can see within range. If the target has 150 hit points or fewer, it can't willingly move in a direction of your choice, it can't target a creature, object, or structure in that direction with an attack or effect, and can't include such a creature, object, or structure in the area of any effect or spell. In addition, it is immediately flung 150 feet in the direction opposite of your chosen direction.</p>
+			<p class="indent">A repelled creature can make a Charisma saving throw at the end of each of its turns. On a successful save, the spell's effect ends on it.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
