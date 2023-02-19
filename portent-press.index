@@ -4,14 +4,14 @@
 		<name>Portent Press</name>
 		<description>A collection of the content created by Portent Press.</description>
 		<author url="https://discord.com/invite/fspTtCsvwt">Portent Press.</author>
-		<update version="1.0.1">
+		<update version="1.0.2">
 			<file name="portent-press.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/portent-press.index" />
 		</update>
 	</info>
 	<files>
 		<!-- Major Arcana -->
 		<file name="oranas-expanded-spellbook.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook.index" />
-		<file name="impending-doom.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/impending-doom.index" />
+		<file name="impending-doom.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/impending-doom.index" />
 
 		<!-- Minor Arcana -->
 	</files>
