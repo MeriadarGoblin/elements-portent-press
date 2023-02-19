@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Condition</name>
+		<update version="0.0.1">
+			<file name="condition.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/impending-doom/condition.xml" />
+		</update>
+	</info>
+	
+	<element name="Doomed" type="Condition" source="Internal" id="ID_IMPENDING_DOOM_CONDITION_DOOMED">
+		<description>
+			<ul>
+				<li>A doomed creature can't regain hit points, or have temporary hit points.</li>
+				<li>The creature has disadvantage on saving throws against effects that deal damage.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>• A doomed creature can't regain hit points, or have temporary hit points.&#13;
+				• The creature has disadvantage on saving throws against effects that deal damage.
+			</description>
+		</sheet>
+    </element>
+	
+</elements>

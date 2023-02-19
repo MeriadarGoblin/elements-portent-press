@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Path of the Doomcaller</name>
+		<update version="0.0.1">
+			<file name="subclass-barbarian-doomcaller.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/impending-doom/subclass-barbarian-doomcaller.xml" />
+		</update>
+	</info>
+
+	<element name="Path of the Doomcaller" type="Archetype" source="Impending Doom" id="ID_PP_ID_ARCHETYPE_PATH_OFTHE_DOOMCALLER">
+		<supports>Primal Path</supports>
+		<description>
+			<p>Like oracles, doomcallers are barbarians blessed with the gift of prophecy; a gift limited in scope to themselves and their enemies. Through a supernatural event, the death of a loved one, or divine boon, these warriors can utilize visions of death and destruction to evade their own demise, or ensure the demise of others. At the height of their powers, doomcallers are angels of death on the battlefield. In combat, their gaze is avoided at all costs, lest a creature see its death, and know it is helpless to stop it.</p>
+			<div class="ID_PP_ID_ARCHETYPE_FEATURE_DOOMCALLER_IMMINENT_DESTRUCTION" />
+			<div class="ID_PP_ID_ARCHETYPE_FEATURE_DOOMCALLER_VISIONS_OF_VIOLENCE" />
+			<div class="ID_PP_ID_ARCHETYPE_FEATURE_DOOMCALLER_EDGE_OF_DISASTER" />
+			<div class="ID_PP_ID_ARCHETYPE_FEATURE_DOOMCALLER_MOUTH_OF_OBLIVION" />
+			<div class="ID_PP_ID_ARCHETYPE_FEATURE_DOOMCALLER_DOOMS_CALL" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_PP_ID_ARCHETYPE_FEATURE_DOOMCALLER_IMMINENT_DESTRUCTION" level="3" />
+			<grant type="Archetype Feature" id="ID_PP_ID_ARCHETYPE_FEATURE_DOOMCALLER_VISIONS_OF_VIOLENCE" level="3" />
+			<grant type="Archetype Feature" id="ID_PP_ID_ARCHETYPE_FEATURE_DOOMCALLER_EDGE_OF_DISASTER" level="6" />
+			<grant type="Archetype Feature" id="ID_PP_ID_ARCHETYPE_FEATURE_DOOMCALLER_MOUTH_OF_OBLIVION" level="10" />
+			<grant type="Archetype Feature" id="ID_PP_ID_ARCHETYPE_FEATURE_DOOMCALLER_DOOMS_CALL" level="14" />
+		</rules>
+	</element>
+	<element name="Imminent Destruction" type="Archetype Feature" source="Impending Doom" id="ID_PP_ID_ARCHETYPE_FEATURE_DOOMCALLER_IMMINENT_DESTRUCTION">
+		<description>
+			<p>While a creature you can see is within 30 feet of you, you know if it currently intends to do you physical harm in the next minute.</p>
+		</description>
+		<sheet>
+			<description>While a creature you can see is within 30 feet of you, you know if it currently intends to do you physical harm in the next minute.</description>
+		</sheet>
+	</element>
+	<element name="Visions of Violence" type="Archetype Feature" source="Impending Doom" id="ID_PP_ID_ARCHETYPE_FEATURE_DOOMCALLER_VISIONS_OF_VIOLENCE">
+		<description>
+			<p>Your enemies shall know their doom, and the hand that calls it. When you enter your rage, and as a bonus action on each of your turns while raging, you can lock eyes with a creature you can see within 30 feet of you. The creature must succeed on a Charisma saving throw (DC equal to 8 + your proficiency bonus + your Constitution modifier) or become doomed until your rage ends, you can no longer see the creature, or until you use this feature on a different creature.</p>
+			<p class="indent">A creature doomed in this way sees visions of its violent and bloody death at your hands. At the end of each of its turns, the creature must repeat its saving throw against this effect. On a failed save, it takes 1d8 psychic damage, or half as much damage on a successful one. This damage increase to 2d8 beginning at 10th level.</p>
+			<div class="reference">
+				<div element="ID_IMPENDING_DOOM_CONDITION_DOOMED" />
+			</div>
+		</description>
+		<sheet>
+			<description>When you enter your rage, and as a bonus action on each of your turns while raging, you can lock eyes with a creature you can see within 30 feet of you. The creature must succeed on a Charisma saving throw (DC {{doomcaller:visions dc}}) or become doomed until your rage ends, you can no longer see the creature, or until you use this feature on a different creature. &#13;
+				At the end of each of its turns, the creature must repeat its saving throw against this effect. On a failed save, it takes 1d8 psychic damage, or half as much damage on a successful one.
+			</description>
+			<description level="10">When you enter your rage, and as a bonus action on each of your turns while raging, you can lock eyes with a creature you can see within 30 feet of you. The creature must succeed on a Charisma saving throw (DC {{doomcaller:visions dc}}) or become doomed until your rage ends, you can no longer see the creature, or until you use this feature on a different creature. &#13;
+				At the end of each of its turns, the creature must repeat its saving throw against this effect. On a failed save, it takes 2d8 psychic damage, or half as much damage on a successful one.
+			</description>
+		</sheet>
+		<rules>
+			<stat name="doomcaller:visions dc" value="8" />
+			<stat name="doomcaller:visions dc" value="proficiency" />
+			<stat name="doomcaller:visions dc" value="constitution:modifier" />
+		</rules>
+	</element>
+	<element name="Edge of Disaster" type="Archetype Feature" source="Impending Doom" id="ID_PP_ID_ARCHETYPE_FEATURE_DOOMCALLER_EDGE_OF_DISASTER">
+		<description>
+			<p>You can accept your own doom for greater power. When you start your turn while raging and below half your hit point maximum, you can choose to become doomed until your rage ends (no action required). While doomed in this way, you have resistance to all damage, and you are immune to being frightened.</p>
+		</description>
+		<sheet>
+			<description>When you start your turn while raging and below half your hit point maximum, you can choose to become doomed until your rage ends (no action required). While doomed in this way, you have resistance to all damage, and you are immune to being frightened.</description>
+		</sheet>
+	</element>
+	<element name="Mouth of Oblivion" type="Archetype Feature" source="Impending Doom" id="ID_PP_ID_ARCHETYPE_FEATURE_DOOMCALLER_MOUTH_OF_OBLIVION">
+		<description>
+			<p>The whispers of doom speak to you. You know the direction and distance to any creature within 1 mile of you that is doomed, or has no more than half of its hit points left, and such a creature gains no benefit against you from being hidden or invisible.</p>
+		</description>
+		<sheet action="Action">
+			<description>You know the direction and distance to any creature within 1 mile of you that is doomed, or has no more than half of its hit points left, and such a creature gains no benefit against you from being hidden or invisible.&#13;
+				Additionally, as an action you can lock eyes with a creature within 30 feet of you and force it to make a Wisdom saving throw (DC {{doomcaller:visions dc}}). On a failed save, hushed voices speak of the creature's greatest fear, audible to any creature within 60 feet of it. A creature that can't be doomed or frightened is unaffected, and a creature that succeeds on its saving throw is immune to this effect for 24 hours.
+			</description>
+		</sheet>
+	</element>
+	<element name="Doom's Call" type="Archetype Feature" source="Impending Doom" id="ID_PP_ID_ARCHETYPE_FEATURE_DOOMCALLER_DOOMS_CALL">
+		<description>
+			<p>Once on each of your turns when you hit a doomed creature that has no more than half of its hit points left with a melee weapon attack, you can have the attack become a critical hit.</p>
+		</description>
+		<sheet>
+			<description>Once on each of your turns when you hit a doomed creature that has no more than half of its hit points left with a melee weapon attack, you can have the attack become a critical hit.</description>
+		</sheet>
+	</element>
+</elements>

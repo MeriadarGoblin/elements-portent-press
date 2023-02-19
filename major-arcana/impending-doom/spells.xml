@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spells</name>
+		<update version="0.0.1">
+			<file name="spells.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/impending-doom/spells.xml" />
+		</update>
+	</info>
+	
+	<element name="Countdown" type="Spell" source="Impending Doom" id="ID_PP_ID_SPELL_COUNTDOWN">
+		<supports>Wizard</supports>
+		<description>
+			<p>You conjure the spectral face of a clock centered on a point on a solid surface you can see within range. The clock's face projects a 50-foot radius, 100-foot-high cylinder of inevitable energy, and appears showing as 12 o'clock. At the end of each of your turns, roll a d4. The clock ticks backwards a number of hours equal to the result, and each creature within the area takes 1d12 thunder damage for each hour ticked.</p>
+			<p class="indent">A creature within the spell's area is doomed. If the time on the clock shows as 8 o'clock or earlier, creatures within the spell's area have their speed halved. If the time on the clock shows as 4 o'clock or earlier, creatures within the spell's area can't take reactions, can use either an action or bonus action, not both, and if they attempt to take an action, must roll a d20. On an 11 or higher, the action doesn't take effect until the creature's next turn.</p>
+			<p class="indent">If the clock would tick to 12 o'clock again, each corpse and doomed creature within the spell's area is permanently frozen in time. A target frozen in time this way is immune to all damage, can't be moved, and can't be returned to normal by any means short of a wish spell.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">9</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">300 feet</set>
+			<set name="duration">Special</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pair of clock hands carved from the bones of a lich worth 2,500 gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Dire Omen" type="Spell" source="Impending Doom" id="ID_PP_ID_SPELL_DIRE_OMEN">
+		<supports>Cleric, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You attempt to alter the fate of a creature you can see within range, guiding them to destruction. The target must succeed on a Charisma saving throw or be doomed for the duration. At the end of each of its turns, the target can make another Charisma saving throw. On a success, the spell ends on the target.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd. The creatures must be within 30 feet of each other when you target them.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="range">60 feet</set>
+			<set name="duration">Concentration, up to 1 mintue</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a cracked mirror</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Dread Mist" type="Spell" source="Impending Doom" id="ID_PP_ID_SPELL_DREAD_MIST">
+		<supports>Warlock, Wizard</supports>
+		<description>
+			<p>You breathe out a 30-foot-radius sphere of thick smog that roils with the horror stricken faces of the damned centered on a point you choose within range. The smog spreads around corners. It lasts for the duration, and is unaffected by wind. Its area is heavily obscured.</p>
+			<p class="indent">When a creature enters the spell's area for the first time on a turn or starts its turn there, that creature must make a Wisdom saving throw. On a failed save, the creature is doomed. A creature doomed in this way is also frightened, and while it remains in the smog it takes 10 (3d6) necrotic damage at the start of each of its turns. When a doomed creature ends its turn outside of the smog, it can repeat its saving throw, ending the effect on a success.</p>
+			<p class="indent">If a humanoid dies while doomed and within the smog, there is a 33 percent chance that a specter rises from its corpse at the start of your next turn. The specter pursues whatever creature is closest to it. Statistics for the specter are in the Monster Manual.</p>
+			<p class="indent">The smog moves 10 feet away from you at the start of each of your turns, rolling along the surface of the ground, after which its radius expands by 5 feet (to a maximum of 150 feet). The vapors, being heavier than air, sink to the lowest level of the land, even pouring down openings.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">7</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 mintue</set>
+			<set name="range">30 feet</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a vial containing a creature's final breath before it died</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Gift of the Grave" type="Spell" source="Impending Doom" id="ID_PP_ID_SPELL_GIFT_OFTHE_GRAVE">
+		<supports>Warlock, Wizard</supports>
+		<description>
+			<p>You touch a creature and attempt to inflict it with a death curse. The target must succeed on a Wisdom saving throw or become cursed for the duration. While cursed, the target is doomed, and it must make a Wisdom saving throw at the start of each of its turns. On a failed save, it takes 3d10 necrotic damage. On a successful save, it takes half as much damage and the spell ends.</p>
+			<p class="indent">A creature cursed in this way can use its action to touch one of its allies and force it to make a Wisdom saving throw. On a failed save, the curse ends for the creature and passes on instead to its ally.</p>
+			<p class="indent">If damage from this spell kills a target, it can't be raised from the dead by any means short of a <i>true resurrection</i> spell or similar magic.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">3</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Judgement" type="Spell" source="Impending Doom" id="ID_PP_ID_SPELL_JUDGEMENT">
+		<supports>Cleric, Paladin</supports>
+		<description>
+			<p>You call upon the heavens to decree a creature unworthy of existence. A creature of your choice you can see within range must succeed on a Wisdom saving throw or be doomed for the duration. An Undead loses any immunity to the doomed condition until the spell ends. While doomed in this way, a beam of divine light stretches endlessly above the creature, illuminating its space and the area above it with bright light.</p>
+			<p class="indent">Until the spell ends, a creature under the effects of this spell takes 5d6 radiant damage at the end of each of its turns. The damage increases by 1d6 for each subsequent turn past the first, to a maximum of 10d6.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">5</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">90 feet</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a set of silver scales and a feather worth 300 gp</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Protection from Darkness" type="Spell" source="Impending Doom" id="ID_PP_ID_SPELL_PROTECTION_FROM_DARKNESS">
+		<supports>Cleric, Warlock, Wizard</supports>
+		<description>
+			<p>Until the spell ends, one willing creature you touch is protected against darkness of all kinds. The target gains darkvision out to a range of 60 feet, and magical darkness doesn't impede its darkvision. If the creature already had darkvision, its darkvision instead increases by 60 feet.</p>
+			<p class="indent">Additionally, the target is immune to being doomed or frightened, and its hit point maximum can't be reduced.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a strip of magnesium</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Zone of Disaster" type="Spell" source="Impending Doom" id="ID_PP_ID_SPELL_ZONE_OF_DISASTER">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You generate overwhelmingly bad luck in a 30-foot cube within range. Creatures within the area are doomed, have disadvantage on attack rolls and ability checks, and can't gain advantage on attack rolls, ability checks, or saving throws. If a creature would take damage as a result of failing a saving throw in the area, it takes an additional die of damage.</p>
+			<p class="indent">A creature within the area is aware of the spell, although it doesn't have any special knowledge of its dimensions.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">6</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">120 feet</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+</elements>

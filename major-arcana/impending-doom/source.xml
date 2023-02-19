@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Source</name>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/impending-doom/source.xml" />
+		</update>
+	</info>
+	<element name="Impending Doom" type="Source" source="Impending Doom" id="ID_SOURCE_PP_OES">
+		<description>
+			<p>The content from the Portent Press team that adds a new condition with two subclasses revolving it.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">ID</set>
+			<set name="url">https://www.gmbinder.com/share/-Mwnh8jiTdNi5H0bU3tf</set>
+			<set name="image">https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/impending-doom/impending-doom-cover.PNG</set>
+			<set name="author" abbreviation="PP" url="https://discord.com/invite/fspTtCsvwt">Portent Press</set>
+			<set name="homebrew">true</set>
+			<set name="release">20220303</set>
+		</setters>
+	</element>
+</elements>

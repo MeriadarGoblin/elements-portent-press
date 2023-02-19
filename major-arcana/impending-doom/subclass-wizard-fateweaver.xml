@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Fateweaver Arcane Tradition</name>
+		<update version="0.0.1">
+			<file name="subclass-wizard-fateweaver.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/impending-doom/subclass-wizard-fateweaver.xml" />
+		</update>
+	</info>
+	
+	<element name="Fateweaver" type="Archetype" source="Impending Doom" id="ID_PP_ID_ARCHETYPE_ARCANE_TRADITION_FATEWEAVER">
+		<description>
+			<p>Tied into the fabric of the cosmos, magic permeates and joins the fates of all creatures it touches. It's through this link that fateweavers channel their powers, plucking confidently at the strings of destiny to rethread them to better serve their own ends. Mastery of the tapestry of destiny grants a practitioner many abilities, most notable of which is prophecy, as well as magic able to ensure a creature's destruction.</p>
+			<div element="ID_PP_ID_ARCHETYPE_FEATURE_FATEWEAVER_THREADS_OF_FATE" />
+			<div element="ID_PP_ID_ARCHETYPE_FEATURE_FATEWEAVER_PRECOGNITION" />
+			<div element="ID_PP_ID_ARCHETYPE_FEATURE_FATEWEAVER_DOOMSAYER" />
+			<div element="ID_PP_ID_ARCHETYPE_FEATURE_FATEWEAVER_SHARE_PROPHECY" />
+			<div element="ID_PP_ID_ARCHETYPE_FEATURE_FATEWEAVER_CUT_THE_THREADS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_PP_ID_ARCHETYPE_FEATURE_FATEWEAVER_THREADS_OF_FATE" level="2" />
+			<grant type="Archetype Feature" id="ID_PP_ID_ARCHETYPE_FEATURE_FATEWEAVER_PRECOGNITION" level="2" />
+			<grant type="Archetype Feature" id="ID_PP_ID_ARCHETYPE_FEATURE_FATEWEAVER_DOOMSAYER" level="6" />
+			<grant type="Archetype Feature" id="ID_PP_ID_ARCHETYPE_FEATURE_FATEWEAVER_SHARE_PROPHECY" level="10" />
+			<grant type="Archetype Feature" id="ID_PP_ID_ARCHETYPE_FEATURE_FATEWEAVER_CUT_THE_THREADS" level="14" />
+		</rules>
+	</element>
+	<element name="Threads of Fate" type="Archetype Feature" source="Impending Doom" id="ID_PP_ID_ARCHETYPE_FEATURE_FATEWEAVER_THREADS_OF_FATE">
+		<description>
+			<p>When you cast a spell that targets one or more creatures, you can grasp threads of fate from your choice of any of those creatures. Any threads fade from your grasp after you finish a short or long rest, the creature dies, or you become unconscious.</p>
+			<p class="indent">While you grasp a creature's thread and it is on the same plane of existence as you, you know if it is below half of its hit point maximum, any conditions it is under the effects of, and you know if it dies.</p>
+			<p class="indent">Additionally, when a creature whose thread you grasp in this way dies, you can choose to tie the thread of its fate into your own, learning one of the following things of your choice:</p>
+			<ul>
+				<li>You learn the creature's true name, and a basic understanding of its personality.</li>
+				<li>You learn what the creature had intended to achieve in the next 24 hours if it had lived.</li>
+				<li>You learn what happened to the creature in the last hour of its life.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you cast a spell that targets one or more creatures, you can grasp threads of fate from your choice of any of those creatures. Any threads fade from your grasp after you finish a short or long rest, the creature dies, or you become unconscious.&#13;
+				While you grasp a creature's thread and it is on the same plane of existence as you, you know if it is below half of its hit point maximum, any conditions it is under the effects of, and you know if it dies.&#13;
+				Additionally, when a creature whose thread you grasp in this way dies, you can choose to tie the thread of its fate into your own, learning one of the following things of your choice:&#13;
+				You learn the creature's true name, and a basic understanding of its personality, you learn what the creature had intended to achieve in the next 24 hours if it had lived, and you learn what happened to the creature in the last hour of its life.
+			</description>
+		</sheet>
+	</element>
+	<element name="Precognition" type="Archetype Feature" source="Impending Doom" id="ID_PP_ID_ARCHETYPE_FEATURE_FATEWEAVER_PRECOGNITION">
+		<description>
+			<p>Your mind is open to the futures of others. You learn the guidance cantrip.</p>
+			<p class="indent">Also, you can see a faint aura around any creature within 30 feet of you. While you can see this aura, you know how close the creature is to dying of old age, natural causes, or any disease it is suffering from. You gain no special knowledge of the cause.</p>
+		</description>
+		<sheet>
+			<description>You can see a faint aura around any creature within 30 feet of you. While you can see this aura, you know how close the creature is to dying of old age, natural causes, or any disease it is suffering from. You gain no special knowledge of the cause.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_GUIDANCE" />
+		</rules>
+	</element>
+	<element name="Doomsayer" type="Archetype Feature" source="Impending Doom" id="ID_PP_ID_ARCHETYPE_FEATURE_FATEWEAVER_DOOMSAYER">
+		<description>
+			<p>Creatures can't gain advantage on saving throws they make against your spells or magical effects.</p>
+			<p class="indent">Also, when a creature you can see fails its saving throw against a spell you cast of 1st level or higher, you can cause the creature to become doomed for 1 minute. The creature can make a Wisdom saving throw against your spell save DC at the end of each of its turns, ending the effect on a success. If the creature dies while doomed in this way, you know what happens to its soul in the immediate future.</p>
+			<p class="indent">Once you attempt to doom a creature in this way, you can't do so again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Rest">
+			<description>Creatures can't gain advantage on saving throws they make against your spells or magical effects. Also, when a creature you can see fails its saving throw against a spell you cast of 1st level or higher, you can cause the creature to become doomed for 1 minute. The creature can make a Wisdom saving throw against your spell save DC at the end of each of its turns, ending the effect on a success. If the creature dies while doomed in this way, you know what happens to its soul in the immediate future.&#13;
+				Once you attempt to doom a creature in this way, you can't do so again until you finish a short or long rest.
+			</description>
+		</sheet>
+	</element>
+	<element name="Share Prophecy" type="Archetype Feature" source="Impending Doom" id="ID_PP_ID_ARCHETYPE_FEATURE_FATEWEAVER_SHARE_PROPHECY">
+		<description>
+			<p>You add the <i>divination</i> spell to your spellbook, and it counts as a wizard spell for you. If it is there already, you can instead add one divination spell of 5th level or lower from the wizard spell list to your spellbook. When you cast a divination spell that allows you to receive an omen, or ask a question of a higher power, you can touch another creature, allowing them to ask any required questions, or receive any omens. Doing so removes any chance for a random reading. A chosen creature can't gain this benefit again for 24 hours.</p>
+		</description>
+		<rules>
+			<select type="Spell" name="Share Prophecy (Fateweaver)" supports="Divination, $(spellcasting:list)" default="ID_PHB_SPELL_DIVINATION" />
+		</rules>
+	</element>
+	<element name="Cut Threads" type="Archetype Feature" source="Impending Doom" id="ID_PP_ID_ARCHETYPE_FEATURE_FATEWEAVER_CUT_THE_THREADS">
+		<description>
+			<p>When a creature automatically fails its saving throw against one of your spells, or makes its saving throw against one of your spells with disadvantage, you can treat the spell as if you had rolled the maximum possible damage for that creature.</p>
+			<p class="indent">Additionally, when a creature whose thread you grasp dies, you can sever its thread permanently (no action required). If you do so, the creature can't be brought back to life by any means short of a <i>wish</i> spell. A creature that can't be doomed is unaffected.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_WISH" />
+			</div>
+		</description>
+		<sheet>
+			<description>When a creature automatically fails its saving throw against one of your spells, or makes its saving throw against one of your spells with disadvantage, you can treat the spell as if you had rolled the maximum possible damage for that creature.&#13;
+				Additionally, when a creature whose thread you grasp dies, you can sever its thread permanently (no action required). If you do so, the creature can't be brought back to life by any means short of a <i>wish</i> spell. A creature that can't be doomed is unaffected.
+			</description>
+		</sheet>
+	</element>
+</elements>

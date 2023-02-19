@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Magic Items</name>
+		<update version="0.0.1">
+			<file name="items-magic.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/impending-doom/items-magic.xml" />
+		</update>
+	</info>
+	
+	<element name="Anvil of the Doomsmith" type="Magic Item" source="Impending Doom" id="ID_PP_ID_MAGIC_ITEM_ANVIL_OF_THE_DOOMSMITH">
+		<description>
+			<p>Carved and polished from a block of adamantine, and adorned with coins of bad luck and misfortune from numerous cultures, this maul doubles as an anvil thanks to its design and heft.</p>
+			<p class="indent">While attuned to the maul, you are immune to the effects of being doomed, frightened, and poisoned, and you have a +3 bonus to attack and damage rolls made with it, as well as to ability checks made to make or repair an object using the maul. An object repaired or created this way is done so twice as fast. In addition, the maul has the following properties:</p>
+			<p class="indent"><b><i>Smith's Bounty.</i></b> As an action, you can conjure a set of smith's tools, as well as 100 gp of materials for their use. The tools and materials vanish if they are ever more than 10 feet away from the maul, or after 24 hours. Materials used to create or repair an object don't vanish in this way. Once you use this property of the maul, it can't be used again until the next dawn.</p>
+			<p class="indent"><b><i>Doomstrike.</i></b> When you hit a creature with the maul, you can deal an additional 4d6 necrotic damage to it and force it to make a DC 19 Constitution saving throw. On a failed save, the creature gains any of the following conditions you have for the next minute: blinded, deafened, doomed, frightened, or poisoned. This property of the maul can be used twice, and it regains any expended uses daily at dawn.</p>
+			<p class="indent"><b><i>Curse.</i></b> This maul is cursed, and attempting to attune to the maul extends the curse to you. As long as you remain cursed, you are unwilling to part with the maul, you are doomed, and are compelled to smith with the maul to the best of your ability.</p>
+			<p class="indent">After you finish a long rest, you must succeed on a DC 5 Wisdom saving throw or spend the next hour crafting a weapon, set of armor, or other object with the maul as best you can. If you succeed on the saving throw, the DC increases by 5. After you fail the saving throw, the DC resets to 5.</p>
+			<p class="indent">A greater restoration spell cast at 9th level or similar magic can break the curse. If you use the maul to create a magic item of legendary rarity, you can also choose to break the curse.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0"></set>
+			<set name="type" addition="Maul">Weapon</set>
+			<set name="attunement" addition="requires attunement by a doomed creature">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="weapon">Maul</set>
+		</setters>
+	</element>
+	<element name="Praetor Helm" type="Magic Item" source="Impending Doom" id="ID_PP_ID_MAGIC_ITEM_PRAETOR_HELM">
+		<description>
+			<p>This tarnished copper helm denies any attempt to be cleaned or polished, and was once worn by a fierce warrior within the Lower Planes. While wearing the helm, you always know if a creature you can see is a fiend, and fiends have disadvantage on saving throws to avoid being frightened while they can see you. It also has the following property:</p>
+			<p class="indent"><b><i>Demon's Slayer.</i></b> When you attack a fiend that has less than half its maximum hit points remaining, you score a critical hit against it on a roll of 18–20. Critical hits you score in this way cause the creature to be doomed until the end of your next turn.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">head</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement" addition="requires attunement by a barbarian, fighter, or paladin">true</set>
+		</setters>
+	</element>
+	<element name="Rings of Ruin's Bane" type="Magic Item" source="Impending Doom" id="ID_PP_ID_MAGIC_ITEM_RING_OF_RUINS_BANE">
+		<description>
+			<p>While wearing this ring, you always feel a sense of unease as if something horrible looms in your not-too-distant future. You can't be surprised while you are conscious. If this ring ever protects you from being surprised, you gain resistance to all damage for the first round of that combat.</p>
+			<p class="indent">As an action, you can point the ring at a creature and cast the <i>dire omen</i> spell targeting it (save DC 15).</p>
+			<p class="indent">Once the ring has been used to cast the spell in this way, it can't be used to do so again until the next dawn.</p>
+			<div class="reference">
+				<div element="ID_PP_ID_SPELL_DIRE_OMEN" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">ring</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement" addition="requires attunement by a barbarian, fighter, or paladin">true</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PP_ID_SPELL_DIRE_OMEN" />
+		</rules>
+	</element>
+	
+</elements>
