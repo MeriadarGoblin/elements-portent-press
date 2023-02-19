@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<info>
-	<name>Impending Doom</name>
-	<description>The content from the Portent Press team that adds a new condition with two subclasses revolving it.</description>
-	<author url="https://www.gmbinder.com/share/-LsDqsNbupzeLhkTIcPv">Portent Press</author>
-	<update version="0.0.2">
-		<file name="impending-doom.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/impending-doom.index" />
-	</update>
+<index>
+	<info>
+		<name>Impending Doom</name>
+		<description>The content from the Portent Press team that adds a new condition with two subclasses revolving it.</description>
+		<author url="https://www.gmbinder.com/share/-LsDqsNbupzeLhkTIcPv">Portent Press</author>
+		<update version="0.0.3">
+			<file name="impending-doom.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/impending-doom.index" />
+		</update>
+	</info>
 	<files>
 		<file name="condition.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/impending-doom/condition.xml" />
 		<file name="items-magic.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/impending-doom/items-magic.xml" />
@@ -13,4 +15,5 @@
 		<file name="subclass-barbarian-doomcaller.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/impending-doom/subclass-barbarian-doomcaller.xml" />
 		<file name="subclass-wizard-fateweaver.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/impending-doom/subclass-fate-weaver.xml" />
 	</files>
-</info>
+	
+</index>
