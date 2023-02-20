@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Spells</name>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="spells.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/spells.xml" />
 		</update>
 	</info>
@@ -659,7 +659,7 @@
 	<element name="Elude" type="Spell" source="Orana's Expanded Spellbook" id="ID_PP_OES_SPELL_ELUDE">
 		<supports>Bard, Sorcerer, Warlock, Wizard</supports>
 		<description>
-			<p></p>
+			<p>Choose a creature that you can see within range. For the duration, you are invisible to that creature. The spell ends if you attack or cast a spell.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
@@ -910,7 +910,8 @@
 	<element name="Haptic Feedback" type="Spell" source="Orana's Expanded Spellbook" id="ID_PP_OES_SPELL_HAPTIC_FEEDBACK">
 		<supports>Bard, Cleric, Wizard</supports>
 		<description>
-			<p></p>
+			<p>A creature that you can see within range must make an Intelligence saving throw. On a failed save, the creature experiences unsettling sensations, such as ants walking on its arms, or a finger running up its spine. The creature has disadvantage on any Charisma checks it makes for the duration. At any time before the spell ends (no action required), you can deal 1d6 psychic damage to the target, then the spell immediately ends. You can't deal this damage if you're incapacitated.</p>
+			<p class="indent"><b>At Higher Levels.</b> This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
@@ -2029,7 +2030,7 @@
 	<element name="Watcher's Ward" type="Spell" source="Orana's Expanded Spellbook" id="ID_PP_OES_SPELL_WATCHERS_WARD">
 		<supports>Cleric</supports>
 		<description>
-			<p></p>
+			<p>You touch a willing creature other than yourself and mark it with a faintly glowing symbol that lasts for the duration. The symbol also disappears if you or the marked creature dismiss it as an action, or if you cast this spell again. You choose the symbol's appearance, as well as if it is visible to others. While the marked creature is on the same plane of existence as you, you know the direction to it and whether it has at least 1 hit point. Once during the spell's duration, when you cast a spell with a range of touch, you can target the creature even if it isn't within your reach. The creature must be on the same plane of existence as you. The spell then ends.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>

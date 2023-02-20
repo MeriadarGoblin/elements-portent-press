@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Feats</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/feats.xml" />
 		</update>
 	</info>
@@ -129,6 +129,7 @@
 		</rules>
 	</element>
 	<element name="Intelligence Increase" type="Feat Feature" source="Orana's Expanded Spellbook" id="ID_OES_FEAT_HEXER_INTELLIGENCE">
+		<supports>Hexer Score Increase</supports>
 		<description>
 			<p>Increase your Intelligence to a maximum of 20.</p>
 		</description>
@@ -139,6 +140,7 @@
 		</rules>
 	</element>
 	<element name="Wisdom Increase" type="Feat Feature" source="Orana's Expanded Spellbook" id="ID_OES_FEAT_HEXER_WISDOM">
+		<supports>Hexer Score Increase</supports>
 		<description>
 			<p>Increase your Wisdom to a maximum of 20.</p>
 		</description>
@@ -149,6 +151,7 @@
 		</rules>
 	</element>
 	<element name="Charisma Increase" type="Feat Feature" source="Orana's Expanded Spellbook" id="ID_OES_FEAT_HEXER_CHARISMA">
+		<supports>Hexer Score Increase</supports>
 		<description>
 			<p>Increase your Charisma by 1 to a maximum of 20.</p>
 		</description>
