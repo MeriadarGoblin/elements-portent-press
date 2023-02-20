@@ -2,11 +2,11 @@
 <elements>
 	<info>
 		<name>Source</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="source.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/impending-doom/source.xml" />
 		</update>
 	</info>
-	<element name="Impending Doom" type="Source" source="Impending Doom" id="ID_SOURCE_PP_OES">
+	<element name="Impending Doom" type="Source" source="Impending Doom" id="ID_SOURCE_PP_IMPENDING_DOOM">
 		<description>
 			<p>The content from the Portent Press team that adds a new condition with two subclasses revolving it.</p>
 		</description>
