@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Circle of Reefs</name>
+		<update version="0.0.1">
+			<file name="subclass-druid-reefs.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/what-lies-below/subclass-druid-reefs.xml" />
+		</update>
+	</info>
+	
+	<element name="Circle of Reefs" type="Archetype" source="What Lies Below" id="ID_PP_WLB_ARCHETYPE_CIRCLE_OF_REEFS">
+		<supports>Druid Circle</supports>
+		<description>
+			<p>Druids of the Circle of Reefs swear loyalty to the coasts and their reefs. They adorn themselves with armor made of dead coral, driftwood, and sea shells in order to protect themselves in the never-ending battle against ocean pollution, overfishing, and beach erosion. In battle, they wield the tremendous druidic magic of the shallow seas and the interconnected strength of the reef.</p>
+			<div element="ID_PP_WLB_ARCHETYPE_FEATURE_REEFS_BARRIER_REEF" />
+			<div element="ID_PP_WLB_ARCHETYPE_FEATURE_REEFS_SEA_SHAPE" />
+			<div element="ID_PP_WLB_ARCHETYPE_FEATURE_REEFS_POLYP_BLOOM" />
+			<div element="ID_PP_WLB_ARCHETYPE_FEATURE_REEFS_REEF_WALK" />
+			<div element="ID_PP_WLB_ARCHETYPE_FEATURE_REEFS_BARBED_BARRIER" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_PP_WLB_ARCHETYPE_FEATURE_REEFS_BARRIER_REEF" level="2" />
+			<grant type="Archetype Feature" id="ID_PP_WLB_ARCHETYPE_FEATURE_REEFS_SEA_SHAPE" level="2" />
+			<grant type="Archetype Feature" id="ID_PP_WLB_ARCHETYPE_FEATURE_REEFS_POLYP_BLOOM" level="6" />
+			<grant type="Archetype Feature" id="ID_PP_WLB_ARCHETYPE_FEATURE_REEFS_REEF_WALK" level="10" />
+			<grant type="Archetype Feature" id="ID_PP_WLB_ARCHETYPE_FEATURE_REEFS_BARBED_BARRIER" level="14" />
+		</rules>
+	</element>
+	<element name="Barrier Reef" type="Archetype Feature" source="What Lies Below" id="ID_PP_WLB_ARCHETYPE_FEATURE_REEFS_BARRIER_REEF">
+		<description>
+			<p>You gain proficiency with hand crossbows, nets, and tridents, and you gain possession of a shield made of your choice of coral, driftwood, shells, or marine material.</p>
+			<p class="indent">While you wield a shield, you can expend a use of your Wild Shape as an action to plant your shield in the ground or float it before you while submerged. The shield immediately extends 5 feet to your left and right for every 2 levels you have in this class and remains immobile. If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (your choice), unless it uses its reaction to move 5 feet to either side of the wall.</p>
+			<p class="indent">The wall provides half cover to those behind it and prevents travel through it, though you gain no benefits of a shield if you wield another one while behind the wall.</p>
+			<p class="indent">While you remain within 5 feet of the wall, you gain the following benefits:</p>
+			<ul>
+				<li>You can see through the wall, though others can't.</li>
+				<li>If the wall would grant you a bonus to your AC and Dexterity saving throws as a result of providing half cover, the bonus is equal to your Wisdom modifier (minimum of +3).</li>
+				<li>Your druid spells can originate from any point along the wall, though you must use your own senses.</li>
+			</ul>
+			<p class="indent">Your shield maintains this form for 1 minute or until you use a bonus action to revert it back to its original shape.</p>
+		</description>
+		<sheet action="Action" usage="Wild Shape">
+			<description>While you wield a shield, you can expend a use of your Wild Shape as an action to plant your shield in the ground or float it before you while submerged. The shield immediately extends 5 feet to your left and right for every 2 levels you have in this class and remains immobile. If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (your choice), unless it uses its reaction to move 5 feet to either side of the wall.&#13;
+				The wall provides half cover to those behind it and prevents travel through it, though you gain no benefits of a shield if you wield another one while behind the wall.&#13;
+				While you remain within 5 feet of the wall, you gain the following benefits:&#13;
+				• You can see through the wall, though others can't.&#13;
+				• If the wall would grant you a bonus to your AC and Dexterity saving throws as a result of providing half cover, the bonus is equal to your Wisdom modifier (minimum of +3).&#13;
+				• Your druid spells can originate from any point along the wall, though you must use your own senses.&#13;
+				Your shield maintains this form for 1 minute or until you use a bonus action to revert it back to its original shape.
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_NET" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT" />
+		</rules>
+	</element>
+	<element name="Sea Shape" type="Archetype Feature" source="What Lies Below" id="ID_PP_WLB_ARCHETYPE_FEATURE_REEFS_SEA_SHAPE">
+		<description>
+			<p>When you enter your beast form, you can choose a beast with a swimming speed, ignoring the limitations in the Beast Shapes table. Also, the beasts you transform into gain the following trait if they don't have it already:</p>
+			<h5>Amphibious</h5>
+			<p>The creature can breathe both air and water.</p>
+		</description>
+		<sheet>
+			<description>When you enter your beast form, you can choose a beast with a swimming speed, ignoring the limitations in the Beast Shapes table. Also, the beasts you transform into gain the trait Amphibious (the creature can breathe both air and water.)</description>
+		</sheet>
+	</element>
+	<element name="Polyp Bloom" type="Archetype Feature" source="What Lies Below" id="ID_PP_WLB_ARCHETYPE_FEATURE_REEFS_POLYP_BLOOM">
+		<description>
+			<p>Like the reefs, your shield can create a bloom of microscopic organisms to grow itself. As a bonus action while your shield is in its Barrier form, you can add a 5-foot-long panel to the wall. The panel can be in the same orientation as the wall or 90 degrees in another direction.</p>
+			<p class="indent">At 14th level, you can create up to three panels. Each of these panels much be adjacent to another.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>As a bonus action while your shield is in its Barrier form, you can add a 5-foot-long panel to the wall. The panel can be in the same orientation as the wall or 90 degrees in another direction.</description>
+			<description level="14">As a bonus action while your shield is in its Barrier form, you can add two 5-foot-long panels to the wall. The panels can be in the same orientation as the wall or 90 degrees in another direction and must be adjacent to each other.</description>
+		</sheet>
+	</element>
+	<element name="Reef Walk" type="Archetype Feature" source="What Lies Below" id="ID_PP_WLB_ARCHETYPE_FEATURE_REEFS_REEF_WALK">
+		<description>
+			<p>You learn to combine your form with that of your Barrier Reef. On your turn, you can step into your Barrier Reef and exit it in an unoccupied space along it as if by the <i>tree stride</i> spell. If you use your movement this way immediately before making a melee attack against a creature that couldn't see you before you moved, you can do so with advantage.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_TREE_STRIDE" />
+			</div>
+		</description>
+		<sheet>
+			<description>On your turn, you can step into your Barrier Reef and exit it in an unoccupied space along it as if by the tree stride spell. If you use your movement this way immediately before making a melee attack against a creature that couldn't see you before you moved, you can do so with advantage.</description>
+		</sheet>
+	</element>
+	<element name="Barbed Barrier" type="Archetype Feature" source="What Lies Below" id="ID_PP_WLB_ARCHETYPE_FEATURE_REEFS_BARBED_BARRIER">
+		<description>
+			<p>You can expend two uses of your Wild Shape when you create your Barrier Reef to make it a Barbed Barrier. When this wall appears and when a creature starts its turn within 5 feet of the Barbed Barrier, a creature must make a Dexterity saving throw against your spell save DC. On a failure, the creature takes piercing damage equal to 2d6 + your Wisdom modifier and is poisoned while your Barrier Reef remains. On a success, a creature takes half as much damage and isn't poisoned.</p>
+		</description>
+		<sheet>
+			<description>You can expend two uses of your Wild Shape when you create your Barrier Reef to make it a Barbed Barrier. When this wall appears and when a creature starts its turn within 5 feet of the Barbed Barrier, a creature must make a Dexterity saving throw against your spell save DC. On a failure, the creature takes piercing damage equal to 2d6 + {{wisdom:modifier}} and is poisoned while your Barrier Reef remains. On a success, a creature takes half as much damage and isn't poisoned.</description>
+		</sheet>
+	</element>
+</elements>

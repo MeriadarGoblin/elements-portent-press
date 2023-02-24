@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Angler</name>
+		<update version="0.0.1">
+			<file name="subclass-rogue-angler.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/what-lies-below/subclass-rogue-angler.xml" />
+		</update>
+	</info>
+	
+	<element name="Angler" type="Archetype" source="What Lies Below" id="ID_PP_WLB_ARCHETYPE_ANGLER">
+		<supports>Roguish Archetype</supports>
+		<description>
+			<p>As an archetypal angler, you are a rogue that excels at getting your hooks into your prey from a distance before reeling them to you for the kill. You rely on your trusty fishing pole, lures, and strong, nimble arms to defeat your enemies and to provide sustenance to your allies.</p>
+			<div element="ID_PP_WLB_ARCHETYPE_FEATURE_ANGLER_BONUS_PROFICIENCIES" />
+			<div element="ID_PP_WLB_ARCHETYPE_FEATURE_ANGLER_HOOK_AND_REEL" />
+			<div element="ID_PP_WLB_ARCHETYPE_FEATURE_ANGLER_TIGHT_KNOTS" />
+			<div element="ID_PP_WLB_ARCHETYPE_FEATURE_ANGLER_SEA_LEGS" />
+			<div element="ID_PP_WLB_ARCHETYPE_FEATURE_ANGLER_LEVIATHER" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_PP_WLB_ARCHETYPE_FEATURE_ANGLER_BONUS_PROFICIENCIES" level="3" />
+			<grant type="Archetype Feature" id="ID_PP_WLB_ARCHETYPE_FEATURE_ANGLER_HOOK_AND_REEL" level="3" />
+			<grant type="Archetype Feature" id="ID_PP_WLB_ARCHETYPE_FEATURE_ANGLER_TIGHT_KNOTS" level="9" />
+			<grant type="Archetype Feature" id="ID_PP_WLB_ARCHETYPE_FEATURE_ANGLER_SEA_LEGS" level="13" />
+			<grant type="Archetype Feature" id="ID_PP_WLB_ARCHETYPE_FEATURE_ANGLER_LEVIATHER" level="17" />
+		</rules>
+	</element>
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="What Lies Below" id="ID_PP_WLB_ARCHETYPE_FEATURE_ANGLER_BONUS_PROFICIENCIES">
+		<description>
+			<p>You gain proficiency with the Survival skill, if you don't have it already. In addition, for you, the Fishing Tackle kit (see chapter 5 of the Player's Handbook for information about this adventuring gear) is considered a tool, and you become proficient with its use, such as catching food.</p>
+			<p class="indent">Additionally, you can use the wooden rod, silken line, and a steel hook from your kit as a weapon called an Angler's Pole. The Angler's Pole has the following properties and you are considered proficient with it.</p>
+			<table>
+				<thead>
+					<tr><td>Weapon Name</td><td>Damage</td><td>Weight</td><td>Properties</td></tr>
+				</thead>
+				<tr><td>Angler's Pole</td><td>1d4 piercing</td><td>2 lb.</td><td>Finesse, light, reach, versatile (1d6), special</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>For you, the Fishing Tackle kit is considered a tool, and you become proficient with its use, such as catching food. Additionally, you can use the wooden rod, silken line, and a steel hook from your kit as a weapon called an Angler's Pole.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<grant type="Proficiency" id="ID_WLB_WEAPON_PROPERTY_SPECIAL_ANGLERS_POLE" />
+		</rules>
+	</element>
+	<element name="Hook and Reel" type="Archetype Feature" source="What Lies Below" id="ID_PP_WLB_ARCHETYPE_FEATURE_ANGLER_HOOK_AND_REEL">
+		<description>
+			<p>Your experience preparing hooks and reeling fish allows you additional uses of your Cunning Action. When you take the Attack action and hit a creature with an angler's pole, you can use your bonus action to attempt to grapple the creature, even if you don't have a free hand to do so. On a success, the creature is grappled by you. The grapple ends early for the creature if it is ever out of your reach, if you are no longer wielding your angler's pole or attack another creature with it, or if the restraints are dealt slashing or fire damage.</p>
+			<p class="indent">You can use your Sneak Attack against a target grappled in this way even if you don’t have advantage on the attack roll, but not if you have disadvantage on it, and on subsequent turns, you can use your bonus action to pull a grappled creature 5 feet toward you. If the creature is at least one size smaller than you, you can instead pull that creature 10 feet.</p>
+		</description>
+		<sheet>
+			<description>When you take the Attack action and hit a creature with an angler's pole, you can use your bonus action to attempt to grapple the creature, even if you don't have a free hand to do so. On a success, the creature is grappled by you. The grapple ends early for the creature if it is ever out of your reach, if you are no longer wielding your angler's pole or attack another creature with it, or if the restraints are dealt slashing or fire damage.&#13;
+				You can use your Sneak Attack against a target grappled in this way even if you don’t have advantage on the attack roll, but not if you have disadvantage on it, and on subsequent turns, you can use your bonus action to pull a grappled creature 5 feet toward you. If the creature is at least one size smaller than you, you can instead pull that creature 10 feet.
+			</description>
+		</sheet>
+	</element>
+	<element name="Tight Knots" type="Archetype Feature" source="What Lies Below" id="ID_PP_WLB_ARCHETYPE_FEATURE_ANGLER_TIGHT_KNOTS">
+		<description>
+			<p>You can tie just about any knot. You have advantage on Intelligence (Sleight of Hand) checks to tie and untie knots, and you can use an action to replace the steel hook on your angler's pole with a dagger that is knotted to the silken line. When you do so, your angler's pole gains any magical benefits that the dagger grants its wielder, taking on its attunement rules if it has any, and its damage becomes slashing instead of piercing. A dagger knotted in this way loses the thrown property and any magical benefits relating to its throwing. It can also be replaced with another dagger or a steel hook with an action.</p>
+			<p class="indent">Additionally, you can attempt to grapple a creature that is two sizes larger than you with your angler's pole.</p>
+		</description>
+		<sheet>
+			<description>You can tie just about any knot. You have advantage on Intelligence (Sleight of Hand) checks to tie and untie knots, and you can use an action to replace the steel hook on your angler's pole with a dagger that is knotted to the silken line. When you do so, your angler's pole gains any magical benefits that the dagger grants its wielder, taking on its attunement rules if it has any, and its damage becomes slashing instead of piercing. A dagger knotted in this way loses the thrown property and any magical benefits relating to its throwing. It can also be replaced with another dagger or a steel hook with an action.&#13;
+				Additionally, you can attempt to grapple a creature that is two sizes larger than you with your angler's pole.
+			</description>
+		</sheet>
+	</element>
+	<element name="Sea Legs" type="Archetype Feature" source="What Lies Below" id="ID_PP_WLB_ARCHETYPE_FEATURE_ANGLER_SEA_LEGS">
+		<description>
+			<p>Your legs are used to the constant sway of the seas. You have advantage on saving throws against effects that would knock you prone.</p>
+			<p class="indent">Additionally, when you use your Uncanny Dodge feature against a melee attack, you can move up to half your speed without provoking opportunity attacks.</p>
+		</description>
+		<sheet>
+			<description>Your legs are used to the constant sway of the seas. You have advantage on saving throws against effects that would knock you prone.&#13;
+				Additionally, when you use your Uncanny Dodge feature against a melee attack, you can move up to half your speed without provoking opportunity attacks.
+			</description>
+		</sheet>
+	</element>
+	<element name="Leviather" type="Archetype Feature" source="What Lies Below" id="ID_PP_WLB_ARCHETYPE_FEATURE_ANGLER_LEVIATHER">
+		<description>
+			<p>No fish is too big for you. You can grapple a creature of any size with your angler's pole, and when you pull a creature on your turn with Hook and Reel, you can pull it an additional 5 feet for every 10 feet you've moved since the end of your last turn.</p>
+			<p class="indent">Additionally, a creature you pull using your Angler's Pole takes 1d6 bludgeoning damage and 1d6 slashing damage for each 5 feet it is pulled by you.</p>
+		</description>
+		<sheet>
+			<description>You can grapple a creature of any size with your angler's pole, and when you pull a creature on your turn with Hook and Reel, you can pull it an additional 5 feet for every 10 feet you've moved since the end of your last turn. Additionally, a creature you pull using your Angler's Pole takes 1d6 bludgeoning damage and 1d6 slashing damage for each 5 feet it is pulled by you.</description>
+		</sheet>
+	</element>
+	
+	<element name="Weapon Proficiency (Anger's Pole)" type="Proficiency" source="What Lies Below" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WLB_ANGLERS_POLE">
+        <supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_WLB_WEAPON_PROPERTY_SPECIAL_ANGLERS_POLE</supports>
+        <sheet alt="Angler's Pole" />    
+        <setters>
+            <set name="sourceUrl">https://www.gmbinder.com/share/-N0Bx_7U5sp7gLznZDDd</set>
+        </setters>
+    </element>
+	<element name="Special (Angler's Pole)" type="Weapon Property" source="What Lies Below" id="ID_WLB_WEAPON_PROPERTY_SPECIAL_ANGLERS_POLE">
+        <description>
+            <p>While wielding it in two hands, the reach of the Angler's Pole is 30 feet instead of 10 feet.</p>
+        </description>
+    </element>
+	<element name="Angler's Pole" type="Weapon" source="What Lies Below" id="ID_WLB_WEAPON_ANGLERS_POLE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_WLB_WEAPON_PROPERTY_SPECIAL_ANGLERS_POLE </supports>
+		<description>
+			<p></p>
+			<div class="reference">
+				<div element="ID_WLB_WEAPON_PROPERTY_SPECIAL_ANGLERS_POLE" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp"></set>
+			<set name="weight" lb="2"></set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="piercing">1d4</set>
+			<set name="versatile">1d6</set>
+			<set name="proficiency">ID_WLB_WEAPON_PROPERTY_SPECIAL_ANGLERS_POLE</set>
+		</setters>
+	</element>
+    <append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS">
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WLB_ANGLERS_POLE" />
+        </rules>
+    </append>
+</elements>

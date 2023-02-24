@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Source</name>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/what-lies-below/source.xml" />
+		</update>
+	</info>
+	
+	<element name="What Lies Below" type="Source" source="What Lies Below" id="ID_SOURCE_PP_WHAT_LIES_BELOW">
+		<description>
+			<p>An additional content made by Portent Press that adds class options around an aquatic theme!</p>
+		</description>
+		<setters>
+			<set name="abbreviation">WLB</set>
+			<set name="url">https://www.gmbinder.com/share/-N0Bx_7U5sp7gLznZDDd</set>
+			<set name="image">https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/what-lies-below/WLB-cover.PNG</set>
+			<set name="author" abbreviation="PP" url="https://www.gmbinder.com/share/-N0Bx_7U5sp7gLznZDDd">PortentPress</set>
+			<set name="homebrew">true</set>
+			<set name="release">20220303</set>
+		</setters>
+	</element>
+	
+</elements>

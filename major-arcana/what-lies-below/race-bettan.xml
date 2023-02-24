@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Bettan Race</name>
+		<update version="0.0.1">
+			<file name="race-bettan.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/what-lies-below/subclass-race-bettan.xml" />
+		</update>
+	</info>
+	
+	<element name="Bettan" type="Race" source="What Lies Below" id="ID_PP_WLB_RACE_BETTAN">
+		<description>
+			<p>Bettan are militant guardians of the deepest rivers and lakes. They protect their territories against other bettan and against any who would dare assert claim over their homes, first by demonstrating their strength in ritual displays of their ribbons and then by taking up arms against any unintimidated by their presence.</p>
+			<h4>Fierce Beauty</h4>
+			<p>Bettan have powder-textured skin and long fins of every color that trail behind them in the water like ribbons. As they float among the aquamarine waters, their fins move in the waves like a motley of shimmering ribbons, but they bear a fanged jaw and often hide weapons within their ribbons, as they are always battle-ready.</p>
+			<h4>Gladiators and Showmen</h4>
+			<p>Being so essential to bettan upbringing, warrior training has developed beyond a skill and into an art among the bettan. Every year, a bettan community will host a grand festival for the others in the area, usually in a rotation that revolves year-to-year. These Aquariums attract eager young bettan, as well as the occasional surface dweller, to compete in one-on-one or group bouts of combat to earn respect, rewards, boons, or even the eye of a lover. In some areas of the world, these bouts may even be to the death, promising great riches to the winners or serving to prevent war.</p>
+			<h4>Bettan Nmes</h4>
+			<p>Most bettan names have one or two syllables. As a people, they make little distinction among genders, as their features are often feminine in presentation to those unfamiliar with their intricacies and as they expect all to train as warriors.</p>
+			<p class="indent"><b>Names:</b> Acua, Cora, Ey, Kelpo, Ray, Rena, Shore, Siam, Triden, Uloi, Yeye</p>
+			<h4>Bettan Traits</h4>
+			<p>Your bettan character has a number of traits in common with all other bettan.</p>
+			<p class="indent"><em>Ability Score Increase.</em> Typically, your Strength score increases by 2, and your Charisma scores increases by 1. Alternatively, you can increase any ability score by 2, and any other ability score by 1.</p>
+			<p class="indent"><em>Age.</em> Bettan reach maturity at around age 8 and can live up to 70 years.</p>
+			<p class="indent"><em>Size.</em> Bettan stand between 3 and 4 feet tall and average about 80 pounds. Your size is Small.</p>
+			<p class="indent"><em>Speed.</em> Your base walking speed is 25 feet, and you have a swimming speed of 35 feet.</p>
+			<p class="indent"><em>Amphibious.</em> You can breathe air and water.</p>
+			<p class="indent"><em>Bite.</em> Your sharp teeth serve as a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+			<p class="indent"><em>Darkvision.</em> Accustomed to the bottoms of rivers and oceans, your vision can cut through limited darkness. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</p>
+			<p class="indent"><em>Ribbons of the Fighting Folk.</em> Your ribbons are both threatening and alluring. You have proficiency in the Intimidation and Persuasion skills.</p>
+			<p class="indent"><em>Territorial.</em> You can make an opportunity attack without using your reaction. Once you use this trait, you can't do so again until you finish a long rest.</p>
+			<p class="indent"><em>Undaunted Warriors.</em> You have advantage on saving throws against being frightened and proficiency with hand crossbows, nets, and tridents.</p>
+			<p class="indent"><em>Languages.</em> You can speak, read, and write Common and Beta, the language of the bettan.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names">Acua, Cora, Ey, Kelpo, Ray, Rena, Shore, Siam, Triden, Uloi, Yeye</set>
+			<set name="names-format">{{name}}</set>
+		</setters>
+		<rules>
+			<select type="Racial Trait" name="Ability Score Increase (Bettan)" supports="Bettan Score Option" />
+			<grant type="Size=" id="ID_SIZE_SMALL" />
+			<stat name="innate speed" value="25" bonus="base" />
+			<stat name="innate speed:swim" value="35" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_WLB_LANGUAGE_BETTAN" />
+			<grant type="Racial Trait" id="ID_PP_WLB_RACIAL_TRAIT_BETTAN_AMPHIBIOUS" />
+			<grant type="Racial Trait" id="ID_PP_WLB_RACIAL_TRAIT_BETTAN_BITE" />
+			<grant type="Racial Trait" id="ID_PP_WLB_RACIAL_TRAIT_BETTAN_RIBBONS_OFTHE_FIGHTING_FOLK" />
+			<grant type="Racial Trait" id="ID_PP_WLB_RACIAL_TRAIT_BETTAN_TERRITORIAL" />
+			<grant type="Racial Trait" id="ID_PP_WLB_RACIAL_TRAIT_BETTAN_UNDAUNTED_WARRIORS" />
+		</rules>
+	</element>
+	<element name="Standard Racial Increase (Bettan)" type="Racial Trait" source="What Lies Below" id="ID_WLB_RACIAL_TRAIT_BETTAN_STANDARD_ASI">
+		<supports>Bettan Score Option</supports>
+		<description>
+			<p>Your Strength score increases by 2, and your Charisma scores increases by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="2" />
+			<stat name="charisma" value="1" />
+		</rules>
+	</element>
+	<element name="Optional Racial Increase (Bettan)" type="Racial Trait" source="What Lies Below" id="ID_WLB_RACIAL_TRAIT_BETTAN_OPTIONAL_ASI">
+		<supports>Bettan Score Option</supports>
+		<description>
+			<p>You can increase any ability score by 2, and any other ability score by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Optional Racial Increase +2 (Bettan)" supports="Custom Ability Score Increase 2" />
+			<select type="Ability Score Improvement" name="Optional Racial Increase +1 (Bettan)" supports="Custom Ability Score Increase 1" />
+		</rules>
+	</element>
+	<element name="Amphibious" type="Racial Trait" source="What Lies Below" id="ID_PP_WLB_RACIAL_TRAIT_BETTAN_AMPHIBIOUS">
+		<description>
+			<p>You can breathe air and water.</p>
+		</description>
+		<sheet>
+			<description>You can breathe air and water.</description>
+		</sheet>
+	</element>
+	<element name="Bite" type="Racial Trait" source="What Lies Below" id="ID_PP_WLB_RACIAL_TRAIT_BETTAN_BITE">
+		<description>
+			<p>Your sharp teeth serve as a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+		</description>
+		<sheet>
+			<description>Your sharp teeth serve as a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</description>
+		</sheet>
+	</element>
+	<element name="Ribbons of the Fighting Folk" type="Racial Trait" source="What Lies Below" id="ID_PP_WLB_RACIAL_TRAIT_BETTAN_RIBBONS_OFTHE_FIGHTING_FOLK">
+		<description>
+			<p>Your ribbons are both threatening and alluring. You have proficiency in the Intimidation and Persuasion skills.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+		</rules>
+	</element>
+	<element name="Territorial" type="Racial Trait" source="What Lies Below" id="ID_PP_WLB_RACIAL_TRAIT_BETTAN_TERRITORIAL">
+		<description>
+			<p>You can make an opportunity attack without using your reaction. Once you use this trait, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet usage="Long Rest">
+			<description>You can make an opportunity attack without using your reaction. Once you use this trait, you can't do so again until you finish a long rest.</description>
+		</sheet>
+	</element>
+	<element name="Undaunted Warriors" type="Racial Trait" source="What Lies Below" id="ID_PP_WLB_RACIAL_TRAIT_BETTAN_UNDAUNTED_WARRIORS">
+		<description>
+			<p>You have advantage on saving throws against being frightened and proficiency with hand crossbows, nets, and tridents.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against being frightened.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_NET" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT" />
+		</rules>
+	</element>
+
+	<element name="Bettan" type="Language" source="What Lies Below" id="ID_WLB_LANGUAGE_BETTAN">
+		<supports>Standard, Exotic</supports>
+		<description>
+			<p>Typically spoken by the Bettan.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Bettan</set>
+		</setters>
+	</element>
+</elements>

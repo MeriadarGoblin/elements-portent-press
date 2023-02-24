@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spells</name>
+		<update version="0.0.1">
+			<file name="spells.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/what-lies-below/spells.xml" />
+		</update>
+	</info>
+	
+	<element name="Hail of Harpoons" type="Spell" source="What Lies Below" id="ID_PP_WLB_SPELL_HAIL_OF_HARPOONS">
+		<supports>Ranger</supports>
+		<description>
+			<p>You thrust forth a spear or trident, causing dozens of duplicates to splinter from the weapon in a 30-foot cone originating from you. The cone's distance is doubled if the entirety of the cone would be submerged.</p>
+			<p class="indent">Each creature in the cone must make a Dexterity saving throw. On a failed save, a creature takes 10d6 piercing damage and, if it has a swimming speed, its speed is halved for 1 minute. On a successful save, a creature takes half as much damage and doesn't have its swimming speed reduced.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">5</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (30-foot-cone)</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a spear of trident</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Hydro Cannon" type="Spell" source="What Lies Below" id="ID_PP_WLB_SPELL_HYDRO_CANNON">
+		<supports>Sorcerer, Wizard</supports>
+		<description>
+			<p>A pair of cannons sprout from your shoulders and release a torrent of water in a 10-foot-wide, 60-foot-long line. Each creature in the line must make a Strength saving throw. On a failure, a creature takes 6d8 bludgeoning damage, is pushed 30 feet away from you, and knocked prone. On a success, a creature takes half as much damage, is pushed 10 feet, and is not knocked prone.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th or higher level, the damage increases by 1d8 for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">4</set>
+			<set name="school">Evocation</set>
+			<set name="time">time</set>
+			<set name="range">Self (60-foot-line)</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a turtle shell</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Liquid Sculpture" type="Spell" source="What Lies Below" id="ID_PP_WLB_SPELL_LIQUID_SCULPTURE">
+		<supports>Bard, Druid, Wizard</supports>
+		<description>
+			<p>You target a source of water within range and bend the water into an object or image of your choice, which can rotate or change its shape for the duration. The size of the sculpture is determined by the volume of water available to a maximum size equal to a 30-foot-cube.</p>
+			<p class="indent">While the sculpture is present, you can use an action to speak a series of words to a creature within range that can see the sculpture. The creature must make a Wisdom saving throw or be charmed by you for the duration or until it takes damage. A creature who succeeds on this saving throw is immune to the effect for the spell's duration.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="range">60 feet</set>
+			<set name="duration">10 minutes</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Swim" type="Spell" source="What Lies Below" id="ID_PP_WLB_SPELL_SWIM">
+		<supports>Druid, Ranger, Wizard</supports>
+		<description>
+			<p>You touch a creature and alter its body to adapt it to water. For the duration, the creature gains a swimming speed equal to its walking speed and the ability to breathe underwater.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, you can target an additional creature within range for each level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a handful of kelp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Water Lash" type="Spell" source="What Lies Below" id="ID_PP_WLB_WATER_LASH">
+		<supports>Druid, Ranger</supports>
+		<description>
+			<p>A pool of water appears on the ground in the shape of a 10-foot-radius, 5-foot-deep cylinder, centered on a point you can see within range.</p>
+			<p class="indent">When you cast the spell, choose a point you can see within 15 feet of the pool. A 5-foot-wide line of water lashes from the pool to that point. Each creature in that line must make a Dexterity saving throw. A creature takes 2d10 bludgeoning damage on a failed save, or half as much damage on a successful one. On each of your turns until the spell ends, you can use your action to lash water in this way again, targeting the same point or a different one.</p>
+			<p class="indent">If you choose an existing source of water as the pool's origin point when you cast this spell, the lash can appear from any point you can see in that source of water within 60 feet of you.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd or higher level, the damage increases by 1d10 for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">60 feet</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+</elements>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name></name>
+		<update version="0.0.1">
+			<file name="subclass-cleric-sea.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/what-lies-below/subclass-cleric-sea.xml" />
+		</update>
+	</info>	
+
+	<element name="Sea Domain" type="Archetype" source="What Lies Below" id="ID_PP_WLB_ARCHETYPE_SEA_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>The seas are the origin of life and continued sources of its survival. Clerics of the Sea Domain worship the way in which the waters and the moon that create tides bathe the land in life. They seek to protect its fragile reefs and revere its tempestuous nature. Following gods of water, the ocean, and the seas, such as Aegir, Brigantia, Manannan mac Lir, Njord, Poseidon, and Sobek, these clerics adventure on ships, below the waves, and across coasts in order to spread liveliness, find sunken artifacts, and see the vastness of the oceans to strengthen their worship.</p>
+			<h4>Domain Spells</h4>
+			<p><i>1st-level Sea Domain feature</i></p>
+			<p>You gain domain spells at the cleric levels listed in the Sea Domain Spells table. See the Divine Domain class feature for how domain spells work.</p>
+			<h5>Sea Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Spell</td></tr>
+				</thead>
+				<tr><td>1st</td><td>create or destroy water, swim</td></tr>
+				<tr><td>3rd</td><td>moonbeam, water lash</td></tr>
+				<tr><td>5th</td><td>water breathing, water walk</td></tr>
+				<tr><td>7th</td><td>control water, polymorph</td></tr>
+				<tr><td>9th</td><td>commune with nature, hail of harpoons</td></tr>
+			</table>
+			<div element="ID_PP_WLB_ARCHETYPE_FEATURE_SEA_BONUS_PROFICIENCIES" />
+			<div element="ID_PP_WLB_ARCHETYPE_FEATURE_SEA_WIDE_NET" />
+			<div element="ID_PP_WLB_ARCHETYPE_FEATURE_SEA_WIDE_CHANNEL_DIVINITY_LIFE_RAFT" />
+			<div element="ID_PP_WLB_ARCHETYPE_FEATURE_SEA_WIDE_CHANNEL_DIVINITY_SPRING_TIDE" />
+			<div element="ID_PP_WLB_ARCHETYPE_FEATURE_SEA_WIDE_POTENT_SPELLCASTING" />
+			<div element="ID_PP_WLB_ARCHETYPE_FEATURE_SEA_WIDE_OCEANIC" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_CREATE_OR_DESTROY_WATER" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PP_WLB_SPELL_SWIM" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MOONBEAM" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PP_WLB_WATER_LASH" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WATER_BREATHING" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WATER_WALK" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONTROL_WATER" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_POLYMORPH" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_COMMUNE_WITH_NATURE" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PP_WLB_SPELL_HAIL_OF_HARPOONS" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Archetype Feature" id="ID_PP_WLB_ARCHETYPE_FEATURE_SEA_BONUS_PROFICIENCIES" level="1" />
+			<grant type="Archetype Feature" id="ID_PP_WLB_ARCHETYPE_FEATURE_SEA_WIDE_NET" level="1" />
+			<grant type="Archetype Feature" id="ID_PP_WLB_ARCHETYPE_FEATURE_SEA_CHANNEL_DIVINITY_LIFE_RAFT" level="2" />
+			<grant type="Archetype Feature" id="ID_PP_WLB_ARCHETYPE_FEATURE_SEA_CHANNEL_DIVINITY_SPRING_TIDE" level="2" />
+			<grant type="Archetype Feature" id="ID_PP_WLB_ARCHETYPE_FEATURE_SEA_POTENT_SPELLCASTING" level="8" />
+			<grant type="Archetype Feature" id="ID_PP_WLB_ARCHETYPE_FEATURE_SEA_OCEANIC" level="17" />
+		</rules>
+	</element>
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="What Lies Below" id="ID_PP_WLB_ARCHETYPE_FEATURE_SEA_BONUS_PROFICIENCIES">
+		<description>
+			<p>You gain proficiency with hand crossbows, nets, and tridents and your choice of the Nature or Survival skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_NET" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT" />
+			<select type="Proficiency" name="Bonus Proficiencies (Sea Domain)" supports="ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_SURVIVAL" />
+		</rules>
+	</element>
+	<element name="Wide Net" type="Archetype Feature" source="What Lies Below" id="ID_PP_WLB_ARCHETYPE_FEATURE_SEA_WIDE_NET">
+		<description>
+			<p>Your domain prepares you to cast a wide net. When you cast a spell with a range of touch that targets one creature within range, you can target any number of creatures within 10 feet.</p>
+			<p class="indent">Once you use this feature, you can't do so again until you finish a long rest. At 14th level, you can do twice between long rests.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>Your domain prepares you to cast a wide net. When you cast a spell with a range of touch that targets one creature within range, you can target any number of creatures within 10 feet.</description>
+			<description usage="2/Long Rest" level="14">Your domain prepares you to cast a wide net. When you cast a spell with a range of touch that targets one creature within range, you can target any number of creatures within 10 feet.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divninity: Life Raft" type="Archetype Feature" source="What Lies Below" id="ID_PP_WLB_ARCHETYPE_FEATURE_SEA_CHANNEL_DIVINITY_LIFE_RAFT">
+		<description>
+			<p>As an action, you can present your holy symbol and target a number of willing creatures up to your proficiency bonus within 30 feet of you. For the next hour, if a target is reduced to 0 hit points, it is automatically stabilized. In addition, if a stabilized target is submerged in a liquid and you can see it, you can use a bonus action to magically carry the target to the surface of the liquid at a rate of 60 feet per round. When it reaches the surface, the creature floats on the liquid for the remainder of the duration.</p>
+		</description>
+		<sheet action="Action" usage="Channel Divinity" alt="Life Raft">
+			<description>As an action, you can present your holy symbol and target a number of willing creatures up to your proficiency bonus within 30 feet of you. For the next hour, if a target is reduced to 0 hit points, it is automatically stabilized. In addition, if a stabilized target is submerged in a liquid and you can see it, you can use a bonus action to magically carry the target to the surface of the liquid at a rate of 60 feet per round. When it reaches the surface, the creature floats on the liquid for the remainder of the duration.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Spring Tide" type="Archetype Feature" source="What Lies Below" id="ID_PP_WLB_ARCHETYPE_FEATURE_SEA_CHANNEL_DIVINITY_SPRING_TIDE">
+		<description>
+			<p>As an action, you can present your holy symbol and create a 5-foot-diameter moon 30 feet directly above you, which lasts for 1 minute and follows you. You choose the moon's color and phase, but it emits bright light in a 30-foot radius and dim light for an additional 30 feet. Each creature other than you within the moon's light when you use this action must make a Strength saving throw against your spell save DC or be pulled to the nearest unoccupied space next to the moon, have its speed reduced to 0, and travel with the moon for the duration. A creature can choose to fail this saving throw. If the creature is in the moon's bright light, it makes its saving throw with disadvantage.</p>
+		</description>
+		<sheet action="Action" usage="Channel Divinity" alt="Spring Tide">
+			<description>As an action, you can present your holy symbol and create a 5-foot-diameter moon 30 feet directly above you, which lasts for 1 minute and follows you. You choose the moon's color and phase, but it emits bright light in a 30-foot radius and dim light for an additional 30 feet. Each creature other than you within the moon's light when you use this action must make a Strength saving throw against your spell save DC or be pulled to the nearest unoccupied space next to the moon, have its speed reduced to 0, and travel with the moon for the duration. A creature can choose to fail this saving throw. If the creature is in the moon's bright light, it makes its saving throw with disadvantage.</description>
+		</sheet>
+	</element>
+	<element name="Potent Spellcasting" type="Archetype Feature" source="What Lies Below" id="ID_PP_WLB_ARCHETYPE_FEATURE_SEA_POTENT_SPELLCASTING">
+		<description>
+			<p>You add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+		</description>
+		<sheet>
+			<description>You add your Wisdom modifier to the damage you deal with any cleric cantrip.</description>
+		</sheet>
+	</element>
+	<element name="Oceanic" type="Archetype Feature" source="What Lies Below" id="ID_PP_WLB_ARCHETYPE_FEATURE_SEA_OCEANIC">
+		<description>
+			<p>You can cast <i>control water</i> at will, without expending a spell slot. You also learn the <i>tsunami</i> spell, it counts as a cleric spell for you, you always have it prepared, and any creature of your choice with a swimming speed is immune to the spell.</p>
+			<p class="indent">Additionally, when you cast <i>tsunami</i> as a 9th-level spell, the wave can be up to 500-feet-long, 500-feet-high, and 50 feet thick, the spell's damage increases by 1d10, and you can maintain concentration on the spell for up to 1 minute.</p>
+		</description>
+		<sheet>
+			<description>You can cast control water at will, without expending a spell slot. You also learn the tsunami spell, it counts as a cleric spell for you, you always have it prepared, and any creature of your choice with a swimming speed is immune to the spell.&#13;
+				Additionally, when you cast tsunami as a 9th-level spell, the wave can be up to 500-feet-long, 500-feet-high, and 50 feet thick, the spell's damage increases by 1d10, and you can maintain concentration on the spell for up to 1 minute.
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_TSUNAMI" spellcasting="Cleric" prepared="true" />
+		</rules>
+	</element>
+	
+</elements>

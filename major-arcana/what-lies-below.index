@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>What Lies Below</name>
+		<description>The content from the Portent Press team that adds new ideas for aquatic-themed campaigns.</description>
+		<author url="https://www.gmbinder.com/share/-LsDqsNbupzeLhkTIcPv">Portent Press</author>
+		<update version="0.0.1">
+			<file name="impending-doom.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/what-lies-below.index" />
+		</update>
+	</info>
+	<files>
+		<file name="optional-class-features.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/what-lies-below/optional-class-features.xml" />
+		<file name="spells.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/what-lies-below/spells.xml" />
+		<file name="source.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/what-lies-below/source.xml" />
+		<file name="subclass-cleric-sea.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/what-lies-below/subclass-cleric-sea.xml" />
+		<file name="subclass-druid-reefs.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/what-lies-below/subclass-druid-reefs.xml" />
+		<file name="subclass-rogue-angler.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/what-lies-below/subclass-rogue-angler.xml" />
+	</files>
+	
+</index>

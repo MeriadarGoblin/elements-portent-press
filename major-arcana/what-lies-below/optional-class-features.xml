@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Optional Class Features</name>
+		<update version="0.0.1">
+			<file name="optional-class-features.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/what-lies-below/optional-class-features.xml" />
+		</update>
+	</info>
+	<!-- Barbarian Fathom's Fury -->
+	<element name="Fathom's Fury" type="Class Feature" source="What Lies Below" id="ID_PP_WLB_CLASS_FEATURE_BARBARIAN_ADDITIONAL_FATHOMS_FEATURE">
+		<description>
+			<p><i>5th-level barbarian feature, which replaces the Fast Movement feature</i></p>
+			<p>Your rage sustains you while submerged. While you are raging, you gain a swimming speed equal to your walking speed and you can hold your breath twice as long.</p>
+		</description>
+		<sheet>
+			<description>Your rage sustains you while submerged. While you are raging, you gain a swimming speed equal to your walking speed and you can hold your breath twice as long.</description>
+		</sheet>
+	</element>
+
+	<element name="Barbarian, LV05: Fathom's Fury" type="Item" source="What Lies Below" id="ID_PP_WLB_ITEM_OCF_BARBARIAN_ADDITIONAL_FATHOMS_FURY">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_PP_WLB_CLASS_FEATURE_BARBARIAN_ADDITIONAL_FATHOMS_FEATURE" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">fifth level, 5th level, rage</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Grant" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_FAST_MOVEMENT" />
+			<grant type="Class Feature" id="ID_PP_WLB_CLASS_FEATURE_BARBARIAN_ADDITIONAL_FATHOMS_FEATURE" requirements="[level:barbarian:5]"/>
+		</rules>
+	</element>
+	<!-- Fighting Style Option -->
+	<element name="Mariner" type="Class Feature" source="What Lies Below" id="ID_PP_WLB_CLASS_FEATURE_FIGHTINGSTYLE_MARINER">
+		<supports>Fighting Style, Fighter, Paladin, Ranger</supports>
+		<description>
+			<p>You gain a swimming speed equal to your walking speed, and when you hit with a melee weapon attack while underwater, you gain a +2 bonus to the damage roll.</p>
+		</description>
+		<sheet>
+			<description>You gain a swimming speed equal to your walking speed, and when you hit with a melee weapon attack while underwater, you gain a +2 bonus to the damage roll.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:swim" value="speed" />
+		</rules>
+	</element>
+	<!-- Ranger Friend of Nature -->
+	<element name="Friend of Nature" type="Class Feature" source="What Lies Below" id="ID_PP_WLB_CLASS_FEATURE_RANGER_ADDITIONAL_FRIEND_OF_NATURE">
+		<description>
+			<p><i>1st-level ranger feature, which replaces the Natural Explorer feature</i></p>
+			<p>When you call, nature's denizens answer and offer you aid. Over the course of 10 minutes, you can conduct a ritual that attracts the attention of a number of beasts within 1 mile of you. At the end of the ritual, a number of Medium beasts equal to 1 + your proficiency bonus gather within 10 feet of you. Your GM determines the beasts that appear, though they can be of a CR no greater than 1/4, and will provide their statistics if necessary.</p>
+			<p class="indent">These beasts are friendly to you and your companions, are considered trained mounts, and are considered to be Large beasts for the purposes of determining carrying capacity and what creatures are able to mount them. They can accompany you for 8 hours, until you dismiss them (no action required), or until your allies are attacked by hostile creatures, at which point they use their first turn in combat to buck their rider and take the Dash action to flee.</p>
+			<p class="indent">While they accompany you, you gain the following benefits:</p>
+			<ul>
+				<li>Difficult terrain doesn’t slow your group’s travel.</li>
+				<li>Your group can’t become lost except by magical means.</li>
+				<li>You have advantage on Wisdom (Survival) checks to find shelter provided by natural structures.</li>
+			</ul>
+			<p class="indent">At 6th level, the creatures no longer flee when you are attacked and can be used as trained mounts in combat. At 10th level, the maximum CR of these beasts increases to 1.</p>
+		</description>
+		<sheet>
+			<description>Over the course of 10 minutes, you can conduct a ritual that attracts the attention of a number of beasts within 1 mile of you. At the end of the ritual, a number of Medium beasts equal to 1 + your proficiency bonus gather within 10 feet of you. Your GM determines the beasts that appear, though they can be of a CR no greater than 1/4, and will provide their statistics if necessary.&#13;
+				These beasts are friendly to you and your companions, are considered trained mounts, and are considered to be Large beasts for the purposes of determining carrying capacity and what creatures are able to mount them. They can accompany you for 8 hours, until you dismiss them (no action required), or until your allies are attacked by hostile creatures, at which point they use their first turn in combat to buck their rider and take the Dash action to flee.&#13;
+				While they accompany you, you gain the following benefits:&#13;
+				• Difficult terrain doesn’t slow your group’s travel.&#13;
+				• Your group can’t become lost except by magical means.&#13;
+				• You have advantage on Wisdom (Survival) checks to find shelter provided by natural structures.
+			</description>
+			<description level="6">Over the course of 10 minutes, you can conduct a ritual that attracts the attention of a number of beasts within 1 mile of you. At the end of the ritual, a number of Medium beasts equal to 1 + your proficiency bonus gather within 10 feet of you. Your GM determines the beasts that appear, though they can be of a CR no greater than 1/4, and will provide their statistics if necessary.&#13;
+				These beasts are friendly to you and your companions, are considered trained mounts, and are considered to be Large beasts for the purposes of determining carrying capacity and what creatures are able to mount them. They can accompany you for 8 hours, until you dismiss them (no action required), or until your allies are attacked by hostile creatures. Additionally, they can be be use as mounts in combat.&#13;
+				While they accompany you, you gain the following benefits:&#13;
+				• Difficult terrain doesn’t slow your group’s travel.&#13;
+				• Your group can’t become lost except by magical means.&#13;
+				• You have advantage on Wisdom (Survival) checks to find shelter provided by natural structures.
+			</description>
+			<description level="10">Over the course of 10 minutes, you can conduct a ritual that attracts the attention of a number of beasts within 1 mile of you. At the end of the ritual, a number of Medium beasts equal to 1 + your proficiency bonus gather within 10 feet of you. Your GM determines the beasts that appear, though they can be of a CR no greater than 1, and will provide their statistics if necessary.&#13;
+				These beasts are friendly to you and your companions, are considered trained mounts, and are considered to be Large beasts for the purposes of determining carrying capacity and what creatures are able to mount them. They can accompany you for 8 hours, until you dismiss them (no action required), or until your allies are attacked by hostile creatures. Additionally, they can be be use as mounts in combat.&#13;
+				While they accompany you, you gain the following benefits:&#13;
+				• Difficult terrain doesn’t slow your group’s travel.&#13;
+				• Your group can’t become lost except by magical means.&#13;
+				• You have advantage on Wisdom (Survival) checks to find shelter provided by natural structures.
+			</description>
+		</sheet>
+	</element>
+
+	<element name="Ranger, LV01: Friend of Nature" type="Item" source="What Lies Below" id="ID_PP_WLB_ITEM_OCF_RANGER_ADDITIONAL_FRIEND_OF_FURY">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_PP_WLB_CLASS_FEATURE_RANGER_ADDITIONAL_FRIEND_OF_NATURE" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">first level, 1st level, ranger</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Grant" id="ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_NATURAL_EXPLORER" />
+			<grant type="Class Feature" id="ID_PP_WLB_CLASS_FEATURE_RANGER_ADDITIONAL_FRIEND_OF_NATURE" requirements="[level:ranger:1]"/>
+		</rules>
+	</element>
+	<!-- Monk Ki Option -->
+	<element name="Ki-Infused Breath" type="Class Feature" source="What Lies Below" id="ID_PP_WLB_CLASS_FEATURE_MONK_KI_INFUSED_BREATH">
+		<description>
+			<p>You can spend 1 ki point as an action to breathe underwater for 1 hour.</p>
+		</description>
+		<sheet action="Action" usage="Ki">
+			<description>You can spend 1 ki point as an action to breathe underwater for 1 hour.</description>
+		</sheet>
+	</element>
+
+	<element name="Monk, LV02: Ki-Infused Breath" type="Item" source="What Lies Below" id="ID_PP_WLB_ITEM_OCF_MONK_ADDITIONAL_KI_INFUSED_BREATH">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_PP_WLB_CLASS_FEATURE_MONK_KI_INFUSED_BREATH" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">second level, 2nd level, monk</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_PP_WLB_CLASS_FEATURE_MONK_KI_INFUSED_BREATH" requirements="[level:monk:2]"/>
+		</rules>
+	</element>
+	
+</elements>
