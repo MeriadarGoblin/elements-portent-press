@@ -4,8 +4,8 @@
 		<name>What Lies Below</name>
 		<description>The content from the Portent Press team that adds new ideas for aquatic-themed campaigns.</description>
 		<author url="https://www.gmbinder.com/share/-LsDqsNbupzeLhkTIcPv">Portent Press</author>
-		<update version="0.0.1">
-			<file name="impending-doom.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/what-lies-below.index" />
+		<update version="0.0.2">
+			<file name="what-lies-below.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/what-lies-below.index" />
 		</update>
 	</info>
 	<files>
