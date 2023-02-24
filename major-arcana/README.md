@@ -4,6 +4,7 @@ This is an index for the [Aurora Character Builder](http://www.aurorabuilder.com
 ## Repository Links
 - https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook.index
 - https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/impending-doom.index
+- https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/what-lies-below.index
 
 ## Compendium Links
 Orana's Expanded Spellbook
@@ -11,3 +12,6 @@ Orana's Expanded Spellbook
 
 Impending Doom
 - https://www.gmbinder.com/share/-Mwnh8jiTdNi5H0bU3tf
+
+What Lies Below
+- https://www.gmbinder.com/share/-N0Bx_7U5sp7gLznZDDd
