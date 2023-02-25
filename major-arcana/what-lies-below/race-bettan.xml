@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Bettan Race</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-bettan.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/what-lies-below/subclass-race-bettan.xml" />
 		</update>
 	</info>
@@ -43,7 +43,8 @@
 			<stat name="innate speed:swim" value="35" bonus="base" />
 			<grant type="Vision" id="ID_VISION_DARKVISION" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
-			<grant type="Language" id="ID_WLB_LANGUAGE_BETTAN" />
+			<grant type="Language" id="ID_WLB_LANGUAGE_BETA" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language||Bettan Language" number="2"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<grant type="Racial Trait" id="ID_PP_WLB_RACIAL_TRAIT_BETTAN_AMPHIBIOUS" />
 			<grant type="Racial Trait" id="ID_PP_WLB_RACIAL_TRAIT_BETTAN_BITE" />
 			<grant type="Racial Trait" id="ID_PP_WLB_RACIAL_TRAIT_BETTAN_RIBBONS_OFTHE_FIGHTING_FOLK" />
@@ -86,7 +87,7 @@
 			<p>Your sharp teeth serve as a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
 		</description>
 		<sheet>
-			<description>Your sharp teeth serve as a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</description>
+			<description>Your sharp teeth serve as a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d6 + {{strength:modifier}}, instead of the bludgeoning damage normal for an unarmed strike.</description>
 		</sheet>
 	</element>
 	<element name="Ribbons of the Fighting Folk" type="Racial Trait" source="What Lies Below" id="ID_PP_WLB_RACIAL_TRAIT_BETTAN_RIBBONS_OFTHE_FIGHTING_FOLK">
@@ -95,16 +96,17 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency" supports="Skill" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
 		</rules>
 	</element>
 	<element name="Territorial" type="Racial Trait" source="What Lies Below" id="ID_PP_WLB_RACIAL_TRAIT_BETTAN_TERRITORIAL">
 		<description>
 			<p>You can make an opportunity attack without using your reaction. Once you use this trait, you can't do so again until you finish a long rest.</p>
 		</description>
-		<sheet usage="Long Rest">
-			<description>You can make an opportunity attack without using your reaction. Once you use this trait, you can't do so again until you finish a long rest.</description>
+		<sheet usage="1/Long Rest">
+			<description>You can make an opportunity attack without using your reaction.</description>
 		</sheet>
 	</element>
 	<element name="Undaunted Warriors" type="Racial Trait" source="What Lies Below" id="ID_PP_WLB_RACIAL_TRAIT_BETTAN_UNDAUNTED_WARRIORS">
@@ -115,14 +117,15 @@
 			<description>You have advantage on saving throws against being frightened.</description>
 		</sheet>
 		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_NET" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_NET" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Simple/Martial Weapon or Tool, Undaunted Warriors" number="3" supports="Weapon||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
 		</rules>
 	</element>
 
-	<element name="Bettan" type="Language" source="What Lies Below" id="ID_WLB_LANGUAGE_BETTAN">
-		<supports>Standard, Exotic</supports>
+	<element name="Beta" type="Language" source="What Lies Below" id="ID_WLB_LANGUAGE_BETA">
+		<supports>Standard, Exotic, Bettan Language</supports>
 		<description>
 			<p>Typically spoken by the Bettan.</p>
 		</description>
