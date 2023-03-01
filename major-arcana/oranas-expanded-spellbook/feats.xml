@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Feats</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/feats.xml" />
 		</update>
 	</info>
@@ -214,7 +214,7 @@
 		</rules>
 	</element>
 	<!-- /Shadow Mage Feat -->
-	<element name="Spell Versatility" type="Feat" source="" id="ID_OES_FEAT_SPELL_VERSATILITY">
+	<element name="Spell Versatility" type="Feat" source="Orana's Expanded Spellbook" id="ID_OES_FEAT_SPELL_VERSATILITY">
 		<prerequisite>Spellcasting or Pact Magic feature</prerequisite>
 		<description>
 			<p>The breadth of your aptitude for magic expands, allowing you greater flexibility. You gain the following benefits:</p>
@@ -237,7 +237,7 @@
 	</element>
 	<!-- So basically there is going to need to be a select for just about every kind of spellcasting feature. 
 	In this case: 11 from the main repo including subclasses, and 11 from OES subclasses -->
-	<element name="Warrior Mage" type="Feat" source="" id="ID_OES_FEAT_WARRIOR_MAGE">
+	<element name="Warrior Mage" type="Feat" source="Orana's Expanded Spellbook" id="ID_OES_FEAT_WARRIOR_MAGE">
 		<prerequisite>The ability to cast at least one spell</prerequisite>
 		<requirements>[type:spell]</requirements>
 		<description>
@@ -274,7 +274,7 @@
 			<stat name="dexterity" value="1" />
 		</rules>
 	</element>
-	<element name="Wind Touched" type="Feat" source="" id="ID_OES_FEAT_WIND_TOUCHED">
+	<element name="Wind Touched" type="Feat" source="Orana's Expanded Spellbook" id="ID_OES_FEAT_WIND_TOUCHED">
 		<description>
 			<p>Your exposure to the Elemental Plane of Air has surrounded your magical presence with whirling winds, granting you the following benefits:</p>
 			<ul>
