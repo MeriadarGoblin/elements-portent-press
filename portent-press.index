@@ -4,7 +4,7 @@
 		<name>Portent Press</name>
 		<description>A collection of the content created by Portent Press.</description>
 		<author url="https://discord.com/invite/fspTtCsvwt">Portent Press.</author>
-		<update version="1.0.3">
+		<update version="1.0.4">
 			<file name="portent-press.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/portent-press.index" />
 		</update>
 	</info>
@@ -14,5 +14,6 @@
 		<file name="impending-doom.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/impending-doom.index" />
 		<file name="what-lies-below.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/what-lies-below.index" />	
 		<!-- Minor Arcana -->
+		<file name="minor-arcana.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/minor-arcana/minor-arcana.index" />
 	</files>
 </index>
