@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Minor Arcana</name>
+		<description>The small content from the Portent Press team. </description>
+		<author url="https://discord.com/invite/fspTtCsvwt">Portent Press</author>
+		<update version="0.0.1">
+			<file name="minor-arcana.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/minor-arcana/minor-arcana.index" />
+		</update>
+	</info>
+	<files>
+		<!-- Class -->
+		<file name="subclass-wizard-goblimancy.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/minor-arcana/class/subclass-wizard-goblimancy.xml" />
+
+		<file name="source.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/minor-arcana/source.xml" />
+	</files>
+	
+</index>

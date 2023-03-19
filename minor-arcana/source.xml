@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Source</name>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/minor-arcana/source.xml" />
+		</update>
+	</info>
+	<element name="Minor Arcana" type="Source" source="Minor Arcana" id="ID_SOURCE_PP_MINOR_ARCANA">
+		<description>
+			<p>The small content from the Portent Press team that adds various content that don't belong in any compendium!</p>
+		</description>
+		<setters>
+			<set name="abbreviation">PPMA</set>
+			<set name="url">https://discord.com/invite/fspTtCsvwt</set>
+			<!-- <set name="image"></set> -->
+			<set name="author" abbreviation="PP" url="https://discord.com/invite/fspTtCsvwt">Portent Press</set>
+			<set name="homebrew">true</set>
+			<set name="release">20190101</set>
+		</setters>
+	</element>
+</elements>

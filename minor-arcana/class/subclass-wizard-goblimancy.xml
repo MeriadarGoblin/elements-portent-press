@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Arcane Tradition: Goblimancy</name>
+		<update version="0.0.1">
+			<file name="subclass-wizard-goblimancy.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/minor-arcana/class/subclass-wizard-goblimancy.xml" />
+		</update>
+	</info>
+	<element name="Goblimancy" type="Archetype" source="Minor Arcana" id="ID_PP_MA_ARCHETYPE_GOBLIMANCY">
+		<supports>Arcane Tradition</supports>
+		<description>
+			<p>Ask a wizard what the most obscure focus of magical study is and you will receive a variety of answers, such as oneiromancy, or the Far Realm. You will likely never get the correct answer. That answer, of course, being goblimancy. Indeed, most wizards have never even heard of it. As the name suggests, goblimancers focus on one of the most overlooked and underestimated of the many creatures that walk the earth: goblins. Summoning goblins. Empowering goblins. Summoning more goblins. These are just a fraction of the powers that goblimancers can wield, assuming of course that they also branch out into other schools of magic. Most goblimancers, coincidentally, are also goblins themselves. A fact that should shock no one, since the only creature likely to want the help of a goblin is another goblin. And even then, only reluctantly.</p>
+			<div element="ID_PP_MA_ARCHETYPE_FEATURE_GOBLINMANCY_GOBLIN_SAVANT" />
+			<div element="ID_PP_MA_ARCHETYPE_FEATURE_GOBLINMANCY_MINION_MAGE" />
+			<div element="ID_PP_MA_ARCHETYPE_FEATURE_GOBLINMANCY_PACK_TACTICS" />
+			<div element="ID_PP_MA_ARCHETYPE_FEATURE_GOBLINMANCY_MOB_RULE" />
+			<div element="ID_PP_MA_ARCHETYPE_FEATURE_GOBLINMANCY_MIGHT_OF_THE_MASTER" />
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="sourceUrl">https://www.gmbinder.com/share/-MzYRiLwnER8SCetvH42</set>
+		</setters>
+		<rules>
+			<grant type="Archetype Feature" id="ID_PP_MA_ARCHETYPE_FEATURE_GOBLINMANCY_GOBLIN_SAVANT" level="2" />
+			<grant type="Archetype Feature" id="ID_PP_MA_ARCHETYPE_FEATURE_GOBLINMANCY_MINION_MAGE" level="2" />
+			<grant type="Archetype Feature" id="ID_PP_MA_ARCHETYPE_FEATURE_GOBLINMANCY_PACK_TACTICS" level="6" />
+			<grant type="Archetype Feature" id="ID_PP_MA_ARCHETYPE_FEATURE_GOBLINMANCY_MOB_RULE" level="10" />
+			<grant type="Archetype Feature" id="ID_PP_MA_ARCHETYPE_FEATURE_GOBLINMANCY_MIGHT_OF_THE_MASTER" level="14" />
+		</rules>
+	</element>
+	<element name="Goblin Savant" type="Archetype Feature" source="Minor Arcana" id="ID_PP_MA_ARCHETYPE_FEATURE_GOBLINMANCY_GOBLIN_SAVANT">
+		<description>
+			<p>You can speak, read, and write Goblin. Also, whenever you make a Charisma check when interacting with goblinoids, you can add your Intelligence modifier to the check.</p>
+		</description>
+		<sheet>
+			<description>Whenever you make a Charisma check when interacting with goblinoids, you can add your Intelligence modifier to the check.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.gmbinder.com/share/-MzYRiLwnER8SCetvH42</set>
+		</setters>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_GOBLIN" />
+		</rules>
+	</element>
+	<element name="Minion Mage" type="Archetype Feature" source="Minor Arcana" id="ID_PP_MA_ARCHETYPE_FEATURE_GOBLINMANCY_MINION_MAGE">
+		<description>
+			<p>You add the <i>conjure goblin</i> spell to your spellbook if it is not there already. When you cast the conjure goblin spell, each goblin you summon gains one of the following benefits for the spell's duration:</p>
+			<ul>
+				<li>The goblin learns a single wizard cantrip you know as if it was your level, using Intelligence as its spellcasting ability for it.</li>
+				<li>The goblin adds your proficiency bonus to the damage of its weapon attacks.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you cast the conjure goblin spell, each goblin you summon gains one of the following benefits for the spell's duration: The goblin learns a single wizard cantrip you know as if it was your level, using Intelligence as its spellcasting ability for it and the goblin adds +{{proficiency}} to the damage of its weapon attacks.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.gmbinder.com/share/-MzYRiLwnER8SCetvH42</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PP_MA_SPELL_CONJURE_GOBLIN" />
+		</rules>
+	</element>
+	<element name="Pack Tactics" type="Archetype Feature" source="Minor Arcana" id="ID_PP_MA_ARCHETYPE_FEATURE_GOBLINMANCY_PACK_TACTICS">
+		<description>
+			<p>When you cast the <i>conjure goblin</i> spell, its duration becomes 24 hours, and it no longer requires concentration. The spell ends early if you cast it again.</p>
+			<p class="indent">Also, when you cast a spell that targets at least one friendly goblin, you can target a number of additional friendly goblins within range equal to your proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description>When you cast the conjure goblin spell, its duration becomes 24 hours, and it no longer requires concentration. The spell ends early if you cast it again. Also, when you cast a spell that targets at least one friendly goblin, you can target a number of additional friendly goblins within range equal to {{proficiency}}</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.gmbinder.com/share/-MzYRiLwnER8SCetvH42</set>
+		</setters>
+	</element>
+	<element name="Mob Rule" type="Archetype Feature" source="Minor Arcana" id="ID_PP_MA_ARCHETYPE_FEATURE_GOBLINMANCY_MOB_RULE">
+		<description>
+			<p>When you cast the <i>conjure goblin</i> spell, each goblin you summon gains the following benefits:</p>
+			<ul>
+				<li>The goblin uses the statistics of a goblin boss.</li>
+				<li>The goblin adds your Intelligence modifier to its attack rolls.</li>
+				<li>If the goblin would be reduced to 0 hit points but not killed out right, it is instead reduced to 1 hit point. It can use this benefit only once.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you cast the conjure goblin spell, each goblin you summon gains the following benefits: The goblin uses the statistics of a goblin boss, adds +{{intellignece:modifier}} to its attack rolls, and if the goblin would be reduced to 0 hit points but not killed out right, it is instead reduced to 1 hit point. It can use this benefit only once.</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.gmbinder.com/share/-MzYRiLwnER8SCetvH42</set>
+		</setters>
+	</element>
+	<element name="Might of the Master" type="Archetype Feature" source="Minor Arcana" id="ID_PP_MA_ARCHETYPE_FEATURE_GOBLINMANCY_MIGHT_OF_THE_MASTER">
+		<description>
+			<p>After you cast the <i>conjure goblin</i> spell, you can use a bonus action to cast a spell with a casting time of 1 action. The spell must target only friendly goblins.</p>
+			<p class="indent">Also, when you would be attacked or forced to make a Dexterity saving throw against an effect that targets only you, you can use your reaction to choose a willing goblin you can see within 60 feet of you. You and the goblin teleport, swapping places, and the goblin becomes the target of the attack or effect.</p>
+		</description>
+		<sheet action="Reaction/Bonus Action">
+			<description>After you cast the conjure goblin spell, you can use a bonus action to cast a spell with a casting time of 1 action. The spell must target only friendly goblins.&#13;
+				Also, when you would be attacked or forced to make a Dexterity saving throw against an effect that targets only you, you can use your reaction to choose a willing goblin you can see within 60 feet of you. You and the goblin teleport, swapping places, and the goblin becomes the target of the attack or effect.
+			</description>
+		</sheet>
+		<setters>
+			<set name="sourceUrl">https://www.gmbinder.com/share/-MzYRiLwnER8SCetvH42</set>
+		</setters>
+	</element>
+	
+	<element name="Conjure Goblin" type="Spell" source="Minor Arcana" id="ID_PP_MA_SPELL_CONJURE_GOBLIN">
+		<supports>Wizard</supports>
+		<description>
+			<p>You summon a goblin, which appears in an unoccupied space that you can see within range. The goblin disappears when it drops to 0 hit points or when the spell ends.</p>
+			<p class="indent">The goblin is friendly to you and your companions for the duration. Roll initiative for the goblin, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands to the goblin, it defends itself from hostile creatures, or spends its actions amusing itself. The DM has the goblin's statistics.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, two additional goblins appear for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">goblin, conjure, minion</set>
+			<set name="level">1</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">60 feet</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a gold piece for each goblin, which the spell consumes</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+			<set name="sourceUrl">https://www.gmbinder.com/share/-MzYRiLwnER8SCetvH42</set>
+		</setters>
+	</element>
+</elements>
