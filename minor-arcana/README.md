@@ -1,7 +1,7 @@
-# elements-portent-press
+# Minor Arcana
 This is an index for the [Aurora Character Builder](http://www.aurorabuilder.com "Aurora Website") of content from Portent's Press random content posted on reddit, discord, and instagram.
 
-## Repository Links
+## Repository Link
 - https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/minor-arcana/minor-arcana.index
 
 ## Source Links (Where Applicable)
