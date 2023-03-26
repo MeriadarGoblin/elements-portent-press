@@ -2,8 +2,8 @@
 <elements>
 	<info>
 		<name>Bettan Race</name>
-		<update version="0.0.2">
-			<file name="race-bettan.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/what-lies-below/subclass-race-bettan.xml" />
+		<update version="0.0.3">
+			<file name="race-bettan.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/what-lies-below/race-bettan.xml" />
 		</update>
 	</info>
 	
