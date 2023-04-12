@@ -4,11 +4,12 @@
 		<name>What Lies Below</name>
 		<description>The content from the Portent Press team that adds new ideas for aquatic-themed campaigns.</description>
 		<author url="https://www.gmbinder.com/share/-N0Bx_7U5sp7gLznZDDd">Portent Press</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="what-lies-below.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/what-lies-below.index" />
 		</update>
 	</info>
 	<files>
+		<file name="optional-class-features.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/what-lies-below/race-bettan.xml" />    
 		<file name="optional-class-features.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/what-lies-below/optional-class-features.xml" />
 		<file name="spells.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/what-lies-below/spells.xml" />
 		<file name="source.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/what-lies-below/source.xml" />
