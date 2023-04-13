@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Source</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="source.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/what-lies-below/source.xml" />
 		</update>
 	</info>
@@ -14,7 +14,7 @@
 		<setters>
 			<set name="abbreviation">WLB</set>
 			<set name="url">https://www.gmbinder.com/share/-N0Bx_7U5sp7gLznZDDd</set>
-			<set name="image">https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/what-lies-below/WLB-cover.png</set>
+			<set name="image">https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/what-lies-below/WLB-cover.png</set>
 			<set name="author" abbreviation="PP" url="https://www.gmbinder.com/share/-N0Bx_7U5sp7gLznZDDd">PortentPress</set>
 			<set name="homebrew">true</set>
 			<set name="release">20220303</set>
