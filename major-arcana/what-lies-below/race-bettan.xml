@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Bettan Race</name>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="race-bettan.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/what-lies-below/race-bettan.xml" />
 		</update>
 	</info>
@@ -38,7 +38,7 @@
 		</setters>
 		<rules>
 			<select type="Racial Trait" name="Ability Score Increase (Bettan)" supports="Bettan Score Option" />
-			<grant type="Size=" id="ID_SIZE_SMALL" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
 			<stat name="innate speed" value="25" bonus="base" />
 			<stat name="innate speed:swim" value="35" bonus="base" />
 			<grant type="Vision" id="ID_VISION_DARKVISION" />
