@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Optional Class Features</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="optional-class-features.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/what-lies-below/optional-class-features.xml" />
 		</update>
 	</info>
