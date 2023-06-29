@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Bettan Race</name>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="race-bettan.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/what-lies-below/race-bettan.xml" />
 		</update>
 	</info>
@@ -33,8 +33,8 @@
 		</description>
 		<sheet display="false" />
 		<setters>
-			<set name="names">Acua, Cora, Ey, Kelpo, Ray, Rena, Shore, Siam, Triden, Uloi, Yeye</set>
-			<set name="names-format">{{name}}</set>
+			<set name="names" type="gender-non-specific">Acua, Cora, Ey, Kelpo, Ray, Rena, Shore, Siam, Triden, Uloi, Yeye</set>
+			<set name="names-format">{{gender-non-specific}}</set>
 		</setters>
 		<rules>
 			<select type="Racial Trait" name="Ability Score Increase (Bettan)" supports="Bettan Score Option" />
