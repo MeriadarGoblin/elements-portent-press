@@ -2,8 +2,8 @@
 <elements>
 	<info>
 		<name>Path of the Vampire</name>
-		<update version="0.0.1">
-			<file name="subclass-barbarian-vampire.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/minor-arcana/subclass-barbarian-vampire.xml" />
+		<update version="0.0.2">
+			<file name="subclass-barbarian-vampire.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/minor-arcana/class/subclass-barbarian-vampire.xml" />
 		</update>
 	</info>
 	

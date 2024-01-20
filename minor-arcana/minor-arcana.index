@@ -4,13 +4,13 @@
 		<name>Minor Arcana</name>
 		<description>The small content from the Portent Press team. </description>
 		<author url="https://discord.com/invite/fspTtCsvwt">Portent Press</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="minor-arcana.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/minor-arcana/minor-arcana.index" />
 		</update>
 	</info>
 	<files>
 		<!-- Class -->
-		<file name="subclass-barbarian-vampire.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/minor-arcana/subclass-barbarian-vampire.xml" />
+		<file name="subclass-barbarian-vampire.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/minor-arcana/class/subclass-barbarian-vampire.xml" />
 		<file name="subclass-wizard-goblimancy.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/minor-arcana/class/subclass-wizard-goblimancy.xml" />
 
 		<file name="source.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/minor-arcana/source.xml" />
