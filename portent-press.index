@@ -10,10 +10,10 @@
 	</info>
 	<files>
 		<!-- Major Arcana -->
-		<file name="cheffreys-acrophyal-cookbook.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/cheffreys-acrophyal-cookbook.index" />
-		<file name="oranas-expanded-spellbook.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook.index" />
-		<file name="impending-doom.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/impending-doom.index" />
-		<file name="what-lies-below.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/what-lies-below.index" />	
+		<file name="cheffreys-acrophyal-cookbook.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/cheffreys-acrophyal-cookbook.index" />
+		<file name="oranas-expanded-spellbook.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/mainmain/major-arcana/oranas-expanded-spellbook.index" />
+		<file name="impending-doom.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/mainmain/major-arcana/impending-doom.index" />
+		<file name="what-lies-below.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/mainmain/major-arcana/what-lies-below.index" />	
 		<!-- Minor Arcana -->
 		<file name="minor-arcana.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/minor-arcana/minor-arcana.index" />
 	</files>

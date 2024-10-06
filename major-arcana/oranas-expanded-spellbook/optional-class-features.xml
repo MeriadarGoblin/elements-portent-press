@@ -3,7 +3,7 @@
 	<info>
 		<name>Magic Items</name>
 		<update version="0.0.3">
-			<file name="optional-class-features.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/optonal-class-features.xml" />
+			<file name="optional-class-features.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/optonal-class-features.xml" />
 		</update>
 	</info>
 	

@@ -3,7 +3,7 @@
 	<info>
 		<name>Magic Items</name>
 		<update version="0.0.2">
-			<file name="items-magic.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/items-magic.xml" />
+			<file name="items-magic.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/items-magic.xml" />
 		</update>
 	</info>
 	

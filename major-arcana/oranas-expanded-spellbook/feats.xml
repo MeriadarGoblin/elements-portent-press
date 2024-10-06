@@ -3,7 +3,7 @@
 	<info>
 		<name>Feats</name>
 		<update version="0.0.3">
-			<file name="feats.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/oranas-expanded-spellbook/feats.xml" />
+			<file name="feats.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/oranas-expanded-spellbook/feats.xml" />
 		</update>
 	</info>
 

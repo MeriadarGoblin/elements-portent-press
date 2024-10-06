@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="optional-class-features.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/cheffreys-apocryphal-cookbook/optional-class-features.xml" />
+			<file name="optional-class-features.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/cheffreys-apocryphal-cookbook/optional-class-features.xml" />
 		</update>
 	</info>
 	<!-- Bard -->
