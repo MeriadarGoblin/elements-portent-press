@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name></name>
+		<update version="0.0.1">
+			<file name="artificer-infusions.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/artificer-infusions.xml" />
+		</update>
+	</info>
+	
+	<element name="Butcher's Cleaver" type="Class Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARTIFICER_INFUSION_BUTCHERS_CLEAVER">
+		<requirements>[level:6]</requirements>
+		<prerequisite>6th-level artificer</prerequisite>
+		<supports>Artificer Infusion</supports>
+		<description>
+			<p><em>Prerequisite: 6th-level artificer</em></p>
+			<p><em>Item: dagger</em></p>
+			<p>While holding this item, a creature gains a +1 bonus to attack rolls. In addition, the creature has advantage on attack rolls against Beasts.</p>
+			<p class="indent">The bonus increases to +2 when you reach 10th level in this class.</p>
+		</description>
+		<sheet>
+			<description>You can infuse a dagger into a +1 dagger with advantage on attack rolls against Beasts.</description>
+			<description level="10">You can infuse a dagger into a +2 dagger with advantage on attack rolls against Beasts.</description>
+		</sheet>
+	</element>
+	<element name="Horn of Plenty" type="Class Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARTIFICER_INFUSION_HORN_OF_PLENTY">
+		<supports>Artificer Infusion</supports>
+		<description>
+			<p><em>Item: horn</em></p>
+			<p>A creature proficient with musical instrum1ents can use an action to begin playing a tune from the horn for up to 1 minute. For each round the creature maintains this action, it builds up a charge. At the end of the minute or when the creature uses its action for a different purpose, it creates food and water, as if by the <i>create food and water</i>, for a number of creatures equal to its accumulated charges and the horn becomes a nonmagical instrument until the next dawn, at which point it can be used again.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_CREATE_FOOD_AND_WATER" />
+			</div>
+		</description>
+		<sheet>
+			<description>A creature proficient with musical instruments can use an action to begin playing a tune from the horn for up to 1 minute. For each round the creature maintains this action, it builds up a charge. At the end of the minute or when the creature uses its action for a different purpose, it creates food and water, as if by the create food and water, for a number of creatures equal to its accumulated charges and the horn becomes a nonmagical instrument until the next dawn, at which point it can be used again.</description>
+		</sheet>
+	</element>
+	<element name="Sous Chef" type="Class Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARTIFICER_INFUSION_SOUS_CHEF">
+		<supports>Artificer Infusion</supports>
+		<description>
+			<p><em>Item: mess kit</em></p>
+			<p>As an action, a creature in possession of this infusion can activate it to cast <i>unseen servant</i>. When the servant appears, it appears with a mess kit and cook's utensils. Unless commanded otherwise with a bonus action, the servant uses its action to cook meals with any available rations, food, or raw materials available to it.</p>
+		</description>
+		<sheet>
+			<description>A creature proficient with musical instruments can use an action to begin playing a tune from the horn for up to 1 minute. For each round the creature maintains this action, it builds up a charge. At the end of the minute or when the creature uses its action for a different purpose, it creates food and water, as if by the create food and water, for a number of creatures equal to its accumulated charges and the horn becomes a nonmagical instrument until the next dawn, at which point it can be used again.</description>
+		</sheet>
+	</element>
+	
+</elements>

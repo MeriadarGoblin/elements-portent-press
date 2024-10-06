@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="sorcerer-abdomen.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/cheffreys-apocryphal-cookbook/sorcerer-abdomen.xml" />
+		</update>
+	</info>
+	
+	<element name="Arcane Abdomen" type="Archetype" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_SORCERER_ARCANE_ABDOMEN">
+		<supports>Sorcerous Origin</supports>
+		<description>
+			<p>Unlike most sorcerers, those originating from the Arcane Abdomen appear all but indistinguishable to their fellows. They rarely, if ever, have glowing eyes or random scales to mark them. While capable of learning such magics, they don't often fly around or throw fireballs. In fact, most would be hard pressed to ever recognize one as a sorcerer, maybe even thinking they were some kind of strange wizard with a disease. But that's only because the tremendous change to their bodies is entirely internal.</p>
+			<p class="indent">Whether it's because an ancestor managed to digest an Ooze, because they somehow survived swallowing a bag of holding as an infant, or some other incomprehensible magical adaptation or affliction, these sorcerers have an unparalleled capacity--quite literally--for eating. They can consume almost anything in nearly limitless volume, and its in so doing that their magic is most incredible to behold.</p>
+			<div element="ID_PP_CAC_ARCHETYPE_FEATURE_SORCERER_GASTROARCANA" />
+			<div element="ID_PP_CAC_ARCHETYPE_FEATURE_SORCERER_ARCANE_HUNGER" />
+			<div element="ID_PP_CAC_ARCHETYPE_FEATURE_SORCERER_SWALLOW_HOLE" />
+			<div element="ID_PP_CAC_ARCHETYPE_FEATURE_SORCERER_IN_HERE_SOMEWHERE" />
+			<div element="ID_PP_CAC_ARCHETYPE_FEATURE_SORCERER_ABDOMINAL_ATTUNEMENT" />
+			<div element="ID_PP_CAC_ARCHETYPE_FEATURE_SORCERER_EXTRADIMENSIONAL_VORTEX" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_SORCERER_GASTROARCANA" level="1" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_SORCERER_ARCANE_HUNGER" level="1" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_SORCERER_SWALLOW_HOLE" level="1" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_SORCERER_IN_HERE_SOMEWHERE" level="6" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_SORCERER_ABDOMINAL_ATTUNEMENT" level="14" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_SORCERER_EXTRADIMENSIONAL_VORTEX" level="18" />
+		</rules>
+	</element>
+	<element name="Gastroarcana" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_SORCERER_GASTROARCANA">
+		<description>
+			<p>You learn additional spells when you reach certain levels in this class, as shown in the Stomach Spells table. These spells count as sorcerer spells for you, but they don't count against the number of sorcerer spells you know.</p>
+			<p class="indent">Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must deal acid damage or possess a material component that can be eaten.</p>
+			<h5>Stomach Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>grease, Tasha's caustic brew</em></td></tr>
+				<tr><td>3rd</td><td><em>acid arrow, dragon's breath</em></td></tr>
+				<tr><td>5th</td><td><em>hunger of Hadar, overgorge</em></td></tr>
+				<tr><td>7th</td><td><em>banishment, vitriolic sphere</em></td></tr>
+				<tr><td>9th</td><td><em>Cheffrey's draconic maw, cloudkill</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must deal acid damage or possess a material component that can be eaten.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="1st Additional Spell (Gastroarcana)" supports="0" level="1" default="ID_PHB_SPELL_GREASE" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="1st Additional Spell (Gastroarcana)" supports="0" level="1" default="ID_WOTC_TCOE_SPELL_TASHAS_CAUSTIC_BREW" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="2nd Additional Spell (Gastroarcana)" supports="1" level="3" default="ID_PHB_SPELL_MELFS_ACID_ARROW" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="2nd Additional Spell (Gastroarcana)" supports="1" level="3" default="ID_XGTE_SPELL_DRAGONS_BREATH" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="3rd Additional Spell (Gastroarcana)" supports="2" level="5" default="ID_PHB_SPELL_HUNGER_OF_HADAR" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="3rd Additional Spell (Gastroarcana)" supports="2" level="5" default="ID_PP_CAC_SPELL_OVERGORGE" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="4th Additional Spell (Gastroarcana)" supports="3" level="7" default="ID_PHB_SPELL_BANISHMENT" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="4th Additional Spell (Gastroarcana)" supports="3" level="7" default="ID_XGTE_SPELL_VITRIOLIC_SPHERE" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="5th Additional Spell (Gastroarcana)" supports="4" level="9" default="ID_PP_CAC_SPELL_CHEFFREYS_DRACONIC_MAW" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="5th Additional Spell (Gastroarcana)" supports="4" level="9" default="ID_PHB_SPELL_CLOUDKILL" spellcasting="Sorcerer" allowReplace="false" />
+		</rules>
+	</element>
+	<element name="Arcane Hunger" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_SORCERER_ARCANE_HUNGER">
+		<description>
+			<p>Your magical stomach gives you the following benefits and burdens:</p>
+			<ul>
+				<li>You are immune to poison and disease that would come from eating or drinking something.</li>
+				<li>You can swallow any material, including glass or metal, and digest it without issue, though chewing the material may damage your mouth at your GM's discretion.</li>
+				<li>There is no limit to the amount of food or drink you can consume at a time without becoming ill.</li>
+				<li>You must eat a minimum of five pounds of food per day, instead of one pound.</li>
+				<li>When you cast a sorcerer spell with a material component that is food, you can't use an arcane focus in place of the material component, and whenever you cast a spell using a material component, you must literally consume them.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Your magical stomach gives you the following benefits and burdens: You are immune to poison and disease that would come from eating or drinking something. You can swallow any material, including glass or metal, and digest it without issue, though chewing the material may damage your mouth at your GM's discretion.&#13;
+				There is no limit to the amount of food or drink you can consume at a time without becoming ill.&#13;
+				You must eat a minimum of five pounds of food per day, instead of one pound.&#13;
+				When you cast a sorcerer spell with a material component that is food, you can't use an arcane focus in place of the material component, and whenever you cast a spell using a material component, you must literally consume them.
+			</description>
+		</sheet>
+	</element>
+	<element name="Swallow Hole" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_SORCERER_SWALLOW_HOLE">
+		<description>
+			<p>You learn to momentarily flood your body with magical energy, enlarging your maw and gullet. As an action, you can make a melee spell attack against a Medium or smaller object or creature within 5 feet of you. On a hit, you deal force damage equal to 2d6 + your spellcasting modifier and you can force the target to succeed on a Strength saving throw against your spell save DC or be swallowed into your stomach until the start of your next turn. An object automatically fails this saving throw.</p>
+			<p class="indent">A swallowed target is blinded and restrained, it has total cover against attacks and other effects outside of you, and it takes 2d6 acid damage at the start of its turn.</p>
+			<p class="indent">If you take damage equal to or greater than your 2 × sorcerer level on a single turn, you must succeed on a DC 18 Constitution saving throw at the end of that turn or regurgitate the swallowed creature, which falls prone in a space within 5 feet of you. If you fall unconscious, a swallowed target is also regurgitated prone in a space within 5 feet of you.</p>
+			<p class="indent">You can swallow larger creatures when you reach certain levels in this class: Large at 6th level, Huge at 14th level, and Gargantuan at 18th level.</p>
+			<p class="indent">You have a number of uses of this spell attack equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="{{proficiency}}/Long Rest">
+			<description>As an action, you can make a melee spell attack against a Medium or smaller object or creature within 5 feet of you. On a hit, you deal force damage equal to 2d6 + your spellcasting modifier and you can force the target to succeed on a Strength saving throw against your spell save DC or be swallowed into your stomach until the start of your next turn. An object automatically fails this saving throw.&#13;
+				A swallowed target is blinded and restrained, it has total cover against attacks and other effects outside of you, and it takes 2d6 acid damage at the start of its turn.&#13;
+				If you take damage equal to or greater than your 2 × sorcerer level on a single turn, you must succeed on a DC 18 Constitution saving throw at the end of that turn or regurgitate the swallowed creature, which falls prone in a space within 5 feet of you. If you fall unconscious, a swallowed target is also regurgitated prone in a space within 5 feet of you.
+			</description>
+			<description level="6">As an action, you can make a melee spell attack against a Large or smaller object or creature within 5 feet of you. On a hit, you deal force damage equal to 2d6 + your spellcasting modifier and you can force the target to succeed on a Strength saving throw against your spell save DC or be swallowed into your stomach until the start of your next turn. An object automatically fails this saving throw.&#13;
+				A swallowed target is blinded and restrained, it has total cover against attacks and other effects outside of you, and it takes 2d6 acid damage at the start of its turn.&#13;
+				If you take damage equal to or greater than your 2 × sorcerer level on a single turn, you must succeed on a DC 18 Constitution saving throw at the end of that turn or regurgitate the swallowed creature, which falls prone in a space within 5 feet of you. If you fall unconscious, a swallowed target is also regurgitated prone in a space within 5 feet of you.
+			</description>
+			<description level="14">As an action, you can make a melee spell attack against a Huge or smaller object or creature within 5 feet of you. On a hit, you deal force damage equal to 2d6 + your spellcasting modifier and you can force the target to succeed on a Strength saving throw against your spell save DC or be swallowed into your stomach until the start of your next turn. An object automatically fails this saving throw.&#13;
+				A swallowed target is blinded and restrained, it has total cover against attacks and other effects outside of you, and it takes 2d6 acid damage at the start of its turn.&#13;
+				If you take damage equal to or greater than your 2 × sorcerer level on a single turn, you must succeed on a DC 18 Constitution saving throw at the end of that turn or regurgitate the swallowed creature, which falls prone in a space within 5 feet of you. If you fall unconscious, a swallowed target is also regurgitated prone in a space within 5 feet of you.
+			</description>
+			<description level="18">As an action, you can make a melee spell attack against a Gargantuan or smaller object or creature within 5 feet of you. On a hit, you deal force damage equal to 2d6 + your spellcasting modifier and you can force the target to succeed on a Strength saving throw against your spell save DC or be swallowed into your stomach until the start of your next turn. An object automatically fails this saving throw.&#13;
+				A swallowed target is blinded and restrained, it has total cover against attacks and other effects outside of you, and it takes 2d6 acid damage at the start of its turn.&#13;
+				If you take damage equal to or greater than your 2 × sorcerer level on a single turn, you must succeed on a DC 18 Constitution saving throw at the end of that turn or regurgitate the swallowed creature, which falls prone in a space within 5 feet of you. If you fall unconscious, a swallowed target is also regurgitated prone in a space within 5 feet of you.
+			</description>
+		</sheet>
+	</element>
+	<element name="In Here Somewhere" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_SORCERER_IN_HERE_SOMEWHERE">
+		<description>
+			<p>You learn to use your stomach's inexplicable dimensions to your advantage. As an action, you can expend a number of sorcery points to consume an object. The number is determined by the object's size: Small or smaller (1), Medium (2), or Large (3). Once consumed, the object disappears into an extradimensional within your stomach and can be regurgitated, unharmed, as a bonus action.</p>
+			<p class="indent">Consuming a <i>bag of holding, portable hole</i>, or similar item that creates an extradimensional space instantly kills you, destroys the item, and opens a gate to the Astral Plane in your space. Any creature within 10 feet of the gate is sucked through it to a random location on the Astral Plane. The gate then closes. The gate is one-way only and can’t be reopened.</p>
+		</description>
+		<sheet action="Action">
+			<description>As an action, you can expend a number of sorcery points to consume an object. The number is determined by the object's size: Small or smaller (1), Medium (2), or Large (3). Once consumed, the object disappears into an extradimensional within your stomach and can be regurgitated, unharmed, as a bonus action.&#13;
+				Consuming a bag of holding, portable hole, or similar item that creates an extradimensional space instantly kills you, destroys the item, and opens a gate to the Astral Plane in your space. Any creature within 10 feet of the gate is sucked through it to a random location on the Astral Plane. The gate then closes. The gate is one-way only and can’t be reopened.
+			</description>
+		</sheet>
+	</element>
+	<element name="Abdominal Attunement" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_SORCERER_ABDOMINAL_ATTUNEMENT">
+		<description>
+			<p>You learn to lightly digest the magic floating within your belly. When you use your In Here Somewhere feature to swallow a magic item that requires attunement, you can choose to immediately attune to it and gain its benefits as if you were wearing, wielding, or carrying it. You must meet the item's normal attunement requirements, though you need not be proficient with its use or meet any ability requirements necessary to wear or wield the item, such as the Strength requirement of plate armor.</p>
+			<p class="indent">You can attune to one item this way, and your attunement ends when you regurgitate it. Should you attempt to attune to a second, you lose attunement to the first.</p>
+			<p class="indent">While attuned, you gain any benefits that would logically apply to your physical person (GM's discretion) and expend the item's charges as normal, though you don't need to wear, wield, or carry the item.</p>
+			<p class="indent">For example, if you swallow <i>splint armor of resistance (fire)</i>, your unarmored AC would become 17 and you'd gain resistance to fire damage, but were you to don any other armor, you would lose these benefits. Similarly, if you were to swallow a flame tongue longsword, you would gain the ability to cause flames to emit from your fists, benefiting your unarmed strikes, but you would gain no benefit while you have no hands free.</p>
+		</description>
+		<sheet>
+			<description>When you use your In Here Somewhere feature to swallow a magic item that requires attunement, you can choose to immediately attune to it and gain its benefits as if you were wearing, wielding, or carrying it. You must meet the item's normal attunement requirements, though you need not be proficient with its use or meet any ability requirements necessary to wear or wield the item, such as the Strength requirement of plate armor.&#13;
+				You can attune to one item this way, and your attunement ends when you regurgitate it. Should you attempt to attune to a second, you lose attunement to the first. While attuned, you gain any benefits that would logically apply to your physical person (GM's discretion) and expend the item's charges as normal, though you don't need to wear, wield, or carry the item.
+			</description>
+		</sheet>
+	</element>
+	<element name="Extradimensional Vortex" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_SORCERER_EXTRADIMENSIONAL_VORTEX">
+		<description>
+			<p>As an action, you can activate your Swallow Hole feature without making a spell attack or expending a use of the feature. When you do so, each creature in a 30-foot cone originating from you must succeed on a Strength saving throw or be swallowed for 1 minute. While swallowed in this way, each creature suffers the normal effects of being swallowed by your Swallow Hole.</p>
+			<p class="indent">Once you use this feature, you can't do so again until you finish or expend 9 sorcery points to do so again.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You can activate your Swallow Hole feature without making a spell attack or expending a use of the feature. When you do so, each creature in a 30-foot cone originating from you must succeed on a Strength saving throw or be swallowed for 1 minute. While swallowed in this way, each creature suffers the normal effects of being swallowed by your Swallow Hole.&#13;
+				Once you use this feature, you can't do so again until you finish or expend 9 sorcery points to do so again.
+			</description>
+		</sheet>
+	</element>
+</elements>

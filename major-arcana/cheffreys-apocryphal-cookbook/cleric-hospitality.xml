@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="cleric-hospitality.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/cheffreys-apocryphal-cookbook/cleric-hospitality.xml" />
+		</update>
+	</info>
+	
+	<element name="Hospitality Domain" type="Archetype" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_CLERIC_HOSPITALITY">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>To clerics of the hospitality domain, the table is a place as sacred as any temple. They exemplify the warmth that comes with feasting and the beauty of raising crops and livestock to be enjoyed, as championed by gods such as Birgantia, Demeter, Hathor, and Uller. Though they are responsible for the slaughter, they value using every piece of a kill and celebrating the life that is continued in the meals these ingredients create.</p>
+			<p class="indent">Many clerics of this domain travel the land preparing meals for those they care for, hunting the biggest game, and searching for the holiest of ingredients; while others preside over great celebrations of harvest.</p>
+			<h5 class="caption">DOMAIN SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>hunter's mark, searing smite</em></td></tr>
+				<tr><td>3rd</td><td><em>calm emotions, locate animals or plants</em></td></tr>
+				<tr><td>5th</td><td><em>create food and water, Scovillior's hell spice</em></td></tr>
+				<tr><td>7th</td><td><em>fire shield, hounds of the huntsman</em></td></tr>
+				<tr><td>9th</td><td><em>hold monster, steel wind strike</em></td></tr>
+			</table>
+			<div element="ID_PP_CAC_ARCHETYPE_FEATURE_HOSPITALITY_DOMAIN_BONUS_PROFICIENCIES" />
+			<div element="ID_PP_CAC_ARCHETYPE_FEATURE_HOSPITALITY_DOMAIN_FAMILY_DINNER" />
+			<div element="ID_PP_CAC_ARCHETYPE_FEATURE_HOSPITALITY_DOMAIN_CHANNELDIVINITY_FILLET_OF_FOE" />
+			<div element="ID_PP_CAC_ARCHETYPE_FEATURE_HOSPITALITY_DOMAIN_SOUS_CHEF" />
+			<div element="ID_PP_CAC_ARCHETYPE_FEATURE_HOSPITALITY_DOMAIN_DIVINE_STRIKE" />
+			<div element="ID_PP_CAC_ARCHETYPE_FEATURE_HOSPITALITY_DOMAIN_CHEF_OFTHE_GODS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_HUNTERS_MARK" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SEARING_SMITE" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CALM_EMOTIONS" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_LOCATE_ANIMALS_OR_PLANTS" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CREATE_FOOD_AND_WATER" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PP_CAC_SPELL_SCOVILLIORS_HELL_SPICE" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIRE_SHIELD" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PP_CAC_SPELL_HOUNDS_OFTHE_HUNTSMAN" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_MONSTER" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_STEEL_WIND_STRIKE" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_HOSPITALITY_DOMAIN_BONUS_PROFICIENCIES" level="1"/>
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_HOSPITALITY_DOMAIN_FAMILY_DINNER" level="1"/>
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_HOSPITALITY_DOMAIN_CHANNELDIVINITY_FILLET_OF_FOE" level="2"/>
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_HOSPITALITY_DOMAIN_SOUS_CHEF" level="6"/>
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_HOSPITALITY_DOMAIN_DIVINE_STRIKE" level="8"/>
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_HOSPITALITY_DOMAIN_CHEF_OFTHE_GODS" level="17"/>
+		</rules>
+	</element>
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_HOSPITALITY_DOMAIN_BONUS_PROFICIENCIES">
+		<description>
+			<p>You gain proficiency with cook's utensils and martial weapons.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+		</rules>
+	</element>
+	<element name="Family Dinner" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_HOSPITALITY_DOMAIN_FAMILY_DINNER">
+		<description>
+			<p>You can prepare a scrumptious meal for your allies. Over the course of an hour, which can be accomplished during a short rest, you can make a hearty meal that can serve a number of creatures up to 1 + proficiency bonus on a surface within 5 feet of you.</p>
+			<p class="indent">A creature can use an action to eat the meal. When it does so, its hit point maximum and current hit points increase by a number equal to your cleric level for the next 8 hours.</p>
+			<p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>Over the course of an hour, which can be accomplished during a short rest, you can make a hearty meal that can serve a number of creatures up to 1 + proficiency bonus on a surface within 5 feet of you. A creature can use an action to eat the meal. When it does so, its hit point maximum and current hit points increase by a number equal to your cleric level for the next 8 hours.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Fillet or Foe" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_HOSPITALITY_DOMAIN_CHANNELDIVINITY_FILLET_OF_FOE">
+		<description>
+			<p>You can apply your knowledge of butchery to the carving of your enemies. When you make a melee weapon attack against a creature that is not a Construct, you can expend a use of your Channel Divinity to deal additional damage equal to twice your Wisdom modifier.</p>
+		</description>
+		<sheet alt="Fillet or Foe" usage="Channel Divinity">
+			<description>When you make a melee weapon attack against a creature that is not a Construct, you can expend a use of your Channel Divinity to deal additional damage equal to twice your Wisdom modifier.</description>
+		</sheet>
+	</element>
+	<element name="Sous Chef" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_HOSPITALITY_DOMAIN_SOUS_CHEF">
+		<description>
+			<p>You can extend your mastery of the kitchen to your allies. When an ally within 30 feet of you makes a melee weapon attack against a creature that is not a Construct, you can use a reaction to grant the attack a bonus to damage equal to your Wisdom modifier.</p>
+			<p class="indent">You have a number of uses of this feature equal to your proficiency bonus and you regain all expended uses at the end of a long rest.</p>
+		</description>
+		<sheet>
+			<description>When an ally within 30 feet of you makes a melee weapon attack against a creature that is not a Construct, you can use a reaction to grant the attack a +{{wisdom:modifier}} to damage.</description>
+		</sheet>
+	</element>
+	<element name="Divine Strike" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_HOSPITALITY_DOMAIN_DIVINE_STRIKE">
+		<description>
+			<p>You gain the ability to infuse your weapon strikes with the warmth of hospitality and hearth. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 fire damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+		</description>
+		<sheet>
+			<description>Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 fire damage to the target.</description>
+			<description level="8">Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 2d8 fire damage to the target.</description>
+		</sheet>
+	</element>
+	<element name="Chef of the Gods" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_HOSPITALITY_DOMAIN_CHEF_OFTHE_GODS">
+		<description>
+			<p>Your prowess as a chef is unmatched. You always have <i>heroes' feast</i> prepared, it doesn't count toward your number of spells prepared, and you ignore the spell's material components.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_HEROES_FEAST" />
+			</div>
+		</description>
+		<sheet>
+			<description>You always have heroes' feast prepared, it doesn't count toward your number of spells prepared, and you ignore the spell's material components.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_HEROES_FEAST" level="17" spellcasting="Cleric" prepared="true" />
+		</rules>
+	</element>
+</elements>

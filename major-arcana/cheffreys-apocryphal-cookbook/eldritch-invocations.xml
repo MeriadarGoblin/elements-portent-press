@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="eldritch-invocations.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/cheffreys-apocryphal-cookbook/eldritch-invocations.xml" />
+		</update>
+	</info>
+	
+	<element name="Bloody Bounty" type="Class Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAP_CLASS_FEATURE_ELDRITCH_INVOCATION_BLOODY_BOUNTY">
+		<supports>Eldritch Invocation</supports>
+		<requirements>ID_PP_CAC_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OFTHE_CHALICE,[level:9]</requirements>
+		<prerequisite>12th-level warlock, Pact of the Chalice</prerequisite>
+		<description>
+			<p>You can cast <i>heroes' feast</i> once without expending a spell slot or material components. You regain the ability to do so when you finish a long rest.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_HEROES_FEAST" />
+			</div>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast heroes' feast once without expending a spell slot or material components.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_HEROES_FEAST" />
+		</rules>
+	</element>
+	<element name="Cursed Meal" type="Class Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAP_CLASS_FEATURE_ELDRITCH_INVOCATION_CURSED_MEAL">
+		<supports>Eldritch Invocation</supports>
+		<requirements>ID_PP_CAC_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OFTHE_CHALICE,[level:5]</requirements>
+		<prerequisite>5th-level warlock, Pact of the Chalice</prerequisite>
+		<description>
+			<p>You can cast <i>create food and water</i> once without expending a spell slot. When you do so, you can choose for the food to be cursed. A creature that consumes cursed food from the spell must succeed on a Constitution saving throw or be cursed and charmed by you for 1 hour.</p>
+			<p class="indent">You regain the ability to do cast the spell in this way when you finish a long rest.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_CREATE_FOOD_AND_WATER" />
+			</div>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast create food and water once without expending a spell slot. When you do so, you can choose for the food to be cursed. A creature that consumes cursed food from the spell must succeed on a Constitution saving throw or be cursed and charmed by you for 1 hour.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_CREATE_FOOD_AND_WATER" />
+		</rules>
+	</element>
+	<element name="Hadar's Feast" type="Class Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAP_CLASS_FEATURE_ELDRITCH_INVOCATION_HADARS_FEAST">
+		<supports>Eldritch Invocation</supports>
+		<description>
+			<p>When you consume a pound of food, you gain a number of temporary hit points equal to your Charisma bonus.</p>
+		</description>
+		<sheet>
+			<description>When you consume a pound of food, you gain a number of temporary hit points equal to your Charisma bonus.</description>
+		</sheet>
+	</element>
+	<element name="Ravenous Blast" type="Class Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAP_CLASS_FEATURE_ELDRITCH_INVOCATION_RAVENOUS_BLAST">
+		<supports>Eldritch Invocation</supports>
+		<requirements>ID_PP_CAC_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OFTHE_CHALICE,ID_PHB_SPELL_ELDRITCH_BLAST</requirements>
+		<prerequisite>eldritch blast cantrip, Pact of the Chalice</prerequisite>
+		<description>
+			<p>When you miss a creature with an attack roll made with <i>eldritch blast</i>, you gain advantage on your next attack roll with <i>eldritch blast</i> against the target.</p>
+		</description>
+		<sheet>
+			<description>When you miss a creature with an attack roll made with eldritch blast, you gain advantage on your next attack roll with eldritch blast against the target.</description>
+		</sheet>
+	</element>
+</elements>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="barbarian-vampire.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/cheffreys-apocryphal-cookbook/barbarian-vampire.xml" />
+		</update>
+	</info>
+	
+	<element name="Path of the Vampire" type="Archetype" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_BARBARIAN_VAMPIRE">
+		<description>
+			<p>Where barbarians go, death follows, but for none so much as those that walk the Path of the Vampire. While they don't have to feed on blood or walk only at night like their namesakes, these barbarians do their bests to ensure the world never forgets the term blood bath.</p>
+			<p class="indent">Relying on a ritual that ties their rage to bloodletting, many of these barbarians are known for the lack of self-control; some so much so that their victims can mistake them for the true-blooded vampires from whom they draw their name and powers. Others, though, fight this dark craving, forcing themselves into calm by remembering why they chose to take the rite in the first places: usually, so that they can better protect the ones they love most from that which would stalk the night in their place.</p>
+			<div element="ID_PP_CAC_ARCHETYPE_FEATURE_VAMPIRE_BLOOD_RAGE" />
+			<div element="ID_PP_CAC_ARCHETYPE_FEATURE_VAMPIRE_UNCONTROLLABLE_THIRST" />
+			<div element="ID_PP_CAC_ARCHETYPE_FEATURE_VAMPIRE_BLOODLETTERS_MIASMA" />
+			<div element="ID_PP_CAC_ARCHETYPE_FEATURE_VAMPIRE_BLOOD_HOUND" />
+			<div element="ID_PP_CAC_ARCHETYPE_FEATURE_VAMPIRE_VAMPIRIC_FORM" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_VAMPIRE_BLOOD_RAGE" level="3" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_VAMPIRE_UNCONTROLLABLE_THIRST" level="3" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_VAMPIRE_BLOODLETTERS_MIASMA" level="6" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_VAMPIRE_BLOOD_HOUND" level="10" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_VAMPIRE_VAMPIRIC_FORM" level="14" />
+		</rules>
+	</element>
+	
+	<element name="Blood Rage" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_VAMPIRE_BLOOD_RAGE">
+		<description>
+			<p>You can consume a pint of blood in place of a pound of food for the sake of being fed.</p>
+			<p class="indent">Additionaly, while your hit point total is half of its maximum or less and you aren't raging, you can use a bonus action to begin raging without expending a use of your rage. When you do so, you lose a number of hit points equal to your proficiency bonus, which can't be reduced in any way, at the start of each of your turns while raging in this way.</p>
+		</description>
+		<sheet>
+			<description>You can consume a pint of blood in place of a pound of food for the sake of being fed. While your hit point total is half of its maximum or less and you aren't raging, you can use a bonus action to begin raging without expending a use of your rage. When you do so, you lose a {{proficiency}} hit points, which can't be reduced in any way, at the start of each of your turns while raging in this way.</description>
+		</sheet>
+	</element>
+	<element name="Uncontrollable Thirst" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_VAMPIRE_UNCONTROLLABLE_THIRST">
+		<description>
+			<p>Your thirst for carnage and bloodshed can't be quenched. When you enter your rage, you can choose to become uncontrollable while raging. For the duration, you can’t be inflicted with a condition against your will. If you are already inflicted with a condition when you enter your rage, the effect is suspended for the duration of the rage.</p>
+			<p class="indent">Moreover, while you are uncontrollable and are within 5 feet of a creature that has half of its hit points or less, you must use your action to make a melee weapon attack against the creature, even if it is an ally. If more than one creature meets this criteria, you can make a Wisdom saving throw (DC 20) to choose a target. On a failure, your GM chooses for you.</p>
+		</description>
+		<sheet>
+			<description>
+				When you enter your rage, you can choose to become uncontrollable while raging. For the duration, you can’t be inflicted with a condition against your will. If you are already inflicted with a condition when you enter your rage, the effect is suspended for the duration of the rage.&#13;
+				While you are uncontrollable and are within 5 feet of a creature that has half of its hit points or less, you must use your action to make a melee weapon attack against the creature, even if it is an ally. If more than one creature meets this criteria, you can make a Wisdom saving throw (DC 20) to choose a target. On a failure, your GM chooses for you.
+			</description>
+		</sheet>
+	</element>
+	<element name="Bloodletter's Miasma" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_VAMPIRE_BLOODLETTERS_MIASMA">
+		<description>
+			<p>While you're raging, blood shed within 30 feet of you gathers around you in a 10-foot aura, which is lightly obscured. A creature that starts its turn within your miasma or enters it for the first time on its turn must succeed on a Constitution saving throw (DC equals 8 + your proficiency bonus + your Constitution modifier) or take necrotic damage equal to your Rage Damage.</p>
+		</description>
+		<sheet>
+			<description>While you're raging, blood shed within 30 feet of you gathers around you in a 10-foot aura, which is lightly obscured. A creature that starts its turn within your miasma or enters it for the first time on its turn must succeed on a Constitution saving throw (DC {{bloodletter miasma}}) or take necrotic damage equal to your Rage Damage.</description>
+		</sheet>
+		<rules>
+			<stat name="bloodletter miasma:dc" value="8" />
+			<stat name="bloodletter miasma:dc" value="proficiency" />
+			<stat name="bloodletter miasma:dc" value="constitution:modifier" />
+		</rules>
+	</element>
+	<element name="Blood Hound" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_VAMPIRE_BLOOD_HOUND">
+		<description>
+			<p>You can cast <em>locate creature</em> without expending a spells slot or material components. If the target doesn't have blood, the spell fails.</p>
+			<p class="indent">Once you use this feature, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet usage="Long Rest" >
+			<description>You can cast locate creature without expending a spells slot or material components. If the target doesn't have blood, the spell fails.</description>
+		</sheet>
+	</element>
+	<element name="Vampiric Form" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_VAMPIRE_VAMPIRIC_FORM">
+		<description>
+			<p>You learn to tap into the deepest aspects of your vampiric rite. When you enter an uncontrollable rage, you gain a flying speed equal to your walking speed and creatures reduced to 0 hit points within your miasma instantly explode into a gory mist, thickening your aura until the end of your next turn. For the duration, creatures other than you perceive the area within your aura as heavily obscured.</p>
+		</description>
+		<sheet>
+			<description>When you enter an uncontrollable rage, you gain a flying speed equal to your walking speed and creatures reduced to 0 hit points within your miasma instantly explode into a gory mist, thickening your aura until the end of your next turn. For the duration, creatures other than you perceive the area within your aura as heavily obscured.</description>
+		</sheet>
+	</element>
+</elements>

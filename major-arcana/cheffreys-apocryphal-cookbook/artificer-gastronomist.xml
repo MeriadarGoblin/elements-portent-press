@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="artificer-gastronomist.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/cheffreys-apocryphal-cookbook/artificer-gastronomist.xml" />
+		</update>
+	</info>
+	
+	<element name="Gastronomist" type="Archetype" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_GASTRONOMIST">
+		<supports>Artificer Specialist</supports>
+		<description>
+			<p>These artificers through years of study have learn how to manipulate the surrounding magic through devices, weapons or their own life force to help augument themselves and their Arcane weapon.</p>
+			<div element="ID_PP_CAC_ARCHETYPE_FEATURE_GASTRONOMIST_TOOL" />
+			<div element="ID_PP_CAC_ARCHETYPE_FEATURE_GASTRONOMIST_SPELLS" />
+			<div element="ID_PP_CAC_ARCHETYPE_FEATURE_GASTRONOMIST_HEATING_METAL" />
+			<div element="ID_PP_CAC_ARCHETYPE_FEATURE_GASTRONOMIST_MAGICAL_FLAVOR" />
+			<div element="ID_PP_CAC_ARCHETYPE_FEATURE_GASTRONOMIST_VENDING_ELEMENT" />
+			<div element="ID_PP_CAC_ARCHETYPE_FEATURE_GASTRONOMIST_FOOD_FACTORY" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_GASTRONOMIST_TOOL" level="3" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_GASTRONOMIST_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_GASTRONOMIST_HEATING_METAL" level="3" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_GASTRONOMIST_MAGICAL_FLAVOR" level="5" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_GASTRONOMIST_VENDING_ELEMENT" level="9" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_GASTRONOMIST_FOOD_FACTORY" level="15" />
+		</rules>	
+	</element>
+	<element name="Tool Proficiency" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_GASTRONOMIST_TOOL">
+		<description>
+			<p>You gain proficiency with cook's utensils. If you already have this proficiency, you gain proficiency with one other type of artisan's tools of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency (Gastronomist)" supports="Tool" default="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" />
+		</rules>
+	</element>
+	<element name="Gastronomist Spells" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_GASTRONOMIST_SPELLS">
+		<description>
+			<p>You always have certain spells prepared after you reach particular levels in this class, as shown in the Gastronimist Spells table. These spells count as artificer spells for you, but they don't count against the number of artificer spells you prepare.</p>
+			<h5 class="caption">GASTRONOMIST SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Artificer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>purify food and drink, Tasha's caustic brew</em></td></tr>
+				<tr><td>5th</td><td><em>dragon's breath, locate animals or plants</em></td></tr>
+				<tr><td>9th</td><td><em>create food and water, overgorge</em></td></tr>
+				<tr><td>13th</td><td><em>polymorph, ravenous</em></td></tr>
+				<tr><td>17th</td><td><em>Cheffrey's draconic maw, greater restoration</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>You always have certain spells prepared after you reach particular levels in this class, as shown in the Alchemist Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_PURIFY_FOOD_AND_DRINK" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_TCOE_SPELL_TASHAS_CAUSTIC_BREW" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_DRAGONS_BREATH" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_LOCATE_ANIMALS_OR_PLANTS" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CREATE_FOOD_AND_WATER" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PP_CAC_SPELL_OVERGORGE" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_POLYMORPH" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PP_CAC_SPELL_RAVENOUS" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PP_CAC_SPELL_CHEFFREYS_DRACONIC_MAW" spellcasting="Artificer" level="17" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION" spellcasting="Artificer" level="17" prepared="true" />
+		</rules>
+	</element>
+	<element name="Heating Metal" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_GASTRONOMIST_HEATING_METAL">
+		<description>
+			<p>Your tinkering has produced a cooking element unlike any other: a cauldron, oven, or other metal object of your choice that you can put ingredients into, called your heating element. Your heating element is a Small object that weighs 40 lbs, has an AC of 16, is immune to cold, fire, lightning, poison, and psychic damage and resistant to all other damage types, is immune to all conditions, and has a number of hit points equal to 10 times your artificer level.</p>
+			<p class="indent">If the <em>mending</em> spell is cast on it, it regains 2d6 hit points. If it is reduced to 0 hit points, you can use your cook's utensils to rebuild it over the course of 1 minute, provided you are within 5 feet of it and you expend a spell slot of 1st level or higher.</p>
+			<p class="indent">As a bonus action, you can place your heating element in an unoccupied space within 5 feet of you, and activate its heating mechanism for 10 minutes, or until you use a bonus action to deactivate it.</p>
+			<p class="indent">When you activate your heating element, and on subsequent turns as a bonus action while you are within 5 feet of it, you can produce one of the following effects:</p>
+			<p class="indent"><strong><em>Expel Excess Heat.</em></strong> Flames propel from the bottom of the element, causing it to fly up to 30 feet to an unoccupied space of your choice, where it hovers until the start of your next turn. Any creature that enters the area directly beneath the element or starts its turn there must make a Dexterity saving throw against your spell save DC or take 1d8 fire damage. At the start of your next turn the element falls, taking 1d6 bludgeoning damage for every 10 feet it falls. If it lands on a creature, the creature must a Dexterity saving throw against your spell save DC or take half the damage the element takes from falling, splitting the damage between them.</p>
+			<p class="indent"><strong><em>Reheat Meal.</em></strong> You reheat a previous prepared meal in your heating element and toss it to a friendly creature within 30 feet, which the creature immediately consumes if it isn't incapacitated. The target gains temporary hit points equal to 1d8 + your Intelligence modifier and has advantage on the next saving throw it makes within the next minute.</p>
+			<p class="indent"><strong><em>Simmer Burn.</em></strong> Liquids within the element spray out of it in a 15-foot cone. Each creature in the area must make a Dexterity saving throw against your spell save DC, taking 2d8 acid damage on a failure or half as much damage on a success.</p>
+			<p class="indent">Once you activate your heating element, you can't do so again until you finish a long rest or until you expend a spell slot to activate it again.</p>
+		</description>
+		<sheet>
+			<description>
+				You can produce a heating element such as a cauldron, oven, or other metal object of your choice that you can put ingredients into. our heating element is a Small object that weighs 40 lbs, has an AC of 16, is immune to cold, fire, lightning, poison, and psychic damage and resistant to all other damage types, is immune to all conditions, and has {{heating element:hp}} hit points equal to 10 times your artificer level.&#13;
+				If the mending spell is cast on it, it regains 2d6 hit points. If it is reduced to 0 hit points, you can use your cook's utensils to rebuild it over the course of 1 minute, provided you are within 5 feet of it and you expend a spell slot of 1st level or higher. As a bonus action, you can place your heating element in an unoccupied space within 5 feet of you, and activate its heating mechanism for 10 minutes, or until you use a bonus action to deactivate it.&#13;
+				When you activate your heating element, and on subsequent turns as a bonus action while you are within 5 feet of it, you can produce effects such as Expel Excess Heat, Reheat Metal, and Simmer Burn. Once you activate your heating element, you can't do so again until you finish a long rest or until you expend a spell slot to activate it again.
+			</description>
+		</sheet>
+		<rules>
+			<stat name="heating element:hp" value="level:artificer" />
+			<stat name="heating element:hp" value="level:artificer" />
+			<stat name="heating element:hp" value="level:artificer" />
+			<stat name="heating element:hp" value="level:artificer" />
+			<stat name="heating element:hp" value="level:artificer" />
+			<stat name="heating element:hp" value="level:artificer" />
+			<stat name="heating element:hp" value="level:artificer" />
+			<stat name="heating element:hp" value="level:artificer" />
+			<stat name="heating element:hp" value="level:artificer" />
+			<stat name="heating element:hp" value="level:artificer" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_GASTRONOMIST_HEATING_METAL_EXPEL_EXCESS_HEAT" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_GASTRONOMIST_HEATING_METAL_REHEAT_MEAL" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_GASTRONOMIST_HEATING_METAL_SIMMER_BURN" />
+			<stat name="heating metal:die" value="1" />
+			<stat name="heating metal:die" value="1" level="9" />
+		</rules>
+	</element>
+	<element name="Expel Excess Heat" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_HEATING_METAL_EXPEL_EXCESS_HEAT">
+		<description>
+			<p>Flames propel from the bottom of the element, causing it to fly up to 30 feet to an unoccupied space of your choice, where it hovers until the start of your next turn. Any creature that enters the area directly beneath the element or starts its turn there must make a Dexterity saving throw against your spell save DC or take 1d8 fire damage. At the start of your next turn the element falls, taking 1d6 bludgeoning damage for every 10 feet it falls. If it lands on a creature, the creature must a Dexterity saving throw against your spell save DC or take half the damage the element takes from falling, splitting the damage between them.</p>
+		</description>
+		<sheet usage="Heating Element">
+			<description>Flames propel from the bottom of the element, causing it to fly up to 30 feet to an unoccupied space of your choice, where it hovers until the start of your next turn. Any creature that enters the area directly beneath the element or starts its turn there must make a Dexterity saving throw against your spell save DC or take {{heating metal:die}}d8 fire damage. At the start of your next turn the element falls, taking 1d6 bludgeoning damage for every 10 feet it falls. If it lands on a creature, the creature must a Dexterity saving throw against your spell save DC or take half the damage the element takes from falling, splitting the damage between them.</description>
+		</sheet>
+	</element>
+	<element name="Reheat Meal" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_HEATING_METAL_REHEAT_MEAL">
+		<description>
+			<p>You reheat a previous prepared meal in your heating element and toss it to a friendly creature within 30 feet, which the creature immediately consumes if it isn't incapacitated. The target gains temporary hit points equal to 1d8 + your Intelligence modifier and has advantage on the next saving throw it makes within the next minute.</p>
+		</description>
+		<sheet usage="Heating Element">
+			<description>You reheat a previous prepared meal in your heating element and toss it to a friendly creature within 30 feet, which the creature immediately consumes if it isn't incapacitated. The target gains temporary hit points equal to {{heating metal:die}}d8 + {{intelligence:modifier}} and has advantage on the next saving throw it makes within the next minute.</description>
+		</sheet>
+	</element>
+	<element name="Simmer and Burn" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_HEATING_METAL_SIMMER_BURN">
+		<description>
+			<p>Liquids within the element spray out of it in a 15-foot cone. Each creature in the area must make a Dexterity saving throw against your spell save DC, taking 2d8 acid damage on a failure or half as much damage on a success.</p>
+		</description>
+		<sheet>
+			<description>Liquids within the element spray out of it in a 15-foot cone. Each creature in the area must make a Dexterity saving throw against your spell save DC, taking {{simmer burn:die}}d8 acid damage on a failure or half as much damage on a success.</description>
+		</sheet>
+		<rules>
+			<stat name="simmer burn:die" value="2" />
+			<stat name="simmer burn:die" value="1" level="9" />
+		</rules>
+	</element>
+
+	<element name="Magical Flavor" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_GASTRONOMIST_MAGICAL_FLAVOR">
+		<description>
+			<p>You learn to flavor your spells as if they were meals. When you cast an artificer spell that heals or deals damage, you can enhance the spell's flavor for one creature targeted by it. The spell gains one of the following effects for that creature:</p>
+			<p class="indent"><strong><em>Bitter.</em></strong> The target takes an additional 1d8 poison damage.</p>
+			<p class="indent"><strong><em>Salty.</em></strong> The target takes an additional 1d8 necrotic damage.</p>
+			<p class="indent"><strong><em>Sour.</em></strong> The target takes an additional 1d8 acid damage.</p>
+			<p class="indent"><strong><em>Spicy.</em></strong> The target takes an additional 1d8 fire damage.</p>
+			<p class="indent"><strong><em>Sweet.</em></strong> The target regains an additional 1d8 hit points.</p>
+		</description>
+	</element>
+	<element name="Vending Element" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_GASTRONOMIST_VENDING_ELEMENT">
+		<description>
+			<p>You learn to create snacks for your allies and store them in your heating element for them to access, strengthening them and your element. The damage dealt by your heating element's abilities and the number of temporary hit points it grants increases by 1d8.</p>
+			<p class="indent">Additionally, a friendly creature within 5 feet of your heating element can use its action to remove a snack from within the element and consume it. When it does so, the creature can expend a number of Hit Dice up to your proficiency bonus. For each Hit Die expended this way, the creature can roll the die and add its Constitution modifier, regaining hit points equal to the result. The creature also gains advantage on the next attack roll, ability check, or saving throw it makes within the next minute.</p>
+			<p class="indent">Once a creature eats a snack from your element, it can't do so again until it finishes a long rest.</p>
+		</description>
+		<sheet>
+			<description>A friendly creature within 5 feet of your heating element can use its action to remove a snack from within the element and consume it. When it does so, the creature can expend a number of Hit Dice (Max {{profiency}}). For each Hit Die expended this way, the creature can roll the die and add its Constitution modifier, regaining hit points equal to the result. The creature also gains advantage on the next attack roll, ability check, or saving throw it makes within the next minute.</description>
+		</sheet>
+	</element>
+	<element name="Food Factory" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_GASTRONOMIST_FOOD_FACTORY">
+		<description>
+			<p>Your heating element develops a conveyor belt by which it can supply support to your allies and pain to your enemies. As an action, you can make a wall up to 60 feet long, 5 feet high, and 1 foot thick originating from your heating element, or a ringed wall up to 20 feet in diameter, 5 feet high, and 1 foot thick with one 5-foot segment of the wall touching your heating element. A creature trapped within the ring when it appears can use its reaction to make a Dexterity saving throw against your spell save DC, escaping the ring on a success. The wall becomes fixed in place, though it temporarily disappears when you use Expel Excess heat until it lands, at which point it redeploys (allowing you to choose its shape again). It lasts for 1 minute or until you dismiss it (no action required).</p>
+			<p class="indent">Additionally, when you produce a special effect from your heating element, you can choose for the effect to originate anywhere along the wall rather than from the element's space. When you use your bonus action to Expel Excess Heat, Reheat Meal, or Simmer and Burn, you can choose to end your Food Factory early. When you do so, you gain the following additional benefit:</p>
+			<p class="indent"><strong><em>Expel Excess Heat.</em></strong> Immediately before the wall vanishes, each creature within 5 feet of it must make a Constitution saving throw or take 5d8 fire damage and your heating element flies up to 120 feet in a direction of your choice.</p>
+			<p class="indent"><strong><em>Reheat Meal.</em></strong> Each creature of your choice within 5 feet of the wall gains the feature's benefits and can't suffer from disadvantage on attack rolls until the end of your next turn.</p>
+			<p class="indent"><strong><em>Simmer and Burn.</em></strong> You can choose to create a number of cones equal to your Intelligence modifier (minimum of 3), each of which originates from a point of your choice along the wall. A creature in the area of two or more cones must make a saving throw for each of those cones, taking damage from each one.</p>
+			<p class="indent">Once you use this feature, you can't do so again until you finish a long rest or you expend a spell slot of 3rd level or higher to reform the wall.</p>
+		</description>
+		<sheet action="Action" usage="Long Rest">
+			<description>
+				As an action, you can make a wall up to 60 feet long, 5 feet high, and 1 foot thick originating from your heating element, or a ringed wall up to 20 feet in diameter, 5 feet high, and 1 foot thick with one 5-foot segment of the wall touching your heating element. A creature trapped within the ring when it appears can use its reaction to make a Dexterity saving throw against your spell save DC, escaping the ring on a success. The wall becomes fixed in place, though it temporarily disappears when you use Expel Excess heat until it lands, at which point it redeploys (allowing you to choose its shape again). It lasts for 1 minute or until you dismiss it (no action required).&#13;
+				You can choose for an effect to originate anywhere along the wall rather than from the element's space. When you use your bonus action to Expel Excess Heat, Reheat Meal, or Simmer and Burn, you can choose to end your Food Factory early. When you do so, you gain an additional benefit.&#13;
+				Once you use this feature, you can't do so again until you finish a long rest or you expend a spell slot of 3rd level or higher to reform the wall.
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_GASTRONOMIST_FOOD_FACTORY_EXPEL_EXCESS_HEAT" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_GASTRONOMIST_FOOD_FACTORY_REHEAT_MEAL" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_GASTRONOMIST_FOOD_FACTORY_SIMMER_BURN" />
+		</rules>
+	</element>
+	<element name="Expel Excess Heat (Food Factory)" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_GASTRONOMIST_FOOD_FACTORY_EXPEL_EXCESS_HEAT">
+		<description>
+			<p>Immediately before the wall vanishes, each creature within 5 feet of it must make a Constitution saving throw or take 5d8 fire damage and your heating element flies up to 120 feet in a direction of your choice.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Food Factory" alt="Expel Excess Heat">
+			<description>Immediately before the wall vanishes, each creature within 5 feet of it must make a Constitution saving throw or take 5d8 fire damage and your heating element flies up to 120 feet in a direction of your choice.</description>
+		</sheet> 
+	</element>
+	<element name="Reheat Meal (Food Factory)" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_GASTRONOMIST_FOOD_FACTORY_REHEAT_MEAL">
+		<description>
+			<p>Each creature of your choice within 5 feet of the wall gains the feature's benefits and can't suffer from disadvantage on attack rolls until the end of your next turn.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Food Factory" alt="Reheat Meal">
+			<description>Each creature of your choice within 5 feet of the wall gains the feature's benefits and can't suffer from disadvantage on attack rolls until the end of your next turn.</description>
+		</sheet> 
+	</element>
+	<element name="Simmer and Burn (Food Factory)" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_GASTRONOMIST_FOOD_FACTORY_SIMMER_BURN">
+		<description>
+			<p>You can choose to create a number of cones equal to your Intelligence modifier (minimum of 3), each of which originates from a point of your choice along the wall. A creature in the area of two or more cones must make a saving throw for each of those cones, taking damage from each one.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Food Factory" alt="Simmer and Burn">
+			<description>You can choose to create a number of cones equal to your Intelligence modifier (minimum of 3), each of which originates from a point of your choice along the wall. A creature in the area of two or more cones must make a saving throw for each of those cones, taking damage from each one.</description>
+		</sheet> 
+	</element>
+</elements>

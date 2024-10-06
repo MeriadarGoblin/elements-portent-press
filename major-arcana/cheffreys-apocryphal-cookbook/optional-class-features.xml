@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="optional-class-features.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/cheffreys-apocryphal-cookbook/optional-class-features.xml" />
+		</update>
+	</info>
+	<!-- Bard -->
+	<element name="Art of Rest" type="Class Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_CLASS_FEATURE_BARD_ART_OF_REST">
+		<description>
+			<p><i>2nd-level barbarian feature</i></p>
+			<p>You can use your spellcasting focus to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can see, hear, taste or smell your creation regain hit points at the end of the short rest by spending one or more Hit Dice, each of those creatures regains an extra 1d6 hit points.</p>
+			<p class="indent">The extra hit points increase when you reach certain levels in this class: to 1d8 at 9th level, to 1d10 at 13th level, and to 1d12 at 17th level.</p>
+		</description>
+		<sheet>
+			<description>If you or any friendly creatures who can see, hear, taste or smell your creation regain hit points at the end of the short rest by spending one or more Hit Dice, each of those creatures regains an extra 1d6 hit points.</description>
+			<description level="9">If you or any friendly creatures who can see, hear, taste or smell your creation regain hit points at the end of the short rest by spending one or more Hit Dice, each of those creatures regains an extra 1d8 hit points.</description>
+			<description level="13">If you or any friendly creatures who can see, hear, taste or smell your creation regain hit points at the end of the short rest by spending one or more Hit Dice, each of those creatures regains an extra 1d10 hit points.</description>
+			<description level="17">If you or any friendly creatures who can see, hear, taste or smell your creation regain hit points at the end of the short rest by spending one or more Hit Dice, each of those creatures regains an extra 1d12 hit points.</description>
+		</sheet>
+	</element>
+
+	<element name="Bard, LV02: Art of Rest" type="Item" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ITEM_OCF_BARD_ART_OF_REST">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_PP_CAC_CLASS_FEATURE_BARD_ART_OF_REST" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">second level, 2nd level</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Grant" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARD_SONG_OF_REST" />
+			<grant type="Class Feature" id="ID_PP_CAC_CLASS_FEATURE_BARD_ART_OF_REST" requirements="[level:bard:2]"/>
+		</rules>
+	</element>
+	<!-- Druid -->
+	<element name="Forager" type="Class Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_CLASS_FEATURE_DRUID_FORAGER">
+		<description>
+			<p>You can locate's magical deposits of natural sustenance. Over the course of 10 minutes, you can find a number of goodberries (as if from the goodberry spell) up to your twice your proficiency bonus in an outdoor area in which you remain for the duration.</p>
+			<p class="indent">Once you use this feature, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>Over the course of 10 minutes, you can find a number of goodberries (as if from the goodberry spell) up to your twice your proficiency bonus in an outdoor area in which you remain for the duration.</description>
+		</sheet>
+	</element>
+
+	<element name="Druid, LV01: Forager" type="Item" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ITEM_OCF_DRUID_FORAGER">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_PP_CAC_CLASS_FEATURE_DRUID_FORAGER" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">first level, 1st level</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_PP_CAC_CLASS_FEATURE_DRUID_FORAGER" requirements="[level:druid:1]"/>
+		</rules>
+	</element>
+	<!-- Monk -->
+	<element name="Ki Fast" type="Class Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_CLASS_FEATURE_MONK_KI_FAST">
+		<description>
+			<p>When you suffer a level of exhaustion as a result of ending an adventuring day without eating enough food, you can ignore the effects of your exhaustion. While you do so, your ki point maximum is reduced by 1 for each level of exhaustion you ignore. You still acquire levels of exhaustion while you ignore the effects, and you can't ignore effects suffered for any other reason.</p>
+			<p class="indent">You can ignore a number of levels of exhaustion in this way up to your proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description>When you suffer a level of exhaustion as a result of ending an adventuring day without eating enough food, you can ignore the effects of your exhaustion uo to {{proficiency}} levels. While you do so, your ki point maximum is reduced by 1 for each level of exhaustion you ignore. You still acquire levels of exhaustion while you ignore the effects, and you can't ignore effects suffered for any other reason.</description>
+		</sheet>
+	</element>
+
+	<element name="Monk, LV04: Ki Fast" type="Item" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ITEM_OCF_MONK_KI_FAST">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_PP_CAC_CLASS_FEATURE_MONK_KI_FAST" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">fourth level, 4th level</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_PP_CAC_CLASS_FEATURE_MONK_KI_FAST" requirements="[level:monk:4]"/>
+		</rules>
+	</element>
+	<!-- Ranger -->
+	<element name="Hunting Style" type="Class Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_CLASS_FEATURE_RANGER_HUNTING_STYLE">
+		<description>
+			<p>You adopt a particular set of skills associated with hunting in the areas you favor. Choose one of the following options.</p>
+			<p class="indent">You can’t take a Hunting Style option more than once, even if you later get to choose again.</p>
+			<h5>AMBUSH ARCHER</h5>
+			<p>You prefer to lie in wait and take out your prey from afar. You gain proficiency with the Stealth skill and a +2 bonus to damage rolls for attacks made with ranged weapons.</p>
+			<h5>HONORABLE WOODSMAN</h5>
+			<p>You respect natures many difficulties and use them to your advantage in battle. Difficult terrain doesn't slow your group's travel and you have advantage on attack rolls against creatures affected by difficult terrain.</p>
+			<h5>OFFENSIVE JUGGERNAUT</h5>
+			<p>You barrel through the wilderness, destroying all in your path. You gain proficiency with heavy armor and your walking speed increases by 10 feet while you wear heavy armor.</p>
+			<h5>SNARE TRAPPER</h5>
+			<p>You rely on magic to entrap your prey and weaken their ability to fight. You learn the thorn whip cantrip. Wisdom is your spellcasting ability for this spell, and you can add your Wisdom modifier to the damage you deal with this cantrip.</p>
+			<p class="indent">At 2nd level, you learn the snare spell, which doesn't count against your number of spells known, and you can cast it a number of times equal to your proficiency bonus without expending spell slots. You regain all uses of this casting when you finish a long rest.</p>
+		</description>
+		<rules>
+			<select type="Class Feature" name="Hunting Style" supports="Hunting Style CAC" />
+		</rules>
+	</element>
+
+	<element name="Ranger, LV01: Hunting Style" type="Item" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ITEM_OCF_RANGER_HUNTING_STYLE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_PP_CAC_CLASS_FEATURE_RANGER_HUNTING_STYLE" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">first level, 1st level</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Grant" id="ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_NATURAL_EXPLORER" />
+			<grant type="Class Feature" id="ID_PP_CAC_CLASS_FEATURE_RANGER_HUNTING_STYLE" requirements="[level:ranger:1]"/>
+		</rules>
+	</element>
+	<!-- Sorcerer -->
+	<element name="Refuled Font" type="Class Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_CLASS_FEATURE_SORCERER_REFUELED_FONT">
+		<description>
+			<p>You can regain 3 sorcery points by consuming an extra pound of food beyond that required for your character.</p>
+			<p class="indent">Once you regain sorcery points in this way, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can regain 3 sorcery points by consuming an extra pound of food beyond that required for your character.</description>
+		</sheet>
+	</element>
+
+	<element name="Sorcerer, LV10: Refueled Font" type="Item" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ITEM_OCF_SORCERER_REFUELED_FONT">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_PP_CAC_CLASS_FEATURE_SORCERER_REFUELED_FONT" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">ten level, 10th level</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_PP_CAC_CLASS_FEATURE_SORCERER_REFUELED_FONT" requirements="[level:sorcerer:10]"/>
+		</rules>
+	</element>
+	<!-- Warlock Pact Boon -->
+	<element name="Pact of the Chalice" type="Class Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OFTHE_CHALICE">
+		<supports>Pact Boon</supports>
+		<description>
+			<p>Your patron bestows upon a you a ceremonial chalice that is always full of your blood and can't spill no matter its orientation. You can use the chalice as a spellcasting focus for you warlock spells, and you can drink from it when you roll Hit Dice during a short rest to regain an additional number of hit points equal to your Charisma modifier.</p>
+			<p class="indent">Additionally, you learn the <i>detect poison and disease spell</i> and the <i>purify food and drink</i> spell, which don't count against your number of spells known. You can cast each as a ritual once, and you regain your ability to do so when you finish a long rest.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_PURIFY_FOOD_AND_DRINK" />
+				<div element="ID_PHB_SPELL_DETECT_POISON_AND_DISEASE" />
+			</div>
+		</description>
+		<sheet>
+			<description>You have a ceremonial chalice that is always full of your blood and can't spill no matter its orientation. You can use the chalice as a spellcasting focus for you warlock spells, and you can drink from it when you roll Hit Dice during a short rest to regain {{charisma:modifier}} additional number of hit points.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_PURIFY_FOOD_AND_DRINK" />
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_POISON_AND_DISEASE" />
+		</rules>
+	</element>
+
+	<!-- Hunting Styles -->
+	<element name="Ambush Archer" type="Class Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_CLASS_FEATURE_HUNTING_STYLE_AMBUSH_ARCHER">
+		<supports>Hunting Style CAC</supports>
+		<description>
+			<p>You prefer to lie in wait and take out your prey from afar. You gain proficiency with the Stealth skill and a +2 bonus to damage rolls for attacks made with ranged weapons.</p>
+		</description>
+		<sheet>
+			<description>You get +2 bonus to damage rolls for attacks made with ranged weapons</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+		</rules>
+	</element>
+	<element name="Honorable Woodsman" type="Class Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_CLASS_FEATURE_HUNTING_STYLE_HONORABLE_WOODSMAN">
+		<supports>Hunting Style CAC</supports>
+		<description>
+			<p>You respect natures many difficulties and use them to your advantage in battle. Difficult terrain doesn't slow your group's travel and you have advantage on attack rolls against creatures affected by difficult terrain.</p>
+		</description>
+		<sheet>
+			<description>Difficult terrain doesn't slow your group's travel and you have advantage on attack rolls against creatures affected by difficult terrain.</description>
+		</sheet>
+	</element>
+	<element name="Offensive Judgement" type="Class Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_CLASS_FEATURE_HUNTING_STYLE_OFFENSIVE_JUDGEMENT">
+		<supports>You barrel through the wilderness, destroying all in your path. You gain proficiency with heavy armor and your walking speed increases by 10 feet while you wear heavy armor.</supports>
+		<description>
+			<p>You barrel through the wilderness, destroying all in your path. You gain proficiency with heavy armor and your walking speed increases by 10 feet while you wear heavy armor.</p>
+		</description>
+		<sheet>
+			<description>Your walking speed increases by 10 feet while you wear heavy armor.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:misc" value="10" equipped="[armor:heavy]" />
+		</rules>
+	</element>
+	<element name="Snare Trapper" type="Class Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_CLASS_FEATURE_HUNTING_STYLE_SNARE_TRAPPER">
+		<description>
+			<p>You rely on magic to entrap your prey and weaken their ability to fight. You learn the thorn whip cantrip. Wisdom is your spellcasting ability for this spell, and you can add your Wisdom modifier to the damage you deal with this cantrip.</p>
+			<p class="indent">At 2nd level, you learn the snare spell, which doesn't count against your number of spells known, and you can cast it a number of times equal to your proficiency bonus without expending spell slots. You regain all uses of this casting when you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description>You learn the <i>thorn whip</i> cantrip. Wisdom is your spellcasting ability for this spell, and you can add {{wisdom:modifier}}.</description>
+			<description level="2">You learn the <i>thorn whip</i> cantrip. Wisdom is your spellcasting ability for this spell, and you can add {{wisdom:modifier}} to the damage. You can cast the <i>snare</i> spell {{proficiency}} times without expending spell slots. You regain all uses of this casting when you finish a long rest.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_THORN_WHIP" />
+			<grant type="Spell" id="ID_XGTE_SPELL_SNARE" level="2" />
+		</rules>
+	</element>
+</elements>

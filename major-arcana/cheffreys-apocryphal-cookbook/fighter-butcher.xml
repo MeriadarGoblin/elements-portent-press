@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="fighter-butcher.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/cheffreys-apocryphal-cookbook/fighter-butcher.xml" />
+		</update>
+	</info>
+	
+	<element name="Butcher" type="Archetype" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FIGHTER_BUTCHER">
+		<supports>Martial Archetype</supports>
+		<description>
+			<p>Not all blademasters hone their techniques on battlefields, practice yards, or dojos. For the archetypal butcher, there is no greater teacher than the counter. Whether it's marble slab on which they chop and slice entire legs of beef away from cattle or a cutting board on which they create the finest cuts of julienned veggies, these butchers treat knifework like an art, refining muscle memory to such extremes that they can rend muscle from even the incorporeal. And all know how to beat flesh into tender, juicy slabs.</p>
+			<div element="ID_PP_CAC_ARCHETYPE_FEATURE_BUTCHER_BONUS_PROFICIENCY" />
+			<div element="ID_PP_CAC_ARCHETYPE_FEATURE_BUTCHER_INSTRUMENT" />
+			<div element="ID_PP_CAC_ARCHETYPE_FEATURE_BUTCHER_QUIET_MEAL" />
+			<div element="ID_PP_CAC_ARCHETYPE_FEATURE_BUTCHER_KITCHEN_VERSATILITY" />
+			<div element="ID_PP_CAC_ARCHETYPE_FEATURE_BUTCHER_IMPROVED_INSTRUMENTS" />
+			<div element="ID_PP_CAC_ARCHETYPE_FEATURE_BUTCHER_TASTE_VICTORY" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_BUTCHER_BONUS_PROFICIENCY" level="3" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_BUTCHER_INSTRUMENT" level="3" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_BUTCHER_QUIET_MEAL" level="7" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_BUTCHER_KITCHEN_VERSATILITY" level="10" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_BUTCHER_IMPROVED_INSTRUMENTS" level="15" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_BUTCHER_TASTE_VICTORY" level="18" />
+		</rules>
+	</element>
+	
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_BUTCHER_BONUS_PROFICIENCY">
+		<description>
+			<p>Your time spent studying in the kitchen leaves you uniquely educated. You gain proficiency in cook's utensils and with the Medicine skill, if you aren't already.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" />
+		</rules>
+	</element>
+	<element name="Butcher's Instruments" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_BUTCHER_INSTRUMENT">
+		<description>
+			<p>Though proficient with all, you choose an instrument from the butcher's arsenal to reflect your unique style from Cleaver, Knife, or Tenderizer and gain its unique feature. You can't be disarmed of your instrument by nonmagical means, and you have advantage on checks and saving throws against being disarmed of it by magical means.</p>
+			<p class="indent">When you gain a level in this class or attune to a weapon, you can change your choice of instrument, losing its unique feature and gaining the unique feature of your new choice.</p>
+			<p class="indent"><b><i>Cleaver. </i></b>When you adopt this style, choose a handaxe, sickle, battleaxe, glaive, greataxe, or halberd in your possession. The weapon becomes your Cleaver. Once per turn, when you hit with your Cleaver, you can deal an extra 1d6 slashing damage and force the creature to succeed on a Constitution saving throw (DC = 8 + your proficiency bonus + your Strength modifier) or be severed until the start of your next turn. While severed, a creature subtracts your proficiency bonus from attack and damage rolls made with Strength.</p>
+			<p class="indent"><b><i>Knife. </i></b>When you adopt this style choose a dagger, scimitar, or shortsword in your possession. The weapon becomes your Knife. The damage die of your Knife becomes 1d8. In addition, once per turn when you hit a creature with your Knife, you can force it to succeed on a Constitution saving throw (DC = 8 + your proficiency bonus + your Dexterity modifier) or be hamstrung until the start of your next turn. While hamstrung, a creature's walking speed is reduced to 5 feet, and it has disadvantage on attack rolls made as a reaction.</p>
+			<p class="indent"><b><i>Tenderizer. </i></b>When you adopt this style, choose a weapon that deals bludgeoning damage or a morningstar in your possession. The weapon becomes your Tenderizer. Once per turn, when you hit an object or creature with your tenderizer, you can force it to make a Constitution saving throw (DC = 8 + your proficiency bonus + your Intelligence modifier) or become tender for up to 1 minute. While tender, the creature's AC is reduced by half your proficiency bonus (rounded down).</p>
+			<p>You can force a saving throw with your instrument twice, and you regain all expended when you finish a short or long rest.</p>
+		</description>
+		<sheet usage="2/Rest">
+			<description>Choose an instrument from the butcher's arsenal to reflect your unique style from Cleaver, Knife, or Tenderizer and gain its unique feature. You can't be disarmed of your instrument by nonmagical means, and you have advantage on checks and saving throws against being disarmed of it by magical means. You can force a saving throw with your instrument twice, and you regain all expended when you finish a short or long rest.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Butcher's Instruments" supports="Butcher Instrument" />
+		</rules>
+	</element>
+	<!-- Butcher's Instruments -->
+	<element name="Cleaver" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_BUTCHER_CLEAVER">
+		<supports>Butcher Instruments</supports>
+		<description />
+		<sheet>
+			<description>When you adopt this style, choose a handaxe, sickle, battleaxe, glaive, greataxe, or halberd in your possession. The weapon becomes your Cleaver. Once per turn, when you hit with your Cleaver, you can deal an extra 1d6 slashing damage and force the creature to succeed on a Constitution saving throw (DC {{butcher cleaver:dc}}) or be severed until the start of your next turn. While severed, a creature subtracts your proficiency bonus from attack and damage rolls made with Strength.</description>
+		</sheet>
+		<rules>
+			<stat name="butcher cleaver:dc" value="8" />
+			<stat name="butcher cleaver:dc" value="proficiency" />
+			<stat name="butcher cleaver:dc" value="strength:modifier" />
+		</rules>
+	</element>
+	<element name="Knife" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_BUTCHER_KNIFE">
+		<supports>Butcher Instruments</supports>
+		<description />
+		<sheet>
+			<description>When you adopt this style choose a dagger, scimitar, or shortsword in your possession. The weapon becomes your Knife. The damage die of your Knife becomes 1d8. In addition, once per turn when you hit a creature with your Knife, you can force it to succeed on a Constitution saving throw (DC {{butcher knife:dc}}) or be hamstrung until the start of your next turn. While hamstrung, a creature's walking speed is reduced to 5 feet, and it has disadvantage on attack rolls made as a reaction.</description>
+		</sheet>
+		<rules>
+			<stat name="butcher knife:dc" value="8" />
+			<stat name="butcher knife:dc" value="proficiency" />
+			<stat name="butcher knife:dc" value="dexterity:modifier" />
+		</rules>
+	</element>
+	<element name="Tenderizer" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_BUTCHER_TENDERIZER">
+		<supports>Butcher Instruments</supports>
+		<description />
+		<sheet>
+			<description>When you adopt this style, choose a weapon that deals bludgeoning damage or a morningstar in your possession. The weapon becomes your Tenderizer. Once per turn, when you hit an object or creature with your tenderizer, you can force it to make a Constitution saving throw (DC {{butcher tenderizer:dc}}) or become tender for up to 1 minute. While tender, the creature's AC is reduced by half your proficiency bonus (rounded down).</description>
+		</sheet>
+		<rules>
+			<stat name="butcher tenderizer:dc" value="8" />
+			<stat name="butcher tenderizer:dc" value="proficiency" />
+			<stat name="butcher tenderizer:dc" value="intelligence:modifier" />
+		</rules>
+	</element>
+
+	<element name="Quiet Meal" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_BUTCHER_QUIET_MEAL">
+		<description>
+			<p>You know the impact a quiet meal can have on a soldier in the throes of war. During a short rest, you can prepare food using cook's utensils and at least one pound of food. If you or any friendly creatures regain hit points at the end of the short rest by spending one or more Hit Dice, each of those creatures regains an extra 1d6 hit points and has advantage on Constitution saving throws against poison and disease for 1 hour.</p>
+		</description>
+		<sheet>
+			<description>During a short rest, you can prepare food using cook's utensils and at least one pound of food. If you or any friendly creatures regain hit points at the end of the short rest by spending one or more Hit Dice, each of those creatures regains an extra 1d6 hit points and has advantage on Constitution saving throws against poison and disease for 1 hour.</description>
+		</sheet>
+	</element>
+	<element name="Kitchen Versatility" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_BUTCHER_KITCHEN_VERSATILITY">
+		<description>
+			<p>Every chef knows how to the stretch the uses of their preferred tools, and you're no different. You gain proficiency with improvised weapons.</p>
+			<p class="indent">Additionally, when you make an attack with your Butcher's Instrument, you can choose to make the attack as if you were using an improvised weapon. When you do so, you can expend a use of your Butcher's Instrument and force the target to succeed on a saving throw against any condition inflicted by a Butcher's Instrument.</p>
+			<p class="indent">Once you use this feature, you can't do so again until you finish a short or long rest.</p>
+		</description>
+		<sheet>
+			<description>You are proficient with improvised weapons. Additionally, when you make an attack with your Butcher's Instrument, you can choose to make the attack as if you were using an improvised weapon. When you do so, you can expend a use of your Butcher's Instrument and force the target to succeed on a saving throw against any condition inflicted by a Butcher's Instrument. Once you use this feature, you can't do so again until you finish a short or long rest.</description>
+		</sheet>
+	</element>
+	<element name="Improved Instruments" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_BUTCHER_IMPROVED_INSTRUMENTS">
+		<description>
+			<p>Your Butcher's Instrument improves in the following ways.</p>
+			<p class="indent"><b><i>Cleaver. </i></b>When you take the Attack action with your Cleaver and hit a creature, you can extend your attack, cleaving into another creature within your reach. Make a new attack roll against the creature. This attack doesn't count against the number of attacks you can make using your Extra Attack feature but can only be used once per Attack action.</p>
+			<p class="indent"><b><i>Knife. </i></b>When you hit the same creature three or more times on your turn with your Knife, the target becomes sliced for 1 minute. While sliced, a target can't regain hit points and it takes an additional 1d8 slashing damage at the start of each of its turns.</p>
+			<p class="indent"><b><i>Tenderizer. </i></b>When you roll to attack with your Tenderizer and exceed the target's AC by 5 or more, you can roll one additional weapon damage die when determining the damage for the attack.</p>
+		</description>
+		<sheet>
+			<description>Your Butcher's Instrument improves in the following ways.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_BUTCHER_CLEAVER_IMPROVEMENT" requirements="ID_PP_CAC_ARCHETYPE_FEATURE_BUTCHER_CLEAVER" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_BUTCHER_KNIFE_IMPROVEMENT" requirements="ID_PP_CAC_ARCHETYPE_FEATURE_BUTCHER_KNIFE" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_BUTCHER_TENDERIZER_IMPROVEMENT" requirements="ID_PP_CAC_ARCHETYPE_FEATURE_BUTCHER_TENDERIZER" />
+		</rules>
+	</element>
+
+	<!-- IMPROVEMENTS -->
+	<element name="Cleaver Improvement" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_BUTCHER_CLEAVER_IMPROVEMENT">
+		<compendium display="false" />
+		<supports>Butcher Instruments</supports>
+		<description />
+		<sheet>
+			<description>When you take the Attack action with your Cleaver and hit a creature, you can extend your attack, cleaving into another creature within your reach. Make a new attack roll against the creature. This attack doesn't count against the number of attacks you can make using your Extra Attack feature but can only be used once per Attack action.</description>
+		</sheet>
+	</element>
+	<element name="Knife Improvement" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_BUTCHER_KNIFE_IMPROVEMENT">
+		<compendium display="false" />
+		<supports>Butcher Instruments</supports>
+		<description />
+		<sheet>
+			<description>When you hit the same creature three or more times on your turn with your Knife, the target becomes sliced for 1 minute. While sliced, a target can't regain hit points and it takes an additional 1d8 slashing damage at the start of each of its turns.</description>
+		</sheet>
+	</element>
+	<element name="Tenderizer Improvement" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_BUTCHER_TENDERIZER_IMPROVEMENT">
+		<compendium display="false" />
+		<supports>Butcher Instruments</supports>
+		<description />
+		<sheet>
+			<description>When you roll to attack with your Tenderizer and exceed the target's AC by 5 or more, you can roll one additional weapon damage die when determining the damage for the attack.</description>
+		</sheet>
+	</element>
+	
+	<element name="Taste Victory" type="Archetype Feaure" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_BUTCHER_TASTE_VICTORY">
+		<description>
+			<p>You can sense when victory approaches and know how best to serve it up. When you start your turn with no uses of your Butcher's Instrument, you regain a use.</p>
+			<p class="indent">Additionally, you can expend a use of your Indomitable feature when you force a saving throw using your Butcher's Instrument. When you do so, instead of rerolling your own saving throw, the target must reroll its saving throw.</p>
+		</description>
+		<sheet>
+			<description>When you start your turn with no uses of your Butcher's Instrument, you regain a use. Additionally, you can expend a use of your Indomitable feature when you force a saving throw using your Butcher's Instrument. When you do so, instead of rerolling your own saving throw, the target must reroll its saving throw.</description>
+		</sheet>
+	</element>
+</elements>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="bard-mixology.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/cheffreys-apocryphal-cookbook/bard-mixology.xml" />
+		</update>
+	</info>
+	
+	<element name="College of Mixology" type="Archetype" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_BARD_MIXOLOGY">
+		<supports>Bard College</supports>
+		<description>
+			<p>Of the many stops in an adventurer's travel, none is as ubiquitous as a visit to a tavern. Whether searching for rumors and allies, or simply carousing with the fruits of their labor after a hard adventuring day's work, nothing goes down smoother than the first drink of the night. That being so, for the discerning drinker, the best drinks of all are served by those professionally trained in the magical art of mixology, an illustrious echelon that you happen to belong to. From aperitif to digestif, your supernatural cocktail mastery allows for magical mischief.</p>
+			<div element="ID_PP_CAC_ARCHETYPE_FEATURE_MIXOLOGY_BONUS_PROFICIENCY" />
+			<div element="ID_PP_CAC_ARCHETYPE_FEATURE_MIXOLOGY_ALCHEMICOCKTAILS" />
+			<div element="ID_PP_CAC_ARCHETYPE_FEATURE_MIXOLOGY_TOP_SHELF" />
+			<div element="ID_PP_CAC_ARCHETYPE_FEATURE_MIXOLOGY_GARNISH_INSPIRATION" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_MIXOLOGY_BONUS_PROFICIENCY" level="3" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_MIXOLOGY_ALCHEMICOCKTAILS" level="3" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_MIXOLOGY_TOP_SHELF" level="6" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_MIXOLOGY_GARNISH_INSPIRATION" level="14" />
+		</rules>
+	</element>
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_MIXOLOGY_BONUS_PROFICIENCY">
+		<description>
+			<p>You gain proficiency with alchemist's supplies and brewer's supplies, and you have advantage on ability checks you make to impress or perform while using those tools.</p>
+			<p class="indent">Additionally, you can use any drinking glass as a spellcasting focus for your bard spells, provided it contains a beverage.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on ability checks you make to impress or perform while using achlemist's supplies and brewer's supplies. Also, you can use a drinking as a spellcasting focus for your spells, provided it contains a beverage.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES" />
+		</rules>
+	</element>
+	<element name="Alchemicocktails" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_MIXOLOGY_ALCHEMICOCKTAILS">
+		<description>
+			<p>As an action, while you have alchemist's supplies on your person, you can expend a use of your Bardic Inspiration to mix a magical cocktail, choosing from the options on the Magical Cocktail table. A creature can drink such a cocktail as a bonus action, becoming magically tipsy for 1 minute. When it becomes tipsy, and at the start of each of its turns for the duration, it must roll one of your Bardic Inspiration dice. On a result of 4 or higher, it gains the benefits of the cocktail until the start of its next turn. On a result of 3 or lower, it becomes poisoned until the start of its next turn. A tipsy creature can use an action to sober itself, ending the cocktail's effects.</p>
+			<p class="indent">You can have a number of magical cocktails at any given time equal to your Charisma modifier, and they lose their potency after you finish a long rest. If you would exceed this number, the oldest cocktail loses its potency.</p>
+			<table>
+				<h5>Magical Cocktail</h5>
+				<thead>
+					<tr><td>Cocktail</td><td>Effect</td></tr>
+				</thead>
+				<tr><td>Amnian Flip</td><td>The creature gains one Metamagic option of its choice (as per the sorcerer class feature), and using a Metamagic option requires 1 fewer sorcery points for it.</td></tr>
+				<tr><td>Chult Sling</td><td>The creature gains a number of temporary hit points equal to your level, and it has resistance to all damage while it has temporary hit points.</td></tr>
+				<tr><td>Icewind Fizz</td><td>The creature's speed is doubled, and it gains the benefits of the Dodge action.</td></tr>
+				<tr><td>Moonshae Punch</td><td>When the creature takes the Attack action on its turn, it can make one additional attack as part of that action.</td></tr>
+			</table>
+		</description>
+		<sheet usage="{{charisma:modifier}}/Long Rest">
+			<description>As an action, while you have alchemist's supplies on your person, you can expend a use of your Bardic Inspiration to mix a magical cocktail, choosing from the options on the Magical Cocktail table. A creature can drink such a cocktail as a bonus action, becoming magically tipsy for 1 minute. When it becomes tipsy, and at the start of each of its turns for the duration, it must roll one of your Bardic Inspiration dice. On a result of 4 or higher, it gains the benefits of the cocktail until the start of its next turn. On a result of 3 or lower, it becomes poisoned until the start of its next turn. A tipsy creature can use an action to sober itself, ending the cocktail's effects. If you would exceed this number, the oldest cocktail loses its potency.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_MIXOLOGY_ALCHEMICOCKTAILS_AMNIAN_FLIP" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_MIXOLOGY_ALCHEMICOCKTAILS_CHULT_SING" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_MIXOLOGY_ALCHEMICOCKTAILS_ICEWIND_FIZZ" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_MIXOLOGY_ALCHEMICOCKTAILS_MOONSHAE_PUNCH" />
+		</rules>
+	</element>
+	<element name="Amnian Flip" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_MIXOLOGY_ALCHEMICOCKTAILS_AMNIAN_FLIP">
+		<description>
+			<p>The creature gains one Metamagic option of its choice (as per the sorcerer class feature), and using a Metamagic option requires 1 fewer sorcery points for it.</p>
+		</description>
+		<sheet usage="1 Bardic Inspiration">
+			<description>The creature gains one Metamagic option of its choice (as per the sorcerer class feature), and using a Metamagic option requires 1 fewer sorcery points for it.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Amnian Flip (Achemicocktail)" supports="Metamagic" />
+		</rules>
+	</element>
+	<element name="Chult Sling" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_MIXOLOGY_ALCHEMICOCKTAILS_CHULT_SING">
+		<description>
+			<p>The creature gains a number of temporary hit points equal to your level, and it has resistance to all damage while it has temporary hit points.</p>
+		</description>
+		<sheet usage="1 Bardic Inspiration">
+			<description>The creature gains {{level:artificer}} temporary hit points, and it has resistance to all damage while it has temporary hit points.</description>
+		</sheet>
+	</element>
+	<element name="Icewind Fizz" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_MIXOLOGY_ALCHEMICOCKTAILS_ICEWIND_FIZZ">
+		<description>
+			<p>The creature's speed is doubled, and it gains the benefits of the Dodge action.</p>
+		</description>
+		<sheet usage="1 Bardic Inspiration">
+			<description>The creature's speed is doubled, and it gains the benefits of the Dodge action.</description>
+		</sheet>
+	</element>
+	<element name="Moonshae Punch" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_MIXOLOGY_ALCHEMICOCKTAILS_MOONSHAE_PUNCH">
+		<description>
+			<p>When the creature takes the Attack action on its turn, it can make one additional attack as part of that action.</p>
+		</description>
+		<sheet usage="1 Bardic Inspiration">
+			<description>When the creature takes the Attack action on its turn, it can make one additional attack as part of that action.</description>
+		</sheet>
+	</element>
+
+	<element name="Top Shelf" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_MIXOLOGY_TOP_SHELF">
+		<description>
+			<p>When you a mix a magical cocktail, you can choose a bard spell you know and expend a spell slot of its level or higher, imbuing the cocktail with the spell until it loses potency. The spell can't be a cantrip, and must have a casting time of 1 action or bonus action. If the spell requires material components with a gold cost or that would be expended, you must also provide those components. When a creature drinks this cocktail, it becomes the target of the spell, using your spell save DC and spellcasting ability modifier. If the spell requires concentration, the creature must provide that concentration.</p>
+		</description>
+		<sheet>
+			<description>When you a mix a magical cocktail, you can choose a bard spell you know and expend a spell slot of its level or higher, imbuing the cocktail with the spell until it loses potency. The spell can't be a cantrip, and must have a casting time of 1 action or bonus action. If the spell requires material components with a gold cost or that would be expended, you must also provide those components. When a creature drinks this cocktail, it becomes the target of the spell, using your spell save DC and spellcasting ability modifier. If the spell requires concentration, the creature must provide that concentration.</description>
+		</sheet>
+	</element>
+	<element name="Garnish Inspiration" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_MIXOLOGY_GARNISH_INSPIRATION">
+		<description>
+			<p>When a creature drinks one of your magical cocktails, it also gains a Bardic Inspiration die.</p>
+			<p class="indent">Additionally, you are aware of the presence and nature of poisons in any fluid you can taste or smell, and such a poison has no effect on you unless you wish it.</p>
+		</description>
+		<sheet>
+			<description>When a creature drinks one of your magical cocktails, it also gains a Bardic Inspiration die. Additionally, you are aware of the presence and nature of poisons in any fluid you can taste or smell, and such a poison has no effect on you unless you wish it.</description>
+		</sheet>
+	</element>
+</elements>

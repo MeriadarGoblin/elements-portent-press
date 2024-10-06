@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Source</name>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/cheffreys-apocryphal-cookbook/source.xml" />
+		</update>
+	</info>
+	<element name="Cheffrey's Apocryphal Cookbook" type="Source" source="Cheffrey's Apocryphal Cookbook" id="ID_SOURCE_PP_CAC">
+		<description>
+			<p>The content from the Portent Press team that adds a food-related content.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">CAC</set>
+			<set name="url">https://www.gmbinder.com/share/-NwHd9w8gvfvi2JXStBN</set>
+			<set name="image">https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/cheffreys-apocryphal-cookbook/CAC-cover.png</set>
+			<set name="author" abbreviation="PP" url="https://discord.com/invite/fspTtCsvwt">Portent Press</set>
+			<set name="homebrew">true</set>
+			<set name="release">20240429</set>
+		</setters>
+	</element>
+</elements>

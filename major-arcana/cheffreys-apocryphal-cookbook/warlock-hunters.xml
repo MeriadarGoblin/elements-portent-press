@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="warlock-hunters.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/cheffreys-apocryphal-cookbook/warlock-hunters.xml" />
+		</update>
+	</info>
+	
+	<element name="The Hunters" type="Archetype" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_WARLOCK_HUNTERS">
+		<supports>Otherworldly Patron</supports>
+		<description>
+			<p>The natural world abounds with predators: lions, tigers, bears. And beyond them are the hunters that they fear, like humanoids, fiends, and fey. But even these predators are mere amateurs compared to that of the beings that can be counted as Hunters. They hunt not for sustenance, but for sport, and on a scale that dwarfs the simple fox's pursuit of the mouse. The Hunters seek out incredible foes, from demon lords to angels, testing their tracking on cosmic scales and their abilities on the multiverse's strongest.</p>
+			<p class="indent">Somehow, you've earned the patronage of one or all of these great beings. Perhaps you've been set to locate a specific creature or item for them or perhaps your experience hunting has drawn their attentions. Perhaps you successfully hunted one down, earning their trust.</p>
+			<div class="ID_PP_CAC_ARCHETYPE_FEATURE_THE_HUNTERS_EXPANDED_SPELL_LIST" />
+			<div class="ID_PP_CAC_ARCHETYPE_FEATURE_THE_HUNTERS_SPELLS_OFTHE_TRADE" />
+			<div class="ID_PP_CAC_ARCHETYPE_FEATURE_THE_HUNTERS_TRACK_UNTO_GRAVE" />
+			<div class="ID_PP_CAC_ARCHETYPE_FEATURE_THE_HUNTERS_LETHAL_PURSUIT" />
+			<div class="ID_PP_CAC_ARCHETYPE_FEATURE_THE_HUNTERS_CURSE_OFTHE_WILLING_PREY" />
+			<div class="ID_PP_CAC_ARCHETYPE_FEATURE_THE_HUNTERS_COSMIC_RANGE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_THE_HUNTERS_EXPANDED_SPELL_LIST" level="1" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_THE_HUNTERS_SPELLS_OFTHE_TRADE" level="1" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_THE_HUNTERS_TRACK_UNTO_GRAVE" level="1" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_THE_HUNTERS_LETHAL_PURSUIT" level="6" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_THE_HUNTERS_CURSE_OFTHE_WILLING_PREY" level="10" />
+			<grant type="Archetype Feature" id="ID_PP_CAC_ARCHETYPE_FEATURE_THE_HUNTERS_COSMIC_RANGE" level="14" />
+		</rules>
+	</element>
+	
+	<element name="Expanded Spell List" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_THE_HUNTERS_EXPANDED_SPELL_LIST">
+		<description>
+			<p>The Hunters lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5 class="caption">Hunters Expanded Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>hunter's mark, refresh</em></td></tr>
+				<tr><td>2nd</td><td><em>knock, web</em></td></tr>
+				<tr><td>3rd</td><td><em>clairvoyance, phantom steed</em></td></tr>
+				<tr><td>4th</td><td><em>freedom of movement, hounds of the huntsman</em></td></tr>
+				<tr><td>5th</td><td><em>commune with nature, passwall</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<spellcasting name="Warlock" extend="true">
+			<extend>ID_PHB_SPELL_HUNTERS_MARK</extend>
+			<extend>ID_PP_CAC_SPELL_REFRSH</extend>
+			<extend>ID_PHB_SPELL_KNOCK</extend>
+			<extend>ID_PHB_SPELL_WEB</extend>
+			<extend>ID_PHB_SPELL_CLAIRVOYANCE</extend>
+			<extend>ID_PHB_SPELL_PHANTOM_STEED</extend>
+			<extend>ID_PHB_SPELL_FREEDOM_OF_MOVEMENT</extend>
+			<extend>ID_PP_CAC_SPELL_HOUNDS_OFTHE_HUNTSMAN</extend>
+			<extend>ID_PHB_SPELL_COMMUNE_WITH_NATURE</extend>
+			<extend>ID_PHB_SPELL_PASSWALL</extend>
+		</spellcasting>
+	</element>
+	<element name="Spells of the Trade" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_THE_HUNTERS_SPELLS_OFTHE_TRADE">
+		<description>
+			<p>Neither you nor the Hunters waste time with nonmagical pursuits. You learn <i>detect evil and good</i>, <i>detect magic</i>, and <i>detect poison and disease</i>, which don't count against your number of spells known and are warlock spells for you. You can cast each as a ritual, even if you don't have the ability to cast spells as a ritual normally and if the spell doesn't have the ritual tag.</p>
+			<p class="indent">You can learn additional spells with this feature, all of which gain the benefits listed above, so long as the spells have the word "detect" or "locate" in the spell's name and those spells are of a level for which you have warlock spell slots.</p>
+		</description>
+		<sheet>
+			<description>You can cast spells that have the words "detect" or "locate" as rituals. You can also learn spells that have these words for which you have spell slots.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_EVIL_AND_GOOD" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_POISON_AND_DISEASE" spellcasting="Warlock" />
+		</rules>
+	</element>
+	<element name="Track Unto Grave" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_THE_HUNTERS_TRACK_UNTO_GRAVE">
+		<description>
+			<p>As a bonus action, you can spe ou can speak the name of a creature you know. If the creature is within a number of feet you equal to 100 times your warlock level, you immediately learn its exact position and the most efffficient path by which you can reach it, and you can force it to make a Charisma saving throw against your spell save DC. On a failure, the creature can't be hidden from you and you can see it, even if it is invisible, as if by the <i>see invisibility</i> spell, for 1 minute or until it leaves the current plane of existence. On a success, it's unaffffected. If the creature isn't within the area, you learn a vague approximation of where it could be, such as "a few miles away" or "on a difffferent plane" (GM's discretion).</p>
+			<p class="indent">A creature immunte to divination spells or spells of a level less than half your warlock level (rounded down) are immune to this feature.</p>
+			<p class="indent">Once you use this feature, you can't do so again until you reduce the target of the feature to 0 hit points or you finish a short or long rest.</p>
+		</description>
+	</element>
+	<element name="Lethal Pursuit" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_THE_HUNTERS_LETHAL_PURSUIT">
+		<description>
+			<p>Your walking speed increases by 10 feet, and you can take the Dash action as a bonus action.</p>
+			<p class="indent">Additionally, when you hit a creature you've located with your Track unto Grave feature or with a warlock spell you're concentrating on with a spell or weapon attack, you can add your Charisma modifier to one of the attack's damage rolls.</p>
+		</description>
+		<sheet>
+			<description>You can take the Dash action as a bonus action. When you hit a creature you've located with your Track unto Grave feature or with a warlock spell you're concentrating on with a spell or weapon attack, you can add your Charisma modifier to one of the attack's damage rolls.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:misc" value="10" />
+		</rules>
+	</element>
+	<element name="Curse of the Willing Prey" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_THE_HUNTERS_CURSE_OFTHE_WILLING_PREY">
+		<description>
+			<p>Your patrons bestow upon you a secret curse that afflicts prey like no other. When a creature fails its saving throw against your Track unto Grave feature, you can choose for it to become cursed and frightened of you for the duration. While frightened in this way, the creature must move closer to you by the most efficient path, though not through obviously dangerous terrain, ignoring the normal movement restrictions inflicted by the frightened condition.</p>
+			<p class="indent">Once a creature fails its saving throw against this feature, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When a creature fails its saving throw against your Track unto Grave feature, you can choose for it to become cursed and frightened of you for the duration. While frightened in this way, the creature must move closer to you by the most efficient path, though not through obviously dangerous terrain, ignoring the normal movement restrictions inflicted by the frightened condition. &#13;
+				Once a creature fails its saving throw against this feature, you can't use it again until you finish a long rest.
+			</description>
+		</sheet>
+	</element>
+	<element name="Cosmic Range" type="Archetype Feature" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_ARCHETYPE_FEATURE_THE_HUNTERS_COSMIC_RANGE">
+		<description>
+			<p>Like your patrons, you hunt on a cosmic scale. You learn the <i>plane shift</i> spell if you don't know it already, it doesn't count against your number of mystic arcanum known, and you can cast it as a ritual if it were one of your Spells of the Trade.</p>
+			<p class="indent">Additionaly, when you cast one of your Spells of the Trade, you can multiply the area that spell affects by 100.</p>
+		</description>
+		<sheet>
+			<description>You can cast the plane shift spell and cast it as a ritual as if it was one of your Spells of the Trade. Also, when you cast one of your Spells of the Trade, you can multiply the area that spell affects by 100.</description>
+		</sheet>
+	</element>
+</elements>

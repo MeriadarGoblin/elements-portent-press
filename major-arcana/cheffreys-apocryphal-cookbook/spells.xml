@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="spells.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/cheffreys-apocryphal-cookbook/spells.xml" />
+		</update>
+	</info>
+	
+	<element name="Butter Fingers" type="Spell" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_SPELL_BUTTER_FINGERS">
+		<supports>Bard, Sorcerer, Wizard</supports>
+		<description>
+			<p>Choose a creature you can see within range, or two creatures if both are within 10 feet of each other. The hands (or two similar appendages) of each target are instantly daubed with a thick layer of cultured butter. When you cast this spell, and at the start of each of its turns, each target must make a Dexterity or Strength saving throw (its choice) or drop whatever it's holding in its hands. For the duration, each target also has advantage on ability checks made to escape grapples, as well as bindings such as ropes or cuffs.</p>
+			<p class="indent">A creature can use its action to wash or wipe the butter off either itself or another creature, provided it has water, soap, or a cloth available. The <em>prestidigitation</em> cantrip can also end the spell on a creature.</p>
+			<p class="indent">The butter turns into water when the spell ends.</p>
+		</description>
+		<setters>
+			<set name="keywords">cook</set>
+			<set name="level">1</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">60 feet</set>
+			<set name="duration">1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">two drops of fresh cream</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Cheffrey's Draconic Maw" type="Spell" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_SPELL_CHEFFREYS_DRACONIC_MAW">
+		<supports>Artificer, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>Make a melee spell attack against one creature within 5 feet of you. On a hit, target takes 14d6 piercing damage as you chomp hard into the creature.</p>
+			<p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 6th level or higher, the damage increases by 2d6 for each slot level above 5th.</p>
+		</description>
+		<setters>
+			<set name="keywords">cook</set>
+			<set name="level">5</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (5-foot radius)</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Hounds of the Huntman" type="Spell" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_SPELL_HOUNDS_OFTHE_HUNTSMAN">
+		<supports>Ranger</supports>
+		<description>
+			<p>You summon six spectral hounds in unoccupied spaces within range. Each hound uses the statistics of a wolf, except it has a speed of 60 feet, resistance to nonmagical bludgeoning, piercing, and slashing damage, and a bonus to its Wisdom (Perception) checks equal to your spellcasting ability modifier. Each hound is considered Fey, and it disappears when it drops to 0 hit points or when the spell ends.</p>
+			<p class="indent">The hounds are friendly to you and your companions. They take their turns in the initiative order immediately after yours, and they do so as a group. They obey any commands that you issue to them (no action required by you). If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.</p>
+			<p class="indent">While a hound is on the same plane of existence as you, you always know its location relative to you, and you can communicate with it or any number of the hounds telepathically. The hounds can telepathically communicate simple emotions and concepts back to you. Additionally, as an action, you can see through a hound's eyes and hear what it hears until you choose not to (no action required), or until you use your action to choose a different hound. During this time, you are deaf and blind with regard to your own senses.</p>
+			<p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 5th level or higher, the duration is 24 hours and doesn't require concentration.</p>
+		</description>
+		<setters>
+			<set name="keywords">cook</set>
+			<set name="level">4</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">30 feet</set>
+			<set name="duration">Concentration, up to 8 hours</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Overgorge" type="Spell" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_SPELL_OVERGORGE">
+		<supports>Warlock, Wizard</supports>
+		<description>
+			<p>Each creature within a 15-foot-radius sphere centered on a point you choose within range must succeed on a Constitution saving throw when you cast this spell or be affected by it. An affected creature feels sluggish. If it moves more than half of its speed on a turn; casts a spell; or makes more than one attack on a turn, it must succeed on a Constitution saving throw or become unconscious until the end of its turn as it falls asleep.</p>
+		</description>
+		<setters>
+			<set name="keywords">cook</set>
+			<set name="level">3</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">60 feet</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a full leather pouch</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Ravenous" type="Spell" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_SPELL_RAVENOUS">
+		<supports>Warlock, Wizard</supports>
+		<description>
+			<p>You attempt to strike a foe with violent hunger. Choose a creature you can see within range to make a Constitution saving throw. On a failed save, the creature becomes ravenous. A ravenous creature must use its movement and action on its turn to attempt to swallow whole the nearest creature of its size or smaller. The target must succeed on a Strength saving throw or be swallowed in this way. If the creature couldn't normally swallow a target of a given size, the spell magically expands its mouth and stomach to allow it to do so. A swallowed creature is blinded and restrained, and it has total cover against attacks and other effects outside the creature that swallowed it. If the creature already had the ability to swallow a creature, the target suffers any other appropriate effects (such as taking acid damage from its digestive fluids).</p>
+			<p class="indent">A ravenous creature becomes satisfied, ending the spell, when it has eaten its fill. To be full, a creature needs to eat an amount equal to one creature of its size. Creatures of a smaller size count as half as much for this amount for each size category smaller than the ravenous creature. At the end of each of its turns, the ravenous creature can also make a Constitution saving throw. On a success, the spell ends.</p>
+			<p class="indent">When the spell ends, the creature regurgitates any targets it couldn't normally swallow, taking 6d6 bludgeoning damage when it does so. A regurgitated target falls prone in a space within 5 feet of the creature.</p>
+		</description>
+		<setters>
+			<set name="keywords">cook</set>
+			<set name="level">4</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">30 feet</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an empty leather pouch</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Refresh" type="Spell" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_SPELL_REFRSH">
+		<supports>Bard, Clerid, Druid, Wizard</supports>
+		<description>
+			<p>You attempt to strike a foe with violent hunger. Choose a creature you can see within range to make a Constitution saving throw. On a failed save, the creature becomes ravenous. A ravenous creature must use its movement and action on its turn to attempt to swallow whole the nearest creature of its size or smaller. The target must succeed on a Strength saving throw or be swallowed in this way. If the creature couldn't normally swallow a target of a given size, the spell magically expands its mouth and stomach to allow it to do so. A swallowed creature is blinded and restrained, and it has total cover against attacks and other effects outside the creature that swallowed it. If the creature already had the ability to swallow a creature, the target suffers any other appropriate effects (such as taking acid damage from its digestive fluids).</p>
+			<p class="indent">A ravenous creature becomes satisfied, ending the spell, when it has eaten its fill. To be full, a creature needs to eat an amount equal to one creature of its size. Creatures of a smaller size count as half as much for this amount for each size category smaller than the ravenous creature. At the end of each of its turns, the ravenous creature can also make a Constitution saving throw. On a success, the spell ends.</p>
+			<p class="indent">When the spell ends, the creature regurgitates any targets it couldn't normally swallow, taking 6d6 bludgeoning damage when it does so. A regurgitated target falls prone in a space within 5 feet of the creature.</p>
+		</description>
+		<setters>
+			<set name="keywords">cook</set>
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">up to ten pints of water or another beverage, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Scald" type="Spell" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_SPELL_SCALD">
+		<supports>Artificer, Bard, Druid, Ranger, Sorcerer, Wizard</supports>
+		<description>
+			<p>Choose a point within a liquid, other than a moving body of water, you can see within range; a 5-foot-radius sphere of that liquid, centered on that point, immediately heats to the boiling point of water. The sphere's radius increases by 5 feet on each of your turns, to a maximum radius of 20 feet.</p>
+			<p class="indent">A creature that comes in contact with the liquid must succeed on a Constitution saving throw, which it has disadvantage on if it is drinking the liquid. It takes 4d6 fire damage on a failed save, or half as much on a success. A creature that has the liquid poured on it continuously or is at least partially submerged in the liquid makes the saving throw at the start of each of its turns.</p>
+			<p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, the fire damage increases by 1d6, and the sphere's maximum radius increases by 5 feet, for each level of the slot above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">cook</set>
+			<set name="level">2</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">60 feet</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a lump of potash</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Scovillior's Hell Spice" type="Spell" source="Cheffrey's Apocryphal Cookbook" id="ID_PP_CAC_SPELL_SCOVILLIORS_HELL_SPICE">
+		<supports>Artificer, Bard, Cleric, Wizard</supports>
+		<description>
+			<p>You reach out and touch a creature, igniting its tastebuds with spice drawn from the hells. For the duration, the target deals an extra 1d6 fire damage and 1d6 necrotic damage each time it deals fire damage. A creature reduced to 0 hit points by this extra damage is reduced to sulfuric ash.</p>
+		</description>
+		<setters>
+			<set name="keywords">cook</set>
+			<set name="level">3</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Touch</set>
+			<set name="duration">10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">bottled ghost and a half-eaten chili pepper</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+</elements>

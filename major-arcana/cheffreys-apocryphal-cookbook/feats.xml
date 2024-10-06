@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Feats</name>
+		<author url="https://www.gmbinder.com/share/-NwHd9w8gvfvi2JXStBN">Portent Press</author>
+		<update version="0.0.1">
+			<file name="feats.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/major-arcana/cheffreys-apocryphal-cookbook/feats.xml" />
+		</update>
+	</info>
+
+	<element name="Big Appetite" type="Feat" source="Cheffrey's Apocryphal Cookbook" id="ID_CAC_FEAT_BIG_APPETITE">
+		<description>
+			<p>You can eat like none other. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Strength or Constitution score by 1, to a maximum of 20.</li>
+				<li>You have advantage on Constitution checks and saving throws to consume and safely digest quantities of food that would normally effect a creature of your size.</li>
+				<li>You can recover an additional expended Hit Die when you finish a long rest. To do so, you must consume twice as much food as you would normally need for your size.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You have advantage on Constitution checks and saving throws to consume and safely digest quantities of food that would normally effect a creature of your size. Also, you can recover an additional expended Hit Die when you finish a long rest. To do so, you must consume twice as much food as you would normally need for your size.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Big Appetite)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION" />
+		</rules>
+	</element>
+
+	<element name="Home Brew" type="Feat" source="Cheffrey's Apocryphal Cookbook" id="ID_CAC_FEAT_HOME_BREW">
+		<description>
+			<p>The time you've spent brewing has allowed you to refine your own home recipe. You gain the following benefits:</p>
+			<ul>
+				<li>Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</li>
+				<li>You can ignore the weight of containers that hold liquids, such as jugs and casks, when determining your carrying capacity.</li>
+				<li>Over the course of a long rest, you can produce a number of pints of a special alcoholic beverage, called Home Brew, in an empty container of your choice. The number equals 1 + your proficiency bonus. Home Brew tastes exactly how you wish, whether sensible or not, and reverts to purified water after 7 days if not consumed.</li>
+			</ul>
+			<p class="indent">A creature that consumes 1 pint of your Home Brew gains a number of temporary hit points equal to the modifier of the ability increased by this feat and gains the benefits of the <i>protection from poison</i> spell for 1 hour.</p>
+		</description>
+		<sheet>
+			<description>Over the course of a long rest, you can produce a number of pints of a special alcoholic beverage, called Home Brew, in an empty container of your choice. The number equals 1 + your proficiency bonus. Home Brew tastes exactly how you wish, whether sensible or not, and reverts to purified water after 7 days if not consumed. Also, you can ignore the weight of containers that hold liquids, such as jugs and casks, when determining your carrying capacity.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Home Brew)" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+		</rules>
+	</element>
+
+	<element name="Tavern Brawler" type="Feat" source="Cheffrey's Apocryphal Cookbook" id="ID_CAC_FEAT_TAVERN_BRAWLER">
+		<description>
+			<p>The havoc of a barroom rumble in full swing is music to your ears. Thanks to your rough-and-tumble approach to combat, you gain the following benefits:</p>
+			<ul>
+				<li>Increase your Strength, Dexterity, or Constitution score by 1, to a maximum of 20.</li>
+				<li>You gain proficiency with improvised weapons.</li>
+				<li>Your unarmed strikes can deal bludgeoning damage equal to 1d4 + your Strength modifier on a hit. If you have another feature that improves the die of your unarmed strikes, increase the die size of your unarmed strikes by one (to maximum of a d12). For example, a d4 would become a d6.</li>
+				<li>When you hit a creature with an improvised weapon or an unarmed strike on your turn, you can use your bonus action to attempt to shove or grapple the target.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You have proficiency with improvised weapons. Your unarmed strikes can deal bludgeoning damage equal to 1d4 + {{strength:modifier}} on a hit. If you have another feature that improves the die of your unarmed strikes, increase the die size of your unarmed strikes by one (to maximum of a d12). For example, a d4 would become a d6.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Tavern Brawler)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION" />
+		</rules>
+	</element>
+
+	<element name="War to Table" type="Feat" source="Cheffrey's Apocryphal Cookbook" id="ID_CAC_FEAT_WAR_TO_TABLE">
+		<description>
+			<p>You are a butcher unlike any other, which grants you the following benefits:</p>
+			<ul>
+				<li>Increase your Strength, Constitution, or Charisma score by 1, to a maximum of 20.</li>
+				<li>Over the course of 1 hour, which can be accomplished as part of a short or long rest, you can butcher the corpse of a creature that has died within the last 8 hours. The creature's CR must be less than or equal to your proficiency bonus, it must have body parts that you or a friendly creature can consume (DM's discretion), it can be no larger than one size larger than you, and it must remain within 5 feet of you for the hour. At the end of the hour, you can produce a number of Butcher's Rations equal to your proficiency bonus.</li>
+				<li>Your Butcher's Rations gain the basic benefits of a day's rations and the following benefits according to the type of creature they were created from, when you cook them with your cook's utensils. A creature can only benefit from one Butcher's Rations effect at a time.</li>
+			</ul>
+			<p class="indent"><b><i>Accursed Consumption. </i></b>Butcher's Rations created from a Celestial, Humanoid, or Undead grant the consumer immunity to the effects of cursed items and curses, such as the bestow curse spell or the hex spell, for 8 hours.</p>
+			<p class="indent"><b><i>Blissful Satisfaction. </i></b>Butcher's Rations created from a Beast, Dragon, Giant, Monstrosity, or Plant grant the consumer temporary hit points equal to your level and resistance against poison for 8 hours.</p>
+			<p class="indent"><b><i>Otherworldly Influence. </i></b>Butcher's Rations created from an Aberration, Celestial, Elemental, Fey, Fiend, or Ooze grant the consumer resistance to a damage type of its choice for 8 hours.</p>
+		</description>
+		<sheet>
+			<description>Over the course of 1 hour, which can be accomplished as part of a short or long rest, you can butcher the corpse of a creature that has died within the last 8 hours. The creature's CR must be less than or equal to your proficiency bonus, it must have body parts that you or a friendly creature can consume (DM's discretion), it can be no larger than one size larger than you, and it must remain within 5 feet of you for the hour. At the end of the hour, you can produce a number of Butcher's Rations equal to your proficiency bonus. Your Butcher's Rations gain the basic benefits of a day's rations and the following benefits according to the type of creature they were created from, when you cook them with your cook's utensils. A creature can only benefit from one Butcher's Rations effect at a time.&#13;
+				Accursed Consumption: Butcher's Rations created from a Celestial, Humanoid, or Undead grant the consumer immunity to the effects of cursed items and curses, such as the bestow curse spell or the hex spell, for 8 hours. &#13;
+				Blissful Satisfaction: Butcher's Rations created from a Beast, Dragon, Giant, Monstrosity, or Plant grant the consumer temporary hit points equal to your level and resistance against poison for 8 hours.&#13;
+				Otherworldly Influence: Butcher's Rations created from an Aberration, Celestial, Elemental, Fey, Fiend, or Ooze grant the consumer resistance to a damage type of its choice for 8 hours.
+			</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (War to Table)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_CHARISMA" />
+		</rules>
+	</element>
+</elements>
