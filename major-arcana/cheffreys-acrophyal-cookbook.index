@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<info>
-	<name>Cheffrey's Acrophyal Cookbook</name>
-	<description>The content from the Portent Press team that adds food-themed content.</description>
-	<author url="https://www.gmbinder.com/share/-NwHd9w8gvfvi2JXStBN">Portent Press</author>
-	<update version="0.0.1">
-		<file name="cheffreys-acrophyal-cookbook.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/cheffreys-acrophyal-cookbook.index" />
-	</update>
+<index>
+	<info>
+		<name>Cheffrey's Acrophyal Cookbook</name>
+		<description>The content from the Portent Press team that adds food-themed content.</description>
+		<author url="https://www.gmbinder.com/share/-NwHd9w8gvfvi2JXStBN">Portent Press</author>
+		<update version="0.0.2">
+			<file name="cheffreys-acrophyal-cookbook.index" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/cheffreys-acrophyal-cookbook.index" />
+		</update>
+	</info>
 	<files>
 		<file name="feats.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/cheffreys-apocryphal-cookbook/feats.xml" />
 		<file name="optional-class-features.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/cheffreys-apocryphal-cookbook/optional-class-features.xml" />
@@ -21,4 +23,5 @@
 		<file name="source.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/cheffreys-apocryphal-cookbook/source.xml" />
 		<file name="spells.xml" url="https://raw.githubusercontent.com/MeriadarGoblin/elements-portent-press/main/major-arcana/cheffreys-apocryphal-cookbook/spells.xml" />
 	</files>
-</info>
+	
+</index>
